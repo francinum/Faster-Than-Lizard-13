@@ -1,5 +1,7 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Space Station 13!</h1>
+<h1>Welcome to Faster-Than-Lizard 13!</h1>
 
-<i>This server is running a /tg/station 13 Git build.</i>
+<i>This server is running a modified build of FTL13 designed for maximum ~*<font color="#FF0000">s</font><font color="#FFCC00">p</font><font color="#FFFF00">e</font><font color="#339966">c</font><font color="#0000FF">i</font><font color="#CC00CC">a</font><font color="#660066">l</font> <font color="#FF0000">s</font><font color="#FF9900">n</font><font color="#FFCC00">o</font><font color="#339966">w</font><font color="#0000FF">f</font><font color="#CC00CC">l</font><font color="#660066">a</font><font color="#FF0000">k</font><font color="#FF9900">e</font>*~.</i>
+
+"So its both broken and snowflakey as f u c k :^)" ~Disgruntled Coder, 2016
