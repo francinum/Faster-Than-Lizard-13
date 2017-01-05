@@ -106,7 +106,7 @@ Strip out?
 	l_pocket = /obj/item/weapon/restraints/handcuffs
 	suit_store = /obj/item/weapon/gun/energy/gun/mini		//Mini E-Gun
 	backpack_contents = list(/obj/item/weapon/melee/baton/loaded=1,
-		/obj/item/weapon/gun/energy/gun/advtaser=1,)
+		/obj/item/weapon/gun/energy/gun/advtaser=1)
 
 	backpack = /obj/item/weapon/storage/backpack/security
 	satchel = /obj/item/weapon/storage/backpack/satchel_sec
@@ -217,7 +217,7 @@ var/list/sec_departments = list("engineering", "supply", "medical", "science")
 	r_pocket = /obj/item/device/assembly/flash/handheld
 	suit_store = /obj/item/weapon/gun/energy/gun/mini		//Mini-Egun
 	backpack_contents = list(/obj/item/weapon/melee/baton/loaded=1,
-		/obj/item/weapon/gun/energy/gun/advtaser=1,)
+		/obj/item/weapon/gun/energy/gun/advtaser=1)
 
 	backpack = /obj/item/weapon/storage/backpack/security
 	satchel = /obj/item/weapon/storage/backpack/satchel_sec
