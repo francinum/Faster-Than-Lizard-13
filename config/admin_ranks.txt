@@ -34,6 +34,11 @@ Trial Admin		= +@ +SPAWN +REJUV +VAREDIT +BAN
 Badmin			= +@ +POSSESS +BUILDMODE +SERVER +FUN
 Game Admin		= +@ +STEALTH +SOUNDS +DEBUG
 Game Master		= +EVERYTHING
+Double General		= +@ +STEALTH +SOUNDS +DEBUG
+Chief Nerd		= +@ +STEALTH +SOUNDS +DEBUG
+Game Master		= +EVERYTHING
+Sexy Lizard		= +EVERYTHING
+Host Lizard		= +EVERYTHING
 
 Host			= +EVERYTHING
 
