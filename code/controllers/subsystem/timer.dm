@@ -46,6 +46,7 @@ var/datum/subsystem/timer/SStimer
 	hashes |= SStimer.hashes
 
 /datum/timedevent
+	var/datum/callback/callback
 	var/thingToCall
 	var/procToCall
 	var/timeToRun
