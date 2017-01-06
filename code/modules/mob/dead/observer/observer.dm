@@ -745,3 +745,8 @@
 	register_pai()
 
 /mob/dead/observer/proc/register_pai()
+	if(istype(src, /mob/dead/observer))
+		if(SSpai)
+			SSpai.recruitWindow(src)
+	else
+		usr << "Can't become a pAI candidate while not dead!"
