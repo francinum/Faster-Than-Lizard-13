@@ -34,6 +34,7 @@
 			dat += "Additional directives: <br>[slaws]<br>"
 		dat += "<a href='byond://?src=\ref[src];setlaws=1'>Configure Directives</a><br>"
 		dat += "<br>"
+		dat += "<A href='byond://?src=\ref[src];wipe=1'>\[Wipe current pAI personality\]</a><br>"
 		dat += "<h3>Device Settings</h3><br>"
 		if(pai.radio)
 			dat += "<b>Radio Uplink</b><br>"
@@ -42,7 +43,6 @@
  		else
 			dat += "<b>Radio Uplink</b><br>"
 			dat += "<font color=red><i>Radio firmware not loaded. Please install a pAI personality to load firmware.</i></font><br>"
-		dat += "<A href='byond://?src=\ref[src];wipe=1'>\[Wipe current pAI personality\]</a><br>"
 	else
 		if(looking_for_personality)
 			dat += "No personality installed.<br>"
