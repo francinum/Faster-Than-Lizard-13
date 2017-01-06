@@ -2,8 +2,8 @@ var/datum/subsystem/pai/SSpai
 
 /datum/subsystem/pai
 	name = "pAI"
-	init_order = 20
-	flags = SS_NO_FIRE|SS_NO_INIT
+
+	flags = SS_NO_INIT|SS_NO_FIRE
 
 	var/askDelay = 600
 	var/const/NEVER_FOR_THIS_ROUND = -1
@@ -135,7 +135,6 @@ var/datum/subsystem/pai/SSpai
 	M << browse(dat, "window=paiRecruit")
 
 /datum/subsystem/pai/proc/findPAI(obj/item/device/paicard/p, mob/user)
-	requestRecruits()
 	var/list/available = list()
 	for(var/datum/paiCandidate/c in SSpai.candidates)
 		if(c.ready)
@@ -180,8 +179,6 @@ var/datum/subsystem/pai/SSpai
 
 	user << browse(dat, "window=findPai")
 
-/datum/subsystem/pai/proc/requestRecruits()
-	for(var/mob/dead/observer/O in player_list)
 		if(jobban_isbanned(O, ROLE_PAI))
 			continue
 		if(asked[O.ckey])
