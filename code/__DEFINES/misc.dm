@@ -41,6 +41,7 @@
 #define SUIT_STORE_LAYER		11
 #define BACK_LAYER				10
 #define HAIR_LAYER				9		//TODO: make part of head layer?
+#define NECK_LAYER				8
 #define FACEMASK_LAYER			8
 #define HEAD_LAYER				7
 #define HANDCUFF_LAYER			6
