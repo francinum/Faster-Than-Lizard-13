@@ -36,7 +36,7 @@
 	var/mob/dead/observer/G = usr
 	G.dead_tele()
 	
-	+/obj/screen/ghost/pai
+/obj/screen/ghost/pai
 	name = "pAI Candidate"
 	icon_state = "pai"
 
