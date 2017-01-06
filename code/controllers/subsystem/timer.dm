@@ -46,8 +46,10 @@ var/datum/subsystem/timer/SStimer
 	hashes |= SStimer.hashes
 
 /datum/timedevent
-	var/datum/callback/callback
+	var/thingToCall
+	var/procToCall
 	var/timeToRun
+	var/argList
 	var/id
 	var/hash
 	var/static/nextid = 1
