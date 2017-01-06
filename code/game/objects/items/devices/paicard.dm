@@ -3,7 +3,7 @@
 	icon = 'icons/obj/aicards.dmi'
 	icon_state = "pai"
 	item_state = "electronic"
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = 2
 	slot_flags = SLOT_BELT
 	origin_tech = "programming=2"
 	var/mob/living/silicon/pai/pai
@@ -11,12 +11,10 @@
 
 /obj/item/device/paicard/New()
 	..()
-	pai_card_list += src
 	add_overlay("pai-off")
 
 /obj/item/device/paicard/Destroy()
 	//Will stop people throwing friend pAIs into the singularity so they can respawn
-	pai_card_list -= src
 	if(!isnull(pai))
 		pai.death(0)
 	return ..()
