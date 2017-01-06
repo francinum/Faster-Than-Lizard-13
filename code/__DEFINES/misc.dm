@@ -327,6 +327,7 @@ var/list/bloody_footprints_cache = list()
 #define SENTIENCE_BOSS 5
 
 //Fire and Acid stuff, for resistance_flags
+#define FLAMMABLE 0   //legacy shit
 #define LAVA_PROOF 1
 #define FIRE_PROOF 2
 #define ON_FIRE 4
