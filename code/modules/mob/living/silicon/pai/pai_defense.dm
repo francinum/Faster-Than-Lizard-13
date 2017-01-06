@@ -5,7 +5,7 @@
 /mob/living/silicon/pai/emp_act(severity)
 	take_holo_damage(severity * 25)
 	fullstun(severity * 10)
-	silent = max(severity * 15, silent)
+//	silent = max(severity * 15, silent)
 	if(holoform)
 		fold_in(force = TRUE)
 	//Need more effects that aren't instadeath or permanent law corruption.
@@ -37,7 +37,7 @@
 					fold_in()
 					if(user.put_in_hands(card))
 						user.visible_message("<span class='notice'>[user] promptly scoops up their pAI's card.</span>")
-			else
+			if (user.name != master)
 				visible_message("<span class='danger'>[user] stomps on [src]!.</span>")
 				take_holo_damage(2)
 
@@ -61,7 +61,7 @@
 	if(emitterhealth < 0)
 		fold_in(force = TRUE)
 	src << "<span class='userdanger'>The impact degrades your holochassis!</span>"
-	hit_slowdown += amount
+//	hit_slowdown += amount
 	return amount
 
 /mob/living/silicon/pai/proc/fullstun(amount)
