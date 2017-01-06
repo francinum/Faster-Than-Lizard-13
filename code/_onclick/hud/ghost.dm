@@ -35,6 +35,15 @@
 /obj/screen/ghost/teleport/Click()
 	var/mob/dead/observer/G = usr
 	G.dead_tele()
+	
+	+/obj/screen/ghost/pai
+	name = "pAI Candidate"
+	icon_state = "pai"
+
+/obj/screen/ghost/pai/Click()
+	var/mob/dead/observer/G = usr
+	G.register_pai()
+
 
 /datum/hud/ghost/New(mob/owner)
 	..()
@@ -59,6 +68,10 @@
 
 	using = new /obj/screen/ghost/teleport()
 	using.screen_loc = ui_ghost_teleport
+	static_inventory += using
+
+	using = new /obj/screen/ghost/pai()
+	using.screen_loc = ui_ghost_pai
 	static_inventory += using
 
 
