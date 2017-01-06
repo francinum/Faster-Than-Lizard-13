@@ -467,3 +467,7 @@ var/global/list/ghost_others_options = list(GHOST_OTHERS_SIMPLE, GHOST_OTHERS_DE
 #define INTENT_GRAB   "grab"
 #define INTENT_DISARM "disarm"
 #define INTENT_HARM   "harm"
+
+//callback, used in pAI
+
+#define CALLBACK new /datum/callback
