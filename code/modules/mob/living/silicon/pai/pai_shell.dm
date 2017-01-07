@@ -95,4 +95,4 @@
 		src << "<span class='notice'>You enable your integrated light.</span>"
 	else
 		SetLuminosity(0)
-src << "<span class='notice'>You disable your integrated light.</span>"
+		src << "<span class='notice'>You disable your integrated light.</span>"
