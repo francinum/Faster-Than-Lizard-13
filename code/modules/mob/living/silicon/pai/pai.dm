@@ -60,10 +60,11 @@
 	var/chassis = "repairbot"
 	var/list/possible_chassis = list("cat", "mouse", "monkey", "corgi", "fox", "repairbot", "rabbit")
 
+
 	var/emitterhealth = 50
 	var/emittermaxhealth = 50
-	var/emitterregen = 1
-	var/emittercd = 10
+	var/emitterregen = 0.5
+	var/emittercd = 20
 	var/emitteroverloadcd = 50
 	var/emittersemicd = FALSE
 
@@ -71,6 +72,14 @@
 	var/overload_bulletblock = 0	//Why is this a good idea?
 	var/overload_maxhealth = 0
 	canmove = FALSE
+	var/silent = 0
+	var/hit_slowdown = 0
+	var/light_power = 5
+	var/slowdown = 0
+	
+/mob/living/silicon/pai/movement_delay()
+	. = ..()
+	. += slowdown
 
 /mob/living/silicon/pai/Destroy()
 	pai_list -= src
