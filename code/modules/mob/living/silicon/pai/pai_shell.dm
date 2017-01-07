@@ -97,15 +97,13 @@ var/being_slowed_by_light = FALSE	//used in light brightness code.
 		src << "<span class='notice'>You enable your integrated light.</span>"
 	else if(luminosity == light_power)	//higher beam, at the cost of speed
 		if(slowdown < 2)
-			slowdown += 1
+			slowdown = slowdown+1
 			being_slowed_by_light = TRUE
 		SetLuminosity(light_power*2)
 		src << "<span class='notice'>You increase the brightness of your integrated light.</span>"
-	else if (luminosity == light_power*2)
+	else 
 		if(being_slowed_by_light)
-			slowdown -= 1
+			slowdown = slowdown-1
 			being_slowed_by_light = FALSE
 		SetLuminosity(0)
 		src << "<span class='notice'>You disable your integrated light.</span>"
-	else					//something went VERY FUCKIN' WRONG, YO.
-		src << "<span class='warning'>Your internal light seems to be malfunctioning...</span>"
