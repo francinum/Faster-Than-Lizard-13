@@ -262,3 +262,11 @@
 /datum/action/innate/pai/light/Trigger()
 	..()
 	P.toggle_integrated_light()
+
+/mob/living/silicon/pai/Process_Spacemove(movement_dir = 0)
+	. = ..()
+	if(!.)
+		slowdown = 2
+		return TRUE
+	slowdown = initial(slowdown)
+	return TRUE
