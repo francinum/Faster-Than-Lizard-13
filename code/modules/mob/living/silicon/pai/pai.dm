@@ -112,6 +112,7 @@
 	var/datum/action/innate/pai/shell/AS = new /datum/action/innate/pai/shell
 	var/datum/action/innate/pai/chassis/AC = new /datum/action/innate/pai/chassis
 	var/datum/action/innate/pai/rest/AR = new /datum/action/innate/pai/rest
+ 	var/datum/action/innate/pai/light/AL = new /datum/action/innate/pai/light 
 	AS.Grant(src)
 	AC.Grant(src)
 	AR.Grant(src)
