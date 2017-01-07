@@ -178,7 +178,7 @@ var/datum/subsystem/starmap/SSstarmap
 		// Make a new objective
 		var/datum/objective/O
 
-		if(objective_types.len && world.time < 54000)
+		if(objective_types.len && world.time < 81000)
 			var/objectivetype = pickweight(objective_types)
 			objective_types[objectivetype]--
 			if(objective_types[objectivetype] <= 0)
