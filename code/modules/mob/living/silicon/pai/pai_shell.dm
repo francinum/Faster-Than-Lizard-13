@@ -1,3 +1,5 @@
+var/being_slowed_by_light = FALSE	//used in light brightness code.
+
 /mob/living/silicon/pai/proc/fold_out(force = FALSE)
 	if(emitterhealth < 0)
 		src << "<span class='warning'>Your holochassis emitters are still too unstable! Please wait for automatic repair.</span>"
@@ -91,8 +93,19 @@
 
 /mob/living/silicon/pai/proc/toggle_integrated_light()
 	if(!luminosity)
-		SetLuminosity(light_power)
+		SetLuminosity(light_power)	//low beam
 		src << "<span class='notice'>You enable your integrated light.</span>"
-	else
+	else if(luminosity == light_power)	//higher beam, at the cost of speed
+		if(slowdown < 2)
+			slowdown += 1
+			being_slowed_by_light = TRUE
+		SetLuminosity(light_power*2)
+		src << "<span class='notice'>You increase the brightness of your integrated light.</span>"
+	else if (luminosity == light_power*2)
+		if(being_slowed_by_light)
+			slowdown -= 1
+			being_slowed_by_light = FALSE
 		SetLuminosity(0)
 		src << "<span class='notice'>You disable your integrated light.</span>"
+	else					//something went VERY FUCKIN' WRONG, YO.
+		src << "<span class='warning'>Your internal light seems to be malfunctioning...</span>"
