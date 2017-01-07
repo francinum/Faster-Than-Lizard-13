@@ -244,3 +244,12 @@
 /datum/action/innate/pai/rest/Trigger()
 	..()
 	P.lay_down()
+	
+/datum/action/innate/pai/light
+	name = "Toggle Integrated Lights"
+	button_icon_state = "emp"
+	background_icon_state = "bg_tech"
+ 
+/datum/action/innate/pai/light/Trigger()
+	..()
+	P.toggle_integrated_light()
