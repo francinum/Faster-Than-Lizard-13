@@ -194,7 +194,7 @@
 					pointcost = 10
 			if("necklace")
 				if(gang.points >=1)
-					item_type = /obj/item/clothing/tie/dope_necklace
+					item_type = /obj/item/clothing/neck/dope_necklace
 					pointcost = 1
 			if("pistol")
 				if(gang.points >= 25)
