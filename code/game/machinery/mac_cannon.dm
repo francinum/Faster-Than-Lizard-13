@@ -43,7 +43,7 @@
 		return
 	if(breech.actuator.spent||!breech.actuator)
 		visible_message("\icon[src] <span class=notice>Error. Firing actuator missing or broken. Unable to fire.</span>")
-		playsound(loc,'sound/machines/buzz-sigh.ogg',50,0)
+		playsound(loc,'sound/machines/low_air_warn.ogg',50,0)
 		return
 	return 1
 
