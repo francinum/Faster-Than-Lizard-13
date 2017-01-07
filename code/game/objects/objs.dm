@@ -10,7 +10,8 @@
 	var/damtype = "brute"
 	var/force = 0
 
-	var/burn_state = FIRE_PROOF // LAVA_PROOF | FIRE_PROOF | FLAMMABLE | ON_FIRE
+	var/burn_state = FIRE_PROOF // LAVA_PROOF | FIRE_PROOF | FLAMMABLE | ON_FIRE	//LEFT FOR LEGACY CODE
+	var/resistance_flags = FIRE_PROOF // INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ON_FIRE | UNACIDABLE | ACID_PROOF	//FOR HOLOCHASSIS pAI CODE 
 	var/burntime = 10 //How long it takes to burn to ashes, in seconds
 	var/burn_world_time //What world time the object will burn up completely
 	var/being_shocked = 0

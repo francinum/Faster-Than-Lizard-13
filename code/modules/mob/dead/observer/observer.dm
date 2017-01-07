@@ -691,3 +691,19 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			else
 				verbs -= /mob/dead/observer/verb/boo
 				verbs -= /mob/dead/observer/verb/possess
+
+// everything from here down was merged from pAI code, delete it if you need to undo the change
+
+/mob/dead/observer/verb/register_pai_candidate()
+	set category = "Ghost"
+	set name = "pAI Setup"
+	set desc = "Upload a fragment of your personality to the global pAI databanks"
+
+	register_pai()
+
+/mob/dead/observer/proc/register_pai()
+	if(istype(src, /mob/dead/observer))
+		if(SSpai)
+			SSpai.recruitWindow(src)
+	else
+		usr << "Can't become a pAI candidate while not dead!"

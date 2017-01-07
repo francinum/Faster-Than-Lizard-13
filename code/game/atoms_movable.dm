@@ -158,11 +158,7 @@
 		CRASH("Brainmob without container.")
 
 
-/mob/living/silicon/pai/forceMove(atom/destination)
-	if(card)
-		card.forceMove(destination)
-	else //something went very wrong.
-		CRASH("pAI without card")
+
 
 
 //Called whenever an object moves and by mobs when they attempt to move themselves through space
