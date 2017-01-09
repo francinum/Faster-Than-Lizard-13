@@ -24,7 +24,7 @@
 	can_suppress = 0
 	
 /obj/item/weapon/gun/projectile/automatic/pistol/m1911/meusoc
-	name = "M45 MEU\(SOC\)"
+	name = "M45 MEU(SOC)"
 	desc = "This adaptation of the Colt M1911 still sees use where Nanotrasen needs to arm its officers cheaply and effectively."
 
 /obj/item/weapon/gun/projectile/automatic/pistol/deagle
