@@ -11,3 +11,4 @@ pascal123 = Host Lizard
 eviljackcarver = Sexy Lizard
 leon962 = Chief Nerd
 segalowitz = Double General
+jessica_stark = Game Admin
