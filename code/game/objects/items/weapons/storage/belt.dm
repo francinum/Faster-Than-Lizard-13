@@ -134,7 +134,9 @@
 		/obj/item/weapon/gun/projectile/automatic/pistol,
 		/obj/item/weapon/gun/energy/gun/mini,
 		/obj/item/ammo_box/magazine/m10mm,
-		/obj/item/weapon/gun/energy/gun/advtaser
+		/obj/item/weapon/gun/energy/gun/advtaser,
+		/obj/item/weapon/gun/projectile/automatic/pistol/m1911/meusoc,
+		/obj/item/ammo_box/magazine/m45
 		)
 
 /obj/item/weapon/storage/belt/security/full/New()
