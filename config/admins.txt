@@ -7,8 +7,9 @@
 # NOTE: if the rank-name cannot be found in admin_ranks.txt, they will not be adminned! ~Carn #
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
-pascal123 = Host Lizard
-eviljackcarver = Sexy Lizard
-leon962 = Chief Nerd
-segalowitz = Double General
-jessica_stark = Game Admin
+pascal123 = Server Host
+eviljackcarver = Senior Admin
+leon962 = Trial Admin
+segalowitz = Trial Admin
+jessica_stark = Trial Admin
+christ110 = Trial Admin

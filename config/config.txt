@@ -5,7 +5,7 @@
 STATIONNAME NSV Astraeus
 
 # Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
-LOBBY_COUNTDOWN 35
+LOBBY_COUNTDOWN 60
 
 # Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
 ROUND_END_COUNTDOWN 90
@@ -78,7 +78,7 @@ ALLOW_ADMIN_OOCCOLOR
 ALLOW_METADATA
 
 ## allow players to initiate a restart vote
-#ALLOW_VOTE_RESTART
+ALLOW_VOTE_RESTART
 
 ## allow players to initate a mode-change start
 #ALLOW_VOTE_MODE
@@ -153,7 +153,7 @@ CHECK_RANDOMIZER
 # RULESURL http://www.ftl13.com/wiki/index.php/Rules
 
 ##Github address
-# GITHUBURL https://github.com/Pascal125/Faster-Than-Lizard-13
+GITHUBURL https://github.com/Pascal125/Faster-Than-Lizard-13
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
 # BANAPPEALS http://justanotherday.example.com
