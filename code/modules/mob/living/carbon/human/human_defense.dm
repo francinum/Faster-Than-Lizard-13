@@ -369,10 +369,11 @@
 	return ..()
 
 /mob/living/carbon/human/grabbedby(mob/living/carbon/user, supress_message = 0)
-	if(user == src && pulling && !pulling.anchored && grab_state >= GRAB_AGGRESSIVE && (disabilities & FAT) && ismonkey(pulling))
+	if(user == src && pulling && !pulling.anchored && grab_state >= GRAB_AGGRESSIVE && iscarbon(pulling))
 		devour_mob(pulling)
 	else
 		..()
+		
 
 /mob/living/carbon/human/grippedby(mob/living/user)
 	if(w_uniform)
