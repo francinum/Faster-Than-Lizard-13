@@ -2049,6 +2049,28 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
+"ehy" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio3";
+	name = "containment blast door"
+	},
+/obj/machinery/door/window/southleft{
+	pulledby = null;
+	req_access = null;
+	req_access_txt = "28";
+	safe = 1;
+	screen_loc = null
+	},
+/turf/open/floor/engine,
+/area/shuttle/ftl/research/xenobiology)
 "ehY" = (
 /obj/structure/janitorialcart,
 /turf/open/floor/plasteel,
@@ -14927,25 +14949,6 @@
 "EGl" = (
 /turf/open/floor/engine,
 /area/engine/gravity_generator)
-"EGN" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/machinery/door/window/southleft{
-	req_access = 1 = 28;
-	req_access_txt = "28"
-	},
-/turf/open/floor/engine,
-/area/shuttle/ftl/research/xenobiology)
 "EIr" = (
 /obj/structure/window/fulltile,
 /obj/structure/grille,
@@ -47141,7 +47144,7 @@ MKz
 phh
 qcb
 OXM
-EGN
+ehy
 SaO
 wLI
 wrr
