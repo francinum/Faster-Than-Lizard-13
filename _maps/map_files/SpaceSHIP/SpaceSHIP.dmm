@@ -353,18 +353,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/engineering)
-"aJk" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 9
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/engineering)
 "aJq" = (
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -3606,6 +3594,12 @@
 	initial_gas_mix = "n2=100;TEMP=80"
 	},
 /area/shuttle/ftl/telecomms/server)
+"huc" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/portable_atmospherics/canister,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "hup" = (
 /obj/effect/landmark/latejoin,
 /obj/structure/chair,
@@ -10186,6 +10180,11 @@
 	icon_state = "bar"
 	},
 /area/shuttle/ftl/crew_quarters/bar)
+"uAS" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/portable_atmospherics/canister,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "uCb" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -12093,10 +12092,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
-"yxE" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "yxX" = (
 /obj/structure/table,
 /obj/item/device/taperecorder{
@@ -13819,6 +13814,13 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/surgery)
+"CgL" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "Cht" = (
 /turf/open/floor/plasteel/warning{
 	dir = 8
@@ -47380,8 +47382,8 @@ Hbq
 BOH
 UHz
 UHz
-yxE
-UHz
+uAS
+CgL
 YDs
 wzC
 TaU
@@ -47627,7 +47629,7 @@ ZUA
 ONP
 aaV
 CRa
-CRa
+huc
 CRa
 GIF
 TTX
@@ -47887,7 +47889,7 @@ LQA
 LQA
 Tgd
 TWo
-aJk
+Ljv
 sbQ
 hSf
 yuL
