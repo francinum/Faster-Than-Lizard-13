@@ -31,15 +31,15 @@ Admin Observer
 Moderator		= +ADMIN
 Admin Candidate	= +@
 Trial Admin		= +@ +SPAWN +REJUV +VAREDIT +BAN
-Mapper		= +@ +SPAWN +REJUV +VAREDIT 
-Spriter		= +@ +SPAWN +REJUV +VAREDIT 
 Badmin			= +@ +POSSESS +BUILDMODE +SERVER +FUN
 Game Admin		= +@ +STEALTH +SOUNDS +DEBUG
 Game Master		= +EVERYTHING
-Senior Admin		= +ADMIN +BAN +STEALTH +SOUNDS +SPAWN +VAREDIT +REJUV +POSSESS +DEBUG +FUN +BUILD
-Head Admin		= +EVERYTHING
+Double General		= +@ +STEALTH +SOUNDS +DEBUG
+Chief Nerd		= +@ +STEALTH +SOUNDS +DEBUG
+Game Master		= +EVERYTHING
+Sexy Lizard		= +EVERYTHING
+Host Lizard		= +EVERYTHING
 
-Server Host			= +EVERYTHING
+Host			= +EVERYTHING
 
 Coder			= +DEBUG +VAREDIT +SERVER +SPAWN
-Head Coder			= +DEBUG +VAREDIT +SERVER +SPAWN +ADMIN +SERVER +BUILD
