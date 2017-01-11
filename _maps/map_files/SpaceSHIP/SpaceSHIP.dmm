@@ -123,25 +123,6 @@
 /obj/item/weapon/storage/toolbox/mechanical,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
-"arg" = (
-/obj/machinery/power/apc{
-	auto_name = 1;
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/machinery/airalarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/engine/gravity_generator)
 "arA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -1709,6 +1690,20 @@
 	dir = 4
 	},
 /area/shuttle/ftl/munitions)
+"dul" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "dun" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
@@ -3598,9 +3593,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
-"hAJ" = (
-/turf/closed/wall/r_wall,
-/area/engine/gravity_generator)
 "hAP" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	tag = "icon-intact (EAST)";
@@ -4683,6 +4675,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
+"jzd" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 1
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/engine/engine_smes)
 "jzH" = (
 /obj/structure/sign/securearea{
 	pixel_x = -32
@@ -5085,10 +5083,6 @@
 	name = "floor"
 	},
 /area/shuttle/ftl/bridge)
-"kyj" = (
-/obj/machinery/gravity_generator/main/station,
-/turf/open/floor/engine,
-/area/engine/gravity_generator)
 "kyQ" = (
 /obj/machinery/door/poddoor{
 	id = "EvaGarage";
@@ -5177,6 +5171,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
+"kIQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/light,
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "kJm" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/security/brig)
@@ -5521,20 +5529,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/virology)
-"lnp" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 8
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/light,
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/engine/gravity_generator)
 "loo" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel,
@@ -5917,6 +5911,12 @@
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
+/area/shuttle/ftl/engine/engine_smes)
+"mpE" = (
+/obj/machinery/camera{
+	c_tag = "Engineering Equipment"
+	},
+/turf/open/floor/engine,
 /area/shuttle/ftl/engine/engine_smes)
 "mrp" = (
 /obj/machinery/light,
@@ -6569,6 +6569,10 @@
 	dir = 8
 	},
 /area/shuttle/ftl/cargo/office)
+"nKO" = (
+/obj/machinery/gravity_generator/main/station,
+/turf/open/floor/engine,
+/area/shuttle/ftl/engine/engine_smes)
 "nLu" = (
 /obj/machinery/air_sensor{
 	frequency = 1441;
@@ -7993,12 +7997,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/munitions)
-"qwo" = (
-/obj/machinery/camera{
-	c_tag = "Engineering Equipment"
-	},
-/turf/open/floor/engine,
-/area/engine/gravity_generator)
 "qwF" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -10918,20 +10916,6 @@
 	},
 /turf/open/floor/plasteel/warning,
 /area/shuttle/ftl/engine/engine_smes)
-"whH" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/engine/gravity_generator)
 "wjB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -13763,6 +13747,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
+"BXO" = (
+/obj/machinery/power/apc{
+	auto_name = 1;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "BYI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/westleft{
@@ -14946,9 +14949,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
-"EGl" = (
-/turf/open/floor/engine,
-/area/engine/gravity_generator)
 "EIr" = (
 /obj/structure/window/fulltile,
 /obj/structure/grille,
@@ -15096,6 +15096,26 @@
 "EZv" = (
 /turf/closed/wall,
 /area/shuttle/ftl/medical/cmo)
+"Fba" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/glass_engineering{
+	name = "Gravity Generator";
+	req_access_txt = "34";
+	req_one_access_txt = "0"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Engineering";
+	name = "engineering security door"
+	},
+/turf/open/floor/plasteel/yellow/side,
+/area/shuttle/ftl/engine/engine_smes)
 "FbA" = (
 /obj/machinery/computer/monitor,
 /obj/structure/cable{
@@ -17987,26 +18007,6 @@
 	dir = 4
 	},
 /area/shuttle/ftl/cargo/office)
-"LFW" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/door/airlock/glass_engineering{
-	name = "Gravity Generator";
-	req_access_txt = "34";
-	req_one_access_txt = "0"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/turf/open/floor/plasteel/yellow/side,
-/area/engine/gravity_generator)
 "LHf" = (
 /obj/structure/grille,
 /obj/structure/sign/securearea{
@@ -21152,12 +21152,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
-"SgR" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 1
-	},
-/turf/closed/wall/r_wall,
-/area/engine/gravity_generator)
 "SgU" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/bridge/meeting_room)
@@ -48387,12 +48381,12 @@ KYC
 sDI
 dvl
 RWM
-hAJ
-hAJ
-hAJ
-hAJ
-LFW
-hAJ
+eLy
+eLy
+eLy
+eLy
+Fba
+eLy
 qde
 FTc
 QTa
@@ -48644,12 +48638,12 @@ Rui
 tCv
 PEd
 NsG
-hAJ
-qwo
-EGl
-EGl
-whH
-SgR
+eLy
+mpE
+MhX
+MhX
+dul
+jzd
 Wad
 aEj
 oHE
@@ -48901,12 +48895,12 @@ KYC
 IlU
 WqN
 trE
-hAJ
-EGl
-EGl
-kyj
-lnp
-hAJ
+eLy
+MhX
+MhX
+nKO
+kIQ
+eLy
 wED
 LwW
 TnY
@@ -49158,12 +49152,12 @@ KYC
 wNV
 eXM
 kJT
-hAJ
-EGl
-EGl
-EGl
-arg
-hAJ
+eLy
+MhX
+MhX
+MhX
+BXO
+eLy
 ExG
 CJh
 mVM
@@ -49415,12 +49409,12 @@ KYC
 wXy
 oMU
 aOd
-hAJ
-hAJ
-hAJ
-hAJ
-hAJ
-hAJ
+eLy
+eLy
+eLy
+eLy
+eLy
+eLy
 Kib
 yiw
 FqO
