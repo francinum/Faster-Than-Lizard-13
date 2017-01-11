@@ -14927,6 +14927,25 @@
 "EGl" = (
 /turf/open/floor/engine,
 /area/engine/gravity_generator)
+"EGN" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio3";
+	name = "containment blast door"
+	},
+/obj/machinery/door/window/southleft{
+	req_access = 1 = 28;
+	req_access_txt = "28"
+	},
+/turf/open/floor/engine,
+/area/shuttle/ftl/research/xenobiology)
 "EIr" = (
 /obj/structure/window/fulltile,
 /obj/structure/grille,
@@ -22702,24 +22721,6 @@
 	},
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
-"VDA" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/machinery/door/window/southleft{
-	
-	},
-/turf/open/floor/engine,
-/area/shuttle/ftl/research/xenobiology)
 "VEP" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/book/manual/barman_recipes,
@@ -47140,7 +47141,7 @@ MKz
 phh
 qcb
 OXM
-VDA
+EGN
 SaO
 wLI
 wrr
