@@ -8,8 +8,8 @@
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
 pascal123 = Server Host
-eviljackcarver = Senior Admin
+eviljackcarver = Lizard Bitch
 leon962 = Trial Admin
-segalowitz = Trial Admin
+segalowitz = Double General
 jessica_stark = Trial Admin
-christ110 = Trial Admin
+christ110 = Badmin
