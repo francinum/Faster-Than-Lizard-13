@@ -13,3 +13,4 @@ leon962 = Trial Admin
 segalowitz = Double General
 jessica_stark = Trial Admin
 christ110 = Badmin
+Torsion = Coder
