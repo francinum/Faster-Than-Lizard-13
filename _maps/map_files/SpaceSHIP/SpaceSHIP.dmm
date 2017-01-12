@@ -329,15 +329,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay)
-"aNd" = (
-/obj/machinery/recharger,
-/obj/structure/table,
-/obj/item/device/radio/off,
-/obj/item/device/radio/off,
-/obj/item/device/multitool,
-/obj/item/device/multitool,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/bridge/eva)
 "aNI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -11611,6 +11602,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/meeting_room)
+"xAa" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/bridge/eva)
 "xCr" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -12329,15 +12327,6 @@
 	},
 /turf/open/space,
 /area/shuttle/ftl/munitions/cannon)
-"yTm" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel/loadingarea{
-	dir = 4
-	},
-/area/shuttle/ftl/bridge/eva)
 "yTv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/door/firedoor,
@@ -13699,6 +13688,11 @@
 	initial_gas_mix = "n2=100;TEMP=80"
 	},
 /area/shuttle/ftl/telecomms/server)
+"BFE" = (
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/bar)
 "BGl" = (
 /obj/structure/table/wood,
 /obj/item/weapon/storage/briefcase,
@@ -17812,6 +17806,19 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
+"KKv" = (
+/obj/machinery/recharger,
+/obj/structure/table,
+/obj/item/device/radio/off,
+/obj/item/device/radio/off,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/bridge/eva)
 "KMG" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -64832,7 +64839,7 @@ zNf
 zNf
 rHc
 rHc
-rHc
+toK
 toK
 toK
 toK
@@ -65088,8 +65095,8 @@ jhr
 jhr
 jhr
 jhr
-jhr
-FeJ
+BFE
+toK
 toK
 toK
 toK
@@ -65345,8 +65352,8 @@ jhr
 jhr
 jhr
 jhr
-jhr
-FeJ
+BFE
+toK
 toK
 toK
 toK
@@ -65602,8 +65609,8 @@ jhr
 jhr
 jhr
 jhr
-jhr
-FeJ
+BFE
+toK
 toK
 toK
 toK
@@ -65859,8 +65866,8 @@ jhr
 jhr
 jhr
 jhr
-jhr
-FeJ
+BFE
+toK
 toK
 toK
 toK
@@ -66116,8 +66123,8 @@ jhr
 jhr
 jhr
 jhr
-jhr
-FeJ
+BFE
+toK
 toK
 toK
 toK
@@ -66374,7 +66381,7 @@ QXd
 QXd
 QXd
 QXd
-QXd
+toK
 toK
 toK
 toK
@@ -66630,8 +66637,8 @@ Usl
 Usl
 Usl
 Usl
-Usl
 QXd
+toK
 toK
 toK
 toK
@@ -66887,8 +66894,8 @@ JpL
 TMF
 cMX
 GmA
-yTm
-QXd
+xAa
+toK
 toK
 toK
 toK
@@ -67134,7 +67141,7 @@ Uux
 QRu
 Uux
 QXd
-aNd
+KKv
 AZL
 OTj
 yUb
@@ -67145,7 +67152,7 @@ kyQ
 kyQ
 kyQ
 QXd
-QXd
+toK
 toK
 toK
 toK
@@ -67402,7 +67409,7 @@ Ods
 Ods
 Ods
 QXd
-QXd
+toK
 toK
 toK
 toK
