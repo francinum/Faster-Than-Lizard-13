@@ -422,6 +422,48 @@ var/list/teleportlocs = list()
 /area/shuttle/ftl/maintenance/security
 	name = "Security Maintenance"
 	icon_state = "fpmaint"
+	
+/area/shuttle/ftl/holodeck/rec_center
+	name = "\improper Recreational Holodeck"
+
+/area/shuttle/ftl/holodeck/rec_center/offline
+	name = "Holodeck - Offline"
+
+/area/shuttle/ftlholodeck/rec_center/court
+	name = "Holodeck - Empty Court"
+
+/area/shuttle/ftl/holodeck/rec_center/dodgeball
+	name = "Holodeck - Dodgeball Court"
+
+/area/shuttle/ftl/holodeck/rec_center/basketball
+	name = "Holodeck - Basketball Court"
+
+/area/shuttle/ftl/holodeck/rec_center/thunderdome
+	name = "Holodeck - Thunderdome Arena"
+
+/area/shuttle/ftl/holodeck/rec_center/beach
+	name = "Holodeck - Beach"
+
+/area/shuttle/ftl/holodeck/rec_center/lounge
+	name = "Holodeck - Lounge"
+
+/area/shuttle/ftl/holodeck/rec_center/medical
+	name = "Holodeck - Emergency Medical"
+
+/area/shuttle/ftl/holodeck/rec_center/pet_lounge
+	name = "Holodeck - Pet Park"
+
+/area/shuttle/ftl/holodeck/rec_center/firingrange
+	name = "Holodeck - Firing Range"
+
+/area/shuttle/ftl/holodeck/rec_center/winterwonderland
+	name = "Holodeck - Winter Wonderland"
+
+/area/shuttle/ftl/holodeck/rec_center/rollercoaster
+	name = "Holodeck - Roller Coaster"
+
+/area/shuttle/ftl/holodeck/rec_center/chapelcourt
+	name = "Holodeck - Chapel Courtroom"
 
 /area/shuttle/ftl/maintenance/cargo
 	name = "Cargo Maintenance"
