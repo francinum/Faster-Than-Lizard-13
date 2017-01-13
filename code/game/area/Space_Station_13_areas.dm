@@ -2125,7 +2125,7 @@ var/list/the_station_areas = list (
 	/area/hallway,
 	/area/bridge,
 	/area/crew_quarters,
-	/area/holodeck,
+	/area/shuttle/ftl/holodeck,
 //	/area/mint,		//not present on map
 	/area/library,
 	/area/chapel,
