@@ -429,7 +429,7 @@ var/list/teleportlocs = list()
 /area/shuttle/ftl/holodeck/rec_center/offline
 	name = "Holodeck - Offline"
 
-/area/shuttle/ftlholodeck/rec_center/court
+/area/shuttle/ftl/holodeck/rec_center/court
 	name = "Holodeck - Empty Court"
 
 /area/shuttle/ftl/holodeck/rec_center/dodgeball
