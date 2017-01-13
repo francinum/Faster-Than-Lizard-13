@@ -106,7 +106,7 @@ var/datum/subsystem/events/SSevent
 	/area/turret_protected/ai_upload,
 	/area/engine,
 	/area/solar,
-	/area/holodeck,
+	/area/shuttle/ftl/holodeck,
 	/area/shuttle
 	)
 

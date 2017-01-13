@@ -1,4 +1,4 @@
-/area/holodeck
+/area/shuttle/ftl/holodeck
 	name = "Holodeck"
 	icon_state = "Holodeck"
 	luminosity = 1
@@ -12,7 +12,7 @@
 	Asserts are to avoid the inevitable infinite loops
 */
 
-/area/holodeck/powered(var/chan)
+/area/shuttle/ftl/holodeck/powered(var/chan)
 	if(!master.requires_power)
 		return 1
 	if(master.always_unpowered)
@@ -20,28 +20,28 @@
 	if(!linked)
 		return 0
 	var/area/A = get_area(linked)
-	ASSERT(!istype(A,/area/holodeck))
+	ASSERT(!istype(A,/area/shuttle/ftl/holodeck))
 	return A.powered(chan)
 
-/area/holodeck/usage(var/chan)
+/area/shuttle/ftl/holodeck/usage(var/chan)
 	if(!linked)
 		return 0
 	var/area/A = get_area(linked)
-	ASSERT(!istype(A,/area/holodeck))
+	ASSERT(!istype(A,/area/shuttle/ftl/holodeck))
 	return A.usage(chan)
 
-/area/holodeck/addStaticPower(value, powerchannel)
+/area/shuttle/ftl/holodeck/addStaticPower(value, powerchannel)
 	if(!linked)
 		return
 	var/area/A = get_area(linked)
-	ASSERT(!istype(A,/area/holodeck))
+	ASSERT(!istype(A,/area/shuttle/ftl/holodeck))
 	return A.addStaticPower(value,powerchannel)
 
-/area/holodeck/use_power(var/amount, var/chan)
+/area/shuttle/ftl/holodeck/use_power(var/amount, var/chan)
 	if(!linked)
 		return 0
 	var/area/A = get_area(linked)
-	ASSERT(!istype(A,/area/holodeck))
+	ASSERT(!istype(A,/area/shuttle/ftl/holodeck))
 	return A.use_power(amount,chan)
 
 
@@ -50,53 +50,53 @@
 	blow off steam by doing stupid things like laying down, throwing
 	spheres at holes, or bludgeoning people.
 */
-/area/holodeck/rec_center
+/area/shuttle/ftl/holodeck/rec_center
 	name = "\improper Recreational Holodeck"
 
-/area/holodeck/rec_center/offline
+/area/shuttle/ftl/holodeck/rec_center/offline
 	name = "Holodeck - Offline"
 
-/area/holodeck/rec_center/court
+/area/shuttle/ftl/holodeck/rec_center/court
 	name = "Holodeck - Empty Court"
 
-/area/holodeck/rec_center/dodgeball
+/area/shuttle/ftl/holodeck/rec_center/dodgeball
 	name = "Holodeck - Dodgeball Court"
 
-/area/holodeck/rec_center/basketball
+/area/shuttle/ftl/holodeck/rec_center/basketball
 	name = "Holodeck - Basketball Court"
 
-/area/holodeck/rec_center/thunderdome
+/area/shuttle/ftl/holodeck/rec_center/thunderdome
 	name = "Holodeck - Thunderdome Court"
 
-/area/holodeck/rec_center/beach
+/area/shuttle/ftl/holodeck/rec_center/beach
 	name = "Holodeck - Beach"
 
-/area/holodeck/rec_center/lounge
+/area/shuttle/ftl/holodeck/rec_center/lounge
 	name = "Holodeck - Lounge"
 
-/area/holodeck/rec_center/medical
+/area/shuttle/ftl/holodeck/rec_center/medical
 	name = "Holodeck - Emergency Medical"
 
-/area/holodeck/rec_center/pet_lounge
+/area/shuttle/ftl/holodeck/rec_center/pet_lounge
 	name = "Holodeck - Pet Playground"
 
-/area/holodeck/rec_center/winterwonderland
+/area/shuttle/ftl/holodeck/rec_center/winterwonderland
 	name = "Holodeck - Winter Wonderland"
 
 // Bad programs
 
-/area/holodeck/rec_center/burn
+/area/shuttle/ftl/holodeck/rec_center/burn
 	name = "Holodeck - Atmospheric Burn Test"
 	restricted = 1
 
-/area/holodeck/rec_center/wildlife
+/area/shuttle/ftl/holodeck/rec_center/wildlife
 	name = "Holodeck - Wildlife Simulation"
 	restricted = 1
 
-/area/holodeck/rec_center/bunker
+/area/shuttle/ftl/holodeck/rec_center/bunker
 	name = "Holodeck - Holdout Bunker"
 	restricted = 1
 
-/area/holodeck/rec_center/anthophila
+/area/shuttle/ftl/holodeck/rec_center/anthophila
 	name = "Holodeck - Anthophila"
 	restricted = 1

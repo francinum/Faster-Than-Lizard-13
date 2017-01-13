@@ -1957,6 +1957,9 @@
 	icon_state = "dark"
 	},
 /area/shuttle/ftl/turret_protected/ai)
+"eaG" = (
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center)
 "ecK" = (
 /turf/open/floor/mech_bay_recharge_floor,
 /area/shuttle/ftl/assembly/chargebay)
@@ -2759,12 +2762,6 @@
 /obj/structure/sign/bluecross_2,
 /turf/closed/wall,
 /area/shuttle/ftl/medical/medbay_lobby)
-"fyj" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/holofloor/plating,
-/area/holodeck/rec_center)
 "fyw" = (
 /obj/structure/closet/firecloset,
 /obj/machinery/light{
@@ -4519,9 +4516,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/meeting_room)
-"jhr" = (
-/turf/open/floor/holofloor/plating,
-/area/holodeck/rec_center)
 "jkY" = (
 /obj/structure/chair{
 	dir = 1
@@ -14633,11 +14627,6 @@
 	},
 /turf/open/floor/bluegrid,
 /area/shuttle/ftl/turret_protected/ai)
-"DEe" = (
-/obj/structure/window/reinforced,
-/obj/machinery/computer/holodeck,
-/turf/open/floor/holofloor/plating,
-/area/shuttle/ftl/crew_quarters/sleep)
 "DGf" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -18287,6 +18276,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
+"LPb" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center)
 "LPx" = (
 /obj/structure/table,
 /obj/item/weapon/folder/red,
@@ -23840,6 +23835,15 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/cargo)
+"XGU" = (
+/obj/structure/window/reinforced,
+/obj/machinery/computer/holodeck{
+	holodeck_type = /area/shuttle/ftl/holodeck/rec_center;
+	offline_program = /area/shuttle/ftl/holodeck/rec_center/offline;
+	program_type = /area/shuttle/ftl/holodeck/rec_center
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/crew_quarters/sleep)
 "XHb" = (
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel/shuttle,
@@ -65085,16 +65089,16 @@ JaO
 VAy
 zDq
 UrT
-jhr
-fyj
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
+eaG
+LPb
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
 BFE
 toK
 toK
@@ -65335,23 +65339,23 @@ toK
 QKY
 IUs
 HuB
-DEe
+XGU
 QBe
 AwY
 FGF
 gxX
 Dgd
 oHx
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
 BFE
 toK
 toK
@@ -65599,16 +65603,16 @@ hup
 DkK
 Dgd
 UrT
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
 BFE
 toK
 toK
@@ -65856,16 +65860,16 @@ hup
 ISR
 fJy
 oHx
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
 BFE
 toK
 toK
@@ -66113,16 +66117,16 @@ yfA
 DkK
 Sxd
 UrT
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
-jhr
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
+eaG
 BFE
 toK
 toK
