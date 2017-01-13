@@ -307,7 +307,7 @@
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/uranium.dmi';
 	name = "Corridor A"
-shuttle/ftl/	},
+	},
 /turf/open/floor/engine/cult,
 /area/wizard_station)
 "cXP" = (
