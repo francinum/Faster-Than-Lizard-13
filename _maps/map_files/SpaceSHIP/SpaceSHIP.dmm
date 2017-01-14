@@ -4928,6 +4928,19 @@
 	dir = 4
 	},
 /area/shuttle/ftl/munitions)
+"jXt" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/preopen{
+	id = "bridge blast";
+	layer = 2.9;
+	name = "bridge blast door"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/sandwich{
+	bonus_reagents = list("nutriment" = 1, "vitamin" = 1, "mindbreaker" = 30, "impedrezene" = 30)
+	},
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/shuttle/ftl/bridge)
 "kat" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -7044,6 +7057,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
+"oAL" = (
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/vending/autodrobe{
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "oCg" = (
 /obj/structure/displaycase/labcage,
 /turf/open/floor/plasteel{
@@ -7345,22 +7376,6 @@
 	},
 /turf/open/floor/plasteel/circuit,
 /area/shuttle/ftl/turret_protected/ai)
-"plS" = (
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/machinery/vending/autodrobe,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "plV" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -11804,6 +11819,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/meeting_room)
+"xZA" = (
+/obj/machinery/button/door{
+	id = "EvaGarage";
+	name = "Garage Doors";
+	pixel_x = 26;
+	pixel_y = -6
+	},
+/obj/machinery/camera{
+	c_tag = "EVA Garage";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/loadingarea{
+	dir = 4
+	},
+/area/shuttle/ftl/bridge/eva)
 "yaN" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Tech Storage";
@@ -16358,6 +16392,11 @@
 "HqV" = (
 /turf/open/floor/plasteel/warnwhite/corner,
 /area/shuttle/ftl/assembly/robotics)
+"Hsr" = (
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/shuttle/ftl/bridge/eva)
 "HsN" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -16630,17 +16669,6 @@
 	dir = 9
 	},
 /area/shuttle/ftl/medical/virology)
-"HYR" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/preopen{
-	id = "bridge blast";
-	layer = 2.9;
-	name = "bridge blast door"
-	},
-/obj/item/weapon/reagent_containers/food/snacks/sandwich,
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/shuttle/ftl/bridge)
 "IaT" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -17122,22 +17150,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/break_room)
-"JpL" = (
-/obj/machinery/button/door{
-	id = "EvaGarage";
-	name = "Garage Doors";
-	pixel_x = 26;
-	pixel_y = -6
-	},
-/obj/machinery/camera{
-	c_tag = "EVA Garage";
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel/loadingarea{
-	dir = 4
-	},
-/area/shuttle/ftl/bridge/eva)
 "Jqi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -56076,7 +56088,7 @@ UXj
 UXj
 UXj
 UXj
-HYR
+jXt
 UXj
 UXj
 UXj
@@ -64582,7 +64594,7 @@ kat
 wlA
 Lpy
 vaT
-plS
+oAL
 qgT
 yZl
 FeJ
@@ -66380,10 +66392,10 @@ QXd
 QXd
 QXd
 QXd
-QXd
-QXd
-QXd
-QXd
+Hsr
+Hsr
+Hsr
+Hsr
 QXd
 toK
 toK
@@ -66894,7 +66906,7 @@ Ail
 Ail
 Ail
 lrw
-JpL
+xZA
 TMF
 cMX
 GmA
