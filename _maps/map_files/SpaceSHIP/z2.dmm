@@ -25,22 +25,7 @@
 /obj/effect/holodeck_effect/mobspawner/bee,
 /turf/open/floor/holofloor/asteroid,
 /area/shuttle/ftl/holodeck/rec_center/anthophila)
-"ah" = (
-/obj/structure/foamedmetal,
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 4
-	},
-/turf/open/floor/holofloor/plating,
-/area/shuttle/ftl/holodeck/rec_center/bunker)
 "ai" = (
-/turf/open/floor/holofloor/plating,
-/area/shuttle/ftl/holodeck/rec_center/bunker)
-"aj" = (
-/obj/structure/table,
-/obj/item/stack/medical/ointment{
-	heal_burn = 10
-	},
 /turf/open/floor/holofloor/plating,
 /area/shuttle/ftl/holodeck/rec_center/bunker)
 "ak" = (
@@ -55,13 +40,6 @@
 "al" = (
 /turf/open/floor/holofloor/carpet,
 /area/shuttle/ftl/holodeck/rec_center/lounge)
-"am" = (
-/obj/structure/chair/wood/normal{
-	icon_state = "wooden_chair";
-	dir = 4
-	},
-/turf/open/floor/holofloor/carpet,
-/area/shuttle/ftl/holodeck/rec_center/lounge)
 "an" = (
 /obj/structure/table/wood/poker,
 /obj/effect/holodeck_effect/cards,
@@ -70,13 +48,6 @@
 "ao" = (
 /obj/structure/table/wood/poker,
 /obj/item/clothing/mask/cigarette/pipe,
-/turf/open/floor/holofloor/carpet,
-/area/shuttle/ftl/holodeck/rec_center/lounge)
-"ap" = (
-/obj/structure/chair/wood/normal{
-	icon_state = "wooden_chair";
-	dir = 8
-	},
 /turf/open/floor/holofloor/carpet,
 /area/shuttle/ftl/holodeck/rec_center/lounge)
 "aq" = (
@@ -112,14 +83,6 @@
 	},
 /turf/closed/indestructible/riveted,
 /area/space)
-"ax" = (
-/obj/structure/foamedmetal,
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/turf/open/floor/holofloor/plating,
-/area/shuttle/ftl/holodeck/rec_center/bunker)
 "ay" = (
 /obj/structure/table,
 /obj/machinery/recharger,
@@ -155,32 +118,6 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/court)
-"aF" = (
-/obj/structure/table,
-/obj/item/weapon/gun/energy/laser,
-/turf/open/floor/holofloor/plating,
-/area/shuttle/ftl/holodeck/rec_center/bunker)
-"aG" = (
-/obj/structure/window/reinforced/tinted{
-	icon_state = "rwindow";
-	dir = 4
-	},
-/turf/open/floor/holofloor{
-	icon_state = "wood";
-	dir = 9
-	},
-/area/shuttle/ftl/holodeck/rec_center/lounge)
-"aH" = (
-/obj/item/device/instrument/violin,
-/obj/structure/table/wood,
-/turf/open/floor/holofloor/carpet,
-/area/shuttle/ftl/holodeck/rec_center/lounge)
-"aI" = (
-/obj/structure/chair/comfy/brown{
-	buildstackamount = 0
-	},
-/turf/open/floor/holofloor/carpet,
-/area/shuttle/ftl/holodeck/rec_center/lounge)
 "aJ" = (
 /turf/open/floor/holofloor{
 	dir = 8;
@@ -205,39 +142,6 @@
 	},
 /turf/open/floor/holofloor/carpet,
 /area/shuttle/ftl/holodeck/rec_center/lounge)
-"aN" = (
-/obj/docking_port/stationary/transit{
-	dheight = 0;
-	dir = 2;
-	dwidth = 11;
-	height = 22;
-	id = "whiteship_transit";
-	width = 35
-	},
-/turf/open/space/transit/horizontal,
-/area/space)
-"aO" = (
-/obj/structure/chair/wood/normal,
-/turf/open/floor/holofloor/carpet,
-/area/shuttle/ftl/holodeck/rec_center/lounge)
-"aP" = (
-/obj/docking_port/stationary/transit{
-	dir = 4;
-	dwidth = 1;
-	height = 4;
-	id = "pod3_transit";
-	turf_type = /turf/open/space/transit/horizontal;
-	width = 3
-	},
-/turf/open/space/transit/horizontal,
-/area/space)
-"aQ" = (
-/obj/structure/table,
-/obj/item/stack/medical/bruise_pack{
-	heal_brute = 10
-	},
-/turf/open/floor/holofloor/plating,
-/area/shuttle/ftl/holodeck/rec_center/bunker)
 "aR" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/holofloor/carpet,
@@ -274,59 +178,6 @@
 "aX" = (
 /turf/open/floor/holofloor/grass,
 /area/shuttle/ftl/holodeck/rec_center/pet_lounge)
-"aY" = (
-/obj/structure/table/glass,
-/obj/item/weapon/surgicaldrill,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTHWEST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 9
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"aZ" = (
-/obj/structure/table/glass,
-/obj/item/weapon/hemostat,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTH)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 1
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"ba" = (
-/obj/structure/table/glass,
-/obj/item/weapon/scalpel{
-	pixel_y = 10
-	},
-/obj/item/weapon/circular_saw,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTH)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 1
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bb" = (
-/obj/structure/table/glass,
-/obj/item/weapon/retractor,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTH)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 1
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bc" = (
-/obj/structure/table/glass,
-/obj/item/weapon/cautery,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTHEAST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 5
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "bd" = (
 /turf/open/floor/holofloor{
 	dir = 9;
@@ -394,28 +245,9 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
-"bn" = (
-/obj/structure/table/glass,
-/obj/item/weapon/surgical_drapes,
-/obj/item/weapon/razor,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (WEST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 8
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "bo" = (
 /turf/open/floor/holofloor{
 	icon_state = "white"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bp" = (
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (EAST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 4
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
 "bq" = (
@@ -472,46 +304,6 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
-"bB" = (
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (SOUTHWEST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 10
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bC" = (
-/turf/open/floor/holofloor{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bD" = (
-/obj/structure/table/optable,
-/turf/open/floor/holofloor{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bE" = (
-/obj/machinery/computer/operating,
-/turf/open/floor/holofloor{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"bF" = (
-/obj/structure/table/glass,
-/obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/clothing/suit/apron/surgical,
-/obj/item/clothing/mask/surgical,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (SOUTHEAST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 6
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "bG" = (
 /turf/open/floor/holofloor{
 	dir = 1;
@@ -524,25 +316,6 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
-"bI" = (
-/obj/docking_port/stationary/transit{
-	dir = 4;
-	dwidth = 1;
-	height = 4;
-	id = "pod4_transit";
-	turf_type = /turf/open/space/transit/horizontal;
-	width = 3
-	},
-/turf/open/space/transit/horizontal,
-/area/space)
-"bJ" = (
-/obj/structure/window{
-	dir = 1
-	},
-/turf/open/floor/holofloor{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "bK" = (
 /obj/structure/table/glass,
 /obj/machinery/reagentgrinder,
@@ -661,12 +434,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
-"ca" = (
-/obj/structure/closet/wardrobe/white,
-/turf/open/floor/holofloor{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "cb" = (
 /turf/open/floor/holofloor{
 	dir = 9;
@@ -737,22 +504,6 @@
 	icon_state = "green"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
-"cl" = (
-/obj/docking_port/stationary/transit{
-	dir = 4;
-	dwidth = 9;
-	height = 11;
-	id = "emergency_transit";
-	width = 22
-	},
-/turf/open/space/transit,
-/area/space)
-"cm" = (
-/obj/structure/window,
-/turf/open/floor/holofloor{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "cn" = (
 /turf/open/floor/holofloor{
 	dir = 8;
@@ -793,41 +544,6 @@
 	icon_state = "green"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
-"cu" = (
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTHWEST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 9
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"cv" = (
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTHEAST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 5
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"cw" = (
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/structure/window,
-/obj/machinery/computer/pandemic,
-/turf/open/floor/holofloor{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "cx" = (
 /turf/open/floor/holofloor{
 	dir = 2;
@@ -840,24 +556,6 @@
 	icon_state = "green"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
-"cz" = (
-/obj/machinery/door/window/westleft,
-/turf/open/floor/holofloor{
-	dir = 8;
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn_corner";
-	tag = "icon-white_warn (WEST)"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"cA" = (
-/obj/machinery/door/window/westleft,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTH)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 1
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "cB" = (
 /turf/open/floor/holofloor{
 	tag = "icon-white_warn (SOUTHEAST)";
@@ -866,69 +564,9 @@
 	dir = 6
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
-"cC" = (
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (NORTHEAST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 5
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "cD" = (
 /turf/open/floor/holofloor/beach/coast_t,
 /area/shuttle/ftl/holodeck/rec_center/beach)
-"cE" = (
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (SOUTHWEST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 10
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"cF" = (
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
-/turf/open/floor/holofloor{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"cG" = (
-/obj/structure/window{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/machinery/sleeper{
-	icon_state = "sleeper-open";
-	dir = 1
-	},
-/turf/open/floor/holofloor{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn"
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
-"cH" = (
-/obj/machinery/sleeper{
-	icon_state = "sleeper-open";
-	dir = 1
-	},
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (SOUTHEAST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 6
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "cI" = (
 /turf/open/floor/holofloor{
 	dir = 10;
@@ -1068,16 +706,6 @@
 	},
 /turf/open/floor/bluegrid,
 /area/tdome/arena_source)
-"de" = (
-/obj/docking_port/stationary/transit{
-	dir = 8;
-	dwidth = 2;
-	height = 5;
-	id = "laborcamp_transit";
-	width = 9
-	},
-/turf/open/space/transit,
-/area/space)
 "df" = (
 /obj/machinery/door/poddoor{
 	id = "thunderdomehea";
@@ -1103,65 +731,6 @@
 /obj/item/weapon/gun/energy/laser,
 /turf/open/floor/plasteel/black,
 /area/tdome/arena_source)
-"di" = (
-/obj/docking_port/stationary/transit{
-	dheight = 9;
-	dir = 2;
-	dwidth = 5;
-	height = 22;
-	id = "syndicate_transit";
-	width = 18
-	},
-/turf/open/space/transit,
-/area/space)
-"dj" = (
-/obj/docking_port/stationary/transit{
-	dir = 8;
-	dwidth = 2;
-	height = 12;
-	id = "ferry_transit";
-	width = 5
-	},
-/turf/open/space/transit/horizontal,
-/area/space)
-"dk" = (
-/obj/docking_port/stationary/transit{
-	dwidth = 1;
-	height = 4;
-	id = "pod1_transit";
-	width = 3
-	},
-/turf/open/space/transit,
-/area/space)
-"dl" = (
-/obj/docking_port/stationary/transit{
-	dwidth = 1;
-	height = 4;
-	id = "pod2_transit";
-	width = 3
-	},
-/turf/open/space/transit,
-/area/space)
-"dm" = (
-/obj/docking_port/stationary/transit{
-	dir = 8;
-	dwidth = 5;
-	height = 7;
-	id = "supply_transit";
-	width = 12
-	},
-/turf/open/space/transit,
-/area/space)
-"dn" = (
-/obj/docking_port/stationary/transit{
-	dir = 8;
-	dwidth = 3;
-	height = 5;
-	id = "mining_transit";
-	width = 7
-	},
-/turf/open/space/transit,
-/area/space)
 "do" = (
 /obj/docking_port/stationary/transit{
 	dwidth = 3;
@@ -1181,105 +750,15 @@
 "dr" = (
 /turf/closed/indestructible/splashscreen,
 /area/start)
-"ds" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s6";
-	dir = 2
-	},
-/area/centcom/evac)
-"dt" = (
-/obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_r";
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/centcom/evac)
-"du" = (
-/obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion";
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/centcom/evac)
-"dv" = (
-/obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_l";
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/centcom/evac)
-"dw" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s10";
-	dir = 2
-	},
-/area/centcom/evac)
-"dx" = (
-/obj/docking_port/stationary{
-	dir = 1;
-	dwidth = 1;
-	height = 4;
-	id = "pod1_away";
-	name = "recovery ship";
-	width = 3
-	},
-/turf/open/space,
-/area/space)
-"dy" = (
-/obj/docking_port/stationary{
-	dir = 1;
-	dwidth = 1;
-	height = 4;
-	id = "pod2_away";
-	name = "recovery ship";
-	width = 3
-	},
-/turf/open/space,
-/area/space)
 "dz" = (
 /turf/closed/wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/centcom/evac)
-"dA" = (
-/obj/structure/window/reinforced,
-/obj/structure/shuttle/engine/heater{
-	icon_state = "heater";
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/centcom/evac)
 "dB" = (
 /turf/closed/wall/shuttle{
 	icon_state = "swall7";
-	dir = 2
-	},
-/area/centcom/evac)
-"dC" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall8";
-	dir = 2
-	},
-/area/centcom/evac)
-"dD" = (
-/obj/machinery/door/airlock/shuttle,
-/turf/open/floor/plating,
-/area/centcom/evac)
-"dE" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall0";
-	dir = 2
-	},
-/area/centcom/evac)
-"dF" = (
-/obj/structure/window/shuttle,
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/centcom/evac)
-"dG" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall4";
 	dir = 2
 	},
 /area/centcom/evac)
@@ -1292,71 +771,8 @@
 "dI" = (
 /turf/open/floor/plating,
 /area/centcom/evac)
-"dJ" = (
-/turf/open/floor/plating,
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f6";
-	dir = 2
-	},
-/area/centcom/evac)
-"dK" = (
-/turf/open/floor/plasteel/shuttle,
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f9";
-	dir = 2
-	},
-/area/centcom/evac)
-"dL" = (
-/obj/structure/closet/emcloset,
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
 "dM" = (
 /turf/open/floor/plasteel/shuttle/yellow,
-/area/centcom/evac)
-"dN" = (
-/obj/structure/table,
-/obj/item/weapon/storage/firstaid/toxin{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/firstaid/toxin,
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"dO" = (
-/obj/structure/table,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/fire{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"dP" = (
-/obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular{
-	pixel_x = 2;
-	pixel_y = 0
-	},
-/obj/item/weapon/storage/firstaid/regular{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"dQ" = (
-/turf/open/floor/plasteel/shuttle,
-/turf/closed/wall/shuttle{
-	icon_state = "swall_f5";
-	dir = 2
-	},
-/area/centcom/evac)
-"dR" = (
-/turf/open/floor/plating,
-/turf/closed/wall/shuttle{
-	dir = 2;
-	icon_state = "swall_f10";
-	layer = 2
-	},
 /area/centcom/evac)
 "dS" = (
 /turf/closed/wall/shuttle{
@@ -1366,18 +782,6 @@
 /area/centcom/evac)
 "dT" = (
 /turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"dU" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s5";
-	dir = 2
-	},
-/area/centcom/evac)
-"dV" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swall_s9";
-	dir = 2
-	},
 /area/centcom/evac)
 "dW" = (
 /turf/closed/wall/shuttle{
@@ -1390,95 +794,6 @@
 	icon_state = "swallc1";
 	dir = 2
 	},
-/area/centcom/evac)
-"dY" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"dZ" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/fancy/donut_box,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"ea" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/pen,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"eb" = (
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"ec" = (
-/obj/machinery/sleeper{
-	icon_state = "sleeper-open";
-	dir = 8
-	},
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"ed" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"ee" = (
-/turf/closed/wall/shuttle{
-	icon_state = "swallc2";
-	dir = 2
-	},
-/area/centcom/evac)
-"ef" = (
-/obj/machinery/computer/secure_data,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"eg" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"eh" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"ei" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/clipboard,
-/obj/item/weapon/stamp,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"ej" = (
-/obj/structure/table,
-/obj/item/device/assembly/flash/handheld,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"ek" = (
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"el" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/open/floor/plasteel/shuttle,
-/area/centcom/evac)
-"em" = (
-/obj/structure/table,
-/obj/item/weapon/storage/box/handcuffs,
-/turf/open/floor/plasteel/shuttle/red,
-/area/centcom/evac)
-"en" = (
-/obj/machinery/door/window/northright{
-	base_state = "right";
-	dir = 4;
-	icon_state = "right";
-	name = "Security Desk";
-	req_access_txt = "103"
-	},
-/turf/open/floor/plasteel/shuttle/red,
 /area/centcom/evac)
 "eo" = (
 /turf/open/space/transit/reverse,
@@ -5874,25 +5189,10 @@
 /obj/structure/flora/tree/pine,
 /turf/open/floor/holofloor/snow/cold,
 /area/shuttle/ftl/holodeck/rec_center/winterwonderland)
-"se" = (
-/turf/open/floor/plasteel/warnwhite{
-	tag = "icon-white_warn (WEST)";
-	icon_state = "white_warn";
-	dir = 8
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "sf" = (
 /obj/structure/flora/bush,
 /turf/open/floor/holofloor/snow/cold,
 /area/shuttle/ftl/holodeck/rec_center/winterwonderland)
-"sg" = (
-/turf/open/floor/holofloor{
-	tag = "icon-white_warn (WEST)";
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "white_warn";
-	dir = 8
-	},
-/area/shuttle/ftl/holodeck/rec_center/medical)
 "sh" = (
 /turf/closed/indestructible/riveted,
 /area/hades)
@@ -6197,6 +5497,446 @@
 /obj/item/weapon/storage/box/drinkingglasses,
 /turf/open/floor/carpet,
 /area/hades)
+"tB" = (
+/obj/structure/window{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTHWEST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"uO" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	icon_state = "wood";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"vf" = (
+/turf/open/floor/holofloor{
+	dir = 10;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"vh" = (
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/medical,
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	dir = 4;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"vM" = (
+/turf/open/floor/holofloor/snow/cold,
+/area/shuttle/ftl/holodeck/rec_center/winterwonderland)
+"xi" = (
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	icon_state = "wood";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"xF" = (
+/obj/structure/table,
+/obj/item/stack/medical/bruise_pack{
+	heal_brute = 10
+	},
+/obj/item/stack/medical/bruise_pack{
+	heal_brute = 10
+	},
+/obj/item/stack/medical/bruise_pack{
+	heal_brute = 10
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"yz" = (
+/obj/structure/window{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window{
+	dir = 1;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTHWEST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"yN" = (
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTHWEST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"At" = (
+/obj/structure/chair/comfy/brown{
+	buildstackamount = 0;
+	dir = 2
+	},
+/turf/open/floor/holofloor/carpet,
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"AE" = (
+/obj/structure/chair/wood/normal{
+	dir = 2;
+	icon_state = "wooden_chair"
+	},
+/turf/open/floor/holofloor/carpet,
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"CZ" = (
+/obj/structure/foamedmetal,
+/obj/structure/window{
+	dir = 1;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"DW" = (
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/surgicaldrill,
+/obj/item/weapon/razor,
+/obj/item/weapon/surgical_drapes,
+/obj/item/weapon/cautery,
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTHEAST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 5
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"EG" = (
+/obj/structure/window{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/medical,
+/turf/open/floor/holofloor{
+	dir = 10;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Fa" = (
+/obj/structure/table,
+/obj/item/stack/medical/bruise_pack{
+	heal_brute = 10
+	},
+/obj/machinery/recharger,
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"Fe" = (
+/obj/structure/chair/comfy/brown{
+	buildstackamount = 0;
+	dir = 8
+	},
+/turf/open/floor/holofloor/carpet,
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"Gg" = (
+/obj/structure/foamedmetal,
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"Hb" = (
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/circular_saw,
+/obj/item/weapon/scalpel{
+	pixel_y = 10
+	},
+/obj/item/weapon/retractor,
+/obj/item/weapon/hemostat,
+/turf/open/floor/holofloor{
+	dir = 4;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHEAST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Ik" = (
+/obj/structure/table,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"IG" = (
+/obj/structure/chair/comfy/brown{
+	buildstackamount = 0;
+	dir = 4
+	},
+/turf/open/floor/holofloor/carpet,
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"KD" = (
+/obj/machinery/sleeper{
+	dir = 8;
+	icon_state = "sleeper-open"
+	},
+/turf/open/floor/holofloor{
+	dir = 6;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"La" = (
+/obj/machinery/sleeper{
+	dir = 8;
+	icon_state = "sleeper-open"
+	},
+/turf/open/floor/holofloor{
+	dir = 5;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Lo" = (
+/obj/machinery/computer/pandemic,
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/structure/window{
+	dir = 1;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTHEAST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 5
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Md" = (
+/obj/structure/window{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/medical,
+/turf/open/floor/holofloor{
+	dir = 8;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"MO" = (
+/obj/machinery/sleeper{
+	dir = 4;
+	icon_state = "sleeper-open"
+	},
+/turf/open/floor/holofloor{
+	dir = 10;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"MZ" = (
+/obj/structure/closet/wardrobe/white,
+/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/mask/surgical,
+/turf/open/floor/holofloor{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Nl" = (
+/obj/structure/window{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (WEST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 8
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Po" = (
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"QO" = (
+/obj/structure/foamedmetal,
+/obj/structure/foamedmetal,
+/obj/structure/window{
+	dir = 1;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"Rf" = (
+/turf/open/floor/holofloor{
+	dir = 5;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Se" = (
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/structure/table/wood,
+/obj/item/device/instrument/violin,
+/turf/open/floor/holofloor{
+	icon_state = "wood";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"SH" = (
+/obj/structure/table,
+/obj/item/stack/medical/ointment{
+	heal_burn = 10
+	},
+/obj/item/stack/medical/ointment{
+	heal_burn = 10
+	},
+/obj/item/stack/medical/ointment{
+	heal_burn = 10
+	},
+/turf/open/floor/holofloor/plating,
+/area/shuttle/ftl/holodeck/rec_center/bunker)
+"Tu" = (
+/obj/machinery/sleeper{
+	dir = 4;
+	icon_state = "sleeper-open"
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTHWEST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 9
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Uv" = (
+/obj/structure/table/optable,
+/obj/structure/window{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (SOUTHWEST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 10
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"VO" = (
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/obj/machinery/computer/operating,
+/turf/open/floor/holofloor{
+	dir = 6;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHEAST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Wl" = (
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/medical,
+/obj/structure/window{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (SOUTHEAST)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 6
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"Xp" = (
+/obj/structure/window{
+	dir = 2;
+	icon_state = "rwindow"
+	},
+/turf/open/floor/holofloor{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"XT" = (
+/turf/open/floor/holofloor{
+	tag = "icon-white_warn (NORTH)";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	dir = 1
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
+"XU" = (
+/obj/structure/table/wood,
+/turf/open/floor/holofloor/carpet,
+/area/shuttle/ftl/holodeck/rec_center/lounge)
+"Zl" = (
+/turf/open/floor/holofloor{
+	dir = 6;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "white_warn";
+	tag = "icon-white_warn (NORTHWEST)"
+	},
+/area/shuttle/ftl/holodeck/rec_center/medical)
 
 (1,1,1) = {"
 aa
@@ -60941,16 +60681,16 @@ ac
 "}
 (214,1,1) = {"
 ae
-se
-se
-se
-se
-se
-se
-se
-se
-se
-se
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+vM
 aV
 ag
 ag
@@ -61198,16 +60938,16 @@ ac
 "}
 (215,1,1) = {"
 ae
-se
+vM
 sf
-se
-se
+vM
+vM
 mq
 sd
 me
-se
-se
-se
+vM
+vM
+vM
 aV
 ag
 ag
@@ -61455,16 +61195,16 @@ ac
 "}
 (216,1,1) = {"
 ae
-se
-se
-se
-se
-se
-se
-se
-se
-se
-se
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+vM
 aV
 ag
 ag
@@ -61712,16 +61452,16 @@ ac
 "}
 (217,1,1) = {"
 ae
-se
-se
+vM
+vM
 me
-se
-se
+vM
+vM
 mY
-se
-se
+vM
+vM
 me
-se
+vM
 aV
 ag
 ag
@@ -61969,16 +61709,16 @@ ac
 "}
 (218,1,1) = {"
 ae
-se
-se
-se
-se
-se
+vM
+vM
+vM
+vM
+vM
 sf
-se
-se
-se
-se
+vM
+vM
+vM
+vM
 aV
 ag
 ag
@@ -62483,16 +62223,16 @@ ac
 "}
 (220,1,1) = {"
 ae
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+ai
+CZ
+Gg
+ai
+CZ
+Gg
+ai
+xF
+ai
+ay
 aV
 aW
 aX
@@ -62740,16 +62480,16 @@ ac
 "}
 (221,1,1) = {"
 ae
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+ai
+CZ
+Gg
+ai
+CZ
+Gg
+ai
+Ik
+ai
+ay
 aV
 aX
 aW
@@ -62998,11 +62738,11 @@ ac
 (222,1,1) = {"
 ae
 ai
+CZ
+Gg
 ai
-ai
-ai
-ai
-ai
+CZ
+Gg
 ai
 ai
 ai
@@ -63255,15 +62995,15 @@ ac
 (223,1,1) = {"
 ae
 ai
+CZ
+Gg
 ai
+CZ
+Gg
 ai
+Ik
 ai
-ai
-ai
-ai
-ai
-ai
-ai
+ay
 aV
 aX
 aW
@@ -63511,16 +63251,16 @@ ac
 "}
 (224,1,1) = {"
 ae
-aj
-ay
-aF
 ai
-aF
-aF
+QO
+Gg
 ai
-aF
-ay
-aQ
+CZ
+Gg
+ai
+SH
+ai
+Fa
 aV
 aW
 aX
@@ -64027,25 +63767,25 @@ ac
 ae
 al
 al
-aG
-aG
-aG
-aG
-aG
-aG
 al
 al
+al
+al
+al
+xi
+xi
+Se
 aV
-aY
-bn
-bB
+Po
+Tu
+MO
 bo
 bK
 bY
-cm
-cu
-sg
-cE
+bo
+tB
+Nl
+Uv
 cS
 cT
 ad
@@ -64282,27 +64022,27 @@ ac
 "}
 (227,1,1) = {"
 ae
-am
+uO
+al
+aR
+az
+IG
+IG
 al
 al
-aH
 al
 al
-aL
-al
-al
-am
 aV
-aZ
-bo
-bC
+Po
+Rf
+Zl
 bo
 bL
 cB
-cm
-cv
-cz
-cF
+bo
+DW
+Hb
+VO
 cS
 cT
 ad
@@ -64539,27 +64279,27 @@ ac
 "}
 (228,1,1) = {"
 ae
+uO
+AE
 an
 az
 al
-aI
+aL
 al
 al
-aM
 al
-aO
-aR
+al
 aV
-ba
 bo
-bD
-bJ
+bo
+bo
+bo
 bM
 bZ
 bo
-cw
-cA
-cF
+yz
+Md
+EG
 cS
 cT
 ad
@@ -64796,27 +64536,27 @@ ac
 "}
 (229,1,1) = {"
 ae
+uO
+al
 ao
 az
-al
-aI
-al
-al
+Fe
+Fe
+At
+XU
+XU
 aM
-al
-aO
-an
 aV
-bb
-bo
-bE
-bJ
-bo
+Po
+yN
+vf
 bo
 bo
 bo
-cA
-cG
+bo
+XT
+bo
+Xp
 cS
 cT
 ad
@@ -65053,7 +64793,6 @@ ac
 "}
 (230,1,1) = {"
 ae
-ap
 al
 al
 al
@@ -65061,19 +64800,20 @@ al
 al
 al
 al
+Fe
+Fe
 al
-ap
 aV
-bc
-bp
-bF
-bJ
+Po
+La
+KD
+bo
 bN
-ca
+MZ
 bo
-bo
-cC
-cH
+Lo
+vh
+Wl
 cS
 cT
 ad
