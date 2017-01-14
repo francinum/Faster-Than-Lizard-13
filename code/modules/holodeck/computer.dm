@@ -21,18 +21,18 @@
 	icon_screen = "holocontrol"
 	idle_power_usage = 10
 	active_power_usage = 50
-	var/area/holodeck/linked
-	var/area/holodeck/program
-	var/area/holodeck/last_program
-	var/area/offline_program = /area/holodeck/rec_center/offline
+	var/area/shuttle/ftl/holodeck/linked
+	var/area/shuttle/ftl/holodeck/program
+	var/area/shuttle/ftl/holodeck/last_program
+	var/area/offline_program = /area/shuttle/ftl/holodeck/rec_center/offline
 
 	var/list/program_cache = list()
 	var/list/emag_programs = list()
 
 	// Splitting this up allows two holodecks of the same size
 	// to use the same source patterns.  Y'know, if you want to.
-	var/holodeck_type = /area/holodeck/rec_center	// locate(this) to get the target holodeck
-	var/program_type = /area/holodeck/rec_center	// subtypes of this (but not this itself) are loadable programs
+	var/holodeck_type = /area/shuttle/ftl/holodeck/rec_center	// locate(this) to get the target holodeck
+	var/program_type = /area/shuttle/ftl/holodeck/rec_center	// subtypes of this (but not this itself) are loadable programs
 
 	// set this if you want it to start with some particular program.
 	var/init_program = null
@@ -53,7 +53,7 @@
 		offline_program = locate(offline_program)
 	// the following is necessary for power reasons
 	var/area/AS = get_area(src)
-	if(istype(AS,/area/holodeck))
+	if(istype(AS,/area/shuttle/ftl/holodeck))
 		world.log << "### MAPPING ERROR"
 		world.log << "Holodeck computer cannot be in a holodeck."
 		world.log << "This would cause circular power dependency."
@@ -70,7 +70,7 @@
 	program_cache = list()
 	emag_programs = list()
 	for(var/typekey in subtypesof(program_type))
-		var/area/holodeck/A = locate(typekey)
+		var/area/shuttle/ftl/holodeck/A = locate(typekey)
 		if(!A || A == offline_program) continue
 		if(A.contents.len == 0) continue // not loaded
 		if(A.restricted)
@@ -156,9 +156,9 @@
 	add_fingerprint(usr)
 	if(href_list["loadarea"])
 		var/areapath = text2path(href_list["loadarea"])
-		if(!ispath(areapath, /area/holodeck))
+		if(!ispath(areapath, /area/shuttle/ftl/holodeck))
 			return
-		var/area/holodeck/area = locate(areapath)
+		var/area/shuttle/ftl/holodeck/area = locate(areapath)
 		if(!istype(area))
 			return
 		if(area == offline_program || (area in program_cache) || (emagged && (area in emag_programs)))
