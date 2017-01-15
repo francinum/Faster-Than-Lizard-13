@@ -96,15 +96,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/science)
-"anO" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "mechbay";
-	name = "Mech Bay Loading";
-	req_access = null;
-	req_access_txt = "18"
-	},
-/turf/closed/wall,
-/area/shuttle/ftl/assembly/chargebay)
 "arA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -1718,34 +1709,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
-"dvl" = (
-/obj/structure/table/glass,
-/obj/item/stack/sheet/mineral/plasma{
-	layer = 2.9
-	},
-/obj/item/stack/sheet/mineral/plasma{
-	layer = 2.9
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/item/clothing/glasses/science{
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (WEST)";
-	icon_state = "whiteblue";
-	dir = 8
-	},
-/area/shuttle/ftl/medical/chemistry)
 "dvY" = (
 /obj/machinery/door/airlock/command{
 	name = "Conference Room";
@@ -1963,6 +1926,36 @@
 "ecK" = (
 /turf/open/floor/mech_bay_recharge_floor,
 /area/shuttle/ftl/assembly/chargebay)
+"ecU" = (
+/obj/structure/table/glass,
+/obj/item/stack/sheet/mineral/plasma{
+	layer = 2.9
+	},
+/obj/item/stack/sheet/mineral/plasma{
+	layer = 2.9
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/bag/chemistry,
+/obj/item/weapon/storage/bag/chemistry,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (WEST)";
+	icon_state = "whiteblue";
+	dir = 8
+	},
+/area/shuttle/ftl/medical/chemistry)
 "edm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2543,6 +2536,12 @@
 /obj/structure/chair/wood,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/sleep)
+"eYF" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/atmos)
 "eZf" = (
 /obj/effect/landmark/start{
 	name = "Bartender";
@@ -13939,6 +13938,23 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"BZx" = (
+/obj/structure/table/glass,
+/obj/machinery/reagentgrinder,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
+/obj/item/weapon/storage/box/pillbottles,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (SOUTHWEST)";
+	icon_state = "whiteblue";
+	dir = 10
+	},
+/area/shuttle/ftl/medical/chemistry)
 "Ccb" = (
 /obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/plasteel{
@@ -19399,12 +19415,6 @@
 	},
 /turf/open/floor/plasteel/warnwhite,
 /area/shuttle/ftl/research/lab)
-"Omk" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 1
-	},
-/turf/closed/wall/r_wall,
-/area/shuttle/ftl/atmos)
 "OmM" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
@@ -21281,22 +21291,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge)
-"RWM" = (
-/obj/structure/table/glass,
-/obj/machinery/reagentgrinder,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 4
-	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (SOUTHWEST)";
-	icon_state = "whiteblue";
-	dir = 10
-	},
-/area/shuttle/ftl/medical/chemistry)
 "RXj" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -23538,6 +23532,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/munitions/loading)
+"WTs" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "mechbay";
+	name = "Mech Bay Loading";
+	req_access = null;
+	req_access_txt = "18"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/assembly/chargebay)
 "WTD" = (
 /turf/open/floor/plasteel/warning/corner{
 	tag = "icon-plasteel_warn_corner (EAST)";
@@ -45309,7 +45312,7 @@ cQD
 xzH
 nHm
 mQB
-Omk
+eYF
 RaB
 RaB
 Djz
@@ -48616,8 +48619,8 @@ hqH
 Tqb
 KYC
 sDI
-dvl
-RWM
+ecU
+BZx
 eLy
 eLy
 eLy
@@ -53792,7 +53795,7 @@ exk
 jGm
 tWy
 uKn
-anO
+WTs
 PWG
 JPm
 ecK
