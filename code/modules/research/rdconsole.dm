@@ -391,6 +391,11 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 				linked_lathe.reagents.remove_reagent(R, being_built.reagents[R]*coeff)
 
 		var/P = being_built.build_path //lets save these values before the spawn() just in case. Nobody likes runtimes.
+							
+		coeff *= being_built.lathe_time_factor	//firefox please stop bugging out when i go to copy-paste code, thanks
+							//also that's the code for how long the protolathe takes to build things FIREFOX PLEASE
+		
+		
 		spawn(32*coeff*amount**0.8)
 			if(linked_lathe)
 				if(g2g) //And if we only fail the material requirements, we still spend time and power
@@ -797,6 +802,8 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 			dat += "<B>Chemical Volume:</B> [linked_lathe.reagents.total_volume] / [linked_lathe.reagents.maximum_volume]<HR>"
 
 			var/coeff = linked_lathe.efficiency_coeff
+
+			
 			for(var/v in files.known_designs)
 				var/datum/design/D = files.known_designs[v]
 				if(!(selected_category in D.category)|| !(D.build_type & PROTOLATHE))
