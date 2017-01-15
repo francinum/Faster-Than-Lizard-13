@@ -22,7 +22,8 @@
 
 
 /turf/closed/indestructible/splashscreen
-	name = "FTL13"
+	name = "Two Nerds and a Fireaxe"
+	desc = "A bad crop of a titlescreen, this one depicting Haylee Batten and Andreas Spitzer ready to engage in a battle to defend the Head of Security's office."
 	icon = 'icons/misc/fullscreen.dmi'
 	icon_state = "title"
 	layer = FLY_LAYER
