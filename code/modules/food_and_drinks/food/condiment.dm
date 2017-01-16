@@ -112,7 +112,7 @@
 /obj/item/weapon/reagent_containers/food/condiment/sugar
 	name = "sugar bottle"
 	desc = "Tasty spacey sugar!"
-	list_reagents = list("sugar" = 50)
+	list_reagents = list("sugar" = 100)
 
 /obj/item/weapon/reagent_containers/food/condiment/saltshaker		//Seperate from above since it's a small shaker rather then
 	name = "salt shaker"											//	a large one.
@@ -166,7 +166,7 @@
 	desc = "A big bag of flour. Good for baking!"
 	icon_state = "flour"
 	item_state = "flour"
-	list_reagents = list("flour" = 30)
+	list_reagents = list("flour" = 100)
 	possible_states = list()
 
 /obj/item/weapon/reagent_containers/food/condiment/soymilk
@@ -182,7 +182,7 @@
 	desc = "A big bag of rice. Good for cooking!"
 	icon_state = "rice"
 	item_state = "flour"
-	list_reagents = list("rice" = 30)
+	list_reagents = list("rice" = 100)
 	possible_states = list()
 
 /obj/item/weapon/reagent_containers/food/condiment/soysauce
