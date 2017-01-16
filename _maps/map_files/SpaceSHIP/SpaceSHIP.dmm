@@ -12717,12 +12717,6 @@
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/ftl/crew_quarters/toilet)
-"zqJ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/ingredients/wildcard,
-/turf/open/floor/plasteel/cafeteria,
-/area/shuttle/ftl/crew_quarters/kitchen)
 "zsz" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/clipboard,
@@ -14276,11 +14270,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
-"CBn" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/ingredients/wildcard,
-/turf/open/floor/plasteel/cafeteria,
-/area/shuttle/ftl/crew_quarters/kitchen)
 "CBE" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel{
@@ -14523,6 +14512,17 @@
 	},
 /turf/open/floor/plasteel/yellow/side,
 /area/shuttle/ftl/engine/break_room)
+"CXz" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/table/reinforced,
+/obj/item/weapon/storage/box/ingredients/vegetarian,
+/obj/item/weapon/storage/box/ingredients/sweets,
+/obj/item/weapon/storage/box/ingredients/italian,
+/obj/item/weapon/storage/box/ingredients/fiesta,
+/obj/item/weapon/storage/box/ingredients/carnivore,
+/obj/item/weapon/storage/box/ingredients/exotic,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/ftl/crew_quarters/kitchen)
 "CYg" = (
 /obj/machinery/pipedispenser,
 /obj/machinery/camera{
@@ -18518,6 +18518,14 @@
 	},
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/security/brig)
+"McW" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/storage/box/ingredients/wildcard,
+/obj/item/weapon/storage/box/ingredients/wildcard,
+/obj/item/weapon/storage/box/ingredients/wildcard,
+/obj/item/weapon/storage/box/ingredients/wildcard,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/ftl/crew_quarters/kitchen)
 "Mdv" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -59524,7 +59532,7 @@ HAq
 Len
 llZ
 yqN
-zqJ
+CXz
 xOT
 Wle
 kyW
@@ -60038,7 +60046,7 @@ uKn
 EIr
 HmV
 kyW
-CBn
+McW
 wBL
 wkP
 kyW
