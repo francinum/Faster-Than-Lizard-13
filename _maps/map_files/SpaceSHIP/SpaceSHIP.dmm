@@ -3416,6 +3416,14 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/medbay)
+"gWl" = (
+/obj/structure/table/wood,
+/obj/item/device/flashlight/lamp/green,
+/obj/item/weapon/reagent_containers/food/drinks/flask/det{
+	name = "over-boiled detective's flask"
+	},
+/turf/open/floor/carpet,
+/area/shuttle/ftl/security/detectives_office)
 "gWT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 2
@@ -10900,11 +10908,6 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/captain)
-"vKw" = (
-/obj/structure/table/wood,
-/obj/item/device/flashlight/lamp/green,
-/turf/open/floor/carpet,
-/area/shuttle/ftl/security/detectives_office)
 "vLg" = (
 /obj/effect/landmark/start{
 	name = "Medical Doctor";
@@ -23403,6 +23406,10 @@
 	dir = 8
 	},
 /area/shuttle/ftl/medical/medbay)
+"Wrb" = (
+/obj/machinery/shieldgen,
+/turf/open/floor/engine,
+/area/shuttle/ftl/engine/engineering)
 "Wsk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass,
@@ -48730,7 +48737,7 @@ Dmn
 zaH
 zaH
 zaH
-zaH
+Wrb
 Ljv
 zaH
 zaH
@@ -48987,7 +48994,7 @@ zaH
 zaH
 zaH
 zaH
-zaH
+Wrb
 Ljv
 zaH
 zaH
@@ -49244,7 +49251,7 @@ zaH
 zaH
 zaH
 zaH
-zaH
+Wrb
 Ljv
 zaH
 zaH
@@ -62581,7 +62588,7 @@ toK
 hLw
 mYO
 wgC
-vKw
+gWl
 wax
 Byz
 wTY
