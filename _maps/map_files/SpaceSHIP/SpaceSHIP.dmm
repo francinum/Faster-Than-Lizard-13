@@ -10065,20 +10065,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel/whitered/side,
 /area/shuttle/ftl/security/main)
-"uaU" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular,
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (NORTH)";
-	icon_state = "whiteblue";
-	dir = 1
-	},
-/area/shuttle/ftl/medical/medbay)
 "uby" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/security/detectives_office)
@@ -14935,28 +14921,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
-"DTT" = (
-/obj/structure/closet/crate{
-	icon_state = "crateopen";
-	opened = 1
-	},
-/obj/item/stack/cable_coil{
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/weapon/electronics/airlock,
-/obj/item/stack/cable_coil,
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
-/obj/item/stack/rods{
-	amount = 50
-	},
-/obj/item/stack/sheet/glass{
-	amount = 50
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/break_room)
 "DUl" = (
 /obj/effect/landmark/start{
 	name = "Station Engineer";
@@ -17656,6 +17620,24 @@
 	},
 /turf/open/floor/plasteel{
 	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/medbay)
+"KeX" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/table,
+/obj/item/weapon/storage/firstaid/regular,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
 	},
 /area/shuttle/ftl/medical/medbay)
 "Kfi" = (
@@ -24369,6 +24351,31 @@
 	icon_state = "whitegreen"
 	},
 /area/shuttle/ftl/medical/virology)
+"YCh" = (
+/obj/structure/closet/crate{
+	icon_state = "crateopen";
+	opened = 1
+	},
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/weapon/electronics/airlock,
+/obj/item/stack/cable_coil,
+/obj/item/stack/sheet/metal{
+	amount = 50
+	},
+/obj/item/stack/rods{
+	amount = 50
+	},
+/obj/item/stack/sheet/glass{
+	amount = 50
+	},
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 30
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/break_room)
 "YDs" = (
 /obj/structure/sign/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -47950,7 +47957,7 @@ fqS
 IWp
 BXd
 yRf
-DTT
+YCh
 rvX
 gBs
 lNI
@@ -50507,7 +50514,7 @@ toK
 toK
 toK
 vLy
-uaU
+KeX
 pCL
 NLx
 iiB
