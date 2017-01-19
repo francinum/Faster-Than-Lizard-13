@@ -1,11 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE 
-"aaV" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "aed" = (
 /obj/machinery/door/window{
 	base_state = "right";
@@ -37,18 +30,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay)
-"ahK" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/chiefs_office)
 "ajG" = (
 /turf/closed/wall,
 /area/shuttle/ftl/maintenance/cargo)
@@ -76,6 +57,11 @@
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
+"alt" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/shuttle/ftl/crew_quarters/sleep)
 "anE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -307,6 +293,18 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/engineering)
+"aIR" = (
+/obj/structure/window/reinforced{
+	dir = 2;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
+	tag = "icon-intact (NORTH)";
+	icon_state = "intact";
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "aJq" = (
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -542,16 +540,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/xenobiology)
-"blk" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	icon_state = "intact";
-	dir = 5
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
 "bnD" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -577,6 +565,12 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
+"bpn" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "bqM" = (
 /obj/machinery/door/airlock/research{
 	name = "Mech Bay";
@@ -1154,6 +1148,32 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/captain)
+"cEK" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	tag = "icon-pipe-c";
+	icon_state = "pipe-c";
+	dir = 2
+	},
+/turf/open/floor/plasteel/yellow/side,
+/area/shuttle/ftl/engine/break_room)
+"cFo" = (
+/obj/structure/window/reinforced{
+	dir = 2;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 5
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "cFF" = (
 /obj/machinery/camera{
 	c_tag = "Atmospherics West";
@@ -1171,6 +1191,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
+"cHk" = (
+/obj/machinery/computer/atmos_alert,
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "cJK" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 8
@@ -1195,6 +1221,16 @@
 	dir = 4
 	},
 /area/shuttle/ftl/cargo/office)
+"cKl" = (
+/obj/structure/window/reinforced{
+	dir = 2;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 9
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "cLJ" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -1297,24 +1333,6 @@
 	dir = 1
 	},
 /area/shuttle/ftl/engine/engine_smes)
-"cRZ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/obj/machinery/door/airlock/hatch{
-	name = "Maintenance Hatch";
-	req_access_txt = "29"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/medbay)
 "cTC" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/heater,
 /turf/open/floor/plasteel,
@@ -1394,14 +1412,6 @@
 	dir = 6
 	},
 /area/shuttle/ftl/medical/virology)
-"cXn" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
-	dir = 4
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "cYf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -1477,23 +1487,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
-"dhI" = (
-/obj/structure/table/glass,
-/obj/item/weapon/storage/box/beakers{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/box/syringes,
-/obj/item/device/radio/intercom{
-	pixel_x = 0;
-	pixel_y = -32
-	},
-/obj/machinery/light,
-/turf/open/floor/plasteel{
-	dir = 8;
-	icon_state = "whitegreen"
-	},
-/area/shuttle/ftl/medical/virology)
 "dhU" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -1580,17 +1573,6 @@
 	},
 /turf/open/floor/carpet,
 /area/shuttle/ftl/security/hos)
-"dnx" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/engineering_chief{
-	req_access_txt = "0"
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "dnQ" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	tag = "icon-intact (NORTHWEST)";
@@ -1676,20 +1658,6 @@
 	dir = 4
 	},
 /area/shuttle/ftl/munitions)
-"dul" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "dun" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
@@ -1735,6 +1703,17 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
+"dyy" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "Engineering";
+	name = "engineering security door"
+	},
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "dzf" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -1778,22 +1757,6 @@
 	icon_state = "bot"
 	},
 /area/shuttle/ftl/cargo/storage)
-"dFD" = (
-/obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "dFF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -1871,27 +1834,46 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
-"dSy" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	tag = "icon-pump_map (EAST)";
-	icon_state = "pump_map";
-	dir = 4
+"dSw" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
 	},
 /obj/machinery/camera{
-	c_tag = "Engine North";
-	network = list("SS13","Supermatter")
+	c_tag = "Dormitories";
+	dir = 8
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 28
+/obj/item/device/radio/intercom{
+	pixel_x = 32
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 1
+	},
+/obj/structure/table/wood,
+/obj/item/weapon/storage/book/bible,
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
+/area/shuttle/ftl/crew_quarters/sleep)
 "dTh" = (
 /obj/machinery/autolathe,
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"dTz" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/medical/virology)
 "dVH" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -2108,21 +2090,6 @@
 	dir = 5
 	},
 /area/shuttle/ftl/security/main)
-"enU" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/disposalpipe/sortjunction{
-	icon_state = "pipe-j2s";
-	sortType = 5
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "eoB" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -2276,18 +2243,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
-"eBr" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	tag = "icon-intact (SOUTHEAST)";
-	icon_state = "intact";
-	dir = 6
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "eBt" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/r_wall,
@@ -2296,16 +2251,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
-"eDI" = (
-/obj/machinery/smartfridge/chemistry/virology,
-/obj/machinery/camera{
-	c_tag = "Virology";
-	dir = 1
-	},
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/virology)
 "eDM" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2395,6 +2340,24 @@
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
+"eJs" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "eKt" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -2460,6 +2423,17 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"eQB" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	tag = "icon-pipe-c (EAST)";
+	icon_state = "pipe-c";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/medbay)
 "eSu" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -2538,11 +2512,6 @@
 	dir = 4
 	},
 /area/shuttle/ftl/medical/chemistry)
-"eYt" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/chair/wood,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "eYF" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 1
@@ -2650,14 +2619,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/hor)
-"fqS" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/medbay)
 "frO" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'RADIOACTIVE AREA'";
@@ -2720,23 +2681,6 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/captain)
-"ftW" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/requests_console{
-	announcementConsole = 1;
-	department = "Chief Engineer's Desk";
-	departmentType = 3;
-	name = "Chief Engineer RC";
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "fuv" = (
 /obj/structure/table/reinforced,
 /obj/item/device/multitool,
@@ -2912,6 +2856,20 @@
 	},
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/medbay)
+"fYk" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 10;
+	initialize_directions = 10
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/warning/corner{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "fYG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -3000,6 +2958,29 @@
 /obj/item/device/assembly/flash/handheld,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/assembly/robotics)
+"gcW" = (
+/obj/structure/sink{
+	pixel_y = 28
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/doorButtons/airlock_controller{
+	name = "Virology Access Console";
+	pixel_x = 8;
+	pixel_y = 22;
+	req_access_txt = "23";
+	idSelf = "virology_airlock_control";
+	idInterior = "virology_airlock_interior";
+	idExterior = "virology_airlock_exterior"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "gdp" = (
 /obj/machinery/door/airlock/security{
 	id_tag = "innerbrig";
@@ -3128,6 +3109,15 @@
 	icon_state = "bar"
 	},
 /area/shuttle/ftl/crew_quarters/bar)
+"gpp" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "gsZ" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 2
@@ -3175,6 +3165,12 @@
 	},
 /turf/open/floor/plasteel/green/side,
 /area/shuttle/ftl/hydroponics)
+"gwS" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "gxX" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -3195,12 +3191,6 @@
 "gAw" = (
 /turf/closed/wall,
 /area/shuttle/ftl/hydroponics)
-"gBs" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/break_room)
 "gDa" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	tag = "icon-intact (EAST)";
@@ -3389,6 +3379,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"gQO" = (
+/obj/structure/closet/radiation,
+/obj/item/clothing/glasses/meson,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "gRJ" = (
 /obj/item/weapon/storage/firstaid,
 /obj/structure/table,
@@ -3497,14 +3492,12 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/shuttle/ftl/space)
-"hgj" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+"hfS" = (
+/obj/machinery/light{
+	dir = 2
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "hju" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Maintenance Hatch";
@@ -3581,6 +3574,26 @@
 	dir = 8
 	},
 /area/shuttle/ftl/medical/medbay)
+"hqV" = (
+/obj/machinery/camera{
+	c_tag = "Engine North";
+	network = list("SS13","Supermatter")
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 1;
+	icon_state = "intact"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "hsa" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -4625,24 +4638,6 @@
 	dir = 1
 	},
 /area/shuttle/ftl/security/nuke_storage)
-"jqE" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/machinery/door/airlock/hatch{
-	name = "Maintenance Hatch";
-	req_access_txt = "8"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/crew_quarters/bar)
 "jqV" = (
 /obj/structure/closet/secure_closet/hop,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station,
@@ -4742,12 +4737,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
-"jzd" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 1
-	},
-/turf/closed/wall/r_wall,
-/area/shuttle/ftl/engine/engine_smes)
 "jzH" = (
 /obj/structure/sign/securearea{
 	pixel_x = -32
@@ -4988,27 +4977,6 @@
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
 /area/shuttle/ftl/bridge)
-"kat" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/camera{
-	c_tag = "Dormitories";
-	dir = 8
-	},
-/obj/item/device/radio/intercom{
-	pixel_x = 32
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 1
-	},
-/obj/structure/table/wood,
-/obj/item/weapon/storage/book/bible,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "kaR" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
@@ -5036,6 +5004,9 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/brig)
+"kfa" = (
+/turf/open/floor/engine,
+/area/shuttle/ftl/engine/break_room)
 "kgR" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/lights/mixed{
@@ -5269,20 +5240,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
-"kIQ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 8
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/light,
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "kJm" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/security/brig)
@@ -5300,6 +5257,28 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"kJG" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/item/weapon/book/manual/ftl_wiki/supermatter,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/warning{
+	dir = 8
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "kJK" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -5330,6 +5309,12 @@
 	dir = 6
 	},
 /area/shuttle/ftl/medical/chemistry)
+"kJU" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/engine/chiefs_office)
 "kKl" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/northleft{
@@ -5530,18 +5515,6 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
-"lfy" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	tag = "icon-intact (SOUTHWEST)";
-	icon_state = "intact";
-	dir = 10
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "lha" = (
 /obj/machinery/light_switch{
 	pixel_x = 24
@@ -5582,6 +5555,47 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/virology)
+"lkv" = (
+/obj/machinery/computer/station_alert,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
+"lkF" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/folder/yellow,
+/obj/item/weapon/stamp/ce,
+/obj/item/weapon/lighter,
+/obj/item/weapon/clipboard,
+/obj/item/weapon/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/weapon/pen,
+/obj/item/weapon/paper/monitorkey,
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Chief Engineer's Desk";
+	departmentType = 3;
+	name = "Chief Engineer RC";
+	pixel_x = 30;
+	pixel_y = 2
+	},
+/obj/machinery/button/door{
+	desc = "A remote control-switch for the engineering security doors.";
+	id = "Engineering";
+	name = "Engineering Lockdown";
+	pixel_x = 24;
+	pixel_y = 24;
+	req_access_txt = "29"
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "llZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/vending/dinnerware,
@@ -5602,6 +5616,31 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"lqs" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1;
+	icon_state = "pump_map";
+	tag = "icon-pump_map (EAST)"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "lrw" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -5721,6 +5760,22 @@
 	icon_state = "delivery"
 	},
 /area/shuttle/ftl/munitions/loading)
+"lDu" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/floor/plasteel/warning{
+	dir = 9
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "lEr" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/wood,
@@ -5806,10 +5861,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
-"lNI" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "lNX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -5916,19 +5967,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge)
-"miw" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch{
-	name = "Maintenance Hatch";
-	req_access_txt = "8"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/crew_quarters/sleep)
 "mkJ" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 2;
@@ -5992,12 +6030,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/ftl/engine/engine_smes)
-"mpE" = (
-/obj/machinery/camera{
-	c_tag = "Engineering Equipment"
-	},
-/turf/open/floor/engine,
 /area/shuttle/ftl/engine/engine_smes)
 "mrp" = (
 /obj/machinery/light,
@@ -6354,6 +6386,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/munitions/loading)
+"nja" = (
+/obj/machinery/door/airlock/glass_engineering{
+	name = "Gravity Generator";
+	req_access_txt = "34";
+	req_one_access_txt = "0"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/break_room)
 "njk" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -6545,19 +6590,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/xenobiology)
-"nFe" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = -24
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/yellow/side,
-/area/shuttle/ftl/engine/break_room)
 "nGM" = (
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -6669,10 +6701,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/cargo/office)
-"nKO" = (
-/obj/machinery/gravity_generator/main/station,
-/turf/open/floor/engine,
-/area/shuttle/ftl/engine/engine_smes)
 "nLu" = (
 /obj/machinery/air_sensor{
 	frequency = 1441;
@@ -6782,13 +6810,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/security/armory)
-"nRp" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/chair/wood{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "nVA" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -7071,6 +7092,17 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
+"otR" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 2
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/break_room)
 "oul" = (
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
@@ -7136,24 +7168,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
-"oAL" = (
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/machinery/vending/autodrobe{
-	req_access_txt = "0"
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "oCg" = (
 /obj/structure/displaycase/labcage,
 /turf/open/floor/plasteel{
@@ -7194,6 +7208,11 @@
 	dir = 1
 	},
 /area/shuttle/ftl/medical/medbay)
+"oER" = (
+/obj/structure/table/wood,
+/obj/item/device/flashlight/lamp/green,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/sleep)
 "oFb" = (
 /obj/machinery/door/airlock/command{
 	emergency = 0;
@@ -7293,6 +7312,12 @@
 	dir = 8
 	},
 /area/shuttle/ftl/security/nuke_storage)
+"oQH" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/engine/break_room)
 "oRz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -7331,19 +7356,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
-"oXs" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	tag = "icon-pipe-c (WEST)";
-	icon_state = "pipe-c";
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/medbay)
 "oXv" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/hallway/primary/port)
@@ -7423,6 +7435,12 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
+"pgN" = (
+/obj/structure/chair/comfy/brown{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/sleep)
 "phh" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -7455,16 +7473,6 @@
 	},
 /turf/open/floor/plasteel/circuit,
 /area/shuttle/ftl/turret_protected/ai)
-"plV" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/medbay)
 "pmw" = (
 /obj/effect/landmark/start{
 	name = "Captain"
@@ -7519,6 +7527,19 @@
 	dir = 1
 	},
 /area/shuttle/ftl/security/main)
+"poM" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/break_room)
 "prz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -7555,13 +7576,10 @@
 	},
 /turf/open/floor/plasteel/blue/side,
 /area/shuttle/ftl/atmos)
-"pwm" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	icon_state = "intact";
-	dir = 10
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
+"pvO" = (
+/obj/structure/closet/radiation,
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/engine/break_room)
 "pxb" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	color = "#444444";
@@ -7830,6 +7848,14 @@
 	},
 /turf/open/floor/engine,
 /area/shuttle/ftl/research/xenobiology)
+"pWO" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "pWW" = (
 /obj/machinery/shower{
 	dir = 4
@@ -7884,15 +7910,6 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
-"qbq" = (
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	tag = "icon-intact (NORTHWEST)";
-	icon_state = "intact";
-	dir = 9
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "qcb" = (
 /obj/structure/cable{
 	d2 = 8;
@@ -7916,14 +7933,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/xenobiology)
-"qcd" = (
-/obj/structure/closet/secure_closet/engineering_electrical,
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/clothing/gloves/color/yellow,
-/turf/open/floor/plasteel/yellow/side{
-	dir = 10
-	},
-/area/shuttle/ftl/engine/break_room)
 "qco" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -8049,15 +8058,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
-"qlh" = (
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	tag = "icon-intact (NORTHEAST)";
-	icon_state = "intact";
-	dir = 5
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "qlk" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -8080,6 +8080,12 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
+"qpD" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 2
+	},
+/turf/open/floor/engine,
+/area/shuttle/ftl/engine/break_room)
 "qqG" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -8122,6 +8128,22 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
+"qxh" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/light_switch{
+	pixel_x = -24;
+	pixel_y = -24
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/yellow/side,
+/area/shuttle/ftl/engine/break_room)
 "qxC" = (
 /obj/machinery/air_sensor{
 	frequency = 1441;
@@ -8139,26 +8161,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/surgery)
-"qCD" = (
-/obj/structure/sink{
-	pixel_y = 28
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/doorButtons/airlock_controller{
-	name = "Virology Access Console";
-	pixel_x = 8;
-	pixel_y = 22;
-	req_access_txt = "23";
-	idSelf = "virology_airlock_control";
-	idInterior = "virology_airlock_interior";
-	idExterior = "virology_airlock_exterior"
-	},
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/virology)
 "qFN" = (
 /obj/structure/table,
 /obj/item/weapon/tank/internals/emergency_oxygen{
@@ -8217,6 +8219,17 @@
 	},
 /turf/open/floor/plasteel/red/side,
 /area/shuttle/ftl/atmos)
+"qIq" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "qKP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -8253,14 +8266,6 @@
 	},
 /turf/open/floor/plasteel/cmo,
 /area/shuttle/ftl/medical/cmo)
-"qSx" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	tag = "icon-intact (SOUTHWEST)";
-	icon_state = "intact";
-	dir = 10
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "qVk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -8478,23 +8483,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
-"rvi" = (
-/obj/machinery/atmospherics/components/binary/valve/digital{
-	name = "Coolant valve"
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
-"rvX" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/yellow/side,
-/area/shuttle/ftl/engine/break_room)
 "rwN" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -8622,6 +8610,11 @@
 "rHc" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/maintenance/bar)
+"rHo" = (
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/engineering)
 "rHO" = (
 /obj/structure/displaycase/captain,
 /obj/structure/cable{
@@ -8709,6 +8702,20 @@
 	},
 /turf/open/floor/plasteel/cmo,
 /area/shuttle/ftl/medical/cmo)
+"rNA" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/closed/wall,
+/area/shuttle/ftl/crew_quarters/bar)
 "rPO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
 	dir = 4
@@ -8726,6 +8733,23 @@
 	dir = 5
 	},
 /area/shuttle/ftl/atmos)
+"rRz" = (
+/obj/machinery/power/smes/engineering{
+	color = ""
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/floor/plasteel/warning{
+	dir = 5
+	},
+/area/shuttle/ftl/engine/engine_smes)
 "rSZ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -9001,6 +9025,20 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
+"spR" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/meter,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "spW" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/security/wooden_tv,
@@ -9387,18 +9425,6 @@
 	dir = 1
 	},
 /area/shuttle/ftl/hallway/primary/port)
-"sUj" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/table/wood,
-/obj/item/weapon/dice/d20,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "sUr" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -9460,26 +9486,11 @@
 	name = "floor"
 	},
 /area/shuttle/ftl/atmos)
-"taR" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 2
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/yellow/side,
-/area/shuttle/ftl/engine/break_room)
+"taK" = (
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/random,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/sleep)
 "tbf" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -9572,19 +9583,6 @@
 	dir = 4
 	},
 /area/shuttle/ftl/research/xenobiology)
-"tjj" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
-	tag = "icon-intact (NORTH)";
-	icon_state = "intact";
-	dir = 1
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "tkX" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -9711,20 +9709,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
-"twP" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/machinery/airalarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/bar)
 "twV" = (
 /obj/machinery/chem_dispenser/drinks/beer,
 /obj/structure/table/reinforced,
@@ -9852,6 +9836,21 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/shuttle/ftl/munitions/loading)
+"tMH" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	pixel_x = -6;
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "tMN" = (
 /obj/structure/table/reinforced,
 /obj/machinery/requests_console{
@@ -9873,6 +9872,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
+"tOk" = (
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/medbay)
 "tOF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -10394,6 +10396,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
+"uMj" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "uMS" = (
 /obj/structure/sink{
 	dir = 4;
@@ -10476,23 +10489,6 @@
 	},
 /turf/open/floor/plasteel/neutral,
 /area/shuttle/ftl/munitions/loading)
-"uPL" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/item/weapon/book/manual/ftl_wiki/supermatter,
-/turf/open/floor/plasteel/warning{
-	dir = 8
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "uPS" = (
 /obj/machinery/conveyor{
 	dir = 1;
@@ -10560,6 +10556,19 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/research/server)
+"uXY" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "uZf" = (
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 2;
@@ -10736,6 +10745,14 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
+"vxh" = (
+/obj/structure/disposalpipe/segment{
+	tag = "icon-pipe-c (WEST)";
+	icon_state = "pipe-c";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/medbay)
 "vyh" = (
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/wood,
@@ -10805,21 +10822,6 @@
 	},
 /turf/open/floor/plasteel/shuttle/white,
 /area/shuttle/ftl/subshuttle/pod_3)
-"vFZ" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/weapon/pen,
-/obj/item/weapon/storage/fancy/cigarettes,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "vGh" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -10934,6 +10936,15 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/brig)
+"vXD" = (
+/obj/machinery/camera{
+	c_tag = "Engineering Equipment"
+	},
+/obj/machinery/computer/card/minor/ce,
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "vYf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -11092,11 +11103,32 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/sleep)
+"wlV" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "wmS" = (
 /turf/open/floor/plasteel/warning{
 	dir = 4
 	},
 /area/shuttle/ftl/cargo/mining)
+"wnl" = (
+/obj/effect/landmark/start{
+	name = "Station Engineer";
+	shuttle_abstract_movable = 1
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/break_room)
 "woa" = (
 /obj/machinery/ftl_shieldgen{
 	plasma_charge_max = 25;
@@ -11319,6 +11351,13 @@
 	initial_gas_mix = "n2=100;TEMP=80"
 	},
 /area/shuttle/ftl/telecomms/server)
+"wLd" = (
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "wLI" = (
 /turf/open/floor/engine,
 /area/shuttle/ftl/research/xenobiology)
@@ -11562,6 +11601,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/brig)
+"xlL" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "xmw" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -11754,20 +11804,17 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/assembly/robotics)
-"xJQ" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	icon_state = "intact";
-	dir = 5
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
 "xLN" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hydroponics)
+"xLU" = (
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/shuttle/ftl/crew_quarters/sleep)
 "xNR" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/telecomms/server)
@@ -11829,6 +11876,19 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/primary/starboard)
+"xSW" = (
+/obj/structure/chair/stool,
+/obj/effect/landmark/start{
+	name = "Virologist";
+	shuttle_abstract_movable = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "xUH" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -11895,6 +11955,14 @@
 "xXx" = (
 /turf/closed/wall,
 /area/shuttle/ftl/maintenance/security)
+"xXG" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/engine/break_room)
 "xZs" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
@@ -11998,24 +12066,6 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/brig)
-"yda" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/medbay)
 "yfu" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -12569,22 +12619,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/turret_protected/ai)
-"zaO" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
-"zbL" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station,
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "zbY" = (
 /turf/open/floor/plasteel/warnwhite{
 	tag = "icon-white_warn (NORTH)";
@@ -12592,14 +12626,20 @@
 	dir = 1
 	},
 /area/shuttle/ftl/research/lab)
-"zcq" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
+"zcO" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
+/obj/machinery/airalarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "zfq" = (
 /obj/machinery/atmospherics/components/binary/circulator{
 	dir = 2;
@@ -12723,22 +12763,6 @@
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/ftl/crew_quarters/toilet)
-"zsz" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/clipboard,
-/obj/item/weapon/lighter,
-/obj/item/weapon/stamp/ce,
-/obj/item/weapon/stock_parts/cell/high/plus,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/item/weapon/book/manual/ftl_wiki/supermatter,
-/obj/item/weapon/folder/yellow,
-/obj/item/weapon/paper/monitorkey,
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "zsE" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger{
@@ -12759,14 +12783,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
-"zxw" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	tag = "icon-intact (SOUTHEAST)";
-	icon_state = "intact";
-	dir = 6
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "zxR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -12812,15 +12828,6 @@
 	dir = 6
 	},
 /area/shuttle/ftl/medical/medbay)
-"zFd" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "zHn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -12835,6 +12842,14 @@
 	dir = 5
 	},
 /area/shuttle/ftl/munitions)
+"zHD" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "zIu" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/structure/window/reinforced{
@@ -12898,6 +12913,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/sleep)
+"zRW" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 1
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/engine/chiefs_office)
 "zSr" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -13081,16 +13102,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
-"AlR" = (
-/obj/machinery/computer/station_alert,
-/obj/item/device/radio/intercom{
-	pixel_x = 0;
-	pixel_y = -26
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "AnB" = (
 /obj/structure/disposalpipe/segment{
 	tag = "icon-pipe-c (WEST)";
@@ -13405,6 +13416,18 @@
 "AQM" = (
 /turf/open/floor/plasteel/shuttle/yellow,
 /area/shuttle/ftl/subshuttle/pod_3)
+"ASb" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "34"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/break_room)
 "ASK" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible,
 /obj/structure/cable{
@@ -13836,32 +13859,6 @@
 	icon_state = "cafeteria"
 	},
 /area/shuttle/ftl/crew_quarters/hor)
-"BOB" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass_command{
-	name = "Chief Engineer";
-	req_access_txt = "29"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/delivery{
-	name = "floor"
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "BOH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -14000,25 +13997,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
-"BXO" = (
-/obj/machinery/power/apc{
-	auto_name = 1;
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/machinery/airalarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "BYI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/westleft{
@@ -14062,6 +14040,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"Cef" = (
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/obj/machinery/camera{
+	c_tag = "Chief Engineer's Office";
+	dir = 1
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 4
+	},
+/area/shuttle/ftl/engine/engineering)
 "Cgl" = (
 /obj/structure/table,
 /obj/item/weapon/cautery{
@@ -14105,6 +14102,23 @@
 	icon_state = "L1"
 	},
 /area/shuttle/ftl/hallway/primary/starboard)
+"Cik" = (
+/obj/structure/closet/secure_closet/engineering_chief{
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
+"Cjk" = (
+/obj/structure/closet/radiation,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 2
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/break_room)
 "Cjn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/disposalpipe/segment{
@@ -14151,32 +14165,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/assembly/robotics)
-"Col" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/button/door{
-	desc = "A remote control-switch for the engineering security doors.";
-	id = "Engineering";
-	name = "Engineering Lockdown";
-	pixel_x = 24;
-	pixel_y = 24;
-	req_access_txt = "29"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "Cqh" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
@@ -14217,6 +14205,14 @@
 	},
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/security/brig)
+"Csp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 2
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "CsA" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -14330,6 +14326,12 @@
 	dir = 1
 	},
 /area/shuttle/ftl/security/nuke_storage)
+"CIN" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 10
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "CJh" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -14474,21 +14476,6 @@
 	dir = 10
 	},
 /area/shuttle/ftl/cargo/office)
-"CWu" = (
-/obj/machinery/door/firedoor,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 1
-	},
-/turf/open/floor/plasteel/yellow/side{
-	dir = 4
-	},
-/area/shuttle/ftl/engine/engineering)
 "CWX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 4
@@ -14580,6 +14567,26 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/shuttle/ftl/crew_quarters/kitchen)
+"DfM" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/box/syringes,
+/obj/item/device/radio/intercom{
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/turf/open/floor/plasteel{
+	dir = 8;
+	icon_state = "whitegreen"
+	},
+/area/shuttle/ftl/medical/virology)
 "Dgd" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 8
@@ -14712,6 +14719,22 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"DsH" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "DtJ" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/chemimp{
@@ -14725,6 +14748,13 @@
 	dir = 8
 	},
 /area/shuttle/ftl/security/armory)
+"Dwl" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/medbay)
 "DBA" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -14835,10 +14865,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/janitor)
-"DKa" = (
-/obj/structure/cryofeed/right,
-/turf/open/floor/plasteel/white,
-/area/shuttle/ftl/crew_quarters/sleep)
 "DKB" = (
 /obj/machinery/door/airlock/external{
 	name = "EVA airlock"
@@ -14921,16 +14947,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
-"DUl" = (
-/obj/effect/landmark/start{
-	name = "Station Engineer";
-	shuttle_abstract_movable = 1
-	},
-/obj/structure/chair{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/break_room)
 "DUG" = (
 /obj/structure/closet/wardrobe/science_white,
 /turf/open/floor/plasteel/warning{
@@ -14951,14 +14967,6 @@
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
-"Edc" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/bar)
 "EdF" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /obj/structure/disposalpipe/segment,
@@ -14969,11 +14977,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
+"Eel" = (
+/obj/machinery/door/airlock{
+	id_tag = "Dorm5";
+	name = "Dormitory"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "Eii" = (
 /obj/machinery/recharger,
 /obj/structure/table,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
+"EiJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 2
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/medical/virology)
 "Ejl" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -14987,6 +15008,10 @@
 	},
 /turf/open/floor/plasteel/shuttle/white,
 /area/shuttle/ftl/subshuttle/pod_3)
+"EjD" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/sleep)
 "EjI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
@@ -15004,6 +15029,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/meeting_room)
+"EkR" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/disposalpipe/sortjunction{
+	dir = 1;
+	icon_state = "pipe-j2s";
+	sortType = 5
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/central)
 "ElI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -15062,12 +15101,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/engine/engineering)
-"ExZ" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "Eyb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -15320,12 +15353,6 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
-"EPS" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
 "EQk" = (
 /obj/machinery/door/airlock/command{
 	name = "Munitions Officer";
@@ -15336,15 +15363,6 @@
 "ESv" = (
 /turf/open/floor/plasteel/shuttle,
 /area/shuttle/ftl/subshuttle/pod_3)
-"ETj" = (
-/obj/structure/chair/office/light,
-/obj/effect/landmark/start{
-	name = "Chief Engineer"
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "ETM" = (
 /obj/machinery/vending/snack,
 /obj/machinery/light{
@@ -15375,26 +15393,6 @@
 "EZv" = (
 /turf/closed/wall,
 /area/shuttle/ftl/medical/cmo)
-"Fba" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/door/airlock/glass_engineering{
-	name = "Gravity Generator";
-	req_access_txt = "34";
-	req_one_access_txt = "0"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/turf/open/floor/plasteel/yellow/side,
-/area/shuttle/ftl/engine/engine_smes)
 "FbA" = (
 /obj/machinery/computer/monitor,
 /obj/structure/cable{
@@ -15657,6 +15655,15 @@
 	dir = 8
 	},
 /area/shuttle/ftl/medical/genetics)
+"FsB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	tag = "icon-pipe-c (EAST)"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/central)
 "FuH" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
@@ -15783,26 +15790,6 @@
 	dir = 1
 	},
 /area/shuttle/ftl/hallway/primary/starboard)
-"FOa" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "FOm" = (
 /obj/structure/table/wood,
 /obj/item/weapon/storage/box/matches,
@@ -15824,15 +15811,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/bridge/meeting_room)
-"FQK" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/bar)
 "FRh" = (
 /turf/open/floor/plasteel/darkwarning,
 /area/shuttle/ftl/engine/engineering)
@@ -16322,6 +16300,12 @@
 	icon_state = "L5"
 	},
 /area/shuttle/ftl/hallway/primary/port)
+"Hak" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/turf/open/floor/engine,
+/area/shuttle/ftl/engine/break_room)
 "HaK" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
@@ -16615,15 +16599,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/security/brig)
-"HOI" = (
-/obj/machinery/computer/atmos_alert,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "HPm" = (
 /obj/machinery/camera{
 	c_tag = "Secure Tech Storage";
@@ -16641,6 +16616,31 @@
 	},
 /turf/open/space,
 /area/shuttle/ftl/space)
+"HQR" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 2
+	},
+/obj/machinery/power/apc{
+	auto_name = 1;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/yellow/side,
+/area/shuttle/ftl/engine/break_room)
 "HRt" = (
 /obj/machinery/light{
 	dir = 4
@@ -16809,19 +16809,6 @@
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/medical/genetics)
-"Ijj" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
-	tag = "icon-intact (NORTH)";
-	icon_state = "intact";
-	dir = 1
-	},
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "IlU" = (
 /obj/machinery/chem_heater,
 /turf/open/floor/plasteel/whiteblue/side{
@@ -16933,29 +16920,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
-"Ixf" = (
-/obj/machinery/power/smes/engineering{
-	color = ""
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 0
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'HIGH VOLTAGE'";
-	icon_state = "shock";
-	name = "HIGH VOLTAGE";
-	pixel_x = 0;
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/warning{
-	dir = 5
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "IyK" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/machinery/meter{
@@ -16975,25 +16939,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
-"IDF" = (
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/obj/machinery/light_switch{
-	pixel_x = 8;
-	pixel_y = 24
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "IDX" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -17165,6 +17110,22 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
+"JcI" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/table/wood,
+/obj/item/weapon/dice/d20,
+/obj/item/weapon/dice/d6,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "JdP" = (
 /obj/structure/closet/bombcloset,
 /obj/machinery/airalarm{
@@ -17228,13 +17189,13 @@
 	dir = 1
 	},
 /area/shuttle/ftl/medical/medbay)
-"Jmd" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Maintenance Hatch";
-	req_access_txt = "34"
+"Jpx" = (
+/obj/machinery/atmospherics/components/binary/valve/digital{
+	dir = 8;
+	name = "Coolant valve"
 	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/break_room)
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "Jqi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -17339,6 +17300,15 @@
 	dir = 4
 	},
 /area/shuttle/ftl/engine/engine_smes)
+"JxE" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/break_room)
 "JyU" = (
 /obj/structure/disposaloutlet{
 	dir = 4
@@ -17350,6 +17320,17 @@
 	dir = 4
 	},
 /area/shuttle/ftl/maintenance/disposal)
+"Jzw" = (
+/obj/structure/closet/secure_closet/engineering_electrical,
+/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/color/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 10
+	},
+/area/shuttle/ftl/engine/break_room)
 "JAF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
@@ -17399,6 +17380,29 @@
 	dir = 1
 	},
 /area/shuttle/ftl/medical/medbay)
+"JCt" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Engineering";
+	name = "engineering security door"
+	},
+/obj/machinery/door/airlock/glass_command{
+	name = "Chief Engineer";
+	req_access_txt = "29"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Engineering";
+	name = "engineering security door"
+	},
+/turf/open/floor/plasteel/yellow/side,
+/area/shuttle/ftl/engine/chiefs_office)
 "JIw" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/beakers{
@@ -17414,15 +17418,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
-"JJh" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/chiefs_office)
 "JOv" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -17878,6 +17873,22 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/security/main)
+"KHX" = (
+/obj/machinery/power/smes/engineering{
+	color = ""
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/break_room)
 "KJj" = (
 /obj/structure/sign/biohazard,
 /turf/closed/wall/r_wall,
@@ -17905,6 +17916,12 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
+"KKs" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 2
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "KKv" = (
 /obj/machinery/recharger,
 /obj/structure/table,
@@ -18030,12 +18047,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/meeting_room)
-"Lhu" = (
-/obj/machinery/suit_storage_unit/ce,
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "LiV" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	icon_state = "intact";
@@ -18110,16 +18121,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/shuttle/ftl/security/detectives_office)
-"Lpy" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "Lpz" = (
 /obj/structure/chair/stool/bar,
 /turf/open/floor/plasteel{
@@ -18436,25 +18437,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/munitions/office)
-"LVg" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/table/wood,
-/obj/item/weapon/dice/d6,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
-"LVl" = (
-/obj/structure/chair/stool,
-/obj/effect/landmark/start{
-	name = "Virologist";
-	shuttle_abstract_movable = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/virology)
 "LWb" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -18506,6 +18488,12 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/assembly/robotics)
+"LYV" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 9
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "Mbv" = (
 /obj/structure/closet/secure_closet/brig{
 	id = "Cell 3";
@@ -18620,21 +18608,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay)
-"Mky" = (
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel/warning{
-	dir = 9
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "Mlz" = (
 /obj/structure/table/glass,
 /obj/item/weapon/stock_parts/console_screen,
@@ -18686,12 +18659,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay_lobby)
-"Mta" = (
-/obj/machinery/cryopod/right,
-/turf/open/floor/plasteel/warnwhite{
-	dir = 4
-	},
-/area/shuttle/ftl/crew_quarters/sleep)
 "Mte" = (
 /obj/machinery/airalarm{
 	frequency = 1439;
@@ -18718,14 +18685,6 @@
 	icon_state = "bot"
 	},
 /area/shuttle/ftl/engine/engine_smes)
-"MAv" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/turf/open/floor/plasteel/yellow/side{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/break_room)
 "MCS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
@@ -18843,21 +18802,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/bridge)
-"MQH" = (
-/obj/machinery/computer/card/minor/ce,
-/obj/machinery/camera{
-	c_tag = "Chief Engineer's Office";
-	dir = 1
-	},
-/obj/machinery/airalarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "MRa" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -18913,6 +18857,25 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/bar)
+"Nbp" = (
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/medbay)
 "Nby" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space,
@@ -19012,6 +18975,9 @@
 	initial_gas_mix = "n2=500;TEMP=80"
 	},
 /area/shuttle/ftl/research/server)
+"Nnt" = (
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/maintenance/medbay)
 "NoR" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -19101,6 +19067,25 @@
 	},
 /turf/open/floor/plasteel{
 	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
+"Nxx" = (
+/obj/structure/table/glass,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/device/healthanalyzer,
+/obj/item/clothing/glasses/hud/health,
+/obj/machinery/requests_console{
+	department = "Virology";
+	name = "Virology Requests Console";
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plasteel{
+	dir = 8;
+	icon_state = "whitegreen"
 	},
 /area/shuttle/ftl/medical/virology)
 "Nyh" = (
@@ -19290,16 +19275,6 @@
 "NPU" = (
 /turf/open/floor/plasteel/white,
 /area/shuttle/ftl/security/main)
-"NQF" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 10;
-	initialize_directions = 10
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
 "NRo" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -19431,6 +19406,32 @@
 	dir = 1
 	},
 /area/shuttle/ftl/cargo/storage)
+"OgF" = (
+/obj/structure/closet/crate{
+	icon_state = "crateopen";
+	opened = 1
+	},
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/weapon/electronics/airlock,
+/obj/item/stack/cable_coil,
+/obj/item/stack/sheet/metal{
+	amount = 50
+	},
+/obj/item/stack/rods{
+	amount = 50
+	},
+/obj/item/stack/sheet/glass{
+	amount = 50
+	},
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 30
+	},
+/obj/item/weapon/stock_parts/cell/high/plus,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/break_room)
 "Ohe" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -19551,23 +19552,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
-"Opn" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "Oqn" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -19585,12 +19569,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/munitions/loading)
-"OrK" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/break_room)
 "OtE" = (
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
@@ -19766,15 +19744,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/surgery)
-"ONP" = (
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "OOl" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -20349,13 +20318,6 @@
 	},
 /turf/open/floor/engine/o2,
 /area/shuttle/ftl/atmos)
-"PVq" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	icon_state = "intact";
-	dir = 5
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
 "PWG" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -20447,23 +20409,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/xenobiology)
-"QaT" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/neutral{
-	dir = 2
-	},
-/area/shuttle/ftl/engine/chiefs_office)
 "Qbd" = (
 /obj/structure/closet{
 	name = "Joyride Closet"
@@ -20540,6 +20485,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/brig)
+"QhD" = (
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/sleep)
 "Qis" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -20556,6 +20505,19 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/munitions)
+"Qkn" = (
+/obj/machinery/smartfridge/chemistry/virology,
+/obj/machinery/camera{
+	c_tag = "Virology";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 2
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "Qoi" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -20682,6 +20644,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
+"Qtk" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/vending/autodrobe{
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "QtG" = (
 /obj/machinery/camera{
 	c_tag = "Mining Equipment";
@@ -20702,22 +20676,6 @@
 /obj/machinery/atmospherics/components/trinary/filter,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
-"Qwd" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/disposalpipe/segment{
-	tag = "icon-pipe-c (EAST)";
-	icon_state = "pipe-c";
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/medbay)
 "QxK" = (
 /obj/machinery/atmospherics/components/binary/circulator{
 	dir = 2
@@ -21108,15 +21066,6 @@
 	},
 /turf/open/floor/engine,
 /area/shuttle/ftl/research/xenobiology)
-"RmO" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
 "Rom" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	icon_state = "intact";
@@ -21230,10 +21179,6 @@
 /obj/machinery/computer/security,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
-"RvY" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "RxZ" = (
 /obj/machinery/computer/ftl_weapons{
 	req_access_txt = "45"
@@ -21385,6 +21330,13 @@
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
 /area/shuttle/ftl/bridge/eva)
+"RSI" = (
+/obj/structure/closet/radiation,
+/obj/item/clothing/glasses/meson,
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "RTo" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -21502,28 +21454,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/meeting_room)
-"Sln" = (
-/obj/machinery/light,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "Slq" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/lighter,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/bar)
-"SmE" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "SmV" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -21547,12 +21482,24 @@
 	icon_state = "dark"
 	},
 /area/shuttle/ftl/turret_protected/ai)
+"Snl" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "Sod" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/munitions/office)
 "SoC" = (
 /turf/closed/wall,
 /area/shuttle/ftl/cargo/mining)
+"SpL" = (
+/obj/machinery/gravity_generator/main/station,
+/turf/open/floor/engine,
+/area/shuttle/ftl/engine/break_room)
 "SqJ" = (
 /obj/machinery/door/airlock/external{
 	name = "Supply Dock Airlock";
@@ -21616,6 +21563,12 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/cmo)
+"Swi" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "Sxd" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -21801,22 +21754,6 @@
 /obj/structure/sign/biohazard,
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/medical/cmo)
-"SVG" = (
-/obj/structure/table/glass,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/device/healthanalyzer,
-/obj/item/clothing/glasses/hud/health,
-/obj/machinery/requests_console{
-	department = "Virology";
-	name = "Virology Requests Console";
-	pixel_x = 0;
-	pixel_y = -32
-	},
-/turf/open/floor/plasteel{
-	dir = 8;
-	icon_state = "whitegreen"
-	},
-/area/shuttle/ftl/medical/virology)
 "SWb" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/sign/securearea{
@@ -21827,6 +21764,17 @@
 	},
 /turf/open/space,
 /area/shuttle/ftl/munitions)
+"SYT" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/virology)
 "SZi" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -21871,14 +21819,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/security/nuke_storage)
-"TbI" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/central)
 "Teh" = (
 /obj/structure/window/fulltile,
 /obj/structure/grille,
@@ -21961,6 +21901,19 @@
 	},
 /turf/open/floor/holofloor/plating,
 /area/shuttle/ftl/crew_quarters/sleep)
+"TnO" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -26;
+	pixel_y = 0
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	tag = "icon-pipe-c (EAST)"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/central)
 "TnY" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /obj/machinery/suit_storage_unit/engine,
@@ -22101,9 +22054,24 @@
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/lab)
+"TGT" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "THW" = (
 /turf/closed/wall,
 /area/shuttle/ftl/munitions/office)
+"TJe" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 5
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "TJD" = (
 /obj/structure/disposalpipe/segment{
 	tag = "icon-pipe-c (WEST)";
@@ -22124,6 +22092,19 @@
 	icon_state = "bar"
 	},
 /area/shuttle/ftl/crew_quarters/bar)
+"TLx" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/break_room)
 "TMF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/loadingarea{
@@ -22278,6 +22259,18 @@
 	icon_state = "bot"
 	},
 /area/shuttle/ftl/engine/engine_smes)
+"Udq" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	icon_state = "intact";
+	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engine_smes)
 "Ueb" = (
 /obj/structure/cable/yellow{
 	d1 = 2;
@@ -22307,15 +22300,6 @@
 /obj/structure/chair,
 /turf/open/floor/plasteel/shuttle/red,
 /area/shuttle/ftl/subshuttle/pod_3)
-"Ugd" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 10;
-	initialize_directions = 10
-	},
-/turf/open/floor/plasteel/warning/corner{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/engine_smes)
 "Uhi" = (
 /obj/machinery/computer/ftl_navigation{
 	req_access_txt = "46"
@@ -22450,6 +22434,15 @@
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/primary/starboard)
+"UxF" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/crew_quarters/sleep)
 "UyK" = (
 /obj/structure/window/reinforced,
 /obj/machinery/computer/atmos_control/tank{
@@ -22488,12 +22481,6 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/shuttle/ftl/crew_quarters/kitchen)
-"UEZ" = (
-/obj/structure/chair/wood{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "UFa" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -22536,21 +22523,6 @@
 	dir = 6
 	},
 /area/shuttle/ftl/crew_quarters/sleep)
-"UJr" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/light_switch{
-	pixel_x = -6;
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/virology)
 "UJS" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -22661,6 +22633,10 @@
 	dir = 1
 	},
 /area/shuttle/ftl/security/armory)
+"UYA" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/medbay)
 "UZs" = (
 /obj/machinery/air_sensor{
 	frequency = 1441;
@@ -23392,6 +23368,13 @@
 /obj/machinery/shieldgen,
 /turf/open/floor/engine,
 /area/shuttle/ftl/engine/engineering)
+"WrF" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/starboard)
 "Wsk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass,
@@ -23424,6 +23407,17 @@
 	dir = 8
 	},
 /area/shuttle/ftl/munitions)
+"Wtp" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/obj/effect/landmark/start{
+	name = "Chief Engineer"
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "Wuw" = (
 /obj/machinery/light{
 	dir = 1
@@ -23551,22 +23545,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engineering)
-"WJq" = (
-/obj/machinery/light{
-	dir = 1
+"WNb" = (
+/obj/machinery/suit_storage_unit/ce,
+/obj/item/device/radio/intercom{
+	pixel_x = 0;
+	pixel_y = -26
 	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+/turf/open/floor/plasteel/neutral{
+	dir = 2
 	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 10;
-	initialize_directions = 10
-	},
-/obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engine_smes)
+/area/shuttle/ftl/engine/chiefs_office)
 "WNZ" = (
 /obj/machinery/ftl_drive,
 /turf/open/floor/engine,
@@ -23717,22 +23705,8 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/virology)
-"Xdp" = (
-/obj/structure/table/wood,
-/obj/item/weapon/storage/fancy/cigarettes,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/crew_quarters/sleep)
 "XgF" = (
 /obj/structure/table,
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/virology)
-"Xhm" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/plasteel{
 	icon_state = "white"
 	},
@@ -23880,6 +23854,23 @@
 	name = "floor"
 	},
 /area/shuttle/ftl/atmos)
+"XvB" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	auto_name = 1;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/neutral{
+	dir = 2
+	},
+/area/shuttle/ftl/engine/chiefs_office)
 "Xwg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/camera{
@@ -23904,6 +23895,12 @@
 	},
 /turf/closed/wall,
 /area/shuttle/ftl/maintenance/bar)
+"Xxk" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/space)
 "Xye" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -24351,31 +24348,6 @@
 	icon_state = "whitegreen"
 	},
 /area/shuttle/ftl/medical/virology)
-"YCh" = (
-/obj/structure/closet/crate{
-	icon_state = "crateopen";
-	opened = 1
-	},
-/obj/item/stack/cable_coil{
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/weapon/electronics/airlock,
-/obj/item/stack/cable_coil,
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
-/obj/item/stack/rods{
-	amount = 50
-	},
-/obj/item/stack/sheet/glass{
-	amount = 50
-	},
-/obj/item/stack/sheet/mineral/plasma{
-	amount = 30
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/break_room)
 "YDs" = (
 /obj/structure/sign/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -24451,6 +24423,9 @@
 	dir = 1
 	},
 /area/shuttle/ftl/hallway/primary/port)
+"YKT" = (
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/sleep)
 "YNf" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -24816,10 +24791,38 @@
 /obj/structure/plasticflaps,
 /turf/open/floor/plating,
 /area/shuttle/ftl/cargo/office)
+"ZIL" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/engine/engineering)
 "ZJS" = (
 /obj/machinery/biogenerator,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hydroponics)
+"ZMt" = (
+/obj/machinery/power/apc{
+	auto_name = 1;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/machinery/camera{
+	c_tag = "Chief Engineer's Office";
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 1
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/engine/break_room)
 "ZOZ" = (
 /obj/structure/chair{
 	dir = 1
@@ -24871,17 +24874,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
-"ZUA" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	tag = "icon-pipe-c";
-	icon_state = "pipe-c";
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/engine/engineering)
 "ZVh" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
@@ -45129,17 +45121,17 @@ PJZ
 VfE
 YjW
 fZN
-Xhm
+SYT
 YjW
 Rkv
 LqQ
-eLy
-eLy
-eLy
-eLy
-eLy
-eLy
-oul
+IWp
+IWp
+IWp
+IWp
+IWp
+IWp
+gQO
 Ucg
 Ccb
 vgB
@@ -45386,17 +45378,17 @@ PJZ
 ghv
 XgF
 skU
-Xhm
-YjW
-eDI
-LqQ
-eBr
-zcq
-zcq
-zcq
-zcq
-tjj
-blk
+uMj
+Csp
+Qkn
+EiJ
+qpD
+qpD
+qpD
+Cjk
+pvO
+IWp
+gQO
 Ucg
 Ccb
 vgB
@@ -45643,18 +45635,18 @@ PJZ
 LqQ
 LqQ
 LqQ
-qCD
+gcW
 lkk
 rhx
 LqQ
-qSx
-RvY
-RvY
-RvY
-RvY
-qlh
-RmO
-rvi
+kfa
+kfa
+SpL
+poM
+xXG
+nja
+pWO
+bpn
 exf
 pmQ
 cQY
@@ -45900,18 +45892,18 @@ SUD
 HYx
 qgD
 LqQ
-UJr
+tMH
 Nwt
-dhI
-LqQ
-zxw
-RvY
-RvY
-RvY
-RvY
-qbq
-NQF
-xJQ
+DfM
+dTz
+Hak
+Hak
+Hak
+KHX
+ZMt
+IWp
+qIq
+wlV
 fZp
 eLy
 hju
@@ -46158,17 +46150,17 @@ DPP
 PAU
 ybB
 xEA
-LVl
-SVG
+xSW
+Nxx
 LqQ
-lfy
-hgj
-hgj
-hgj
-hgj
-Ijj
-blk
-EPS
+IWp
+IWp
+IWp
+IWp
+IWp
+IWp
+xlL
+Jpx
 Rom
 jIe
 ynA
@@ -46418,14 +46410,14 @@ iZO
 Xco
 YBU
 LqQ
-dFD
-dnx
-zsz
-ftW
-vFZ
-SdM
-dSy
-pwm
+Swi
+KKs
+KKs
+KKs
+KKs
+aIR
+hqV
+wLd
 qVm
 qVm
 whm
@@ -46675,18 +46667,18 @@ LqQ
 LqQ
 LqQ
 LqQ
-IDF
-ziY
-cXn
-ziY
-MQH
-SdM
-WJq
-zaO
-zaO
-PVq
-Ugd
-uPL
+CIN
+Xxk
+Xxk
+TJe
+Swi
+aIR
+lqs
+spR
+uXY
+Udq
+fYk
+kJG
 nrI
 urw
 sjq
@@ -46925,20 +46917,20 @@ FrL
 HYj
 yyV
 BHM
-Qwd
-plV
-plV
-plV
-plV
-plV
-cRZ
-Col
-enU
-Opn
-ETj
-AlR
-SdM
-Mky
+eQB
+UYA
+UYA
+UYA
+UYA
+Dwl
+Nnt
+Swi
+KKs
+KKs
+LYV
+CIN
+cFo
+lDu
 JOv
 jnb
 SmV
@@ -47182,20 +47174,20 @@ aCj
 NMO
 vJk
 idm
-oXs
+vxh
 IWp
 IWp
 IWp
 IWp
+oQH
 IWp
-IWp
-Lhu
-zFd
-QaT
-zbL
-HOI
-SdM
-Ixf
+CIN
+Xxk
+Xxk
+Xxk
+Xxk
+cKl
+rRz
 Jxr
 Hfw
 Hfl
@@ -47439,19 +47431,19 @@ sde
 tXV
 pdD
 BHM
-fqS
+tOk
 IWp
 yQm
 ggE
 ygk
-qcd
+Jzw
 IWp
-JJh
-JJh
-BOB
-JJh
-ahK
-SdM
+rHo
+rHo
+rHo
+rHo
+rHo
+rHo
 eLy
 eLy
 eLy
@@ -47696,18 +47688,18 @@ ikz
 jsi
 gMC
 BHM
-fqS
+tOk
 IWp
 kOu
 GHD
 HIo
-nFe
+qxh
 sny
 sfA
 wdp
-FOa
+Ljt
 sfA
-Hbq
+sfA
 Ljt
 rir
 sfA
@@ -47953,18 +47945,18 @@ BHM
 BHM
 BHM
 BHM
-fqS
+tOk
 IWp
 BXd
 yRf
-YCh
-rvX
-gBs
-lNI
-SmE
-ZUA
-ONP
-aaV
+OgF
+cEK
+JxE
+ZIL
+DsH
+TGT
+gpp
+CRa
 CRa
 huc
 CRa
@@ -48210,15 +48202,15 @@ Zrg
 Zrg
 Zrg
 Zrg
-yda
-Jmd
-MAv
-DUl
-OrK
-taR
+Nbp
+ASb
+TLx
+wnl
+otR
+HQR
 IWp
 gQa
-CWu
+Cef
 OwS
 CjN
 xiS
@@ -48725,12 +48717,12 @@ KYC
 sDI
 ecU
 BZx
-eLy
-eLy
-eLy
-eLy
-Fba
-eLy
+SdM
+dyy
+dyy
+dyy
+JCt
+SdM
 qde
 FTc
 QTa
@@ -48982,12 +48974,12 @@ Rui
 tCv
 PEd
 NsG
-eLy
-mpE
-MhX
-MhX
-dul
-jzd
+SdM
+vXD
+Cik
+RSI
+eJs
+zRW
 Wad
 aEj
 oHE
@@ -49239,12 +49231,12 @@ KYC
 IlU
 WqN
 trE
-eLy
-MhX
-MhX
-nKO
-kIQ
-eLy
+SdM
+lkv
+Wtp
+ziY
+XvB
+SdM
 wED
 LwW
 TnY
@@ -49496,12 +49488,12 @@ KYC
 wNV
 eXM
 kJT
-eLy
-MhX
-MhX
-MhX
-BXO
-eLy
+SdM
+cHk
+lkF
+zcO
+WNb
+SdM
 ExG
 CJh
 mVM
@@ -49753,12 +49745,12 @@ KYC
 wXy
 oMU
 aOd
-eLy
-eLy
-eLy
-eLy
-eLy
-eLy
+SdM
+SdM
+SdM
+kJU
+SdM
+SdM
 Kib
 yiw
 FqO
@@ -50013,8 +50005,8 @@ Bqf
 fya
 iAW
 JIU
-JIU
-TbI
+FsB
+TnO
 JIU
 uMc
 JUj
@@ -50271,7 +50263,7 @@ DPZ
 CmJ
 eHa
 WBx
-WBx
+EkR
 WBx
 mfh
 CKU
@@ -63161,7 +63153,7 @@ wyH
 wyH
 wyH
 wyH
-jqE
+rNA
 nVF
 toK
 toK
@@ -63410,16 +63402,16 @@ tNP
 uKn
 qgT
 gFg
-DKa
-DKa
-DKa
-DKa
-DKa
-DKa
 nqN
 qgT
-twP
-rHc
+oER
+pgN
+qgT
+oER
+pgN
+qgT
+UxF
+xLU
 toK
 toK
 toK
@@ -63667,16 +63659,16 @@ xhl
 uKn
 qgT
 Abo
-Mta
-Mta
-Mta
-Mta
-Mta
-Mta
 UIM
 qgT
-FQK
-rHc
+QhD
+YKT
+qgT
+QhD
+YKT
+qgT
+UxF
+xLU
 toK
 toK
 toK
@@ -63921,19 +63913,19 @@ toK
 Uux
 jyi
 ctI
-uKn
+WrF
 qgT
 Ksg
-Zng
-Zng
-Zng
-Zng
-Zng
-Zng
-Zng
+hfS
 qgT
-FQK
-rHc
+taK
+YKT
+qgT
+taK
+YKT
+qgT
+UxF
+xLU
 toK
 toK
 toK
@@ -64180,17 +64172,17 @@ jyi
 LWb
 Wzi
 qgT
-ExZ
-Zng
-UEZ
-UEZ
-Zng
-Zng
-Zng
-Sln
+Eel
+Eel
 qgT
-FQK
-FeJ
+qgT
+EjD
+qgT
+qgT
+EjD
+qgT
+UxF
+alt
 toK
 toK
 toK
@@ -64438,16 +64430,16 @@ Bdj
 pZO
 Kyy
 pOb
-eYt
-Xdp
-LVg
-nRp
+pOb
+pOb
+pOb
+pOb
 pOb
 rge
 zRQ
-miw
-Edc
-FeJ
+Snl
+zHD
+alt
 toK
 toK
 toK
@@ -64696,15 +64688,15 @@ esR
 JPd
 IsU
 HSM
-sUj
-kat
+JcI
+dSw
 wlA
-Lpy
+Qtk
 vaT
-oAL
-qgT
-yZl
-FeJ
+zHD
+gwS
+Zng
+alt
 toK
 toK
 toK
@@ -64960,8 +64952,8 @@ zNf
 zNf
 zNf
 zNf
-rHc
-rHc
+zNf
+zNf
 toK
 toK
 toK
