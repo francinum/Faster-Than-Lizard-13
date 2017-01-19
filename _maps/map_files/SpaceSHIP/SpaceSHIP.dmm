@@ -2725,6 +2725,16 @@
 	dir = 4
 	},
 /area/shuttle/ftl/research/lab)
+"fyG" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/storage/toolbox/mechanical,
+/obj/machinery/computer/ftl_weapons{
+	req_access_txt = "45"
+	},
+/turf/open/floor/plasteel/darkblue/side{
+	dir = 4
+	},
+/area/shuttle/ftl/bridge)
 "fzw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -4119,6 +4129,12 @@
 	dir = 5
 	},
 /area/shuttle/ftl/hallway/primary/starboard)
+"iqL" = (
+/obj/machinery/computer/crew,
+/turf/open/floor/plasteel/darkblue/side{
+	dir = 6
+	},
+/area/shuttle/ftl/bridge)
 "irG" = (
 /obj/structure/disposalpipe/segment{
 	tag = "icon-pipe-c";
@@ -4324,6 +4340,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
+"iQF" = (
+/obj/machinery/computer/security,
+/turf/open/floor/plasteel/darkblue/side{
+	dir = 5
+	},
+/area/shuttle/ftl/bridge)
 "iQL" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 1
@@ -14576,12 +14598,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
-"CZh" = (
-/obj/machinery/computer/crew,
-/turf/open/floor/plasteel/darkblue/side{
-	dir = 5
-	},
-/area/shuttle/ftl/bridge)
 "CZq" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/crew_quarters/heads)
@@ -14743,6 +14759,14 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
+"Dsq" = (
+/obj/machinery/computer/ftl_navigation{
+	req_access_txt = "46"
+	},
+/turf/open/floor/plasteel/darkblue/side{
+	dir = 4
+	},
+/area/shuttle/ftl/bridge)
 "DsB" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -17784,12 +17808,6 @@
 	},
 /turf/open/floor/carpet,
 /area/shuttle/ftl/security/hos)
-"Kzm" = (
-/obj/machinery/computer/security,
-/turf/open/floor/plasteel/darkblue/side{
-	dir = 6
-	},
-/area/shuttle/ftl/bridge)
 "KAj" = (
 /obj/machinery/door/airlock/command{
 	name = "Captain's Quarters";
@@ -18380,14 +18398,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/research/server)
-"LKn" = (
-/obj/machinery/computer/ftl_weapons{
-	req_access_txt = "45"
-	},
-/turf/open/floor/plasteel/darkblue/side{
-	dir = 4
-	},
-/area/shuttle/ftl/bridge)
 "LLY" = (
 /obj/structure/chair,
 /turf/open/floor/plasteel{
@@ -24461,16 +24471,6 @@
 	icon_state = "cafeteria"
 	},
 /area/shuttle/ftl/crew_quarters/hor)
-"YNz" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/machinery/computer/ftl_navigation{
-	req_access_txt = "46"
-	},
-/turf/open/floor/plasteel/darkblue/side{
-	dir = 4
-	},
-/area/shuttle/ftl/bridge)
 "YNO" = (
 /obj/structure/table,
 /obj/item/weapon/book/manual/ftl_wiki/munitions_manual,
@@ -55975,13 +55975,13 @@ IFL
 tuI
 jVM
 UXj
-CZh
-YNz
+iQF
+fyG
 Arg
 VPc
 wht
-LKn
-Kzm
+Dsq
+iqL
 UXj
 JPN
 XBo
