@@ -33,7 +33,7 @@ var/datum/subsystem/starmap/SSstarmap
 
 	var/list/ship_objectives = list()
 
-	var/list/objective_types = list(/datum/objective/ftl/killships = 2, /datum/objective/ftl/delivery = 1)
+	var/list/objective_types = list(/datum/objective/ftl/killships = 10, /datum/objective/ftl/delivery = 10)
 
 /datum/subsystem/starmap/New()
 	NEW_SS_GLOBAL(SSstarmap)
@@ -180,7 +180,7 @@ var/datum/subsystem/starmap/SSstarmap
 		// Make a new objective
 		var/datum/objective/O
 
-		if(objective_types.len && world.time < 81000)
+		if(objective_types.len && world.time < 162000)
 			var/objectivetype = pickweight(objective_types)
 			objective_types[objectivetype]--
 			if(objective_types[objectivetype] <= 0)
