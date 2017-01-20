@@ -33,7 +33,7 @@ var/datum/subsystem/starmap/SSstarmap
 
 	var/list/ship_objectives = list()
 
-	var/list/objective_types = list(/datum/objective/ftl/killships = 2, /datum/objective/ftl/delivery = 1)
+	var/list/objective_types = list(/datum/objective/ftl/killships = 10, /datum/objective/ftl/delivery = 10)
 
 /datum/subsystem/starmap/New()
 	NEW_SS_GLOBAL(SSstarmap)
