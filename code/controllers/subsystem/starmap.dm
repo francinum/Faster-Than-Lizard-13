@@ -167,7 +167,7 @@ var/datum/subsystem/starmap/SSstarmap
 
 		ftl.dock(current_planet.main_dock)
 		
-		if(debug > 0)
+		if(debug_ftl > 0)
 			log_say("FTL completed, zeroing transit-related variables")
 		
 		from_planet = null
@@ -226,9 +226,9 @@ var/datum/subsystem/starmap/SSstarmap
 	return from_system.lerp_y(to_system, get_transit_progress())
 
 /datum/subsystem/starmap/proc/jump(var/datum/star_system/target)
-	if(ftl_debug > 0)		//START DEBUGGING SPAM
+	if(debug_ftl > 0)		//START DEBUGGING SPAM
 		log_say("Proc starting: /datum/subsystem/starmap/proc/jump")
-	if(ftl_debug > 3)
+	if(debug_ftl > 3)
 		log_say("Debug mode set higher than max, grumble grumble.")	//who says i can't have fun with debugging?
 	if(!target || target == current_system || !istype(target))
 		return 1
@@ -243,7 +243,7 @@ var/datum/subsystem/starmap/SSstarmap
 	from_system = current_system
 	from_time = world.time + 40
 	to_system = target
-	to_distance = SSstarmap.current_system.dist(system)
+	to_distance = SSstarmap.current_system.dist(target)
 	if(debug_ftl > 0)
 		log_say("Calculating FTL timer.")
 	if(debug_ftl > 1)
