@@ -148,7 +148,8 @@ var/datum/subsystem/starmap/SSstarmap
 	if(world.time > to_time && in_transit_planet)
 		if(is_loading) // Not done loading yet, delay arrival by 10 seconds
 			if(debug_ftl > 0)
-				log_say("Z level loading/unloading not complete, delaying arrival")
+				log_game("Z level loading/unloading not complete, delaying arrival")
+				message_admins("Z level loading/unloading not complete, delaying arrival")
 			to_time += 100
 			return
 
@@ -168,8 +169,8 @@ var/datum/subsystem/starmap/SSstarmap
 		ftl.dock(current_planet.main_dock)
 		
 		if(debug_ftl > 0)
-			log_say("FTL completed, zeroing transit-related variables")
-		
+			log_game("FTL completed, zeroing transit-related variables")
+			message_admins("FTL completed, zeroing transit-related variables")
 		from_planet = null
 		from_time = 0
 		to_planet = null
@@ -227,9 +228,11 @@ var/datum/subsystem/starmap/SSstarmap
 
 /datum/subsystem/starmap/proc/jump(var/datum/star_system/target)
 	if(debug_ftl > 0)		//START DEBUGGING SPAM
-		log_say("Proc starting: /datum/subsystem/starmap/proc/jump")
+		log_game("Proc starting: /datum/subsystem/starmap/proc/jump")
+		message_admins("Proc starting: /datum/subsystem/starmap/proc/jump")
 	if(debug_ftl > 3)
-		log_say("Debug mode set higher than max, grumble grumble.")	//who says i can't have fun with debugging?
+		log_game("Debug mode set higher than max, grumble grumble.")	//who says i can't have fun with debugging?
+		message_admins("Debug mode set higher than max, grumble grumble.")
 	if(!target || target == current_system || !istype(target))
 		return 1
 	if(!ftl_drive || !ftl_drive.can_jump())
@@ -245,19 +248,24 @@ var/datum/subsystem/starmap/SSstarmap
 	to_system = target
 	to_distance = SSstarmap.current_system.dist(target)
 	if(debug_ftl > 0)
-		log_say("Calculating FTL timer.")
+		log_game("Calculating FTL timer...")
+		message_admins("Calculating FTL timer...")
 	if(debug_ftl > 1)
-		log_say("Distance to target: [to_distance]")
+		log_game("Distance to target: [to_distance]")
+		message_admins("Distance to target: [to_distance]")
 	travel_time = 650 + (1200 * (to_distance / 20))
 	if(debug_ftl > 2)
-		log_say("650 dSec + (1200 * ([to_distance] / 20)) == [travel_time] dSec travel time")
+		log_game("650 dSec + (1200 * ([to_distance] / 20)) == [travel_time] dSec travel time")
+		message_admins("650 dSec + (1200 * ([to_distance] / 20)) == [travel_time] dSec travel time")
 	to_time = world.time + travel_time
 	if(debug_ftl > 0)
-		log_say("Travel will take [travel_time] deciseconds")
+		log_game("Travel will take [travel_time] deciseconds")
+		message_admins("Travel will take [travel_time] deciseconds")
 	current_system = null
 	in_transit = 1
 	if(debug_ftl > 0)
-		log_say("Draining FTL charge and plasma")
+		log_game("Draining FTL charge and plasma")
+		message_admins("Draining FTL charge and plasma")
 	ftl_drive.plasma_charge = 0
 	ftl_drive.power_charge = 0
 	for(var/area/shuttle/ftl/F in world)
