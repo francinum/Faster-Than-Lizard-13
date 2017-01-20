@@ -348,7 +348,6 @@
 	return dat
 
 /obj/machinery/autolathe/proc/can_build(datum/design/D, amount = 1)
-/obj/machinery/autolathe/proc/can_build(datum/design/D)
 	var/coeff = (ispath(D.build_path,/obj/item/stack) ? 1 : prod_coeff)
 
 	if(D.materials[MAT_METAL] && (materials.amount(MAT_METAL) < (D.materials[MAT_METAL] * coeff * amount)))
@@ -361,7 +360,7 @@
 	var/coeff = (ispath(D.build_path,/obj/item/stack) ? 1 : prod_coeff)
 	var/dat
 	if(D.materials[MAT_METAL])
-		dat += "[D.materials[MAT_METAL] * coeff] metal "
+		dat += "[D.materials[MAT_METAL] * coeff] metal"
 	if(D.materials[MAT_GLASS])
 		dat += "[D.materials[MAT_GLASS] * coeff] glass"
 	return dat
