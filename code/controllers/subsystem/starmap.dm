@@ -250,7 +250,7 @@ var/datum/subsystem/starmap/SSstarmap
 		log_say("Distance to target: [to_distance]")
 	travel_time = 650 + (1200 * (to_distance / 20))
 	if(debug_ftl > 2)
-		log_say("65.0 sec + (1200 * ([to_distance] / 20)) == [travel_time]")
+		log_say("650 dSec + (1200 * ([to_distance] / 20)) == [travel_time] dSec travel time")
 	to_time = world.time + travel_time
 	if(debug_ftl > 0)
 		log_say("Travel will take [travel_time] deciseconds")
