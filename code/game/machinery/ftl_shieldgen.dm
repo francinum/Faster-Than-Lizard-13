@@ -18,7 +18,7 @@
 	var/power_charge_max = 100
 	var/charging_plasma = 0
 	var/charging_power = 0
-	var/charge_rate = 35000
+	var/charge_rate = 20000
 	var/plasma_charge_rate = 13
 	var/list/shield_barrier_objs = list()
 	var/on = 1
