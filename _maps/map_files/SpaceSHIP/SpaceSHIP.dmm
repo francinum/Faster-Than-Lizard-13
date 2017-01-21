@@ -23399,13 +23399,6 @@
 /obj/machinery/shieldgen,
 /turf/open/floor/engine,
 /area/shuttle/ftl/engine/engineering)
-"WrF" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/starboard)
 "Wsk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass,
@@ -63961,7 +63954,7 @@ toK
 Uux
 jyi
 ctI
-WrF
+uKn
 qgT
 Ksg
 hfS
