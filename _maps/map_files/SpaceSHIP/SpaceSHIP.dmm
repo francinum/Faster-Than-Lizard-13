@@ -2687,6 +2687,30 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/captain)
+"fvQ" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/obj/machinery/button/door{
+	id = "xenobio3";
+	name = "Containment Blast Doors";
+	pixel_x = 0;
+	pixel_y = 4;
+	req_access_txt = "26"
+	},
+/turf/open/floor/plasteel/warning{
+	tag = "icon-plasteel_warn (EAST)";
+	icon_state = "plasteel_warn";
+	dir = 4
+	},
+/area/shuttle/ftl/research/xenobiology)
 "fwM" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 2;
@@ -2725,16 +2749,6 @@
 	dir = 4
 	},
 /area/shuttle/ftl/research/lab)
-"fyG" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/machinery/computer/ftl_weapons{
-	req_access_txt = "45"
-	},
-/turf/open/floor/plasteel/darkblue/side{
-	dir = 4
-	},
-/area/shuttle/ftl/bridge)
 "fzw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -9033,6 +9047,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/bot,
 /area/shuttle/ftl/hallway/primary/central)
+"sfU" = (
+/obj/machinery/computer/ftl_weapons{
+	req_access_txt = "45"
+	},
+/turf/open/floor/plasteel/darkblue/side{
+	dir = 4
+	},
+/area/shuttle/ftl/bridge)
 "sif" = (
 /obj/machinery/portable_atmospherics/pump,
 /obj/machinery/light,
@@ -10966,6 +10988,23 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"vQT" = (
+/obj/machinery/button/door{
+	id = "bridge blast";
+	name = "Bridge Blast Door Control";
+	pixel_x = 0;
+	pixel_y = 28;
+	req_access_txt = "19"
+	},
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/lizard{
+	desc = "That's Faster-Than-Lizard (13). The Shuttle's lovable Mascot. Eats those pesky cockroaches, too. Bonus!";
+	name = "Faster-Than-Lizard"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/bridge)
 "vTh" = (
 /obj/structure/mirror{
 	pixel_y = 4
@@ -21888,24 +21927,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
-"Tgd" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 6;
-	initialize_directions = 6
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/obj/machinery/door/airlock/glass_engineering{
-	name = "Shield Generator";
-	req_access_txt = "34";
-	req_one_access_txt = "0"
-	},
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/engineering)
 "TgU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -22823,6 +22844,20 @@
 	},
 /turf/open/floor/carpet,
 /area/shuttle/ftl/security/hos)
+"VsE" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "Engineering";
+	name = "engineering security door"
+	},
+/obj/machinery/door/airlock/glass_engineering{
+	name = "Shield Generator";
+	req_access_txt = "34";
+	req_one_access_txt = "0"
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/engineering)
 "Vto" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -24648,24 +24683,6 @@
 "Zng" = (
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/sleep)
-"Zpk" = (
-/obj/effect/landmark/start/bo/helms,
-/obj/machinery/button/door{
-	id = "bridge blast";
-	name = "Bridge Blast Door Control";
-	pixel_x = 0;
-	pixel_y = 28;
-	req_access_txt = "19"
-	},
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/lizard{
-	desc = "That's Faster-Than-Lizard (13). The Shuttle's lovable Mascot. Eats those pesky cockroaches, too. Bonus!";
-	name = "Faster-Than-Lizard"
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/bridge)
 "Zrg" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -46228,7 +46245,7 @@ gHC
 KJj
 Sbm
 tix
-fRv
+fvQ
 Oes
 Sbm
 tix
@@ -48257,7 +48274,7 @@ CjN
 xiS
 LQA
 LQA
-Tgd
+VsE
 TWo
 Ljv
 sbQ
@@ -55714,7 +55731,7 @@ UXj
 jZn
 UJm
 OvE
-Zpk
+vQT
 KPY
 Lkm
 Dum
@@ -55969,7 +55986,7 @@ tuI
 jVM
 UXj
 iQF
-fyG
+sfU
 Arg
 VPc
 wht
