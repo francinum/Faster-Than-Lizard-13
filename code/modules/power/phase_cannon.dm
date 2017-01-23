@@ -9,7 +9,8 @@
 	anchored = 0
 	density = 1
 	var/obj/item/weapon/stock_parts/cell/cell
-	var/charge_rate = 30000
+	var/charge_rate = 60000
+	var/charge_per_shot = 400
 
 	var/state = 0
 	var/locked = 0
@@ -54,12 +55,12 @@
 /obj/machinery/power/shipweapon/proc/can_fire()
 	if(state != 2)
 		return 0
-	return cell.charge >= 2000
+	return cell.charge >= charge_per_shot
 
 /obj/machinery/power/shipweapon/proc/attempt_fire(var/datum/component/target_component)
 	if(!can_fire())
 		return 0
-	cell.use(2000)
+	cell.use(charge_per_shot)
 
 	var/obj/item/projectile/ship_projectile/A = PoolOrNew(projectile_type,src.loc)
 
