@@ -9,7 +9,7 @@
 	anchored = 0
 	density = 1
 	var/obj/item/weapon/stock_parts/cell/cell
-	var/charge_rate = 30000
+	var/charge_rate = 60000
 	var/charge_per_shot = 400
 
 	var/state = 0
