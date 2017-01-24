@@ -13,5 +13,3 @@ eissendargwell = Game Master
 leon962 = Trial Admin
 segalowitz = Double General
 jessica_stark = Cutemin
-christ110 = Badmin
-Torsion = Coder
