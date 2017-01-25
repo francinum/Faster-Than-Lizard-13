@@ -201,6 +201,8 @@
 	if(hasvar(src,"wear_mask"))
 		if(src:wear_mask)
 			items += src:wear_mask
+	if(wear_neck)
+		items += wear_neck
 	if(hasvar(src,"wear_suit"))
 		if(src:wear_suit)
 			items += src:wear_suit
