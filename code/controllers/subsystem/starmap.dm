@@ -19,6 +19,8 @@ var/datum/subsystem/starmap/SSstarmap
 	var/debug_ftl = 0 //prints off debug shit to admin log
 	var/to_distance = 0 //how far is it? used in FTL travel
 	var/travel_time = 0 //how long should it take?
+	
+	var/target_round_time_in_minutes = 270		//target round time, where the 'go home' objective is made
 
 	var/datum/planet/current_planet
 	var/datum/planet/from_planet
@@ -191,7 +193,7 @@ var/datum/subsystem/starmap/SSstarmap
 		// Make a new objective
 		var/datum/objective/O
 
-		if(objective_types.len && world.time < 162000)
+		if(objective_types.len && world.time < (target_round_time_in_minutes * 600))
 			var/objectivetype = pickweight(objective_types)
 			objective_types[objectivetype]--
 			if(objective_types[objectivetype] <= 0)
