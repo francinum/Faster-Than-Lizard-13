@@ -106,3 +106,9 @@
 		C.forceMove(src)
 		stomach_contents.Add(C)
 		add_logs(src, C, "devoured")
+		
+					if(wear_neck)
+						wear_neck.add_mob_blood(src)
+						update_inv_neck()
+		if(wear_neck)
+			hit_clothes = wear_neck
