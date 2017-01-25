@@ -262,6 +262,25 @@ BLIND     // can't see anything
 	user.visible_message("<span class='warning'>[user] draws [held_item] from their shoes!</span>", "<span class='notice'>You draw [held_item] from [src].</span>")
 	held_item = null
 
+//Neck
+/obj/item/clothing/neck
+	name = "necklace"
+	icon = 'icons/obj/clothing/neck.dmi'
+	body_parts_covered = NECK
+	slot_flags = SLOT_NECK
+	strip_delay = 40
+	put_on_delay = 40
+
+/obj/item/clothing/neck/worn_overlays(isinhands = FALSE)
+	. = list()
+	if(!isinhands)
+		if(body_parts_covered & HEAD)
+			if(damaged_clothes)
+				. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedmask")
+			if(blood_DNA)
+				. += image("icon"='icons/effects/blood.dmi', "icon_state"="maskblood")
+
+
 /obj/item/proc/negates_gravity()
 	return 0
 
