@@ -6386,6 +6386,11 @@
 	},
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/medbay_lobby)
+"mMR" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/engineering)
 "mOV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -9838,10 +9843,6 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
-"teP" = (
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/engineering)
 "tgR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 8
@@ -47585,12 +47586,12 @@ ggE
 ygk
 Jzw
 IWp
-teP
-teP
-teP
-teP
-teP
-teP
+mMR
+mMR
+mMR
+mMR
+mMR
+mMR
 eLy
 eLy
 eLy
