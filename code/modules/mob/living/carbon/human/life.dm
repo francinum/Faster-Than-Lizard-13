@@ -271,6 +271,8 @@
 	if(wear_mask)
 		if(wear_mask.flags & BLOCK_GAS_SMOKE_EFFECT)
 			. = 1
+		if(wear_neck)
+			head_clothes = wear_neck
 	if(glasses)
 		if(glasses.flags & BLOCK_GAS_SMOKE_EFFECT)
 			. = 1
