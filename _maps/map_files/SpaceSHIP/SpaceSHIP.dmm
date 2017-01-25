@@ -9838,10 +9838,6 @@
 	dir = 2
 	},
 /area/shuttle/ftl/telecomms/computer)
-"teP" = (
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/engineering)
 "tgR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 8
@@ -11160,6 +11156,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"vPn" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/engineering)
 "vQT" = (
 /obj/machinery/button/door{
 	id = "bridge blast";
@@ -47585,12 +47587,12 @@ ggE
 ygk
 Jzw
 IWp
-teP
-teP
-teP
-teP
-teP
-teP
+vPn
+vPn
+vPn
+vPn
+vPn
+vPn
 eLy
 eLy
 eLy
