@@ -6386,11 +6386,6 @@
 	},
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/medbay_lobby)
-"mMR" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/engineering)
 "mOV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -11161,6 +11156,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"vPn" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/engineering)
 "vQT" = (
 /obj/machinery/button/door{
 	id = "bridge blast";
@@ -47586,12 +47587,12 @@ ggE
 ygk
 Jzw
 IWp
-mMR
-mMR
-mMR
-mMR
-mMR
-mMR
+vPn
+vPn
+vPn
+vPn
+vPn
+vPn
 eLy
 eLy
 eLy
