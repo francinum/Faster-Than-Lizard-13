@@ -451,6 +451,15 @@ There are several things that need to be remembered:
 	if(client && hud_used && hud_used.hud_shown)
 		I.screen_loc = ui_back
 		client.screen += I
+		
+//update whether our neck item appears on our hud.
+/mob/living/carbon/human/update_hud_neck(obj/item/I)
+	I.screen_loc = ui_neck
+	if(client && hud_used && hud_used.hud_shown)
+		if(hud_used.inventory_shown)
+			client.screen += I
+	update_observer_view(I,1)
+
 
 
 /*
