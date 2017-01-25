@@ -918,6 +918,12 @@ var/global/list/possible_items_special = list()
 		return 1
 	return 0
 
+/datum/objective/ftl/delivery
+	var/has_purchased_item = 0
+	var/obj/delivery_item
+	var/item_name = ""
+	var/datum/planet/source_planet
+	var/datum/planet/target_planet
 
 /datum/objective/ftl/delivery/find_target()
 	var/datum/supply_pack/delivery_mission/U = new /datum/supply_pack/delivery_mission
