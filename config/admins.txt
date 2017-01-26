@@ -10,6 +10,6 @@
 pascal123 = Server Host
 eviljackcarver = Lizard Bitch
 eissendargwell = Game Master
+segalowitz = Game Master
 leon962 = Trial Admin
-segalowitz = Double General
 jessica_stark = Cutemin
