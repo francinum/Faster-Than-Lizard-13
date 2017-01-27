@@ -47,37 +47,22 @@ var/datum/subsystem/starmap/SSstarmap
 
 	var/datum/star_system/base
 
-	base = new
+	base = new /datum/star_system/capital/nanotrasen
 	base.generate()
-	base.x = 25
-	base.y = 40
 	star_systems += base
-	base.alignment = "nanotrasen"
-	base.capital_planet = 1
-	base.danger_level = 8
 	capitals[base.alignment] = base
 	current_system = base
-	current_planet = base.navbeacon
+	current_planet = base.planets[1]
 	current_system.visited = 1
 
-	base = new
+	base = new /datum/star_system/capital/syndicate
 	base.generate()
-	base.x = 28
-	base.y = 70
 	star_systems += base
-	base.alignment = "syndicate"
-	base.capital_planet = 1
-	base.danger_level = 8
 	capitals[base.alignment] = base
 
-	base = new
+	base = new /datum/star_system/capital/solgov
 	base.generate()
-	base.x = 70
-	base.y = 45
 	star_systems += base
-	base.alignment = "solgov"
-	base.capital_planet = 1
-	base.danger_level = 8
 	capitals[base.alignment] = base
 
 	// Generate star systems
