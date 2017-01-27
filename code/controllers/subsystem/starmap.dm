@@ -101,24 +101,15 @@ var/datum/subsystem/starmap/SSstarmap
 
 /datum/subsystem/starmap/fire()
 	if(world.time > to_time && in_transit)
-
-		for(var/area/shuttle/ftl/F in world)
-			F << 'sound/effects/hyperspace_end.ogg'
-		parallax_movedir_in_areas(/area/shuttle/ftl, 0)
-		parallax_launch_in_areas(/area/shuttle/ftl, 4, 1)
-		toggle_ambience(0)
-
-		sleep(1)
-
+		if(is_loading) // Not done loading yet, delay arrival by 30 seconds.
+			to_time += 300
+			return
+		
 		current_system = to_system
-
-		var/obj/docking_port/stationary/ftl_start = SSshuttle.getDock("ftl_start")
-		current_system.navbeacon.docks = list(ftl_start)
-		current_system.navbeacon.main_dock = ftl_start
-		current_planet = current_system.navbeacon
+		current_planet = current_system.planets[1]
 
 		var/obj/docking_port/mobile/ftl/ftl = SSshuttle.getShuttle("ftl")
-		var/obj/docking_port/stationary/dest = ftl_start
+		var/obj/docking_port/stationary/dest = current_planet.main_dock
 
 		ftl.dock(dest)
 		current_system.visited = 1
@@ -128,10 +119,19 @@ var/datum/subsystem/starmap/SSstarmap
 		to_system = null
 		to_time = 0
 		in_transit = 0
+		
+		sleep(1)
+		
+		for(var/area/shuttle/ftl/F in world)
+			F << 'sound/effects/hyperspace_end.ogg'
+		parallax_movedir_in_areas(/area/shuttle/ftl, 0)
+		parallax_launch_in_areas(/area/shuttle/ftl, 4, 1)
+		toggle_ambience(0)
 
 		generate_npc_ships()
-		ftl_sound('sound/ai/ftl_success.ogg')
-
+		spawn(50)
+			ftl_sound('sound/ai/ftl_success.ogg')
+			
 	if(world.time > to_time && in_transit_planet)
 		if(is_loading) // Not done loading yet, delay arrival by 10 seconds
 			if(debug_ftl > 0)
@@ -264,7 +264,7 @@ var/datum/subsystem/starmap/SSstarmap
 	spawn(50)
 		ftl.enterTransit()
 	spawn(55)
-		SSmapping.clear_navbeacon()
+		SSmapping.load_planet(target.planets[1]) 
 
 	return 0
 
