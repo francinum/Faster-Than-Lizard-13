@@ -280,7 +280,9 @@
 					/obj/item/ammo_box/magazine/m45,
 					/obj/item/ammo_box/magazine/m45,
 					/obj/item/ammo_box/magazine/m45,
-					/obj/item/ammo_box/magazine/m45)
+					/obj/item/ammo_box/magazine/m45,
+					/obj/item/ammo_box/c45,
+					/obj/item/ammo_box/c45)
 	crate_name = "service weapon crate"
 	sensitivity = 2
 
@@ -292,11 +294,24 @@
 					/obj/item/ammo_box/c45,
 					/obj/item/ammo_box/c45,
 					/obj/item/ammo_box/c45,
-					/obj/item/ammo_box/magazine/m45,
-					/obj/item/ammo_box/magazine/m45)
+					/obj/item/ammo_box/c45)
 	crate_name = ".45 ACP ammunition crate"
 	sensitivity = 1
-
+	
+/datum/supply_pack/security/armory/usp
+	name = "P12 Compact Crate"
+	cost = 6500	
+	contains = list(/obj/item/weapon/gun/projectile/automatic/pistol/usp,
+					/obj/item/weapon/gun/projectile/automatic/pistol/usp,
+					/obj/item/ammo_box/magazine/usp,
+					/obj/item/ammo_box/magazine/usp,
+					/obj/item/ammo_box/magazine/usp,
+					/obj/item/ammo_box/magazine/usp,
+					/obj/item/ammo_box/c45,
+					/obj/item/ammo_box/c45)
+	crate_name = "Bundeswehr P12 Compact crate"
+	sensitivity = 2
+	
 /datum/supply_pack/security/armory/riothelmets
 	name = "Riot Helmets Crate"
 	cost = 1500
