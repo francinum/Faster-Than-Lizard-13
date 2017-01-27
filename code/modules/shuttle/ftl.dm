@@ -22,10 +22,9 @@
 	dir = FTL_SHIP_DIR
 	dwidth = FTL_SHIP_DWIDTH
 	dheight = FTL_SHIP_DHEIGHT
-
-
 	width = FTL_SHIP_WIDTH
 	height = FTL_SHIP_HEIGHT
+	var/encounter_type = ""
 
 /obj/machinery/computer/ftl_navigation
 	name = "Navigation Computer"
@@ -50,6 +49,7 @@
 /obj/machinery/computer/ftl_navigation/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = default_state)
 	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
 	if(!ui)
+		
 		ui = new(user, src, ui_key, "ftl_navigation", name, 800, 660, master_ui, state)
 		ui.open()
 
@@ -148,9 +148,10 @@
 			system_list["visited"] = system.visited
 			var/label = ""
 			for(var/datum/planet/P in system.planets)
-				if(P.z_levels.len && P.z_levels[1] > 2 && !P.do_unload())
-					label = "RELAY"
-					break
+				if(P.z_levels.len && P.z_levels[1] > 2)
+					P.do_unload()
+					if(!label && P.no_unload_reason)
+						label = P.no_unload_reason
 			if(system.capital_planet && !label)
 				label = "CAPITAL"
 			system_list["label"] = label
@@ -183,8 +184,10 @@
 			planet_list["y"] = planet.disp_y
 			planet_list["dist"] = planet.disp_dist
 			var/label = ""
-			if(planet.z_levels.len && planet.z_levels[1] > 2 && !planet.do_unload())
-				label = "RELAY"
+			if(planet.z_levels.len && planet.z_levels[1] > 2)
+				planet.do_unload()
+				if(planet.no_unload_reason)
+					label = planet.no_unload_reason
 			planet_list["label"] = label
 			planets_list[++planets_list.len] = planet_list
 	else if(screen == 4)
@@ -206,13 +209,6 @@
 				return
 			selected_system = target
 			screen = 2
-			. = 1
-		if("select_planet")
-			var/datum/planet/target = locate(params["planet_id"])
-			if(!istype(target))
-				return
-			selected_planet = target
-			screen = 4
 			. = 1
 		if("shipinf")
 			screen = 0
