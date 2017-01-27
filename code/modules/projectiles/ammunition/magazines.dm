@@ -189,6 +189,17 @@
 	max_ammo = 8
 	multiple_sprites = 2
 
+/obj/item/ammo_box/magazine/usp
+	name = "handgun magazine (P12 Compact)"
+	icon_state = "uspmag-12"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
+	max_ammo = 12
+	
+/obj/item/ammo_box/magazine/usp/update_icon()
+	..()
+	icon_state = "uspmag-[ammo_count() ? "12" : "0"]"
+
 /obj/item/ammo_box/magazine/m45
 	name = "handgun magazine (.45)"
 	icon_state = "45-8"
