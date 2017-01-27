@@ -9165,6 +9165,21 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/telecomms/server)
+"rYO" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass_command{
+	name = "Chief Engineer";
+	req_access_txt = "29"
+	},
+/turf/open/floor/plasteel/yellow/side,
+/area/shuttle/ftl/engine/chiefs_office)
 "sbQ" = (
 /obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -15934,22 +15949,6 @@
 	dir = 4
 	},
 /area/shuttle/ftl/assembly/robotics)
-"FvP" = (
-/obj/structure/sink{
-	pixel_y = 20
-	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
-/obj/machinery/camera{
-	c_tag = "Unisex Restrooms";
-	dir = 4
-	},
-/turf/open/floor/plasteel{
-	icon_state = "freezerfloor"
-	},
-/area/shuttle/ftl/crew_quarters/toilet)
 "FwT" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -17606,29 +17605,6 @@
 	dir = 1
 	},
 /area/shuttle/ftl/medical/medbay)
-"JCt" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/obj/machinery/door/airlock/glass_command{
-	name = "Chief Engineer";
-	req_access_txt = "29"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "Engineering";
-	name = "engineering security door"
-	},
-/turf/open/floor/plasteel/yellow/side,
-/area/shuttle/ftl/engine/chiefs_office)
 "JIw" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/beakers{
@@ -19611,6 +19587,22 @@
 	dir = 4
 	},
 /area/shuttle/ftl/research/xenobiology)
+"OeP" = (
+/obj/structure/sink{
+	pixel_y = 20
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
+/obj/machinery/camera{
+	c_tag = "Unisex Restrooms 2";
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/shuttle/ftl/crew_quarters/toilet)
 "OgC" = (
 /turf/open/floor/plasteel/warning{
 	tag = "icon-plasteel_warn (NORTH)";
@@ -48870,7 +48862,7 @@ SdM
 dyy
 dyy
 dyy
-JCt
+rYO
 SdM
 qde
 FTc
@@ -51207,7 +51199,7 @@ JRp
 cwW
 wbV
 vTh
-FvP
+OeP
 zqt
 GEw
 DkK
