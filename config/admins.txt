@@ -8,8 +8,9 @@
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
 pascal123 = Server Host
-eviljackcarver = Lizard Bitch
-eissendargwell = Game Master
-segalowitz = Game Master
-leon962 = Trial Admin
-jessica_stark = Cutemin
+eviljackcarver = Game Master
+eissendargwell = Game Admin
+segalowitz = Game Admin
+leon962 = Game Admin
+jessica_stark = Game Admin
+christ110 = Trial Admin
