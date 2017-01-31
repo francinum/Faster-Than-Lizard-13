@@ -101,3 +101,16 @@
 	..()
 	icon_state = "p08[magazine ? "-[Ceiling(get_ammo(0)/10)*10]" : ""][chambered ? "" : "-e"]"
 	return
+	
+/obj/item/weapon/gun/projectile/automatic/pistol/usp
+	name = "P12 Compact"
+	desc = "Renowned on Earth for its legendary reliability, this .45 handgun is still in use in some militaries throughout the galaxy. Has a threaded barrel to mount a suppressor."
+	icon_state = "usp"
+	mag_type = /obj/item/ammo_box/magazine/usp
+	w_class = 2
+	fire_sound = 'sound/weapons/pistol_glock17_1.ogg'
+	
+/obj/item/weapon/gun/projectile/automatic/pistol/usp/update_icon()
+	..()
+	icon_state = "usp[suppressed ? "-can" : ""][chambered ? "" : "-locked"][magazine ? "" : "-nomag"]"
+	return
