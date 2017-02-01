@@ -4638,6 +4638,22 @@
 "kce" = (
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/fore)
+"kfe" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Jack Ewing's closet";
+	registered_name = "Jack Ewing"
+	},
+/obj/item/weapon/gun/projectile/automatic/gyropistol,
+/obj/item/ammo_box/magazine/m75,
+/obj/item/ammo_box/magazine/m75,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "kiQ" = (
 /obj/machinery/chem_dispenser/drinks,
 /obj/structure/table/reinforced,
@@ -10733,6 +10749,23 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
+"xlA" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Francis Gallyus' closet";
+	registered_name = "Francis Gallyus"
+	},
+/obj/item/clockwork/slab,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "xom" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/firecloset,
@@ -16200,18 +16233,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/bridge/eva)
-"Jbe" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 2
-	},
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "Jep" = (
 /obj/machinery/door/airlock/external{
 	name = "Engineering External Access";
@@ -23395,15 +23416,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/hor)
-"ZfX" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "Zge" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -58532,7 +58544,7 @@ Dft
 eSe
 KGM
 WhH
-Jbe
+xlA
 Wiv
 NlJ
 IYS
@@ -58789,7 +58801,7 @@ Dft
 eSe
 auY
 uRg
-ZfX
+kfe
 qmV
 OaL
 IYS
