@@ -10548,6 +10548,31 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/bridge)
+"wJb" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Asskel-Witsei's closet";
+	registered_name = "Asskel-Witsei"
+	},
+/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/suit/hooded/explorer,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "wLz" = (
 /obj/structure/table,
 /obj/item/weapon/storage/firstaid/o2{
@@ -10810,31 +10835,6 @@
 	},
 /turf/open/floor/plasteel/whiteblue,
 /area/shuttle/ftl/medical/medbay_lobby)
-"xwJ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/obj/structure/closet/secure_closet/personal{
-	desc = "It's a secure locker for personnel. This one seems to be neglected.";
-	name = "High Lord Graytide's closet";
-	registered_name = "High Lord Graytide"
-	},
-/obj/item/weapon/paper/nuke_instructions,
-/obj/item/weapon/gun/energy/laser/redtag,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "xxg" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -15927,18 +15927,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/security/main)
-"Isj" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "Isy" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -17269,6 +17257,24 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/bar)
+"Lsn" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Loads-Sixteen-Tons' closet";
+	registered_name = "Loads-Sixteen-Tons"
+	},
+/obj/item/clothing/tie/talisman,
+/obj/item/weapon/reagent_containers/hypospray,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "Lsu" = (
 /obj/machinery/disposal/bin,
 /obj/machinery/light{
@@ -58030,7 +58036,7 @@ Dft
 wCH
 ZuD
 hOP
-xwJ
+wJb
 cRL
 Wfz
 IYS
@@ -58287,7 +58293,7 @@ Dft
 lcg
 rkv
 NqK
-Isj
+Lsn
 AlU
 Gmf
 IYS
