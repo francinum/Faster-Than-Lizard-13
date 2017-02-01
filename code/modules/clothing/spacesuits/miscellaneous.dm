@@ -327,6 +327,34 @@ Contains:
 	icon_state = "hardsuit0-beserker"
 	item_state = "hardsuit0-beserker"
 
+//Brass Variants
+
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/brass
+	name = "clockwork inquisitor's hardsuit"
+	desc = "A brass hardsuit, almost resembling something from ratvar's own minions"
+	icon_state = "hardsuit-binq"
+	item_state = "hardsuit-binq"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/inquisitor/brass
+
+/obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/inquisitor/brass
+	name = "clockwork inquisitor's helmet"
+//	desc = "put something here you miserable fuck."
+	icon_state = "hardsuit0-binq"
+	item_state = "hardsuit0-binq"
+
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/beserker/brass
+	name = "clockwork champion's hardsuit"
+	desc = "You feel like you can take on the world, with this on!"
+	icon_state = "hardsuit-bbeserker"
+	item_state = "hardsuit-bbeserker"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/beserker/brass
+
+/obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/beserker/brass
+	name = "clockwork champion's helmet"
+	desc = "The helmet seems to be whispering atrocities near where your ears would go."
+	icon_state = "hardsuit0-bbeserker"
+	item_state = "hardsuit0-bbeserker"
+
 //TODO: Move to separate file
 
 /obj/item/clothing/suit/space/hardsuit/disposable
