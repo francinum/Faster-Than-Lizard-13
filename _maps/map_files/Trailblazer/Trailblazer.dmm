@@ -3084,15 +3084,6 @@
 /obj/item/clothing/gloves/color/fyellow,
 /turf/open/floor/plasteel/yellow,
 /area/shuttle/ftl/engine/tool_storage)
-"gLT" = (
-/obj/structure/closet/secure_closet/personal{
-	name = "Betrays-Its-Kin's closet";
-	registered_name = Betrays-Its-Kin
-	},
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/head/bearpelt,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "gNa" = (
 /obj/machinery/vending/tool,
 /turf/open/floor/plasteel/darkyellow,
@@ -4439,21 +4430,6 @@
 "jxC" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/crew_quarters/captain)
-"jzh" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/personal{
-	name = "Kazaaak-Aerwhisp's closet";
-	registered_name = Kazaaak-Aerwhisp
-	},
-/obj/item/clothing/suit/jacket/leather/overcoat,
-/obj/item/weapon/reagent_containers/food/drinks/flask/det{
-	desc = "Friend of the detective. This one, like the detective, seems to have spent too much time in the kitchen, however.";
-	name = "Over-Boiled detective's flask"
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "jBS" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -12784,6 +12760,16 @@
 	dir = 1
 	},
 /area/shuttle/ftl/security/armory)
+"BiS" = (
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/head/bearpelt,
+/obj/structure/closet/secure_closet/personal{
+	desc = "I'm gay";
+	name = "Betrays-Its-Kin's closet";
+	registered_name = "Betrays-Its-Kin"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "Bjc" = (
 /obj/machinery/light{
 	dir = 1
@@ -15007,6 +14993,22 @@
 	dir = 10
 	},
 /area/shuttle/ftl/hallway/primary/central)
+"Gmf" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Kazaaak-Aerwhisp's closet";
+	registered_name = "Kazaaak-Aerwhisp"
+	},
+/obj/item/clothing/suit/jacket/leather/overcoat,
+/obj/item/weapon/reagent_containers/food/drinks/flask/det{
+	desc = "Friend of the detective. This one, like the detective, seems to have spent too much time in the kitchen, however.";
+	name = "Over-Boiled detective's flask"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "Gqx" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -16851,23 +16853,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
-"Kxa" = (
-/obj/machinery/camera{
-	c_tag = "AI Upload";
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/personal{
-	name = "Cassie Suthorn's closet";
-	registered_name = Cassie Suthorn
-	},
-/obj/item/clothing/suit/space/hardsuit/syndi/elite{
-	alt_desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in combat mode.";
-	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50);
-	desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in travel mode."
-	},
-/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "Kxd" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -17485,12 +17470,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/security/main)
-"Mbp" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/weapon/storage/fancy/cigarettes/cigars/cohiba,
-/obj/item/weapon/gun/projectile/revolver/mateba,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "McY" = (
 /obj/machinery/door/airlock/glass,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -17889,6 +17868,24 @@
 	dir = 5
 	},
 /area/shuttle/ftl/medical/chemistry)
+"NlJ" = (
+/obj/machinery/camera{
+	c_tag = "AI Upload";
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Cassie Suthorn's closet";
+	registered_name = "Cassie Suthorn"
+	},
+/obj/item/clothing/suit/space/hardsuit/syndi/elite{
+	alt_desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in combat mode.";
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50);
+	desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in travel mode."
+	},
+/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "NnY" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /turf/open/floor/plasteel/darkblue,
@@ -18269,6 +18266,19 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/munitions)
+"OaL" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Cheesh-Chee's closet";
+	registered_name = "Cheesh-Chee"
+	},
+/obj/item/clothing/head/beret,
+/obj/item/clothing/under/maid,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "Obx" = (
 /obj/machinery/light{
 	dir = 8
@@ -19263,18 +19273,6 @@
 	dir = 5
 	},
 /area/shuttle/ftl/cargo/mining)
-"QeA" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/personal{
-	name = "Cheesh-Chee's closet";
-	registered_name = Cheesh-Chee
-	},
-/obj/item/clothing/head/beret,
-/obj/item/clothing/under/maid,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "Qgi" = (
 /obj/machinery/door/window/northleft{
 	dir = 1;
@@ -21995,6 +21993,16 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/engine_smes)
+"Wfz" = (
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Boris Mayonnaise's closet";
+	registered_name = "Boris Mayonnaise"
+	},
+/obj/item/weapon/storage/fancy/cigarettes/cigars/cohiba,
+/obj/item/weapon/gun/projectile/revolver/mateba,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "WhH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -57998,7 +58006,7 @@ ZuD
 RLZ
 fIL
 cRL
-Mbp
+Wfz
 IYS
 sme
 xCH
@@ -58255,7 +58263,7 @@ rkv
 NqK
 Isj
 AlU
-jzh
+Gmf
 IYS
 sme
 xCH
@@ -58512,7 +58520,7 @@ KGM
 WhH
 Jbe
 Wiv
-Kxa
+NlJ
 IYS
 sme
 xCH
@@ -58769,7 +58777,7 @@ auY
 uRg
 ZfX
 qmV
-QeA
+OaL
 IYS
 sme
 fhu
@@ -59026,7 +59034,7 @@ bjO
 ifX
 wNE
 aJg
-gLT
+BiS
 IYS
 sme
 SlH
