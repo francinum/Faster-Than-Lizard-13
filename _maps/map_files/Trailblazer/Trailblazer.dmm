@@ -511,13 +511,6 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/engine_smes)
-"bjO" = (
-/obj/machinery/airalarm{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/turret_protected/ai_upload)
 "bmd" = (
 /obj/machinery/light{
 	dir = 1
@@ -2566,24 +2559,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
-"fIL" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "fLl" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -3699,6 +3674,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/primary/port)
+"hOP" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/shuttle/ftl/medical/sleeper)
 "hPn" = (
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/floorgrime,
@@ -9446,6 +9432,17 @@
 	},
 /turf/closed/wall,
 /area/shuttle/ftl/cargo/mining)
+"uko" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/circuit/rcircuit/animated,
+/area/shuttle/ftl/turret_protected/ai_upload)
 "ukv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -9539,6 +9536,13 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/science)
+"uvu" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Core Access";
+	req_access_txt = "44"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/turret_protected/ai_upload)
 "uvx" = (
 /obj/machinery/door/airlock/glass_command{
 	name = "Server Room";
@@ -10553,19 +10557,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
-"wNE" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "wOv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/requests_console{
@@ -10786,6 +10777,31 @@
 	},
 /turf/open/floor/plasteel/whiteblue,
 /area/shuttle/ftl/medical/medbay_lobby)
+"xwJ" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel. This one seems to be neglected.";
+	name = "High Lord Graytide's closet";
+	registered_name = "High Lord Graytide"
+	},
+/obj/item/weapon/paper/nuke_instructions,
+/obj/item/weapon/gun/energy/laser/redtag,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "xxg" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -19896,21 +19912,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/munitions/office)
-"RLZ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Core Access";
-	req_access_txt = "44"
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/medical/sleeper)
 "RNi" = (
 /turf/open/floor/plasteel/whiteblue/side{
 	tag = "icon-whiteblue (NORTH)";
@@ -20303,6 +20304,26 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/port)
+"SUR" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	moving_diagonally = 0;
+	name = "Eats-The-Glue's closet";
+	registered_name = "Eats-The-Glue"
+	},
+/obj/item/clothing/tie/scarf/darkblue,
+/obj/item/weapon/gun/projectile/automatic/pistol,
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "SUZ" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -23162,13 +23183,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/assembly/robotics)
-"Yxz" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/open/floor/plasteel/circuit/rcircuit/animated,
-/area/shuttle/ftl/turret_protected/ai_upload)
 "YxJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -58003,8 +58017,8 @@ QtE
 Dft
 wCH
 ZuD
-RLZ
-fIL
+hOP
+xwJ
 cRL
 Wfz
 IYS
@@ -59029,10 +59043,10 @@ Uup
 NSv
 QtE
 Dft
-Yxz
-bjO
+uko
+rkv
 ifX
-wNE
+SUR
 aJg
 BiS
 IYS
@@ -59287,7 +59301,7 @@ NSv
 Dgd
 Dft
 Dft
-Dft
+uvu
 ifX
 dIU
 tcz
