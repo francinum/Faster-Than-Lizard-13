@@ -1370,6 +1370,34 @@
 	dir = 8
 	},
 /area/shuttle/ftl/medical/medbay)
+"dlR" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
+/obj/machinery/doorButtons/access_button{
+	idDoor = "virology_airlock_exterior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = -24;
+	pixel_y = 0;
+	req_access_txt = "23"
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (WEST)";
+	icon_state = "whiteblue";
+	dir = 8
+	},
+/area/shuttle/ftl/medical/medbay)
 "dlV" = (
 /obj/machinery/flasher{
 	id = "Cell 2";
@@ -4766,26 +4794,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay)
-"kAK" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 5
-	},
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (WEST)";
-	icon_state = "whiteblue";
-	dir = 8
-	},
-/area/shuttle/ftl/medical/medbay)
 "kDg" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	icon_state = "intact";
@@ -6346,6 +6354,15 @@
 	},
 /turf/open/floor/plasteel/circuit/rcircuit/animated,
 /area/shuttle/ftl/turret_protected/ai_upload)
+"nXP" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	moving_diagonally = 0;
+	name = "Jonas Spitzer's closet";
+	registered_name = "Jonas Spitzer"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "nZg" = (
 /obj/structure/table/glass,
 /obj/item/clothing/glasses/hud/health,
@@ -14240,6 +14257,10 @@
 	},
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/engine/engine_smes)
+"ExJ" = (
+/obj/machinery/computer/cryopod,
+/turf/closed/wall,
+/area/shuttle/ftl/hydroponics)
 "EAb" = (
 /obj/structure/cable{
 	icon_state = "0-2";
@@ -20545,14 +20566,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/break_room)
-"Tky" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	name = "Andreas Spitzer's closet";
-	registered_name = "Andreas Spitzer"
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "ToN" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -41441,7 +41454,7 @@ Idw
 tOd
 lWe
 TfX
-CKy
+jgg
 CqA
 syo
 rPt
@@ -41955,7 +41968,7 @@ gvb
 jQk
 RvQ
 ZjU
-jgg
+ExJ
 xel
 UBq
 UBq
@@ -45560,7 +45573,7 @@ WnL
 clg
 zlx
 zMv
-kAK
+dlR
 lsM
 Lek
 qux
@@ -57875,7 +57888,7 @@ aGE
 alv
 tbV
 Lav
-Tky
+nXP
 HzW
 smz
 JSi
