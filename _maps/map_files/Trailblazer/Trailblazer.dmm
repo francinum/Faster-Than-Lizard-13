@@ -4638,22 +4638,6 @@
 "kce" = (
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/fore)
-"kfe" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/closet/secure_closet/personal{
-	desc = "It's a secure locker for personnel.";
-	name = "Jack Ewing's closet";
-	registered_name = "Jack Ewing"
-	},
-/obj/item/weapon/gun/projectile/automatic/gyropistol,
-/obj/item/ammo_box/magazine/m75,
-/obj/item/ammo_box/magazine/m75,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "kiQ" = (
 /obj/machinery/chem_dispenser/drinks,
 /obj/structure/table/reinforced,
@@ -10774,23 +10758,6 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
-"xlA" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 2
-	},
-/obj/structure/closet/secure_closet/personal{
-	desc = "It's a secure locker for personnel.";
-	name = "Francis Gallyus' closet";
-	registered_name = "Francis Gallyus"
-	},
-/obj/item/clockwork/slab,
-/turf/open/floor/wood,
-/area/shuttle/ftl/medical/sleeper)
 "xom" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/firecloset,
@@ -12621,6 +12588,26 @@
 "AQD" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/maintenance/medbay)
+"AQM" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Francis Gallyus' closet";
+	registered_name = "Francis Gallyus"
+	},
+/obj/item/clockwork/slab,
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/brass{
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "AQN" = (
 /obj/machinery/spod_part_fabricator,
 /turf/open/floor/plasteel{
@@ -15163,6 +15150,24 @@
 "GEJ" = (
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/hallway/primary/fore)
+"GFv" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/closet/secure_closet/personal{
+	desc = "It's a secure locker for personnel.";
+	name = "Jack Ewing's closet";
+	registered_name = "Jack Ewing"
+	},
+/obj/item/weapon/gun/projectile/automatic/gyropistol,
+/obj/item/ammo_box/magazine/m75,
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/beserker/brass{
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/medical/sleeper)
 "GFJ" = (
 /obj/item/device/instrument/guitar,
 /obj/structure/table,
@@ -58550,7 +58555,7 @@ Dft
 eSe
 KGM
 WhH
-xlA
+AQM
 Wiv
 NlJ
 IYS
@@ -58807,7 +58812,7 @@ Dft
 eSe
 auY
 uRg
-kfe
+GFv
 qmV
 OaL
 IYS
