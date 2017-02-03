@@ -129,6 +129,17 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/assembly/robotics)
+"apU" = (
+/obj/structure/mirror{
+	pixel_y = 32
+	},
+/obj/structure/sink{
+	pixel_y = 20
+	},
+/turf/open/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/shuttle/ftl/crew_quarters/toilet)
 "apY" = (
 /obj/machinery/conveyor{
 	id = "QMLoad";
@@ -7955,14 +7966,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/bridge/eva)
-"qOx" = (
-/obj/structure/sink{
-	pixel_y = 20
-	},
-/turf/open/floor/plasteel{
-	icon_state = "freezerfloor"
-	},
-/area/shuttle/ftl/crew_quarters/toilet)
 "qOD" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/glass,
@@ -12943,24 +12946,6 @@
 /obj/structure/closet/secure_closet/captains,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
-"BfW" = (
-/obj/structure/urinal{
-	pixel_y = 32
-	},
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/turf/open/floor/plasteel{
-	icon_state = "freezerfloor"
-	},
-/area/shuttle/ftl/crew_quarters/toilet)
 "BhI" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/box/rubbershot,
@@ -21928,12 +21913,6 @@
 	},
 /turf/open/floor/engine/plasma,
 /area/shuttle/ftl/atmos)
-"VsW" = (
-/obj/structure/mirror{
-	pixel_y = 4
-	},
-/turf/closed/wall,
-/area/shuttle/ftl/crew_quarters/toilet)
 "Vvh" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -22801,6 +22780,24 @@
 	},
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/hallway/primary/fore)
+"XpL" = (
+/obj/structure/urinal{
+	pixel_y = 28
+	},
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/turf/open/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/shuttle/ftl/crew_quarters/toilet)
 "XsD" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -56299,7 +56296,7 @@ smz
 JSi
 ODU
 UVI
-BfW
+XpL
 XVk
 bSM
 wIg
@@ -56555,8 +56552,8 @@ xCH
 OTk
 rIV
 ODU
-VsW
-qOx
+UVI
+apU
 nTj
 bSM
 GuK
