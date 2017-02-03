@@ -20,6 +20,7 @@ var/global/list/ftl_weapons_consoles = list()
 	var/notice_sound = 'sound/machines/twobeep.ogg'
 
 	var/player_evasion_chance = 25 //evasion chance for the player ship
+	var/enemy_mayday_chance = 50 //chance of enemies calling in a mayday versus just running
 
 
 
@@ -263,16 +264,21 @@ var/global/list/ftl_weapons_consoles = list()
 	return comp_numb
 
 /datum/subsystem/ship/proc/ship_ai(var/datum/starship/S)
+	if(enemy_mayday_chance > 100)		//prevent fuckups due to out of bounds numbers
+		enemy_mayday_chance = 100	
+	else if(enemy_mayday_chance < 0)
+		enemy_mayday_chance = 0
+		
 	if(!S.is_jumping && !S.called_for_help) //enemy ships can either call for help or run, not both
 		if((S.hull_integrity/initial(S.hull_integrity)) <= 0.25 && !S.no_damage_retreat)
-			if(prob(50))
-				broadcast_message("<span class=notice>Enemy ship ([S.name]) detected powering up FTL drive. FTL jump imminent.</span>",notice_sound)
-				S.is_jumping = 1
-			else
+			if(prob(enemy_mayday_chance))			
 				broadcast_message("<span class=notice>Enemy communications intercepted from enemy ship ([S.name]). Distress signal to enemy fleet command decrypted. Reinforcements are being sent.</span>",alert_sound)
 				S.called_for_help = 1
 				spawn(0)
 					distress_call(SSstarmap.current_system)
+			else
+				broadcast_message("<span class=notice>Enemy ship ([S.name]) detected powering up FTL drive. FTL jump imminent.</span>",notice_sound)
+				S.is_jumping = 1
 	if(S.planet != SSstarmap.current_planet && prob(1) && !S.target && !check_hostilities(S.faction,"ship"))
 		broadcast_message("<span class=warning>Enemy ship ([S.name]) at [S.planet] powering up FTL drive for interplanetary jump.</span>",alert_sound)
 		S.is_jumping = 1
