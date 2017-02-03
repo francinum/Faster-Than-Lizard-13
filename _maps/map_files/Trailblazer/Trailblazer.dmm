@@ -4212,6 +4212,26 @@
 	dir = 4
 	},
 /area/shuttle/ftl/security/main)
+"iFV" = (
+/obj/structure/safe,
+/obj/item/clothing/head/bearpelt,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/weapon/gun/projectile/revolver/russian,
+/obj/item/ammo_box/a357,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Vault";
+	dir = 10
+	},
+/obj/item/weapon/card/emag,
+/turf/open/floor/plasteel/vault{
+	dir = 8
+	},
+/area/shuttle/ftl/security/nuke_storage)
 "iGS" = (
 /obj/machinery/chem_heater,
 /turf/open/floor/plasteel/whiteblue/side{
@@ -22807,25 +22827,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/hor)
-"XsG" = (
-/obj/structure/safe,
-/obj/item/clothing/head/bearpelt,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/weapon/gun/projectile/revolver/russian,
-/obj/item/ammo_box/a357,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka/badminka,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/camera{
-	c_tag = "Vault";
-	dir = 10
-	},
-/turf/open/floor/plasteel/vault{
-	dir = 8
-	},
-/area/shuttle/ftl/security/nuke_storage)
 "Xup" = (
 /obj/machinery/computer/aifixer,
 /obj/structure/cable{
@@ -58872,7 +58873,7 @@ GZC
 LdK
 ijc
 ueH
-XsG
+iFV
 LdK
 GZC
 sme
