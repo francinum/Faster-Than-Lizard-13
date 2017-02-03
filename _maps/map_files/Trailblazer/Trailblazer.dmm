@@ -779,6 +779,27 @@
 	dir = 1
 	},
 /area/shuttle/ftl/hydroponics)
+"bGB" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Francis Gallyus's closet";
+	registered_name = "Francis Gallyus"
+	},
+/obj/item/clockwork/slab,
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/brass{
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "bLZ" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -1921,6 +1942,21 @@
 	},
 /turf/open/floor/plasteel/circuit/rcircuit/animated,
 /area/shuttle/ftl/research/server)
+"eAu" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Cassie Suthorn's closet";
+	registered_name = "Cassie Suthorn"
+	},
+/obj/item/clothing/suit/space/hardsuit/syndi/elite{
+	alt_desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in combat mode.";
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50);
+	desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in travel mode."
+	},
+/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "eBc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -4267,16 +4303,6 @@
 	dir = 10
 	},
 /area/shuttle/ftl/hallway/primary/fore)
-"iSU" = (
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/head/bearpelt,
-/obj/structure/closet/secure_closet/personal{
-	desc = "There's a note stickered on... It reads, \"I'm Gay.\"";
-	name = "Betrays-Its-Kin's closet";
-	registered_name = "Betrays-Its-Kin"
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "iUc" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/crew_quarters/hor)
@@ -9057,12 +9083,6 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/eva)
-"sUF" = (
-/obj/structure/closet/secure_closet/personal{
-	
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "sVn" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -15034,15 +15054,6 @@
 	},
 /turf/open/floor/plasteel/shuttle/red,
 /area/shuttle/ftl/subshuttle/pod_3)
-"FRy" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
-	dir = 2
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "FUa" = (
 /obj/machinery/power/apc{
 	auto_name = 1;
@@ -15327,6 +15338,20 @@
 /obj/machinery/computer/message_monitor,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/telecomms/computer)
+"GGI" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station{
+	dir = 2
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "GHp" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -15545,26 +15570,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
-"Hcm" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 2
-	},
-/obj/structure/closet/secure_closet/personal{
-	desc = "It's a secure locker for personnel.";
-	name = "Francis Gallyus's closet";
-	registered_name = "Francis Gallyus"
-	},
-/obj/item/clockwork/slab,
-/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/brass{
-	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "HcR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -16124,25 +16129,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/maintenance/science)
-"Itr" = (
-/obj/machinery/camera{
-	c_tag = "AI Upload";
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	name = "Cassie Suthorn's closet";
-	registered_name = "Cassie Suthorn"
-	},
-/obj/item/clothing/suit/space/hardsuit/syndi/elite{
-	alt_desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in combat mode.";
-	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50);
-	desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in travel mode."
-	},
-/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube,
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "ItH" = (
 /obj/machinery/telecomms/server/presets/common/birdstation,
 /turf/open/floor/plasteel/circuit/rcircuit/animated,
@@ -17053,18 +17039,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/virology)
-"Knn" = (
-/obj/machinery/airalarm/server{
-	dir = 8;
-	pixel_x = 24;
-	pixel_y = 0
-	},
-/turf/open/floor/bluegrid{
-	icon_state = "dark";
-	name = "Mainframe Floor";
-	initial_gas_mix = "n2=100;TEMP=80"
-	},
-/area/shuttle/ftl/telecomms/server)
 "KnD" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
@@ -17927,6 +17901,25 @@
 	dir = 8
 	},
 /area/shuttle/ftl/security/armory)
+"MtI" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Jack Ewing's closet";
+	registered_name = "Jack Ewing"
+	},
+/obj/item/weapon/gun/projectile/automatic/gyropistol,
+/obj/item/ammo_box/magazine/m75,
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/beserker/brass{
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "Mvd" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/engine/engineering)
@@ -19681,6 +19674,17 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/genetics)
+"QCl" = (
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/head/bearpelt,
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "There's a note stickered on... It reads, \"I'm Gay.\"";
+	name = "Betrays-Its-Kin's closet";
+	registered_name = "Betrays-Its-Kin"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "QGi" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -21653,24 +21657,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/captain)
-"UNU" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/closet/secure_closet/personal{
-	desc = "It's a secure locker for personnel.";
-	name = "Jack Ewing's closet";
-	registered_name = "Jack Ewing"
-	},
-/obj/item/weapon/gun/projectile/automatic/gyropistol,
-/obj/item/ammo_box/magazine/m75,
-/obj/item/clothing/suit/space/hardsuit/ert/paranormal/beserker/brass{
-	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "UNZ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -52207,7 +52193,7 @@ sLy
 RFB
 OfB
 Wkc
-Knn
+OfB
 OfB
 OfB
 hCA
@@ -58616,9 +58602,9 @@ Dft
 eSe
 KGM
 WbU
-Hcm
+bGB
 hDM
-Itr
+eAu
 Lav
 JkR
 HzW
@@ -58873,7 +58859,7 @@ Dft
 nVi
 auY
 eUE
-UNU
+MtI
 alv
 hkC
 Lav
@@ -59132,9 +59118,9 @@ rkv
 Etg
 WkZ
 alv
-iSU
+QCl
 Lav
-sUF
+JkR
 HzW
 IAC
 JSi
@@ -59387,7 +59373,7 @@ Dft
 QYp
 rkv
 Etg
-FRy
+GGI
 hDM
 yox
 Lav
