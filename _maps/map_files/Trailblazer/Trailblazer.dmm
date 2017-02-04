@@ -1564,6 +1564,23 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/bridge/meeting_room)
+"dDH" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (EAST)";
+	icon_state = "whiteblue";
+	dir = 4
+	},
+/area/shuttle/ftl/medical/medbay_lobby)
 "dDX" = (
 /turf/open/floor/plating,
 /area/shuttle/ftl/cargo/office)
@@ -2773,24 +2790,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
-"fZH" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (EAST)";
-	icon_state = "whiteblue";
-	dir = 4
-	},
-/turf/open/floor/plasteel/warningline,
-/area/shuttle/ftl/medical/medbay_lobby)
 "gaD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -3265,14 +3264,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/fore)
-"gWn" = (
-/obj/machinery/status_display{
-	density = 0;
-	layer = 4;
-	pixel_y = 0
-	},
-/turf/closed/wall,
-/area/shuttle/ftl/medical/genetics)
 "gZm" = (
 /obj/machinery/power/apc{
 	auto_name = 1;
@@ -4950,6 +4941,19 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/atmos)
+"kEZ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/airalarm{
+	dir = 2;
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/hallway/primary/fore)
 "kFe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -5624,17 +5628,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
-"lZv" = (
-/obj/machinery/dna_scannernew{
-	tag = ""
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/genetics)
 "maO" = (
 /obj/structure/table,
 /obj/item/weapon/book/manual/wiki/security_space_law,
@@ -6917,24 +6910,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
-"oSK" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock";
-	req_access_txt = "0"
-	},
-/obj/docking_port/stationary{
-	dheight = 8;
-	dir = 2;
-	dwidth = 53;
-	height = 59;
-	id = "ftl_start";
-	name = "Starting Area";
-	width = 153
-	},
-/obj/structure/fans/tiny,
-/obj/docking_port/mobile/ftl,
-/turf/open/floor/plating,
-/area/shuttle/ftl/hallway/primary/port)
 "oWI" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
@@ -8960,6 +8935,18 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/telecomms/computer)
+"sLL" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Core Access";
+	req_access_txt = "44"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/turret_protected/ai)
 "sLN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10961,6 +10948,22 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel/shuttle,
 /area/shuttle/ftl/subshuttle/pod_3)
+"xbw" = (
+/obj/machinery/dna_scannernew{
+	tag = ""
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/status_display{
+	density = 0;
+	layer = 4;
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/genetics)
 "xcF" = (
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel{
@@ -11135,18 +11138,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/division)
-"xKj" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Core Access";
-	req_access_txt = "44"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/space,
-/area/shuttle/ftl/turret_protected/ai)
 "xKv" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -12946,6 +12937,24 @@
 /obj/structure/closet/secure_closet/captains,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
+"BfL" = (
+/obj/machinery/door/airlock/external{
+	name = "Supply Dock Airlock";
+	req_access_txt = "0"
+	},
+/obj/docking_port/stationary{
+	dheight = 8;
+	dir = 2;
+	dwidth = 95;
+	height = 59;
+	id = "ftl_start";
+	name = "Starting Area";
+	width = 153
+	},
+/obj/structure/fans/tiny,
+/obj/docking_port/mobile/ftl,
+/turf/open/floor/plating,
+/area/shuttle/ftl/hallway/primary/port)
 "BhI" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/box/rubbershot,
@@ -14544,6 +14553,41 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"FaZ" = (
+/obj/structure/table/glass,
+/obj/item/weapon/folder/white{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/obj/item/weapon/storage/box/monkeycubes{
+	pixel_x = 5;
+	pixel_y = 1
+	},
+/obj/item/weapon/storage/pill_bottle/mannitol{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/weapon/storage/pill_bottle/mutadone{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/item/weapon/disk/data,
+/obj/item/weapon/disk/data,
+/obj/item/weapon/storage/firstaid/toxin,
+/obj/item/weapon/book/manual/medical_cloning{
+	pixel_y = 6
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (WEST)";
+	icon_state = "whiteblue";
+	dir = 8
+	},
+/area/shuttle/ftl/medical/genetics)
 "Fbk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -16938,17 +16982,6 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/medbay_lobby)
-"Kas" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (WEST)";
-	icon_state = "whiteblue";
-	dir = 8
-	},
-/turf/open/floor/plasteel/warningline,
-/area/shuttle/ftl/medical/medbay_lobby)
 "KcB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19175,37 +19208,6 @@
 "PDj" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/space)
-"PDS" = (
-/obj/structure/table/glass,
-/obj/item/weapon/folder/white{
-	pixel_x = 3;
-	pixel_y = 7
-	},
-/obj/item/weapon/storage/box/monkeycubes{
-	pixel_x = 5;
-	pixel_y = 1
-	},
-/obj/item/weapon/storage/pill_bottle/mannitol{
-	pixel_x = -8;
-	pixel_y = -2
-	},
-/obj/item/weapon/storage/pill_bottle/mutadone{
-	pixel_x = -8;
-	pixel_y = 9
-	},
-/obj/item/weapon/disk/data,
-/obj/item/weapon/disk/data,
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/book/manual/medical_cloning{
-	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (WEST)";
-	icon_state = "whiteblue";
-	dir = 8
-	},
-/area/shuttle/ftl/medical/genetics)
 "PEU" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -20723,6 +20725,26 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/research/server)
+"TiU" = (
+/obj/structure/safe,
+/obj/item/clothing/head/bearpelt,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/weapon/gun/projectile/revolver/russian,
+/obj/item/ammo_box/a357,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Vault";
+	dir = 10
+	},
+/obj/item/weapon/card/emag,
+/turf/open/floor/plasteel/vault{
+	dir = 8
+	},
+/area/shuttle/ftl/security/nuke_storage)
 "TjV" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -21449,6 +21471,16 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/port)
+"Uvr" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (WEST)";
+	icon_state = "whiteblue";
+	dir = 8
+	},
+/area/shuttle/ftl/medical/medbay_lobby)
 "Uxs" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/hatch{
@@ -22807,25 +22839,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/hor)
-"XsG" = (
-/obj/structure/safe,
-/obj/item/clothing/head/bearpelt,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/weapon/gun/projectile/revolver/russian,
-/obj/item/ammo_box/a357,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka/badminka,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/camera{
-	c_tag = "Vault";
-	dir = 10
-	},
-/turf/open/floor/plasteel/vault{
-	dir = 8
-	},
-/area/shuttle/ftl/security/nuke_storage)
 "Xup" = (
 /obj/machinery/computer/aifixer,
 /obj/structure/cable{
@@ -41623,9 +41636,9 @@ sme
 sme
 sme
 sme
-oSK
-AhL
-EZj
+lEJ
+TtL
+TtL
 TtL
 FZG
 Hfw
@@ -41880,9 +41893,9 @@ sme
 sme
 sme
 sme
-Rvu
-boY
 lEJ
+koB
+koB
 TtL
 pTI
 qTq
@@ -42137,9 +42150,9 @@ sme
 sme
 sme
 sme
-Xfz
-AhL
-EZj
+lEJ
+TtL
+TtL
 TtL
 pOZ
 AhL
@@ -42651,9 +42664,9 @@ sme
 sme
 sme
 sme
-lEJ
-TtL
-TtL
+BfL
+AhL
+EZj
 TtL
 pOZ
 Izv
@@ -42908,9 +42921,9 @@ sme
 sme
 sme
 sme
+Rvu
+boY
 lEJ
-koB
-koB
 AhL
 MEZ
 nnO
@@ -43165,9 +43178,9 @@ sme
 sme
 sme
 sme
-lEJ
-TtL
-TtL
+Xfz
+AhL
+EZj
 TtL
 MBL
 IZs
@@ -45761,7 +45774,7 @@ plB
 ZNn
 oOj
 oOj
-Kas
+Uvr
 stV
 rFT
 ZNI
@@ -46018,7 +46031,7 @@ Ocm
 AJC
 AJC
 AJC
-fZH
+dDH
 ihL
 qsa
 poO
@@ -48332,9 +48345,9 @@ EWl
 EWl
 EWl
 EfT
-lZv
+xbw
 rOV
-PDS
+FaZ
 yfY
 EfT
 Mok
@@ -48591,7 +48604,7 @@ qsP
 EfT
 EfT
 tZf
-gWn
+EfT
 EfT
 EfT
 frF
@@ -57569,7 +57582,7 @@ Utb
 IiQ
 IiQ
 IiQ
-xKj
+sLL
 AON
 IiQ
 IYn
@@ -58872,7 +58885,7 @@ GZC
 LdK
 ijc
 ueH
-XsG
+TiU
 LdK
 GZC
 sme
@@ -59376,7 +59389,7 @@ yox
 Lav
 mZA
 HzW
-smz
+kEZ
 JSi
 zDO
 TEw

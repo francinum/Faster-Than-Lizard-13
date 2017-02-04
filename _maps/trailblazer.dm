@@ -14,11 +14,13 @@
 		#define MAP_TRANSITION_CONFIG DEFAULT_MAP_TRANSITION_CONFIG
 		
 		#define FTL_SHIP_DIR SOUTH
-		#define FTL_SHIP_DWIDTH 99
+		#define FTL_SHIP_DWIDTH 95
 		#define FTL_SHIP_DHEIGHT 8
 		#define FTL_SHIP_WIDTH 153
 		#define FTL_SHIP_HEIGHT 59
-
+		// For mapping reference:
+		// <-57,50>-<95,8>
+		
 #elif !defined(MAP_OVERRIDE)
 
 	#warn a map has already been included, ignoring SpaceSHIP.

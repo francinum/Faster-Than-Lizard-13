@@ -505,18 +505,6 @@
 	dir = 5
 	},
 /area/centcom/ferry)
-"erK" = (
-/obj/docking_port/stationary/transit{
-	dheight = 8;
-	dir = 2;
-	dwidth = 53;
-	height = 59;
-	id = "ftl_transit";
-	turf_type = /turf/open/space/transit/horizontal/noop;
-	width = 153
-	},
-/turf/open/space/transit/horizontal/noop,
-/area/space)
 "ezn" = (
 /obj/machinery/button/door{
 	desc = "A remote control switch for port-side blast doors.";
@@ -5096,6 +5084,18 @@
 /obj/item/weapon/bedsheet/black,
 /turf/open/floor/carpet,
 /area/hades)
+"TLX" = (
+/obj/docking_port/stationary/transit{
+	dheight = 8;
+	dir = 2;
+	dwidth = 95;
+	height = 59;
+	id = "ftl_transit";
+	turf_type = /turf/open/space/transit/horizontal/noop;
+	width = 153
+	},
+/turf/open/space/transit/horizontal/noop,
+/area/space)
 "TMw" = (
 /obj/structure/table/wood,
 /obj/item/device/syndicatedetonator{
@@ -44150,7 +44150,7 @@ Psk
 Psk
 Psk
 Psk
-erK
+Psk
 Psk
 Psk
 Psk
@@ -45178,7 +45178,7 @@ Psk
 Psk
 Psk
 Psk
-Psk
+TLX
 Psk
 Psk
 Psk
