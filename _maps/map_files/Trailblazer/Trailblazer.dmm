@@ -14092,17 +14092,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/xenobiology)
-"DDe" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	auto_name = 1;
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/shuttle/ftl/crew_quarters/kitchen)
 "DEj" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
@@ -17140,6 +17129,18 @@
 	},
 /turf/open/floor/carpet,
 /area/shuttle/ftl/security/hos)
+"Kpr" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	auto_name = 1;
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/item/weapon/reagent_containers/food/condiment/flour,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/ftl/crew_quarters/kitchen)
 "KpT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -39220,7 +39221,7 @@ vRz
 rab
 ely
 wQB
-DDe
+Kpr
 jMG
 JWx
 wQt
