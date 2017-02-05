@@ -8168,6 +8168,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/shuttle/ftl/bridge)
+"pZM" = (
+/obj/machinery/camera{
+	c_tag = "Engineering Hallway North"
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/lizard{
+	desc = "A cute tiny lizard that eats cockroaches.";
+	name = "Faster-Than-Lizard(13)"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/engine/engineering)
 "qbb" = (
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
@@ -27035,20 +27049,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
-"ZAO" = (
-/obj/machinery/camera{
-	c_tag = "Engineering Hallway North"
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/lizard{
-	desc = "A cute tiny lizard.";
-	name = "Faster-Than-Lizard\(13\)"
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/engine/engineering)
 "ZAW" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/effect/decal/cleanable/greenglow,
@@ -40015,7 +40015,7 @@ wWi
 wWi
 wWi
 wWi
-ZAO
+pZM
 NFK
 Sqb
 Aej
