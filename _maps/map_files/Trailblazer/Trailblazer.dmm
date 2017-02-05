@@ -5841,7 +5841,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/paper/crumpled{
-	info = "<font face="Verdana" color=black><font size="4"><center>NCV BASILISK</center></font><BR> Chief Designer: Russell Spitzer<BR> Designed: November 2556<BR> Class: Trailbla<BR> <BR> <font face="Times New Roman"><i>(The rest is illegible.)</i></font></font>"
+	info = "<font face="Verdana" color=black><font size="4"><center>NCV BASILISK</center></font><BR> Chief Designer: Russell Spitzer<BR> Designed: November 2556<BR> Class: Trailbla<BR> <BR> <font face="Times New Roman"><i>...The rest is illegible...</i></font></font>"
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/bridge/meeting_room)
