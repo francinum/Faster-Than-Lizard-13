@@ -103,14 +103,29 @@
 	return
 	
 /obj/item/weapon/gun/projectile/automatic/pistol/usp
-	name = "P12 Compact"
-	desc = "Renowned on Earth for its legendary reliability, this .45 handgun is still in use in some militaries throughout the galaxy. Has a threaded barrel to mount a suppressor."
+	name = "\improper P12 Compact"
+	desc = "Renowned on Earth for its legendary reliability, this .45 handgun is still in use in some militaries throughout the galaxy. Has a threaded barrel to mount a suppressor. Has an accessory rail to mount a flashlight."
 	icon_state = "usp"
 	mag_type = /obj/item/ammo_box/magazine/usp
+	can_flashlight = 1
+	flight_x_offset = 15
+	flight_y_offset = 13
 	w_class = 2
 	fire_sound = 'sound/weapons/pistol_glock17_1.ogg'
+
+/obj/item/weapon/gun/projectile/automatic/pistol/usp/ui_action_click()
+	toggle_gunlight()
 	
 /obj/item/weapon/gun/projectile/automatic/pistol/usp/update_icon()
 	..()
 	icon_state = "usp[suppressed ? "-can" : ""][chambered ? "" : "-locked"][magazine ? "" : "-nomag"]"
+	if(F && can_flashlight)
+		var/iconF = "flight"
+		if(F.on)
+			iconF = "flight_on"
+		add_overlay(image(icon = icon, icon_state = iconF, pixel_x = flight_x_offset, pixel_y = flight_y_offset))
 	return
+	
+
+/obj/item/weapon/gun/projectile/automatic/pistol/usp/andreas
+	desc = "Renowned on Earth for its legendary reliability, this .45 handgun is still in use in some militaries throughout the galaxy. Has a threaded barrel to mount a suppressor. Has an accessory rail to mount a flashlight. \n \nThis particular handgun bears an engraving on the left side of an encircled eagle, over the words \"DEUTSCHE BUNDESWEHR\" painted in white. Above the serial is '5842189 R S', engraved messily. The handgun seems carefully tuned with a match-grade trigger and an ambidexterous safety. It also seems well-maintained - seems its owner cared a lot about it."
