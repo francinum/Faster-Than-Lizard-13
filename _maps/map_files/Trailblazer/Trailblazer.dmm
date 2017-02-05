@@ -201,15 +201,6 @@
 	dir = 10
 	},
 /area/shuttle/ftl/hallway/primary/fore)
-"aro" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "arw" = (
 /obj/structure/table/reinforced,
 /obj/item/device/flashlight/lamp/green{
@@ -442,15 +433,6 @@
 /obj/machinery/gravity_generator/main/station,
 /turf/open/floor/engine,
 /area/shuttle/ftl/engine/gravity_generator)
-"aXX" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "aZX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -828,17 +810,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/eva)
-"bWC" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
-	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "bWI" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -1422,20 +1393,20 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/assembly/robotics)
+"cZt" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/darkblue,
+/area/shuttle/ftl/engine/engine_smes)
 "cZL" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/engine/engine_smes)
-"dam" = (
-/obj/structure/table/wood,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/weapon/paper/crumpled{
-	
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/bridge/meeting_room)
 "dbV" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2732,6 +2703,13 @@
 	dir = 9
 	},
 /area/shuttle/ftl/hallway/primary/central)
+"fnK" = (
+/obj/effect/landmark/start{
+	name = "Munitions Officer";
+	shuttle_abstract_movable = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions)
 "foK" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/wood,
@@ -5127,15 +5105,6 @@
 /mob/living/simple_animal/cockroach,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/heads)
-"jDO" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "jEB" = (
 /obj/structure/urinal{
 	pixel_y = 28
@@ -5867,20 +5836,15 @@
 	},
 /turf/open/floor/engine,
 /area/shuttle/ftl/munitions)
-"ljR" = (
-/obj/structure/window/reinforced{
-	dir = 8
+"lkq" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/paper/crumpled{
+	info = "<font face=\"Verdana\" color=black><font size=\"4\"><center>NCV BASILISK</center></font><BR> Chief Designer: Russell Spitzer<BR> Designed: November 2556<BR> Class: Trailbla<BR> <BR> <font face=\"Times New Roman\"><i>(The rest is illegible...)</i></font></font>"
 	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
-	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
+/turf/open/floor/wood,
+/area/shuttle/ftl/bridge/meeting_room)
 "lkQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -5959,18 +5923,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
-"lro" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/firealarm{
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "lsM" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -7883,6 +7835,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cafeteria,
 /area/shuttle/ftl/crew_quarters/kitchen)
+"piV" = (
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "munitions";
+	tag = "munitions east"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions/loading)
 "pjY" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -9480,6 +9442,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/engine/engine_smes)
+"rKs" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/engine/engine_smes)
 "rLn" = (
 /obj/machinery/computer/monitor{
 	name = "primary power monitoring console"
@@ -10144,13 +10119,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/circuit/rcircuit/animated,
 /area/shuttle/ftl/telecomms/server)
-"sEc" = (
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/engine_smes)
 "sFn" = (
 /obj/machinery/autolathe,
 /obj/machinery/light{
@@ -14335,16 +14303,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/medical/virology)
-"AFc" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "AFi" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -14861,6 +14819,19 @@
 /obj/structure/grille/broken,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/cmo)
+"BGk" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 10
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/engine/engine_smes)
 "BHm" = (
 /obj/structure/table,
 /obj/item/weapon/grenade/chem_grenade/cleaner,
@@ -15367,6 +15338,15 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"CGf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "munitions";
+	tag = "munitions east"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions/loading)
 "CGk" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -16818,15 +16798,6 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/wood,
 /area/shuttle/ftl/medical/cmo)
-"EZu" = (
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plasteel/darkblue,
-/area/shuttle/ftl/engine/engine_smes)
 "EZG" = (
 /obj/structure/table,
 /obj/item/stack/sheet/metal{
@@ -17468,12 +17439,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/hallway/primary/fore)
-"GhC" = (
-/obj/structure/window/reinforced,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/engine/engine_smes)
 "GiM" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -18345,6 +18310,12 @@
 	dir = 4
 	},
 /area/shuttle/ftl/medical/chemistry)
+"HYf" = (
+/obj/structure/window/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/engine_smes)
 "HYs" = (
 /obj/structure/rack,
 /obj/item/weapon/circuitboard/computer/mecha_control{
@@ -19750,6 +19721,17 @@
 	dir = 4
 	},
 /area/shuttle/ftl/medical/medbay)
+"KDs" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/engine/engine_smes)
 "KDP" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/bodybags,
@@ -23562,6 +23544,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/engine/engineering)
+"SoN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/firealarm{
+	pixel_y = -24
+	},
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "munitions";
+	tag = "munitions east"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions/loading)
 "Spu" = (
 /obj/machinery/vending/hydronutrients,
 /obj/structure/cable{
@@ -23986,17 +23980,6 @@
 /obj/structure/cable,
 /turf/open/space,
 /area/shuttle/ftl/security/nuke_storage)
-"STc" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
-	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "SWo" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -24592,6 +24575,20 @@
 	dir = 10
 	},
 /area/shuttle/ftl/hydroponics)
+"TWJ" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/engine/engine_smes)
 "TWL" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -25621,18 +25618,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/engine/engine_smes)
-"VMS" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/space,
-/area/shuttle/ftl/engine/engine_smes)
 "VNw" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
 /obj/machinery/meter,
@@ -25936,6 +25921,22 @@
 	dir = 10
 	},
 /area/shuttle/ftl/medical/medbay)
+"Wvj" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/space,
+/area/shuttle/ftl/engine/engine_smes)
 "WvC" = (
 /obj/machinery/light{
 	dir = 8
@@ -27005,6 +27006,13 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
+"Yud" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plating,
+/area/shuttle/ftl/engine/engine_smes)
 "Ywj" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space,
@@ -35055,8 +35063,8 @@ nbT
 get
 qhZ
 svx
-GhC
-ljR
+HYf
+Wvj
 uMP
 uMP
 uMP
@@ -35312,8 +35320,8 @@ nbT
 qhZ
 zOB
 zox
-GhC
-STc
+HYf
+BGk
 srD
 Jzf
 lkW
@@ -35569,8 +35577,8 @@ qfA
 lfg
 GTA
 zox
-GhC
-bWC
+HYf
+rKs
 mbQ
 OqN
 lkW
@@ -35826,8 +35834,8 @@ OPU
 AVp
 RaZ
 zox
-GhC
-STc
+HYf
+BGk
 srD
 Jzf
 lkW
@@ -36083,8 +36091,8 @@ pSF
 KVM
 oWI
 xfb
-sEc
-aXX
+Yud
+KDs
 mbQ
 OqN
 lkW
@@ -36340,8 +36348,8 @@ OPU
 PYX
 RaZ
 Jqu
-EZu
-VMS
+cZt
+TWJ
 UCn
 UCn
 UCn
@@ -64851,7 +64859,7 @@ VGU
 ngT
 QtE
 rSJ
-QtE
+fnK
 Fub
 RIh
 KRb
@@ -65626,7 +65634,7 @@ qLr
 HJO
 TYL
 PyM
-lro
+SoN
 Uec
 czQ
 czQ
@@ -65883,7 +65891,7 @@ wlW
 gVW
 XDt
 Gcu
-jDO
+CGf
 Uec
 SYl
 ctY
@@ -66140,7 +66148,7 @@ wyl
 UMr
 XDt
 PyM
-jDO
+CGf
 Uec
 uln
 EsB
@@ -66397,7 +66405,7 @@ KEQ
 HJO
 XDt
 FKg
-AFc
+piV
 Uec
 iFd
 EsB
@@ -66407,7 +66415,7 @@ QJh
 nwq
 DQS
 DQS
-dam
+lkq
 Arj
 jsE
 UMt
@@ -66654,7 +66662,7 @@ Uec
 FqK
 XDt
 PyM
-jDO
+CGf
 Uec
 vgB
 EsB
@@ -66911,7 +66919,7 @@ Uec
 Uec
 XDt
 dJp
-aro
+CGf
 Uec
 PIa
 MCW
