@@ -108,8 +108,8 @@
 	icon_state = "usp"
 	mag_type = /obj/item/ammo_box/magazine/usp
 	can_flashlight = 1
-	flight_x_offset = 15
-	flight_y_offset = 13
+	flight_x_offset = 16
+	flight_y_offset = 12
 	w_class = 2
 	fire_sound = 'sound/weapons/pistol_glock17_1.ogg'
 
