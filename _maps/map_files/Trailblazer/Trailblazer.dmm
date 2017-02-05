@@ -201,15 +201,6 @@
 	dir = 10
 	},
 /area/shuttle/ftl/hallway/primary/fore)
-"aro" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "arw" = (
 /obj/structure/table/reinforced,
 /obj/item/device/flashlight/lamp/green{
@@ -1427,15 +1418,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/engine/engine_smes)
-"dam" = (
-/obj/structure/table/wood,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/weapon/paper/crumpled{
-	
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/bridge/meeting_room)
 "dbV" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2732,6 +2714,13 @@
 	dir = 9
 	},
 /area/shuttle/ftl/hallway/primary/central)
+"fnK" = (
+/obj/effect/landmark/start{
+	name = "Munitions Officer";
+	shuttle_abstract_movable = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions)
 "foK" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/wood,
@@ -5127,15 +5116,6 @@
 /mob/living/simple_animal/cockroach,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/heads)
-"jDO" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "jEB" = (
 /obj/structure/urinal{
 	pixel_y = 28
@@ -5881,6 +5861,15 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/space,
 /area/shuttle/ftl/engine/engine_smes)
+"lkq" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/paper/crumpled{
+	info = "<font face="Verdana" color=black><font size="4"><center>NCV BASILISK</center></font><BR> Chief Designer: Russell Spitzer<BR> Designed: November 2556<BR> Class: Trailbla<BR> <BR> <font face="Times New Roman"><i>(The rest is illegible.)</i></font></font>"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/bridge/meeting_room)
 "lkQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -5959,18 +5948,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
-"lro" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/firealarm{
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "lsM" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -7883,6 +7860,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cafeteria,
 /area/shuttle/ftl/crew_quarters/kitchen)
+"piV" = (
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "munitions";
+	tag = "munitions east"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions/loading)
 "pjY" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -14335,16 +14322,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/medical/virology)
-"AFc" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "munitions";
-	tag = "munitions east"
-	},
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/munitions/loading)
 "AFi" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -15367,6 +15344,15 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
+"CGf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "munitions";
+	tag = "munitions east"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions/loading)
 "CGk" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -23562,6 +23548,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/engine/engineering)
+"SoN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/firealarm{
+	pixel_y = -24
+	},
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "munitions";
+	tag = "munitions east"
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/munitions/loading)
 "Spu" = (
 /obj/machinery/vending/hydronutrients,
 /obj/structure/cable{
@@ -64851,7 +64849,7 @@ VGU
 ngT
 QtE
 rSJ
-QtE
+fnK
 Fub
 RIh
 KRb
@@ -65626,7 +65624,7 @@ qLr
 HJO
 TYL
 PyM
-lro
+SoN
 Uec
 czQ
 czQ
@@ -65883,7 +65881,7 @@ wlW
 gVW
 XDt
 Gcu
-jDO
+CGf
 Uec
 SYl
 ctY
@@ -66140,7 +66138,7 @@ wyl
 UMr
 XDt
 PyM
-jDO
+CGf
 Uec
 uln
 EsB
@@ -66397,7 +66395,7 @@ KEQ
 HJO
 XDt
 FKg
-AFc
+piV
 Uec
 iFd
 EsB
@@ -66407,7 +66405,7 @@ QJh
 nwq
 DQS
 DQS
-dam
+lkq
 Arj
 jsE
 UMt
@@ -66654,7 +66652,7 @@ Uec
 FqK
 XDt
 PyM
-jDO
+CGf
 Uec
 vgB
 EsB
@@ -66911,7 +66909,7 @@ Uec
 Uec
 XDt
 dJp
-aro
+CGf
 Uec
 PIa
 MCW
