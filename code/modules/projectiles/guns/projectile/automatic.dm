@@ -124,6 +124,31 @@
 	..()
 	icon_state = "wt550[magazine ? "-[Ceiling(get_ammo(0)/4)*4]" : ""]"
 
+/obj/item/weapon/gun/projectile/automatic/br55
+	name = "\improper BR55 Battle Rifle"
+	desc = "A battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector has a 3-round-burst and a semi-automatic mode."
+	icon_state = "br55"
+	mag_type = /obj/item/ammo_box/magazine/br55
+	fire_delay = 1
+	can_suppress = 0
+	burst_size = 3
+	fire_sound = 'sound/weapons/gunshot_br55.ogg'
+
+/obj/item/weapon/gun/projectile/automatic/br55/update_icon()
+	..()
+	icon_state = "[initial(icon_state)][chambered ? "" : "-locked"][magazine ? "" : "-nomag"]"
+	return
+	
+/obj/item/weapon/gun/projectile/automatic/br55/civilian
+	name = "\improper BR55-CV rifle"
+	desc = "The civilian variant of a battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector only has a semi-automatic mode."
+	icon_state = "br55civ"
+	mag_type = /obj/item/ammo_box/magazine/br55/civilian
+	fire_delay = 2
+	can_suppress = 0
+	burst_size = 0
+	actions_types = list()
+
 /obj/item/weapon/gun/projectile/automatic/mini_uzi
 	name = "\improper 'Type U3' Uzi"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
