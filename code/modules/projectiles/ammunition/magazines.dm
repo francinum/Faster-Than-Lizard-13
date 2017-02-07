@@ -199,6 +199,18 @@
 /obj/item/ammo_box/magazine/usp/update_icon()
 	..()
 	icon_state = "uspmag-[ammo_count() ? "12" : "0"]"
+	
+/obj/item/ammo_box/magazine/enbloc
+	name = "en-bloc clip"
+	icon_state = "enbloc"
+	origin_tech = "combat=3"
+	ammo_type = /obj/item/ammo_casing/a762
+	caliber = "a762"
+	max_ammo = 8
+
+/obj/item/ammo_box/magazine/enbloc/update_icon()
+	..()
+	icon_state = "[initial(icon_state)]-[ammo_count()]"
 
 /obj/item/ammo_box/magazine/m45
 	name = "handgun magazine (.45)"
