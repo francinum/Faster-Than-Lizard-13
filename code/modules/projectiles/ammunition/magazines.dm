@@ -234,6 +234,29 @@
 	name = "wt550 magazine (Incindiary 4.6x30mm)"
 	ammo_type = /obj/item/ammo_casing/c46x30mminc
 
+/obj/item/ammo_box/magazine/br55
+	name = "BR55 magazine (4.6x30mm)"
+	desc = "A magazine for a rifle. This particular magazine will not fit the civilian variant of the BR55."
+	icon_state = "br55mag-36"
+	ammo_type = /obj/item/ammo_casing/c46x30mm
+	caliber = "4.6x30mm"
+	max_ammo = 36
+
+/obj/item/ammo_box/magazine/br55/update_icon()
+	..()
+	icon_state = "br55mag-[round(ammo_count(),3)]"
+	
+/obj/item/ammo_box/magazine/br55/civilian
+	name = "BR55-CV magazine (4.6x30mm)"
+	desc = "A magazine for a rifle. This particular magazine will fit both the civilian and service variants of the BR55."
+	icon_state = "br55mag-civ"
+	max_ammo = 15
+	
+	
+/obj/item/ammo_box/magazine/br55/civilian/update_icon()
+	..()
+	icon_state = "br55mag-civ[ammo_count() ? "" : "-empty"]"
+	
 /obj/item/ammo_box/magazine/uzim9mm
 	name = "uzi magazine (9mm)"
 	icon_state = "uzi9mm-32"
