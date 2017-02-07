@@ -52,7 +52,7 @@
 				update_icon()
 				return 1
 	else if(can_tactical_reload == 2)		//used with the M1 Garand
-		if(magazine ||!chambered)		//cheap hack, removing the magazine dechambers it
+		if(magazine || !chambered)		//cheap hack, removing the magazine dechambers it
 			user << "<span class='warning'>You cannot perform a tactical reload with an en-bloc clip, eject it first!</span>"
 			return
 		else
