@@ -65,7 +65,7 @@
 		/obj/item/weapon/reagent_containers/food/snacks/grown/cabbage = 1,
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/eggwrap
-	category = CAT_FOOD
+	category = CAT_MISCFOOD
 
 /datum/crafting_recipe/food/beans
 	name = "Beans"
