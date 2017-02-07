@@ -547,6 +547,7 @@
 /obj/item/weapon/gun/projectile/automatic/garand/empty_alarm()
 	if(!chambered && !get_ammo() && !alarmed)
 		playsound(src.loc, eject_sound, 40, 1)
+		user << "<span class='warning'>The clip ejects from \the [src]!</span>"
 		magazine.loc = get_turf(src.loc)
 		magazine.update_icon()
 		magazine.SpinAnimation(10,1)
