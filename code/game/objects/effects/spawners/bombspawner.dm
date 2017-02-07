@@ -75,8 +75,8 @@
 		// timer
 		if (2)
 			var/obj/item/device/transfer_valve/V = new(src.loc)
-			var/obj/item/weapon/tank/internals/plasma/PT = new(V)
-			var/obj/item/weapon/tank/internals/oxygen/OT = new(V)
+			var/obj/item/weapon/tank/internals/plasma/new/PT = new(V)
+			var/obj/item/weapon/tank/internals/oxygen/mew/OT = new(V)
 
 			var/obj/item/device/assembly/timer/T = new(V)
 
