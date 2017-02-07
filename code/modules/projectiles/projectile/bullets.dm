@@ -46,6 +46,15 @@
  	sparks.set_up(1, 1, src)
  	sparks.start()
  	..()
+	
+/obj/item/projectile/bullet/SDSbullet
+	name = "bullet"
+	icon_state = "bullet"
+	damage = 7
+	damage_type = BRUTE
+	nodamage = 0
+	flag = "bullet"
+	hitsound_wall = "ricochet"
 
 /obj/item/projectile/bullet/pellet/overload/New()
 	damage = 3

@@ -117,14 +117,6 @@ var/datum/subsystem/starmap/SSstarmap
 /datum/subsystem/starmap/fire()
 	if(world.time > to_time && in_transit)
 
-		for(var/area/shuttle/ftl/F in world)
-			F << 'sound/effects/hyperspace_end.ogg'
-		parallax_movedir_in_areas(/area/shuttle/ftl, 0)
-		parallax_launch_in_areas(/area/shuttle/ftl, 4, 1)
-		toggle_ambience(0)
-
-		sleep(1)
-
 		current_system = to_system
 
 		var/obj/docking_port/stationary/ftl_start = SSshuttle.getDock("ftl_start")
@@ -144,8 +136,17 @@ var/datum/subsystem/starmap/SSstarmap
 		to_time = 0
 		in_transit = 0
 
+		sleep(1)
+		
+		for(var/area/shuttle/ftl/F in world)
+			F << 'sound/effects/hyperspace_end.ogg'
+		parallax_movedir_in_areas(/area/shuttle/ftl, 0)
+		parallax_launch_in_areas(/area/shuttle/ftl, 4, 1)
+		toggle_ambience(0)
+
 		generate_npc_ships()
-		ftl_sound('sound/ai/ftl_success.ogg')
+		spawn(50)
+			ftl_sound('sound/ai/ftl_success.ogg')
 
 	if(world.time > to_time && in_transit_planet)
 		if(is_loading) // Not done loading yet, delay arrival by 10 seconds
@@ -154,14 +155,6 @@ var/datum/subsystem/starmap/SSstarmap
 				message_admins("Z level loading/unloading not complete, delaying arrival")
 			to_time += 100
 			return
-
-		for(var/area/shuttle/ftl/F in world)
-			F << 'sound/effects/hyperspace_end.ogg'
-		parallax_movedir_in_areas(/area/shuttle/ftl, 0)
-		parallax_launch_in_areas(/area/shuttle/ftl, 4, 1)
-		toggle_ambience(0)
-
-		sleep(1)
 
 		current_planet = to_planet
 
@@ -181,7 +174,16 @@ var/datum/subsystem/starmap/SSstarmap
 		in_transit_planet = 0
 		travel_time = 0
 
-		ftl_sound('sound/ai/ftl_success.ogg')
+		sleep(1)
+		
+		for(var/area/shuttle/ftl/F in world)
+			F << 'sound/effects/hyperspace_end.ogg'
+		parallax_movedir_in_areas(/area/shuttle/ftl, 0)
+		parallax_launch_in_areas(/area/shuttle/ftl, 4, 1)
+		toggle_ambience(0)
+		
+		spawn(50)
+			ftl_sound('sound/ai/ftl_success.ogg')
 
 	// Check and update ship objectives
 	var/objectives_complete = 1
