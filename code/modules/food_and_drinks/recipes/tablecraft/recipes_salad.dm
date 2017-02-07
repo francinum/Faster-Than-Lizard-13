@@ -52,7 +52,7 @@
 	reqs = list(
 		/datum/reagent/consumable/milk = 10,
 		/obj/item/weapon/reagent_containers/glass/bowl = 1,
-		/obj/item/weapon/reagent_containers/food/snacks/grown/oat = 1CAT_SALAD
+		/obj/item/weapon/reagent_containers/food/snacks/grown/oat = 1
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/salad/oatmeal
 	category = CAT_SALAD
