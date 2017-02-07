@@ -253,8 +253,8 @@
 	speak_emote = list("roars")
 	luminosity = 3
 	armour_penetration = 40
-	melee_damage_lower = 20
-	melee_damage_upper = 20
+	melee_damage_lower = 30
+	melee_damage_upper = 30
 	speed = 3
 	move_to_delay = 10
 	ranged = 0
@@ -271,7 +271,7 @@
 	
 /mob/living/simple_animal/hostile/megafauna/dragon/kaal
 	name = "Kaalnaaluth"
-	desc = "Guardians of the necropolis... Something seems off with this one."
+	desc = "Guardians of the necropolis... Something seems off with this one. It appears to be more frail."
 	health = 500
 	maxHealth = 500
 	attacktext = "chomps"
@@ -296,7 +296,6 @@
 	pixel_x = -16
 	aggro_vision_range = 18
 	idle_vision_range = 5
-	loot = list(/obj/structure/closet/crate/necropolis/dragon)
 	butcher_results = list(/obj/item/weapon/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/animalhide/ashdrake = 10, /obj/item/stack/sheet/bone = 30)
 	deathmessage = "collapses into a pile of bones, its flesh sloughing away."
 	death_sound = 'sound/magic/demon_dies.ogg'
