@@ -123,6 +123,12 @@
 	contains = list(/obj/item/weapon/storage/box/metalfoam)
 	crate_name = "metal foam grenade crate"
 
+/datum/supply_pack/emergency/smartmetalfoam
+	name = "Smart Metal Foam Grenade Crate"
+	cost = 1250
+	contains = list(/obj/item/weapon/storage/box/smartmetalfoam)
+	crate_name = "smart metal foam grenade crate"
+
 /datum/supply_pack/emergency/droneshells
 	name = "Drone Shell Crate"
 	cost = 1000
@@ -130,6 +136,18 @@
 					/obj/item/drone_shell,
 					/obj/item/drone_shell)
 	crate_name = "drone shell crate"
+	
+/datum/supply_pack/emergency/spacesuits
+	name = "EVA Suit Crate"
+	cost = 2000
+	contains = list(/obj/item/clothing/suit/space/eva,
+					/obj/item/clothing/suit/space/eva,
+					/obj/item/clothing/suit/space/eva,
+					/obj/item/clothing/head/helmet/space/eva,
+					/obj/item/clothing/head/helmet/space/eva,
+					/obj/item/clothing/head/helmet/space/eva,)
+	crate_name = "EVA Suit Crate"
+	crate_type = /obj/structure/closet/crate/internals
 
 /datum/supply_pack/emergency/specialops
 	name = "Special Ops Supplies"
@@ -482,6 +500,16 @@
 					/obj/item/clothing/head/beret/sec/navyhos)
 	crate_name = "security clothing crate"
 
+/datum/supply_pack/security/armory/hardsuit
+	name = "Security Hardsuit Crate"
+	cost = 3000
+	access = access_armory
+	contains = list(/obj/item/clothing/suit/space/hardsuit/security,
+					/obj/item/clothing/suit/space/hardsuit/security,
+					/obj/item/clothing/suit/space/hardsuit/security)
+	crate_name = "Security Hardsuit Crate"
+	crate_type = /obj/structure/closet/crate/secure
+
 /datum/supply_pack/security/justiceinbound
 	name = "Standard Justice Enforcer Crate"
 	cost = 6000 //justice comes at a price. An expensive, noisy price.
@@ -554,17 +582,24 @@
 					/obj/item/clothing/glasses/meson/engine)
 	crate_name = "engineering gear crate"
 
-/datum/supply_pack/engineering/engine/spacesuit
-	name = "Space Suit Crate"
+/datum/supply_pack/engineering/engine/hardsuit
+	name = "Engineering Hardsuit Crate"
 	cost = 3000
-	access = access_engine //no eva
-	contains = list(/obj/item/clothing/suit/space,
-					/obj/item/clothing/suit/space,
-					/obj/item/clothing/head/helmet/space,
-					/obj/item/clothing/head/helmet/space,
-					/obj/item/clothing/mask/breath,
-					/obj/item/clothing/mask/breath)
-	crate_name = "space suit crate"
+	access = access_engine
+	contains = list(/obj/item/clothing/suit/space/hardsuit/engine,
+					/obj/item/clothing/suit/space/hardsuit/engine,
+					/obj/item/clothing/suit/space/hardsuit/engine)
+	crate_name = "Hardsuit Crate"
+	crate_type = /obj/structure/closet/crate/secure
+
+/datum/supply_pack/engineering/engine/mininghardsuit
+	name = "Mining Hardsuit Crate"
+	cost = 2800
+	access = access_mining
+	contains = list(/obj/item/clothing/suit/space/hardsuit/mining,
+					/obj/item/clothing/suit/space/hardsuit/mining,
+					/obj/item/clothing/suit/space/hardsuit/mining)
+	crate_name = "Hardsuit Crate"
 	crate_type = /obj/structure/closet/crate/secure
 	
 /datum/supply_pack/engineering/colonization

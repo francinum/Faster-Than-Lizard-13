@@ -236,3 +236,67 @@
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1)
 	loot = list()
 
+/mob/living/simple_animal/hostile/megafauna/dragon/daar
+	name = "Daardendria"
+	desc = "A kind and doting Ash Drake. Seems to have a habit of adopting crew members."
+	health = 2500
+	maxHealth = 2500
+	attacktext = "cuddles"
+	attack_sound = 'sound/magic/demon_attack1.ogg'
+	icon_state = "dragon"
+	icon_living = "dragon"
+	icon_dead = "dragon_dead"
+	friendly = "stares down"
+	icon = 'icons/mob/lavaland/dragon.dmi'
+	faction = list("mining")
+	weather_immunities = list("lava","ash")
+	speak_emote = list("roars")
+	luminosity = 3
+	armour_penetration = 40
+	melee_damage_lower = 30
+	melee_damage_upper = 30
+	speed = 3
+	move_to_delay = 10
+	ranged = 0
+	flying = 0
+	mob_size = MOB_SIZE_LARGE
+	pixel_x = -16
+	aggro_vision_range = 18
+	idle_vision_range = 5
+	loot = list(/obj/structure/closet/crate/necropolis/dragon)
+	butcher_results = list(/obj/item/weapon/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/animalhide/ashdrake = 10, /obj/item/stack/sheet/bone = 30)
+	deathmessage = "collapses into a pile of bones, its flesh sloughing away."
+	death_sound = 'sound/magic/demon_dies.ogg'
+	damage_coeff = list(BRUTE = 1, BURN = 0.5, TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1)
+	
+/mob/living/simple_animal/hostile/megafauna/dragon/kaal
+	name = "Kaalnaaluth"
+	desc = "Guardians of the necropolis... Something seems off with this one. It appears to be more frail."
+	health = 500
+	maxHealth = 500
+	attacktext = "chomps"
+	attack_sound = 'sound/magic/demon_attack1.ogg'
+	icon_state = "dragon"
+	icon_living = "dragon"
+	icon_dead = "dragon_dead"
+	friendly = "stares down"
+	icon = 'icons/mob/lavaland/dragon.dmi'
+	faction = list("mining")
+	weather_immunities = list("lava","ash")
+	speak_emote = list("roars")
+	luminosity = 3
+	armour_penetration = 40
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	speed = 3
+	move_to_delay = 10
+	ranged = 0
+	flying = 0
+	mob_size = MOB_SIZE_LARGE
+	pixel_x = -16
+	aggro_vision_range = 18
+	idle_vision_range = 5
+	butcher_results = list(/obj/item/weapon/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/animalhide/ashdrake = 10, /obj/item/stack/sheet/bone = 30)
+	deathmessage = "collapses into a pile of bones, its flesh sloughing away."
+	death_sound = 'sound/magic/demon_dies.ogg'
+	damage_coeff = list(BRUTE = 1, BURN = 0.5, TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1)

@@ -14,3 +14,4 @@ segalowitz = Game Admin
 leon962 = Game Admin
 jessica_stark = Game Admin
 christ110 = Trial Admin
+auris456852 = Trial Admin
