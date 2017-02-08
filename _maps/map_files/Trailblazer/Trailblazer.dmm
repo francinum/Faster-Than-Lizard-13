@@ -2336,6 +2336,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/medical/medbay)
+"eAf" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "containment blast door"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen";
+	req_access_txt = "28"
+	},
+/obj/machinery/door/window/northleft{
+	dir = 1;
+	name = "Containment Pen";
+	req_access_txt = "28"
+	},
+/turf/open/floor/engine,
+/area/shuttle/ftl/research/xenobiology)
 "eAF" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2520,21 +2538,6 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plating,
 /area/shuttle/ftl/bridge)
-"eMK" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/grille,
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/research/xenobiology)
 "eNZ" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -4174,21 +4177,6 @@
 "hCA" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/telecomms/server)
-"hDd" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/research/xenobiology)
 "hDm" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -5778,6 +5766,20 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/secure_construction)
+"kGu" = (
+/obj/structure/grille,
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/research/xenobiology)
 "kGI" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7096,6 +7098,19 @@
 	},
 /turf/open/space,
 /area/shuttle/ftl/space)
+"nfk" = (
+/obj/machinery/button/door{
+	dir = 2;
+	id = "rnd";
+	name = "Shutters Control Button";
+	pixel_x = -25;
+	pixel_y = 9;
+	req_access_txt = "26"
+	},
+/obj/machinery/r_n_d/protolathe,
+/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
+/turf/open/floor/engine,
+/area/shuttle/ftl/research/lab)
 "nfS" = (
 /obj/machinery/conveyor{
 	dir = 1;
@@ -7408,20 +7423,6 @@
 	icon_state = "bot"
 	},
 /area/shuttle/ftl/cargo/storage)
-"nKI" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/research/xenobiology)
 "nKZ" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/hatch{
@@ -8424,6 +8425,26 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/starboard)
+"pIr" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/research/xenobiology)
 "pJo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/decal/cleanable/dirt,
@@ -11783,21 +11804,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
-"vzt" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/grille,
-/obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/research/xenobiology)
 "vzF" = (
 /obj/machinery/atmospherics/pipe/manifold/general/visible,
 /turf/open/floor/plating,
@@ -12023,6 +12029,20 @@
 	dir = 1
 	},
 /area/shuttle/ftl/bridge/eva)
+"weo" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/research/xenobiology)
 "weW" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/structure/cable{
@@ -14433,18 +14453,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay_lobby)
-"AER" = (
-/obj/machinery/button/door{
-	desc = "A remote control switch for the medbay doors.";
-	id = "medbay_r";
-	name = "Medbay Exit Button";
-	normaldoorcontrol = 1;
-	pixel_x = -8;
-	pixel_y = 24;
-	req_access_txt = "1"
-	},
-/turf/closed/wall/r_wall,
-/area/shuttle/ftl/medical/virology)
 "AFi" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -15107,6 +15115,26 @@
 /obj/structure/lattice,
 /turf/open/space,
 /area/shuttle/ftl/medical/virology)
+"BVl" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station,
+/obj/machinery/button/door{
+	desc = "A remote control switch for the medbay doors.";
+	id = "GeneticsDoor";
+	name = "Genetics Exit Button";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	pixel_y = -24;
+	req_access_txt = "0"
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/genetics)
 "BWq" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
@@ -17371,26 +17399,6 @@
 	},
 /turf/closed/wall,
 /area/shuttle/ftl/medical/medbay_lobby)
-"FJv" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/plating,
-/area/shuttle/ftl/research/xenobiology)
 "FKg" = (
 /obj/machinery/ammo_rack/full/shield_piercing,
 /obj/effect/decal/cleanable/dirt,
@@ -17689,6 +17697,25 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
+"GtG" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/grille,
+/obj/structure/cable{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/research/xenobiology)
 "Gue" = (
 /obj/structure/table/optable,
 /obj/structure/cable{
@@ -17793,19 +17820,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/security/main)
-"GCt" = (
-/obj/machinery/button/door{
-	id = "xenobio3";
-	name = "Containment Blast Doors";
-	pixel_x = 0;
-	pixel_y = 25;
-	req_access_txt = "55"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/research/xenobiology)
 "GCA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -17896,26 +17910,6 @@
 	},
 /turf/open/floor/plasteel/circuit/rcircuit/animated,
 /area/shuttle/ftl/assembly/robotics)
-"GKJ" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station,
-/obj/machinery/button/door{
-	desc = "A remote control switch for the medbay doors.";
-	id = "get_outta_the_gene_pool";
-	name = "Genetics Exit Button";
-	normaldoorcontrol = 1;
-	pixel_x = 24;
-	pixel_y = -24;
-	req_access_txt = "0"
-	},
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/genetics)
 "GLC" = (
 /obj/vehicle/atv,
 /turf/open/floor/plasteel/delivery,
@@ -19079,24 +19073,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/medical/genetics)
-"JbN" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/machinery/door/window/northleft{
-	dir = 1;
-	name = "Containment Pen";
-	req_access_txt = "28"
-	},
-/obj/machinery/door/window/northleft{
-	dir = 2;
-	name = "Containment Pen";
-	req_access_txt = "28"
-	},
-/turf/open/floor/engine,
-/area/shuttle/ftl/research/xenobiology)
 "Jci" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/effect/decal/cleanable/oil,
@@ -21109,20 +21085,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/crew_quarters/bar)
-"MTy" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/research/xenobiology)
 "MUU" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -21134,19 +21096,6 @@
 	},
 /turf/open/floor/plasteel/whiteblue,
 /area/shuttle/ftl/medical/medbay_lobby)
-"MVg" = (
-/obj/machinery/button/door{
-	dir = 2;
-	id = "rndshutter";
-	name = "Shutters Control Button";
-	pixel_x = -25;
-	pixel_y = 9;
-	req_access_txt = "26"
-	},
-/obj/machinery/r_n_d/protolathe,
-/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
-/turf/open/floor/engine,
-/area/shuttle/ftl/research/lab)
 "MXK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -21674,24 +21623,19 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plating,
 /area/shuttle/ftl/bridge)
-"NXI" = (
+"NYp" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor/heavy,
 /obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
+	id = "xenobio";
 	name = "containment blast door"
 	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/xenobiology)
 "NYq" = (
@@ -22977,6 +22921,24 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/locker)
+"QmO" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "containment blast door"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/northleft{
+	dir = 1;
+	name = "Containment Pen";
+	req_access_txt = "28"
+	},
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen";
+	req_access_txt = "28"
+	},
+/turf/open/floor/engine,
+/area/shuttle/ftl/research/xenobiology)
 "Qpa" = (
 /obj/structure/rack{
 	dir = 8;
@@ -24429,24 +24391,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/port)
-"Tus" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/preopen{
-	id = "xenobio3";
-	name = "containment blast door"
-	},
-/obj/machinery/door/window/northleft{
-	dir = 2;
-	name = "Containment Pen";
-	req_access_txt = "28"
-	},
-/obj/machinery/door/window/northleft{
-	dir = 1;
-	name = "Containment Pen";
-	req_access_txt = "28"
-	},
-/turf/open/floor/engine,
-/area/shuttle/ftl/research/xenobiology)
 "Tvp" = (
 /obj/effect/landmark{
 	name = "xeno_spawn";
@@ -25486,6 +25430,19 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/shuttle/ftl/cargo/office)
+"Vcl" = (
+/obj/machinery/button/door{
+	id = "xenobio";
+	name = "Containment Blast Doors";
+	pixel_x = 0;
+	pixel_y = 25;
+	req_access_txt = "26"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/research/xenobiology)
 "Vdi" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -47698,11 +47655,11 @@ sme
 sme
 sme
 sme
-nKI
+kGu
 hAl
 iPh
 DAF
-Tus
+eAf
 VZz
 tai
 wSL
@@ -47711,7 +47668,7 @@ Pqq
 Pqq
 Tpn
 raW
-MVg
+nfk
 QXe
 fMG
 scI
@@ -47955,11 +47912,11 @@ sme
 sme
 sme
 sme
-vzt
+GtG
 UPn
 AxL
 AxL
-FJv
+pIr
 dHH
 TMM
 OQO
@@ -48469,11 +48426,11 @@ sme
 sme
 sme
 sme
-MTy
+weo
 hAl
 gPT
 DAF
-Tus
+eAf
 AeD
 AMs
 wzz
@@ -48726,11 +48683,11 @@ sme
 sme
 sme
 sme
-eMK
+NYp
 UPn
 AxL
 AxL
-NXI
+pIr
 dHH
 EcF
 EJJ
@@ -49018,7 +48975,7 @@ wim
 VeA
 heg
 iuy
-AER
+mqV
 mqV
 mqV
 mqV
@@ -49240,11 +49197,11 @@ sme
 sme
 sme
 sme
-MTy
+weo
 hAl
 gPT
 DAF
-JbN
+QmO
 AeD
 uKb
 PFw
@@ -49497,11 +49454,11 @@ sme
 sme
 sme
 sme
-hDd
+NYp
 UPn
 AxL
 AxL
-NXI
+pIr
 dHH
 sWL
 ZRu
@@ -49759,7 +49716,7 @@ XAS
 XAS
 XAS
 XAS
-GCt
+Vcl
 DCj
 XAS
 Gng
@@ -50011,11 +49968,11 @@ sme
 sme
 sme
 sme
-MTy
+weo
 hAl
 iPh
 DAF
-JbN
+QmO
 AeD
 uKb
 mbn
@@ -50268,11 +50225,11 @@ sme
 sme
 sme
 sme
-hDd
+NYp
 UPn
 AxL
 AxL
-NXI
+pIr
 BRS
 LXo
 mbn
@@ -52097,7 +52054,7 @@ ICv
 gKa
 pzc
 VQK
-GKJ
+BVl
 Gad
 pLs
 PAR
