@@ -8,7 +8,7 @@
 	range = -1
 	include_user = 1
 	invocation = "RAC'WA NO!"
-	invocation_type = "shout"
+	invocation_type = "whisper"
 	action_icon_state = "shapeshift"
 
 	var/shapeshift_type
