@@ -1303,21 +1303,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
-"cGF" = (
-/obj/structure/closet/secure_closet/chemical,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/status_display{
-	density = 0;
-	layer = 4;
-	pixel_x = -32;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (NORTHWEST)";
-	icon_state = "whiteblue";
-	dir = 9
-	},
-/area/shuttle/ftl/medical/medbay)
 "cHM" = (
 /obj/effect/landmark/start{
 	name = "Botanist";
@@ -7527,18 +7512,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/atmos/equipment)
-"ohV" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	name = "Boris Mayonnaise's closet";
-	registered_name = "Boris Mayonnaise"
-	},
-/obj/item/weapon/storage/fancy/cigarettes/cigars/cohiba,
-/obj/item/weapon/gun/projectile/revolver/mateba,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "oiN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/decal/cleanable/dirt,
@@ -11328,6 +11301,23 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/wood,
 /area/shuttle/ftl/bridge/meeting_room)
+"unO" = (
+/obj/structure/closet/secure_closet/chemical,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/status_display{
+	density = 0;
+	layer = 4;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/obj/item/weapon/storage/bag/chemistry,
+/obj/item/weapon/storage/bag/chemistry,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTHWEST)";
+	icon_state = "whiteblue";
+	dir = 9
+	},
+/area/shuttle/ftl/medical/medbay)
 "uqe" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station,
 /obj/effect/decal/cleanable/greenglow,
@@ -13891,6 +13881,11 @@
 /mob/living/simple_animal/cockroach,
 /turf/open/floor/wood,
 /area/shuttle/ftl/bridge)
+"zGp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall,
+/area/shuttle/ftl/cargo/office)
 "zGB" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/greenglow,
@@ -15181,34 +15176,6 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/security/hos)
-"Cbb" = (
-/obj/structure/table/glass,
-/obj/item/weapon/storage/box/beakers{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/box/beakers{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/station,
-/obj/item/weapon/storage/bag/chemistry,
-/obj/item/weapon/storage/bag/chemistry,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/device/radio/intercom{
-	dir = 2;
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (SOUTHEAST)";
-	icon_state = "whiteblue";
-	dir = 6
-	},
-/area/shuttle/ftl/medical/chemistry)
 "Cbf" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/decal/cleanable/dirt,
@@ -16817,11 +16784,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/break_room)
-"EPE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor,
-/turf/closed/wall,
-/area/shuttle/ftl/cargo/office)
 "EQr" = (
 /obj/machinery/door/window/southright{
 	name = "Shuttle Brig";
@@ -17738,6 +17700,11 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/surgery)
+"Gvl" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall,
+/area/shuttle/ftl/cargo/office)
 "GvT" = (
 /obj/machinery/recycler,
 /turf/open/floor/plating,
@@ -18627,6 +18594,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/primary/central)
+"IlI" = (
+/obj/structure/table/glass,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/reagentgrinder,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTHWEST)";
+	icon_state = "whiteblue";
+	dir = 9
+	},
+/area/shuttle/ftl/medical/chemistry)
 "Imu" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -18957,12 +18938,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/secure_construction)
-"IRE" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor,
-/turf/closed/wall,
-/area/shuttle/ftl/cargo/office)
 "IRY" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -19715,6 +19690,32 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/virology)
+"KlU" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper,
+/obj/item/weapon/reagent_containers/dropper,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/station,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/device/radio/intercom{
+	dir = 2;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (SOUTHEAST)";
+	icon_state = "whiteblue";
+	dir = 6
+	},
+/area/shuttle/ftl/medical/chemistry)
 "Kmf" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/snacks/mint{
@@ -24218,6 +24219,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
+"Taa" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Boris Mayonnaise's closet";
+	registered_name = "Boris Mayonnaise"
+	},
+/obj/item/weapon/gun/projectile/revolver/mateba,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/beserker{
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "Tap" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -24481,20 +24496,6 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/yellow,
 /area/shuttle/ftl/engine/tool_storage)
-"TCs" = (
-/obj/structure/table/glass,
-/obj/machinery/reagentgrinder,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/whiteblue/side{
-	tag = "icon-whiteblue (NORTHWEST)";
-	icon_state = "whiteblue";
-	dir = 9
-	},
-/area/shuttle/ftl/medical/chemistry)
 "TCJ" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -31
@@ -27327,12 +27328,6 @@
 "Yzz" = (
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/main)
-"YzO" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor,
-/turf/closed/wall,
-/area/shuttle/ftl/cargo/office)
 "YAo" = (
 /obj/structure/chair{
 	dir = 1
@@ -45609,7 +45604,7 @@ IKS
 fWe
 YIW
 rvK
-IRE
+Gvl
 vvm
 dmu
 vGQ
@@ -45866,7 +45861,7 @@ Yje
 FWc
 jPj
 EQH
-YzO
+zGp
 ECr
 swy
 ZPF
@@ -46123,7 +46118,7 @@ EuV
 ESR
 VUt
 ntC
-EPE
+zLg
 qTu
 swy
 ZPF
@@ -46380,7 +46375,7 @@ BhV
 zLg
 NYq
 zLg
-EPE
+zLg
 qTu
 swy
 ZPF
@@ -47682,11 +47677,11 @@ biz
 sme
 sme
 Gkh
-TCs
+IlI
 gjg
 qIT
 vTG
-cGF
+unO
 fOW
 jVf
 Qrx
@@ -48455,7 +48450,7 @@ sme
 xXk
 Rtg
 HVe
-Cbb
+KlU
 mLF
 fTJ
 slQ
@@ -62063,7 +62058,7 @@ ELU
 ESQ
 OqJ
 alv
-ohV
+Taa
 jzE
 rTI
 SBQ
