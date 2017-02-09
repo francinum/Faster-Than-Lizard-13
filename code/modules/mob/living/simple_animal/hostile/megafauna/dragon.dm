@@ -271,9 +271,9 @@
 	
 /mob/living/simple_animal/hostile/megafauna/dragon/kaal
 	name = "Kaalnaaluth"
-	desc = "Guardians of the necropolis... Something seems off with this one. It appears to be more frail."
-	health = 500
-	maxHealth = 500
+	desc = "Guardians of the necropolis, but... Something seems off with this one. It appears to be more frail."
+	health = 400
+	maxHealth = 400
 	attacktext = "chomps"
 	attack_sound = 'sound/magic/demon_attack1.ogg'
 	icon_state = "dragon"
