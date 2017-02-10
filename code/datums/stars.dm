@@ -13,6 +13,10 @@
 	var/danger_level = 0
 	var/capital_planet = 0
 
+	var/PathNode/PNode = null //for pathfinding
+
+	var/datum/space_station/primary_station = null
+
 /datum/star_system/proc/generate()
 	name = generate_star_name()
 	var/valid_coords = 0
@@ -89,6 +93,7 @@
 	var/keep_loaded = 0 // Adminbus var to keep planet loaded
 	var/surface_area_type
 	var/surface_turf_type
+	var/resource_type
 	var/nav_icon_name = "gas"
 
 /datum/planet/New(p_system)
@@ -193,8 +198,19 @@
 	var/list/stock = list()
 	var/datum/planet/planet
 
+	var/list/resources = list()
+	var/list/prices = list()
+
+	var/list/reserved_resources = list()
+
+	var/primary_resource
+	var/is_primary = 0
+
+
 /datum/space_station/New(var/datum/planet/P)
 	planet = P
+
+	SSstarmap.stations += src
 
 /datum/space_station/proc/generate()
 	// TODO: Implement a more sophisticated way of generating station stocks.
