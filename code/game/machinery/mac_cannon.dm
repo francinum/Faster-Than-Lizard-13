@@ -66,9 +66,9 @@
 			explosion(breech,1,2,6)
 		else
 			var/obj/item/projectile/ship_projectile/mac_round/M = PoolOrNew(breech.loaded_shell.projectile,get_step(src,dir))
-+			if(breech.loaded_shell.armed)
-+				M.attack_data = breech.loaded_shell.attack_data
-+			M.target = target_component
+			if(breech.loaded_shell.armed)
+				M.attack_data = breech.loaded_shell.attack_data
+			M.target = target_component
 			M.setDir(src,dir)
 			M.starting = src.loc
 			M.fire()
