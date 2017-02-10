@@ -13,6 +13,8 @@ var/global/list/ftl_weapons_consoles = list()
 	var/list/star_factions = list()
 	var/list/ship_components = list()
 	var/list/ship_types = list()
+	
+	var/debug_ships = 0		//you are going to want to leave this off, trust me
 
 	var/alert_sound = 'sound/machines/warning-buzzer.ogg'
 	var/success_sound = 'sound/machines/ping.ogg'
