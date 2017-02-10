@@ -516,4 +516,4 @@ var/global/list/ftl_weapons_consoles = list()
 	SSstarmap.process_economy()
 
 /datum/subsystem/ship/fire()
-process_ships()
+	process_ships()
