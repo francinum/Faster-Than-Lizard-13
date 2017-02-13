@@ -534,7 +534,7 @@
 				if(!( src.printing ))
 					src.printing = 1
 					data_core.medicalPrintCount++
-					playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)
+					playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 0)
 					sleep(55)
 					var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( src.loc )
 					P.info = "<CENTER><B>Medical Record - (MR-[data_core.medicalPrintCount])</B></CENTER><BR>"
