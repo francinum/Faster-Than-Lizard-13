@@ -250,7 +250,7 @@
 				else
 		else
 			dat += text("<A href='?src=\ref[];choice=Log In'>{Log In}</A>", src)
-	//user << browse(text("<HEAD><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec;size=600x400")
+	//user << browse(text("<HEAD><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec;size=600x400") 
 	//onclose(user, "secure_rec")
 	var/datum/browser/popup = new(user, "secure_rec", "Security Records Console", 600, 400)
 	popup.set_content(dat)
@@ -359,7 +359,7 @@ What a mess.*/
 				if(!( printing ))
 					printing = 1
 					data_core.securityPrintCount++
-					playsound(loc, 'sound/items/poster_being_created.ogg', 100, 1)
+					playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)	//quieter, because higher screech
 					sleep(30)
 					var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( loc )
 					P.info = "<CENTER><B>Security Record - (SR-[data_core.securityPrintCount])</B></CENTER><BR>"
@@ -439,7 +439,7 @@ What a mess.*/
 
 						var/info = stripped_multiline_input(usr, "Please input a description for the poster:", "Print Wanted Poster", default_description, null)
 						if(info)
-							playsound(loc, 'sound/items/poster_being_created.ogg', 100, 1)
+							playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)
 							printing = 1
 							sleep(30)
 							if((istype(active1, /datum/data/record) && data_core.general.Find(active1)))//make sure the record still exists.
