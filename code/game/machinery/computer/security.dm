@@ -359,7 +359,7 @@ What a mess.*/
 				if(!( printing ))
 					printing = 1
 					data_core.securityPrintCount++
-					playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)	//quieter, because higher screech
+					playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 0)	//quieter, because higher screech
 					sleep(55)
 					var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( loc )
 					P.info = "<CENTER><B>Security Record - (SR-[data_core.securityPrintCount])</B></CENTER><BR>"
@@ -439,7 +439,7 @@ What a mess.*/
 
 						var/info = stripped_multiline_input(usr, "Please input a description for the poster:", "Print Wanted Poster", default_description, null)
 						if(info)
-							playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)
+							playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 0)
 							printing = 1
 							sleep(55)
 							if((istype(active1, /datum/data/record) && data_core.general.Find(active1)))//make sure the record still exists.
