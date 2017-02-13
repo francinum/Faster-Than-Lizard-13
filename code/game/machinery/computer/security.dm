@@ -250,7 +250,7 @@
 				else
 		else
 			dat += text("<A href='?src=\ref[];choice=Log In'>{Log In}</A>", src)
-	//user << browse(text("<HEAD><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec;size=600x400") 
+	//user << browse(text("<HEAD><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec;size=600x400")�
 	//onclose(user, "secure_rec")
 	var/datum/browser/popup = new(user, "secure_rec", "Security Records Console", 600, 400)
 	popup.set_content(dat)
@@ -360,7 +360,7 @@ What a mess.*/
 					printing = 1
 					data_core.securityPrintCount++
 					playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)	//quieter, because higher screech
-					sleep(30)
+					sleep(55)
 					var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( loc )
 					P.info = "<CENTER><B>Security Record - (SR-[data_core.securityPrintCount])</B></CENTER><BR>"
 					if((istype(active1, /datum/data/record) && data_core.general.Find(active1)))
@@ -441,7 +441,7 @@ What a mess.*/
 						if(info)
 							playsound(loc, 'sound/items/dot_matrix_printer.ogg', 70, 1)
 							printing = 1
-							sleep(30)
+							sleep(55)
 							if((istype(active1, /datum/data/record) && data_core.general.Find(active1)))//make sure the record still exists.
 								var/obj/item/weapon/photo/photo = active1.fields["photo_front"]
 								new /obj/item/weapon/poster/legit/wanted(src.loc, photo.img, wanted_name, info)
