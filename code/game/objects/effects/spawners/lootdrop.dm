@@ -169,6 +169,7 @@
   	/obj/item/weapon/pickaxe/drill = 2,
 		/obj/structure/janitorialcart = 3,
 		/obj/structure/reagent_dispensers/beerkeg = 3,
+		/obj/item/weapon/gun/projectile/automatic/br55/civilian = 3,
 		/obj/structure/reagent_dispensers/watertank = 3,
 		/obj/machinery/suit_storage_unit/mining = 1,
 		/obj/machinery/suit_storage_unit/mining/eva = 2,
@@ -206,6 +207,7 @@
 		/obj/item/weapon/storage/box/firingpins = 1,
 		/obj/item/weapon/suppressor = 2,
 		/obj/item/weapon/grenade/plastic/c4  = 1,
+		/obj/item/ammo_box/magazine/br55/civilian = 2,
 		"" = 25, //estimate
 		)
 
@@ -246,9 +248,9 @@
 			/obj/item/weapon/grenade/clusterbuster = 1,
 			/obj/item/weapon/gun/medbeam = 1,
 			/obj/item/weapon/gun/energy/floragun = 2,
-			/obj/item/weapon/gun/energy/pulse = 3,
 			/obj/item/weapon/gun/magic/staff/honk = 1,
 			/obj/item/weapon/gun/projectile/shotgun/automatic/combat = 1,
+			/obj/item/weapon/gun/projectile/automatic/br55 = 2,
 			/obj/item/weapon/gun/projectile/revolver/golden = 1,
 			/obj/item/weapon/gun/projectile/revolver = 3,
 			/obj/structure/statue/bananium/clown = 1,

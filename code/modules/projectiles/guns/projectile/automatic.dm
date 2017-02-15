@@ -3,10 +3,12 @@
 	w_class = 3
 	var/alarmed = 0
 	var/select = 1
+	var/can_tactical_reload = 1
 	can_suppress = 1
 	burst_size = 3
 	fire_delay = 2
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	var/eject_sound = null		//only used with the M1 Garand, so expect disappointment if you try it elsewhere
 
 /obj/item/weapon/gun/projectile/automatic/proto
 	name = "\improper NanoTrasen Saber SMG"
@@ -31,23 +33,40 @@
 	. = ..()
 	if(.)
 		return
-	if(istype(A, /obj/item/ammo_box/magazine))
-		var/obj/item/ammo_box/magazine/AM = A
-		if(istype(AM, mag_type))
-			if(magazine)
-				user << "<span class='notice'>You perform a tactical reload on \the [src], replacing the magazine.</span>"
-				magazine.loc = get_turf(src.loc)
-				magazine.update_icon()
-				magazine = null
-			else
-				user << "<span class='notice'>You insert the magazine into \the [src].</span>"
-			user.remove_from_mob(AM)
-			magazine = AM
-			magazine.loc = src
-			chamber_round()
-			A.update_icon()
-			update_icon()
-			return 1
+	if(can_tactical_reload == 1)
+		if(istype(A, /obj/item/ammo_box/magazine))
+			var/obj/item/ammo_box/magazine/AM = A
+			if(istype(AM, mag_type))
+				if(magazine)
+					user << "<span class='notice'>You perform a tactical reload on \the [src], replacing the magazine.</span>"
+					magazine.loc = get_turf(src.loc)
+					magazine.update_icon()
+					magazine = null
+				else
+					user << "<span class='notice'>You insert the magazine into \the [src].</span>"
+				user.remove_from_mob(AM)
+				magazine = AM
+				magazine.loc = src
+				chamber_round()
+				A.update_icon()
+				update_icon()
+				return 1
+	else if(can_tactical_reload == 2)		//used with the M1 Garand
+		if(magazine || !chambered)		//cheap hack, removing the magazine dechambers it
+			user << "<span class='warning'>You cannot perform a tactical reload with an en-bloc clip, eject it first!</span>"
+			return
+		else
+			if(istype(A, /obj/item/ammo_box/magazine))
+				var/obj/item/ammo_box/magazine/AM = A
+				if(istype(AM, mag_type))
+					user << "<span class='notice'>You insert the en-bloc clip into \the [src].</span>"
+					user.remove_from_mob(AM)
+					magazine = AM
+					magazine.loc = src
+					chamber_round()
+					A.update_icon()
+					update_icon()
+					return 1
 
 /obj/item/weapon/gun/projectile/automatic/ui_action_click()
 	burst_select()
@@ -123,6 +142,32 @@
 /obj/item/weapon/gun/projectile/automatic/wt550/update_icon()
 	..()
 	icon_state = "wt550[magazine ? "-[Ceiling(get_ammo(0)/4)*4]" : ""]"
+
+/obj/item/weapon/gun/projectile/automatic/br55
+	name = "\improper BR55 Battle Rifle"
+	desc = "A battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector has a 3-round-burst and a semi-automatic mode."
+	icon_state = "br55"
+	item_state = "c20r"
+	mag_type = /obj/item/ammo_box/magazine/br55
+	fire_delay = 1
+	can_suppress = 0
+	burst_size = 3
+	fire_sound = 'sound/weapons/gunshot_br55.ogg'
+
+/obj/item/weapon/gun/projectile/automatic/br55/update_icon()
+	..()
+	icon_state = "[initial(icon_state)][chambered ? "" : "-locked"][magazine ? "" : "-nomag"]"
+	return
+	
+/obj/item/weapon/gun/projectile/automatic/br55/civilian
+	name = "\improper BR55-CV rifle"
+	desc = "The civilian variant of a battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector only has a semi-automatic mode."
+	icon_state = "br55civ"
+	mag_type = /obj/item/ammo_box/magazine/br55/civilian
+	fire_delay = 2
+	can_suppress = 0
+	burst_size = 0
+	actions_types = list()
 
 /obj/item/weapon/gun/projectile/automatic/mini_uzi
 	name = "\improper 'Type U3' Uzi"
@@ -466,4 +511,64 @@
 /obj/item/weapon/gun/projectile/automatic/ak922/update_icon()
 	..()
 	icon_state = "ak922[magazine ? "-[Ceiling(get_ammo(0)/5)*5]" : ""][chambered ? "" : "-e"]"
+	return
+	
+/////////////////////
+// M1 GARAND
+/////////////////////
+
+/obj/item/weapon/gun/projectile/automatic/garand
+	w_class = 4
+	fire_delay = 2
+	name = "\improper M1 Garand"
+	desc = "This 7.62x51mm rifle is well-known for its eight-round en-bloc clip that ejects with a distinctive <i>ping!</i>, and its use during a war in the early 1940s."
+	icon_state = "garand"
+	item_state = "moistnugget"
+	mag_type = /obj/item/ammo_box/magazine/enbloc
+	actions_types = list()
+	fire_delay = 2
+	can_tactical_reload = 2
+	can_suppress = 0
+	burst_size = 0
+	fire_sound = "sound/weapons/Gunshot_beefy.ogg"
+	eject_sound = "sound/weapons/garand_ping.ogg"
+	
+/obj/item/weapon/gun/projectile/automatic/garand/update_icon()
+	..()
+	icon_state = "[initial(icon_state)][chambered ? "" : "-locked"]"
+
+
+/obj/item/weapon/gun/projectile/automatic/garand/afterattack()
+	..()
+	if (magazine && !chambered)
+		empty_alarm()
+	return
+	
+/obj/item/weapon/gun/projectile/automatic/garand/empty_alarm()
+	if(!chambered && !get_ammo() && !alarmed)
+		src.visible_message("<span class='warning'>The clip ejects from \the [src]!</span>")
+		playsound(src.loc, eject_sound, 40, 1)
+		magazine.loc = get_turf(src.loc)
+		magazine.update_icon()
+		magazine.SpinAnimation(10,1)
+		magazine = null
+		update_icon()
+	return
+	
+
+/obj/item/weapon/gun/projectile/automatic/garand/attack_self(mob/living/user)
+	var/obj/item/ammo_casing/AC = chambered //Find chambered round
+	if(magazine)
+		magazine.loc = get_turf(src.loc)
+		magazine.update_icon()
+		magazine.SpinAnimation(10,1)
+		magazine = null
+		user << "<span class='notice'>You eject the en-bloc clip from \the [src].</span>"
+		playsound(src.loc, eject_sound, 50, 1)
+		AC.loc = get_turf(src)		//we want it to de-chamber at the same time
+		AC.SpinAnimation(10, 1)
+		chambered = null
+	else
+		user << "<span class='notice'>There's no en-bloc clip in \the [src].</span>"
+	update_icon()
 	return
