@@ -12,6 +12,20 @@
 "acU" = (
 /turf/open/floor/holofloor/beach,
 /area/shuttle/ftl/holodeck/rec_center/beach)
+"aea" = (
+/obj/machinery/sleeper{
+	desc = "A magical machine supposedly able to cure everything. Except the crack of dawn, missing and/or broken limbs, or mental health.";
+	efficiency = 5;
+	min_health = -99;
+	name = "Centcomm sleeper";
+	possible_chems = list(  list("adminordrazine", "epinephrine", "morphine", "salbutamol", "bicaridine", "kelotane"),  list("oculine"),  list("antitoxin", "mutadone", "mannitol", "pen_acid"),  list("omnizine") )
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTHWEST)";
+	icon_state = "whiteblue";
+	dir = 9
+	},
+/area/centcom/ferry)
 "afB" = (
 /obj/machinery/capture_the_flag/red,
 /turf/open/floor/plasteel/circuit/gcircuit/animated,
@@ -45,6 +59,19 @@
 /obj/structure/closet,
 /turf/open/floor/plasteel,
 /area/centcom/supply)
+"aBg" = (
+/obj/structure/chair/office/light{
+	dir = 4
+	},
+/obj/machinery/turretid{
+	control_area = "Centcom Transport Shuttle Dock";
+	enabled = 0;
+	name = "checkpoint turret control";
+	pixel_x = 58;
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
 "aDg" = (
 /turf/open/floor/plating/beach/sand,
 /area/centcom/holding)
@@ -84,6 +111,11 @@
 	icon_state = "alien11"
 	},
 /area/abductor_ship)
+"bdo" = (
+/turf/closed/indestructible/fakedoor{
+	name = "Office: J. Kelso"
+	},
+/area/centcom/ferry)
 "beZ" = (
 /mob/living/simple_animal/hostile/hadesacolyte,
 /turf/open/floor/plasteel/hades,
@@ -146,6 +178,15 @@
 /obj/item/weapon/storage/fancy/candle_box,
 /turf/open/floor/carpet,
 /area/hades)
+"bKi" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "bRS" = (
 /obj/structure/table/wood,
 /obj/item/weapon/paper{
@@ -153,6 +194,17 @@
 	},
 /turf/open/floor/plasteel/shuttle/white,
 /area/shuttle/escape)
+"bTO" = (
+/obj/machinery/door/poddoor/multi_tile/four_tile_hor{
+	name = "Large Pod Door 4"
+	},
+/obj/structure/spacepoddoor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "bUc" = (
 /turf/closed/wall/shuttle{
 	dir = 2;
@@ -207,6 +259,15 @@
 "cdt" = (
 /turf/closed/indestructible/riveted,
 /area/tdome/arena)
+"cfs" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "dunn_shutter"
+	},
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows2";
+	dir = 1
+	},
+/area/centcom/ferry)
 "cfK" = (
 /obj/machinery/recharger{
 	pixel_y = 4
@@ -252,6 +313,12 @@
 	dir = 5
 	},
 /area/shuttle/assault_pod)
+"cut" = (
+/obj/machinery/computer/camera_advanced,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "cBK" = (
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/plasteel/hades,
@@ -273,6 +340,13 @@
 "cMQ" = (
 /turf/open/floor/plasteel/circuit/rcircuit,
 /area/ctf)
+"cMW" = (
+/obj/machinery/door/poddoor/shutters,
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows2";
+	dir = 1
+	},
+/area/centcom/ferry)
 "cNO" = (
 /obj/machinery/computer/camera_advanced/abductor{
 	team = 1
@@ -301,6 +375,10 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/syndicate_mothership)
 "cSx" = (
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"cTL" = (
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/black,
 /area/centcom/ferry)
 "cUi" = (
@@ -335,6 +413,14 @@
 	dir = 8
 	},
 /area/ctf)
+"dpz" = (
+/turf/open/floor/plasteel/darkblue/corner,
+/area/centcom/ferry)
+"dpP" = (
+/turf/open/floor/plasteel/darkred/side{
+	dir = 5
+	},
+/area/centcom/ferry)
 "drp" = (
 /turf/open/floor/holofloor{
 	dir = 8;
@@ -459,12 +545,25 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/thunderdome)
+"dPW" = (
+/obj/structure/table/wood,
+/obj/item/weapon/lighter,
+/obj/item/weapon/storage/fancy/cigarettes/cigpack_robust{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/device/flashlight/lamp,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "dSy" = (
 /turf/closed/wall/shuttle{
 	icon_state = "swall4";
 	dir = 2
 	},
 /area/wizard_station)
+"dSI" = (
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
 "dSO" = (
 /turf/open/floor/plasteel/red/corner{
 	dir = 1
@@ -668,6 +767,12 @@
 	},
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"fVX" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "fYd" = (
 /turf/open/floor/holofloor{
 	dir = 5;
@@ -739,6 +844,13 @@
 	},
 /turf/open/floor/plasteel/warningline,
 /area/ctf)
+"goW" = (
+/obj/structure/chair/comfy/brown{
+	buildstackamount = 0;
+	dir = 1
+	},
+/turf/open/floor/plasteel/whiteblue/side,
+/area/centcom/ferry)
 "grt" = (
 /obj/machinery/door/poddoor{
 	id = "thunderdomegen";
@@ -756,6 +868,22 @@
 	},
 /turf/open/space/transit/reverse,
 /area/space)
+"gwd" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
+"gxr" = (
+/obj/machinery/button/door{
+	id = "kelloway";
+	name = "Administrative Shutter-Control";
+	pixel_x = 24;
+	pixel_y = 8
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "gCh" = (
 /turf/open/space,
 /obj/machinery/porta_turret/syndicate/pod,
@@ -788,6 +916,13 @@
 "gRe" = (
 /turf/open/floor/plasteel/delivery,
 /area/centcom/holding)
+"gRt" = (
+/obj/structure/table,
+/obj/machinery/recharger,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "gRS" = (
 /turf/open/floor/plasteel/red/side{
 	dir = 8
@@ -798,23 +933,28 @@
 	dir = 4
 	},
 /area/centcom/evac)
-"gSX" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Administrative Office";
-	opacity = 1;
-	req_access_txt = "109"
-	},
-/turf/open/floor/wood,
-/area/centcom/ferry)
 "haL" = (
 /turf/open/floor/plasteel/green/side{
 	dir = 4
 	},
 /area/tdome/arena)
+"hbt" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "hcF" = (
 /obj/machinery/vending/snack,
 /turf/open/floor/engine/cult,
 /area/wizard_station)
+"hcW" = (
+/obj/machinery/computer/station_alert,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "hdk" = (
 /obj/docking_port/stationary{
 	dir = 8;
@@ -906,6 +1046,13 @@
 "hAb" = (
 /turf/closed/indestructible/rock/snow,
 /area/syndicate_mothership)
+"hDE" = (
+/obj/structure/table,
+/obj/item/device/detective_scanner,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "hGR" = (
 /turf/closed/indestructible/fakeglass{
 	icon_state = "fakewindows2";
@@ -929,6 +1076,11 @@
 /obj/structure/chair,
 /turf/open/floor/plasteel/shuttle/red,
 /area/shuttle/assault_pod)
+"hUo" = (
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "hVF" = (
 /obj/structure/chair/wood/normal{
 	icon_state = "wooden_chair";
@@ -943,6 +1095,15 @@
 	icon_state = "white_warn"
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
+"iak" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 10
+	},
+/area/centcom/ferry)
 "ibF" = (
 /turf/open/floor/plasteel/circuit/gcircuit/off,
 /area/ctf)
@@ -1031,6 +1192,14 @@
 	},
 /turf/open/floor/plasteel/warningline,
 /area/ctf)
+"iGj" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Administrative Offices";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "iHA" = (
 /obj/machinery/door/poddoor/ert,
 /turf/open/floor/plasteel/freezer{
@@ -1081,6 +1250,13 @@
 	dir = 5
 	},
 /area/syndicate_mothership)
+"joT" = (
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (EAST)";
+	icon_state = "whiteblue";
+	dir = 4
+	},
+/area/centcom/ferry)
 "jqs" = (
 /obj/structure/window{
 	icon_state = "rwindow";
@@ -1138,6 +1314,22 @@
 	dir = 6
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
+"jMC" = (
+/obj/machinery/button/door{
+	id = "centcomm_checkpoint";
+	name = "checkpoint lockdown";
+	pixel_x = 8;
+	pixel_y = -24
+	},
+/obj/structure/closet/secure_closet/security,
+/obj/item/device/flashlight/seclite,
+/obj/item/device/flashlight/seclite,
+/obj/item/device/flashlight/seclite,
+/obj/item/device/camera,
+/obj/item/device/camera_film,
+/obj/item/device/camera_film,
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
 "jPV" = (
 /turf/closed/indestructible/fakeglass{
 	icon_state = "fakewindows2";
@@ -1159,6 +1351,10 @@
 "jSq" = (
 /turf/open/floor/plasteel/blue,
 /area/ctf)
+"jTo" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "jUl" = (
 /obj/effect/forcefield,
 /obj/structure/door_assembly/door_assembly_uranium{
@@ -1172,6 +1368,17 @@
 	icon_state = "cultdamage2"
 	},
 /area/wizard_station)
+"jWz" = (
+/obj/machinery/vending/liberationstation,
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
+"kbM" = (
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
+	},
+/area/centcom/ferry)
 "kgr" = (
 /turf/open/floor/holofloor{
 	dir = 10;
@@ -1199,6 +1406,10 @@
 	dir = 8
 	},
 /area/syndicate_mothership)
+"krV" = (
+/obj/machinery/door/poddoor/shutters,
+/turf/closed/indestructible/fakeglass,
+/area/centcom/ferry)
 "ktP" = (
 /turf/open/floor/plasteel/darkblue/side{
 	tag = "icon-darkblue (SOUTHWEST)";
@@ -1209,6 +1420,11 @@
 	dir = 10
 	},
 /area/ctf)
+"kuI" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/food/snacks/pie/cherrypie,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "kwW" = (
 /turf/open/floor/holofloor{
 	dir = 1;
@@ -1249,6 +1465,36 @@
 "kQv" = (
 /turf/open/floor/plating,
 /area/centcom/evac)
+"kRy" = (
+/obj/structure/closet{
+	icon_door = "red";
+	name = "Centcomm security wardrobe"
+	},
+/obj/item/clothing/suit/security/officer,
+/obj/item/weapon/storage/backpack/security,
+/obj/item/weapon/storage/backpack/satchel_sec,
+/obj/item/weapon/storage/backpack/dufflebag/sec,
+/obj/item/weapon/storage/backpack/dufflebag/sec,
+/obj/item/clothing/under/rank/security/navyblue,
+/obj/item/clothing/under/rank/security/navyblue,
+/obj/item/clothing/under/rank/security/navyblue,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/head/beret/sec/navyofficer,
+/obj/item/clothing/head/beret/sec/navyofficer,
+/obj/item/clothing/head/beret/sec/navyofficer,
+/obj/item/clothing/head/soft/sec,
+/obj/item/clothing/head/soft/sec,
+/obj/item/clothing/head/soft/sec,
+/obj/structure/noticeboard{
+	pixel_x = 0;
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "kSo" = (
 /turf/open/floor/plasteel/darkred/side{
 	tag = "icon-darkred (EAST)";
@@ -1382,6 +1628,15 @@
 /mob/living/simple_animal/hostile/hadesacolyte,
 /turf/open/floor/mineral/gold,
 /area/hades)
+"lYg" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "dunn_shutter"
+	},
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows";
+	dir = 1
+	},
+/area/centcom/ferry)
 "lZC" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/wood,
@@ -1398,6 +1653,15 @@
 	},
 /turf/open/floor/plasteel/redyellow,
 /area/tdome/tdomeadmin)
+"mne" = (
+/obj/machinery/computer/atmos_alert,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"msU" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 5
+	},
+/area/centcom/ferry)
 "mtz" = (
 /obj/structure/table/wood,
 /obj/item/weapon/storage/box/donkpockets,
@@ -1410,6 +1674,10 @@
 	pixel_y = 26
 	},
 /turf/open/floor/carpet,
+/area/centcom/ferry)
+"mzM" = (
+/obj/machinery/computer/monitor,
+/turf/open/floor/plasteel/black,
 /area/centcom/ferry)
 "mAR" = (
 /obj/machinery/door/airlock/shuttle,
@@ -1500,6 +1768,17 @@
 	dir = 2
 	},
 /area/syndicate_mothership)
+"mTc" = (
+/obj/machinery/door/poddoor/multi_tile/four_tile_hor{
+	name = "Large Pod Door 2"
+	},
+/obj/structure/spacepoddoor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "mXj" = (
 /turf/open/floor/holofloor{
 	dir = 4;
@@ -1521,6 +1800,11 @@
 	},
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"nga" = (
+/turf/open/floor/plasteel/darkred/side{
+	dir = 8
+	},
+/area/centcom/ferry)
 "nhf" = (
 /turf/open/space/transit/horizontal,
 /turf/open/space/transit/horizontal/noop,
@@ -1529,6 +1813,11 @@
 /obj/structure/barricade/security/ctf,
 /turf/open/floor/plasteel/circuit/rcircuit,
 /area/ctf)
+"nmA" = (
+/obj/structure/bed/roller,
+/obj/item/weapon/bedsheet/centcom,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "nnH" = (
 /obj/machinery/camera{
 	pixel_x = 11;
@@ -1573,6 +1862,10 @@
 /obj/item/device/camera,
 /turf/open/floor/plating/beach/sand,
 /area/centcom/holding)
+"nEk" = (
+/obj/machinery/computer/crew,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "nGk" = (
 /turf/open/floor/holofloor/beach/water,
 /area/shuttle/ftl/holodeck/rec_center/beach)
@@ -1611,6 +1904,23 @@
 /obj/item/weapon/cautery/alien,
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"obe" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "kelloway"
+	},
+/turf/closed/indestructible/fakeglass,
+/area/centcom/ferry)
+"orJ" = (
+/obj/structure/table/wood,
+/obj/item/weapon/paper_bin{
+	amount = 6;
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/weapon/folder/yellow,
+/obj/item/weapon/paper/monitorkey,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "otH" = (
 /turf/open/space/transit,
 /area/space)
@@ -1639,11 +1949,24 @@
 	dir = 2
 	},
 /area/centcom/holding)
+"oCS" = (
+/obj/structure/filingcabinet,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "oEh" = (
 /obj/structure/table,
 /obj/item/weapon/gun/energy/laser,
 /turf/open/floor/holofloor/plating,
 /area/shuttle/ftl/holodeck/rec_center/bunker)
+"oEJ" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 9
+	},
+/area/centcom/ferry)
 "oFw" = (
 /turf/open/floor/plasteel/darkblue/corner,
 /turf/open/floor/plasteel/warningline{
@@ -1726,6 +2049,15 @@
 	dir = 2
 	},
 /area/centcom/holding)
+"pOm" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 8
+	},
+/area/centcom/ferry)
 "pPR" = (
 /turf/open/floor/plasteel/hades,
 /area/hades)
@@ -1760,6 +2092,12 @@
 /obj/machinery/computer/mech_bay_power_console,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
+"qnp" = (
+/turf/open/floor/plasteel/darkred/corner{
+	tag = "icon-darkredcorners (EAST)";
+	dir = 4
+	},
+/area/centcom/ferry)
 "qpk" = (
 /turf/open/floor/plasteel/darkblue/corner,
 /turf/open/floor/plasteel/warningline{
@@ -1845,12 +2183,39 @@
 	dir = 8
 	},
 /area/centcom/control)
+"qZm" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "spitzoffice"
+	},
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows2";
+	dir = 1
+	},
+/area/centcom/ferry)
+"rbj" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 6
+	},
+/area/centcom/ferry)
 "rbE" = (
 /turf/open/floor/plasteel/darkred/side{
 	tag = "icon-darkred (NORTHWEST)";
 	dir = 9
 	},
 /area/ctf)
+"rbI" = (
+/obj/machinery/porta_turret/ai{
+	dir = 9;
+	on = 0
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 6
+	},
+/area/centcom/ferry)
 "rca" = (
 /obj/item/weapon/twohanded/required/ctf/red,
 /turf/open/floor/plasteel/circuit/gcircuit/animated,
@@ -1872,6 +2237,17 @@
 	dir = 6
 	},
 /area/tdome/tdomeobserve)
+"rhY" = (
+/obj/item/weapon/crowbar/red,
+/obj/structure/table,
+/obj/item/device/spacepod_key,
+/obj/item/device/gps{
+	tracking = 0
+	},
+/turf/open/floor/plasteel/darkyellow/corner{
+	dir = 4
+	},
+/area/centcom/ferry)
 "rjt" = (
 /turf/open/floor/plasteel/black,
 /turf/open/floor/plasteel/warningline{
@@ -1932,6 +2308,10 @@
 	dir = 1
 	},
 /area/centcom/evac)
+"rEj" = (
+/obj/machinery/computer/med_data,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "rGd" = (
 /turf/closed/indestructible/fakeglass{
 	icon_state = "fakewindows";
@@ -1954,6 +2334,9 @@
 /obj/effect/forcefield,
 /turf/open/floor/engine/cult,
 /area/wizard_station)
+"rMC" = (
+/turf/open/floor/plasteel/darkblue/side,
+/area/centcom/ferry)
 "rMO" = (
 /turf/open/floor/plasteel/black,
 /turf/open/floor/plasteel/warningline{
@@ -2003,6 +2386,14 @@
 	icon_state = "cultdamage"
 	},
 /area/wizard_station)
+"spM" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Centcom Security Checkpoint - Confiscations Room";
+	opacity = 1;
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "sqt" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
@@ -2049,6 +2440,10 @@
 	dir = 2
 	},
 /area/centcom/holding)
+"sJi" = (
+/obj/machinery/computer/pmanagement,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "sLC" = (
 /obj/item/weapon/twohanded/required/ctf/blue,
 /turf/open/floor/plasteel/circuit/gcircuit/animated,
@@ -2057,6 +2452,15 @@
 /turf/open/floor/plasteel/black,
 /turf/open/floor/plasteel/warningline,
 /area/ctf)
+"sRY" = (
+/obj/structure/chair/comfy/brown{
+	buildstackamount = 0;
+	dir = 1
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	dir = 10
+	},
+/area/centcom/ferry)
 "sSU" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "adminshut";
@@ -2082,6 +2486,24 @@
 	dir = 10
 	},
 /area/ctf)
+"tbc" = (
+/turf/open/floor/plasteel/darkblue/side{
+	tag = "icon-darkblue (EAST)";
+	dir = 4
+	},
+/area/centcom/ferry)
+"tbL" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Centcom Security Checkpoint";
+	opacity = 1;
+	req_access_txt = "103"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "centcomm_checkpoint";
+	name = "centcomm security shutters"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "tef" = (
 /obj/item/weapon/shard{
 	color = "#008000";
@@ -2125,6 +2547,15 @@
 	icon_state = "green"
 	},
 /area/shuttle/ftl/holodeck/rec_center/thunderdome)
+"trt" = (
+/obj/structure/table/wood,
+/obj/item/weapon/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/weapon/pen/fourcolor,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "tru" = (
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
@@ -2155,11 +2586,59 @@
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/floor/plating/airless,
 /area/wizard_station)
+"tMk" = (
+/obj/structure/table/wood,
+/obj/item/weapon/phone,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
+/turf/open/floor/wood,
+/area/centcom/ferry)
+"tOd" = (
+/obj/structure/rack,
+/obj/item/weapon/gun/energy/pulse/carbine{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/weapon/gun/energy/pulse/carbine{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/weapon/gun/energy/pulse/carbine{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/weapon/gun/energy/pulse/carbine{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/weapon/gun/energy/pulse/carbine,
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
+"tQN" = (
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
+/area/centcom/ferry)
 "tUl" = (
 /turf/open/floor/plasteel/brown{
 	dir = 8
 	},
 /area/centcom/control)
+"tUv" = (
+/obj/machinery/door/airlock/centcom{
+	auto_close = null;
+	autoclose = 0;
+	icon_state = "fake_door";
+	id_tag = "centcomm_interior_airlock";
+	locked = 1;
+	name = "Security Checkpoint Interior Airlock"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "centcomm_checkpoint";
+	name = "centcomm security shutters"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "tVE" = (
 /obj/structure/table/glass,
 /obj/item/weapon/hemostat,
@@ -2227,6 +2706,14 @@
 	dir = 6
 	},
 /area/centcom/evac)
+"uDo" = (
+/obj/machinery/clonepod,
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
+	},
+/area/centcom/ferry)
 "uDV" = (
 /turf/open/floor/plasteel/cult,
 /turf/closed/wall/shuttle{
@@ -2311,6 +2798,23 @@
 /obj/structure/divine/trap/ctf/red,
 /turf/open/floor/plasteel/red,
 /area/ctf)
+"vgk" = (
+/turf/open/floor/plasteel/darkblue/corner{
+	tag = "icon-darkbluecorners (WEST)";
+	dir = 8
+	},
+/area/centcom/ferry)
+"vib" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"viw" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "viJ" = (
 /obj/effect/landmark/abductor/agent{
 	team = 3
@@ -2392,6 +2896,12 @@
 "wsC" = (
 /turf/open/floor/plasteel/green/side,
 /area/centcom/evac)
+"wsU" = (
+/obj/machinery/vending/cola{
+	shut_up = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "wuH" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/black,
@@ -2417,6 +2927,13 @@
 "wzn" = (
 /turf/open/floor/plasteel/green/side,
 /area/tdome/tdomeobserve)
+"wAj" = (
+/obj/machinery/door/poddoor/shutters,
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows";
+	dir = 1
+	},
+/area/centcom/ferry)
 "wCi" = (
 /turf/open/floor/plasteel/darkblue/corner{
 	tag = "icon-darkbluecorners (EAST)";
@@ -2600,6 +3117,15 @@
 "xZt" = (
 /turf/open/floor/holofloor/beach/coast_t,
 /area/shuttle/ftl/holodeck/rec_center/beach)
+"ycd" = (
+/turf/open/floor/plasteel/darkyellow/corner{
+	dir = 1
+	},
+/area/centcom/ferry)
+"ycq" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "yeT" = (
 /obj/structure/window{
 	icon_state = "rwindow";
@@ -2723,6 +3249,10 @@
 	},
 /turf/open/floor/plasteel/shuttle/red,
 /area/shuttle/assault_pod)
+"yWv" = (
+/obj/machinery/photocopier,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "yWG" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Thunderdome";
@@ -2758,6 +3288,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/holding)
+"zfR" = (
+/turf/open/floor/engine,
+/area/centcom/ferry)
 "zfW" = (
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel/hades,
@@ -2939,6 +3472,11 @@
 	icon_state = "green"
 	},
 /area/shuttle/ftl/holodeck/rec_center/basketball)
+"zUu" = (
+/obj/structure/table/reinforced,
+/obj/machinery/microwave,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "zUU" = (
 /turf/open/floor/holofloor{
 	tag = "icon-white_warn (SOUTHEAST)";
@@ -2960,6 +3498,10 @@
 	dir = 2
 	},
 /area/syndicate_mothership)
+"Agh" = (
+/obj/machinery/computer/security,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "Aja" = (
 /obj/structure/bookcase,
 /turf/open/floor/engine/cult,
@@ -2981,6 +3523,21 @@
 	},
 /turf/open/space/transit,
 /area/space)
+"Ams" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/southleft{
+	name = "security checkpoint desk"
+	},
+/obj/machinery/door/window/northleft{
+	name = "security checkpoint desk";
+	req_access_txt = "101"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "centcomm_checkpoint";
+	name = "centcomm security shutters"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "Amv" = (
 /obj/structure/chair/wood/wings,
 /turf/open/floor/engine/cult,
@@ -3001,6 +3558,16 @@
 	},
 /turf/open/floor/engine/cult,
 /area/wizard_station)
+"AsD" = (
+/obj/machinery/door/airlock/glass_large{
+	name = "pod bay 1";
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"AxQ" = (
+/turf/open/floor/plasteel/darkred/corner,
+/area/centcom/ferry)
 "ABO" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/pen,
@@ -3027,6 +3594,15 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/floor/grass,
 /area/hades)
+"AGP" = (
+/obj/machinery/door/airlock/centcom{
+	id_tag = "spitzer_door";
+	name = "Office: R. Spitzer";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "AHe" = (
 /obj/machinery/vending/cigarette{
 	products = list(/obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate = 7, /obj/item/weapon/storage/fancy/cigarettes/cigpack_uplift = 3, /obj/item/weapon/storage/fancy/cigarettes/cigpack_robust = 2, /obj/item/weapon/storage/fancy/cigarettes/cigpack_carp = 3, /obj/item/weapon/storage/fancy/cigarettes/cigpack_midori = 1, /obj/item/weapon/storage/box/matches = 10, /obj/item/weapon/lighter/greyscale = 4, /obj/item/weapon/storage/fancy/rollingpapers = 5)
@@ -3056,6 +3632,23 @@
 /turf/open/floor/plasteel/darkred/side,
 /turf/open/floor/plasteel/warningline,
 /area/ctf)
+"ALH" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Infirmary";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel,
+/area/centcom/ferry)
+"ANX" = (
+/obj/machinery/porta_turret/ai{
+	dir = 5;
+	on = 0
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 10
+	},
+/area/centcom/ferry)
 "APf" = (
 /obj/structure/cult/talisman{
 	desc = "A altar dedicated to the Wizard's Federation"
@@ -3151,6 +3744,30 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdome2)
+"BxV" = (
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 8
+	},
+/area/centcom/ferry)
+"BAr" = (
+/obj/machinery/dna_scannernew{
+	tag = ""
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTHEAST)";
+	icon_state = "whiteblue";
+	dir = 5
+	},
+/area/centcom/ferry)
+"BBy" = (
+/obj/machinery/button/door{
+	id = "spitzoffice";
+	name = "Administrative Shutter-Control";
+	pixel_x = 24;
+	pixel_y = 8
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "BFv" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien17"
@@ -3207,9 +3824,48 @@
 /obj/item/weapon/gun/energy/laser,
 /turf/open/floor/plasteel/black,
 /area/tdome/arena_source)
+"BXw" = (
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/storage/firstaid/o2,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/whiteblue/side,
+/area/centcom/ferry)
 "BYr" = (
 /turf/closed/indestructible/fakeglass,
 /area/centcom/control)
+"BZm" = (
+/obj/structure/filingcabinet/employment,
+/turf/open/floor/wood,
+/area/centcom/ferry)
+"BZF" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/firstaid/fire{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/weapon/storage/firstaid/fire,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/whiteblue/side,
+/area/centcom/ferry)
+"CbE" = (
+/obj/structure/closet/secure_closet{
+	name = "confiscation locker";
+	req_access_txt = "103"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 5
+	},
+/area/centcom/ferry)
 "CeK" = (
 /turf/open/floor/plasteel/shuttle/yellow,
 /area/centcom/evac)
@@ -3267,11 +3923,29 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/thunderdome)
+"Cxm" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 9
+	},
+/area/centcom/ferry)
 "CFt" = (
 /turf/open/floor/plasteel/green/side{
 	dir = 1
 	},
 /area/centcom/control)
+"CGD" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/firstaid/toxin{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/weapon/storage/firstaid/toxin,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/whiteblue/side,
+/area/centcom/ferry)
 "CMm" = (
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/black,
@@ -3317,6 +3991,12 @@
 	dir = 5
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
+"DgL" = (
+/turf/open/floor/plasteel/darkblue/side{
+	tag = "icon-darkblue (WEST)";
+	dir = 8
+	},
+/area/centcom/ferry)
 "DjS" = (
 /obj/effect/landmark/start,
 /turf/open/floor/plating,
@@ -3346,12 +4026,24 @@
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/black,
 /area/centcom/evac)
-"Dvn" = (
-/turf/closed/indestructible/fakedoor,
+"DuK" = (
+/turf/closed/indestructible/fakedoor{
+	mouse_over_pointer = 0;
+	name = "Office: R. Pershing"
+	},
 /area/centcom/ferry)
 "Dxv" = (
 /turf/closed/indestructible/riveted,
 /area/ctf)
+"DyG" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "kelloway"
+	},
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows";
+	dir = 1
+	},
+/area/centcom/ferry)
 "DBN" = (
 /turf/open/floor/plasteel/darkred/corner{
 	tag = "icon-darkredcorners (NORTH)";
@@ -3383,14 +4075,36 @@
 	dir = 1
 	},
 /area/syndicate_mothership)
+"DSb" = (
+/obj/machinery/button/door{
+	id = "dunn_shutter";
+	name = "Administrative Shutter-Control";
+	pixel_x = -24;
+	pixel_y = 8;
+	use_power = 0
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "DSs" = (
 /obj/structure/chair/hades,
 /turf/open/floor/mineral/diamond,
 /area/hades)
+"DSJ" = (
+/turf/open/floor/plasteel/whiteblue/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "DTH" = (
 /obj/effect/forcefield,
 /turf/open/space/transit,
 /area/wizard_station)
+"DVE" = (
+/obj/item/weapon/crowbar/red,
+/obj/structure/table,
+/turf/open/floor/plasteel/darkyellow/corner{
+	dir = 4
+	},
+/area/centcom/ferry)
 "DVK" = (
 /turf/closed/indestructible/fakeglass{
 	icon_state = "fakewindows";
@@ -3435,6 +4149,10 @@
 "EbM" = (
 /turf/open/floor/plasteel/black,
 /area/centcom/evac)
+"EcO" = (
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
 "EdD" = (
 /obj/structure/table,
 /obj/item/weapon/dice/d20,
@@ -3458,6 +4176,12 @@
 	icon_state = "alien13"
 	},
 /area/abductor_ship)
+"EmU" = (
+/obj/machinery/door/window/southright{
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "Eny" = (
 /turf/open/floor/plasteel/darkred/side{
 	tag = "icon-darkred (WEST)";
@@ -3550,6 +4274,17 @@
 	dir = 10
 	},
 /area/shuttle/assault_pod)
+"EJP" = (
+/obj/machinery/door/poddoor/multi_tile/four_tile_hor{
+	name = "Large Pod Door 1"
+	},
+/obj/structure/spacepoddoor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "EKk" = (
 /turf/open/floor/holofloor{
 	dir = 2;
@@ -3593,6 +4328,11 @@
 	},
 /turf/open/floor/holofloor/carpet,
 /area/shuttle/ftl/holodeck/rec_center/lounge)
+"FlG" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 6
+	},
+/area/centcom/ferry)
 "Fmk" = (
 /mob/living/simple_animal/hostile/hadesacolyte,
 /turf/open/floor/carpet,
@@ -3644,6 +4384,20 @@
 	},
 /turf/open/floor/plating/airless,
 /area/wizard_station)
+"FNB" = (
+/obj/machinery/sleeper{
+	desc = "A magical machine supposedly able to cure everything. Except the crack of dawn, missing and/or broken limbs, or mental health.";
+	efficiency = 5;
+	min_health = -99;
+	name = "Centcomm sleeper";
+	possible_chems = list(  list("adminordrazine", "epinephrine", "morphine", "salbutamol", "bicaridine", "kelotane"),  list("oculine"),  list("antitoxin", "mutadone", "mannitol", "pen_acid"),  list("omnizine") )
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
+	},
+/area/centcom/ferry)
 "FNU" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -3663,6 +4417,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeadmin)
+"FTp" = (
+/obj/structure/bookcase/manuals/engineering,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "FXV" = (
 /turf/open/floor/holofloor{
 	icon_state = "white"
@@ -3709,9 +4467,31 @@
 /obj/machinery/abductor/gland_dispenser,
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"GAC" = (
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "GAF" = (
 /turf/open/floor/plasteel/darkgreen/side{
 	dir = 4
+	},
+/area/centcom/ferry)
+"GBO" = (
+/obj/machinery/vending/wallmed{
+	pixel_y = 28
+	},
+/obj/machinery/sleeper{
+	desc = "A magical machine supposedly able to cure everything. Except the crack of dawn, missing and/or broken limbs, or mental health.";
+	efficiency = 5;
+	min_health = -99;
+	name = "Centcomm sleeper";
+	possible_chems = list(  list("adminordrazine", "epinephrine", "morphine", "salbutamol", "bicaridine", "kelotane"),  list("oculine"),  list("antitoxin", "mutadone", "mannitol", "pen_acid"),  list("omnizine") )
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
 	},
 /area/centcom/ferry)
 "GDR" = (
@@ -3719,6 +4499,11 @@
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel,
 /area/hades)
+"GGg" = (
+/obj/structure/table/wood,
+/obj/item/device/flashlight/lamp/green,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "GIB" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel,
@@ -3732,6 +4517,22 @@
 /obj/item/toy/figure/syndie,
 /turf/open/floor/plating/asteroid/snow,
 /area/syndicate_mothership)
+"GNe" = (
+/obj/machinery/computer/secure_data,
+/obj/machinery/doorButtons/airlock_controller{
+	dir = 4;
+	idExterior = "centcomm_exterior_airlock";
+	idInterior = "centcomm_interior_airlock";
+	idSelf = "centcomm_airlock_control";
+	name = "Centcomm Access Console";
+	pixel_x = -8;
+	pixel_y = -24;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 6
+	},
+/area/centcom/ferry)
 "GOg" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -3780,6 +4581,14 @@
 	dir = 8
 	},
 /area/ctf)
+"HbT" = (
+/obj/item/device/gps/internal{
+	anchored = 1;
+	desc = "Just pretend you don't see it. You'll need to use the coordinates this thing outputs (\"Centcomm Pod Docks\") to get back here - head south to get to the pod bay. Grab a GPS from the pod bay if you haven't.";
+	gpstag = "Centcomm Pod Docks"
+	},
+/turf/open/space,
+/area/space)
 "Hfq" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/drinkingglasses,
@@ -3846,12 +4655,24 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/basketball)
+"HwX" = (
+/obj/structure/filingcabinet,
+/obj/item/weapon/folder/documents,
+/obj/item/weapon/folder/documents,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "HAd" = (
 /obj/structure/closet/secure_closet/bar,
 /turf/open/floor/plasteel/red/side{
 	dir = 8
 	},
 /area/tdome/tdomeobserve)
+"HBd" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "dunn_shutter"
+	},
+/turf/closed/indestructible/fakeglass,
+/area/centcom/ferry)
 "HCP" = (
 /obj/structure/foamedmetal,
 /obj/structure/window{
@@ -3899,11 +4720,25 @@
 "HOE" = (
 /turf/closed/indestructible/riveted,
 /area/centcom/control)
+"HQb" = (
+/obj/machinery/door/window/southleft{
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "HXJ" = (
 /obj/structure/lattice,
 /obj/effect/forcefield,
 /turf/open/space/transit,
 /area/wizard_station)
+"HXN" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Operations Room";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "IbK" = (
 /turf/open/floor/plasteel/darkblue/side{
 	tag = "icon-darkblue (WEST)";
@@ -3937,6 +4772,19 @@
 /obj/machinery/door/airlock/wood,
 /turf/open/floor/plasteel/hades,
 /area/hades)
+"IiB" = (
+/obj/structure/table/wood,
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/floor/wood,
+/area/centcom/ferry)
+"IiE" = (
+/obj/structure/filingcabinet/filingcabinet{
+	name = "access records"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 5
+	},
+/area/centcom/ferry)
 "Ikd" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -3962,6 +4810,20 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
+"Iwf" = (
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 4
+	},
+/area/centcom/ferry)
+"Iwo" = (
+/obj/machinery/door/airlock/centcom{
+	id_tag = "dunn_door";
+	name = "Office: R. Dunn";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "ICw" = (
 /turf/open/floor/plasteel/shuttle,
 /turf/closed/wall/shuttle/interior{
@@ -3989,6 +4851,10 @@
 	dir = 2
 	},
 /area/wizard_station)
+"ISJ" = (
+/obj/machinery/vending/security,
+/turf/open/floor/plasteel/darkred/side,
+/area/centcom/ferry)
 "IUp" = (
 /turf/open/floor/plasteel/yellowsiding/corner{
 	dir = 1
@@ -4007,6 +4873,13 @@
 	icon_state = "cultdamage6"
 	},
 /area/wizard_station)
+"IWT" = (
+/obj/structure/table,
+/obj/machinery/recharger,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 9
+	},
+/area/centcom/ferry)
 "Jaj" = (
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
@@ -4016,6 +4889,30 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/court)
+"JdX" = (
+/mob/living/simple_animal/hostile/carp/cayenne{
+	attacktext = "nibbles on";
+	desc = "When Kelloway asked for an exotic fish pet, she had meant something along the lines of a three eyed koi like fish that was known to have glittering scales.  When she met this somewhat pudgy carp, she loved it all the same.  It seems spoiled.";
+	faction = list("Station");
+	health = 200;
+	icon_dead = "magicarp_dead";
+	icon_gib = "magicarp_gib";
+	icon_living = "magicarp";
+	icon_state = "magicarp";
+	maxHealth = 200;
+	melee_damage_lower = 5;
+	melee_damage_type = "stamina";
+	name = "Viviane";
+	resize = 1
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
+"Jig" = (
+/obj/machinery/vending/snack{
+	shut_up = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "JjU" = (
 /turf/open/floor/holofloor{
 	dir = 1;
@@ -4035,6 +4932,10 @@
 	dir = 8
 	},
 /area/centcom/evac)
+"JzY" = (
+/obj/machinery/computer/camera_advanced,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "JAo" = (
 /turf/open/space/transit/reverse,
 /area/space)
@@ -4116,6 +5017,12 @@
 "KsI" = (
 /turf/open/floor/plating/beach/water,
 /area/centcom/holding)
+"Ktj" = (
+/obj/machinery/door/airlock/silver{
+	name = "break room"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "Kuu" = (
 /obj/effect/landmark/abductor/console,
 /obj/effect/landmark/abductor/console,
@@ -4265,17 +5172,88 @@
 	dir = 9
 	},
 /area/syndicate_mothership)
+"Mjh" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "spitzoffice"
+	},
+/turf/closed/indestructible/fakeglass,
+/area/centcom/ferry)
+"Mjk" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/firstaid/brute{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/weapon/storage/firstaid/brute,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (SOUTHEAST)";
+	icon_state = "whiteblue";
+	dir = 6
+	},
+/area/centcom/ferry)
+"MkN" = (
+/obj/machinery/door/airlock/centcom{
+	auto_close = null;
+	autoclose = 0;
+	icon_state = "fake_door";
+	id_tag = "centcomm_exterior_airlock";
+	locked = 1;
+	name = "Security Checkpoint Exterior Airlock"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "centcomm_checkpoint";
+	name = "centcomm security shutters"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"Mlb" = (
+/obj/structure/table,
+/obj/item/weapon/crowbar/red,
+/obj/item/device/spacepod_key,
+/obj/item/device/gps{
+	tracking = 0
+	},
+/turf/open/floor/plasteel/darkyellow/corner{
+	dir = 4
+	},
+/area/centcom/ferry)
 "Mlt" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien5"
 	},
 /area/abductor_ship)
+"Mut" = (
+/obj/structure/noticeboard{
+	pixel_x = 0;
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
+"MvQ" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "kelloway"
+	},
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows2";
+	dir = 1
+	},
+/area/centcom/ferry)
 "MDE" = (
 /obj/structure/chair{
 	dir = 4
 	},
 /turf/open/floor/plasteel/shuttle/red,
 /area/shuttle/assault_pod)
+"MFq" = (
+/obj/machinery/computer/station_alert,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "MGf" = (
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
@@ -4343,6 +5321,12 @@
 	dir = 1
 	},
 /area/centcom/control)
+"NjB" = (
+/obj/structure/spacepoddoor{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/centcom/ferry)
 "Nmv" = (
 /turf/open/floor/plasteel/circuit/rcircuit,
 /turf/open/floor/plasteel/warningline{
@@ -4354,6 +5338,13 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 28
 	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"Npz" = (
+/obj/structure/table/reinforced,
+/obj/item/pizzabox/margherita,
+/obj/item/pizzabox/meat,
+/obj/item/pizzabox/mushroom,
 /turf/open/floor/plasteel/black,
 /area/centcom/ferry)
 "NqG" = (
@@ -4380,6 +5371,11 @@
 /obj/item/weapon/circular_saw/alien,
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"NtR" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 2
+	},
+/area/centcom/ferry)
 "NtU" = (
 /turf/open/floor/holofloor{
 	dir = 10;
@@ -4395,11 +5391,26 @@
 	dir = 6
 	},
 /area/shuttle/assault_pod)
+"Nva" = (
+/turf/open/floor/plasteel/darkred/side{
+	dir = 10
+	},
+/area/centcom/ferry)
 "Nwb" = (
 /obj/machinery/status_display{
 	density = 0;
 	pixel_y = 32;
 	supply_display = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"NwN" = (
+/obj/machinery/vending/coffee{
+	shut_up = 1
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 27;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/black,
 /area/centcom/ferry)
@@ -4416,6 +5427,13 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/evac)
+"NFV" = (
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (WEST)";
+	icon_state = "whiteblue";
+	dir = 8
+	},
+/area/centcom/ferry)
 "NGW" = (
 /obj/machinery/camera{
 	pixel_x = 10;
@@ -4490,6 +5508,13 @@
 /obj/structure/window/reinforced,
 /turf/closed/indestructible/riveted,
 /area/space)
+"NWP" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 27;
+	pixel_y = 0
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "Ocj" = (
 /turf/open/floor/holofloor/plating/burnmix,
 /area/shuttle/ftl/holodeck/rec_center/burn)
@@ -4519,6 +5544,19 @@
 	},
 /turf/open/floor/plasteel/cult/airless,
 /area/wizard_station)
+"OjN" = (
+/obj/structure/spacepoddoor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 8
+	},
+/area/centcom/ferry)
+"OkU" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 10
+	},
+/area/centcom/ferry)
 "Ong" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/floor/engine/cult,
@@ -4566,6 +5604,13 @@
 	dir = 6
 	},
 /area/ctf)
+"OMP" = (
+/obj/machinery/door/airlock/glass_large{
+	name = "pod bay 2";
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "OOc" = (
 /turf/open/floor/plating,
 /area/ctf)
@@ -4581,9 +5626,51 @@
 "OQq" = (
 /turf/closed/indestructible/riveted,
 /area/tdome/tdomeadmin)
+"ORX" = (
+/obj/structure/closet,
+/obj/item/clothing/under/rank/chief_engineer,
+/obj/item/clothing/under/rank/atmospheric_technician,
+/obj/item/clothing/under/pants/camo,
+/obj/item/clothing/tie/black,
+/obj/item/clothing/suit/armor/vest/alt,
+/obj/item/clothing/suit/hooded/wintercoat/engineering/atmos,
+/obj/item/clothing/shoes/workboots,
+/obj/item/clothing/head/soft/sec,
+/obj/item/clothing/gloves/color/black/ce,
+/obj/item/clothing/glasses/regular,
+/obj/item/device/radio/headset/headset_cent/alt,
+/obj/item/weapon/gun/projectile/automatic/pistol/automag{
+	name = "Kelloway's .44AMP Automag"
+	},
+/obj/item/areaeditor/blueprints{
+	desc = "Blueprints of the NCV Basilisk. There is a \"Classified\" stamp and several coffee stains on it.";
+	fluffnotice = "Property of Nanotrasen. For heads of staff only. Store in high-secure storage.";
+	name = "NCV Basilisk blueprints"
+	},
+/obj/item/areaeditor/blueprints{
+	desc = "Blueprints of the NSV Astraeus. There is a \"Classified\" stamp and several coffee stains on it.";
+	fluffnotice = "Property of Nanotrasen. For heads of staff only. Store in high-secure storage.";
+	name = "NSV Astraeus blueprints"
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27;
+	pixel_y = 0
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "Pav" = (
 /turf/open/floor/plasteel/black,
 /area/syndicate_mothership)
+"PaT" = (
+/obj/machinery/door/airlock/glass_large{
+	name = "Infirmary Airlock"
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (WEST)";
+	icon_state = "whiteblue";
+	dir = 8
+	},
+/area/centcom/ferry)
 "Pdy" = (
 /turf/closed/indestructible/fakedoor{
 	name = "Centcom"
@@ -4612,6 +5699,18 @@
 /turf/open/floor/plasteel/darkblue/side,
 /turf/open/floor/plasteel/warningline,
 /area/ctf)
+"Pmo" = (
+/obj/structure/guncase/shotgun{
+	open = 0
+	},
+/obj/item/weapon/gun/projectile/shotgun/automatic/combat,
+/obj/item/weapon/gun/projectile/shotgun/automatic/combat,
+/obj/item/weapon/gun/projectile/shotgun/automatic/combat,
+/obj/item/weapon/gun/projectile/shotgun/automatic/combat,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "Pnv" = (
 /turf/open/floor/holofloor{
 	dir = 6;
@@ -4659,6 +5758,20 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/vault,
 /area/centcom/ferry)
+"PDG" = (
+/obj/machinery/computer/camera_advanced,
+/turf/open/floor/wood,
+/area/centcom/ferry)
+"PEH" = (
+/obj/machinery/vending/wallmed{
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
+	},
+/area/centcom/ferry)
 "PIr" = (
 /turf/closed/indestructible/fakeglass{
 	color = "#008000";
@@ -4694,6 +5807,12 @@
 	},
 /turf/open/space,
 /area/space)
+"PTe" = (
+/obj/machinery/newscaster/security_unit{
+	pixel_x = -28
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "PTk" = (
 /obj/machinery/abductor/pad{
 	team = 4
@@ -4786,6 +5905,9 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/basketball)
+"QUo" = (
+/turf/closed/indestructible/fakedoor,
+/area/centcom/ferry)
 "QVd" = (
 /turf/open/floor/plasteel/darkwarning{
 	tag = "icon-warndark (EAST)";
@@ -4911,6 +6033,10 @@
 /turf/open/floor/plasteel/circuit,
 /turf/open/floor/plasteel/warningline,
 /area/ctf)
+"ROT" = (
+/obj/spacepod/sec,
+/turf/open/floor/engine,
+/area/centcom/ferry)
 "RRY" = (
 /turf/open/floor/plasteel/darkred/side{
 	tag = "icon-darkred (NORTH)";
@@ -4929,6 +6055,13 @@
 "RXn" = (
 /obj/machinery/vending/clothing,
 /turf/open/floor/wood,
+/area/centcom/ferry)
+"RZb" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27;
+	pixel_y = 0
+	},
+/turf/open/floor/carpet,
 /area/centcom/ferry)
 "SgZ" = (
 /obj/item/weapon/storage/box/drinkingglasses,
@@ -4961,6 +6094,9 @@
 	dir = 8
 	},
 /area/tdome/tdomeobserve)
+"SCD" = (
+/turf/open/floor/plasteel/whiteblue/corner,
+/area/centcom/ferry)
 "SDp" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien10"
@@ -4992,6 +6128,22 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/centcom/holding)
+"SMy" = (
+/obj/structure/filingcabinet/filingcabinet,
+/obj/item/weapon/paper{
+	info = "<font face=\"Times New Roman\"><i>(Design details regarding the NSV Astraeus. Looking at anything other than the drawing at the top makes your head hurt.)</i></font>";
+	name = "paper - NSV Astraeus specifications"
+	},
+/obj/item/weapon/paper{
+	info = "<font face=\"Times New Roman\"><i>(Design details regarding the NCV Basilisk. Looking at anything other than the drawing at the top makes your head hurt.)</i></font>";
+	name = "paper - NCV Basilisk specifications"
+	},
+/obj/item/weapon/paper{
+	info = "<font face=\"Times New Roman\"><i>(Design details regarding a \"Nighthowler\" class of assault ship. Looking at anything other than the drawing at the top makes your head hurt.)</i></font>";
+	name = "paper - NAV Nighthowler specifications"
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "SRd" = (
 /obj/structure/flora/ausbushes/fernybush,
 /turf/open/floor/grass,
@@ -5030,6 +6182,9 @@
 "TaU" = (
 /turf/closed/wall/shuttle/smooth,
 /area/shuttle/escape)
+"TcB" = (
+/turf/open/floor/plasteel/white,
+/area/centcom/ferry)
 "Teb" = (
 /turf/open/floor/holofloor{
 	dir = 1;
@@ -5044,6 +6199,15 @@
 "Tha" = (
 /turf/closed/indestructible/fakeglass,
 /area/centcom/supply)
+"Tkg" = (
+/obj/machinery/door/airlock/centcom{
+	id_tag = "kelloway_door";
+	name = "Office: A. Kelloway";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "TlL" = (
 /turf/closed/indestructible/fakeglass{
 	icon_state = "fakewindows";
@@ -5057,6 +6221,10 @@
 	icon_state = "fakewindows2"
 	},
 /area/wizard_station)
+"Tqu" = (
+/obj/structure/sign/bluecross_2,
+/turf/closed/indestructible/riveted,
+/area/centcom/ferry)
 "Trx" = (
 /turf/open/floor/plasteel/darkblue/side{
 	tag = "icon-darkblue (NORTH)";
@@ -5079,6 +6247,26 @@
 "TuL" = (
 /turf/open/floor/plasteel/black,
 /area/centcom/control)
+"TAR" = (
+/obj/structure/table/wood,
+/obj/item/documents/photocopy{
+	desc = "A copy of some top-secret Syndicate documents."
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
+"TBC" = (
+/obj/machinery/door/airlock/glass_large{
+	name = "pod bay 4";
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"TDv" = (
+/obj/machinery/newscaster/security_unit{
+	pixel_x = 28
+	},
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "TKm" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/black,
@@ -5117,6 +6305,21 @@
 /obj/item/clothing/mask/gas,
 /turf/open/floor/vault,
 /area/centcom/ferry)
+"TVF" = (
+/obj/structure/closet/secure_closet/lethalshots,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/obj/item/weapon/storage/box/lethalshot,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "TVH" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -5125,6 +6328,22 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/plasteel/hades,
 /area/hades)
+"TVT" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/southright{
+	name = "security checkpoint desk";
+	req_access_txt = "0"
+	},
+/obj/machinery/door/window/northright{
+	name = "security checkpoint desk";
+	req_access_txt = "101"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "centcomm_checkpoint";
+	name = "centcomm security shutters"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "TXN" = (
 /obj/structure/rack,
 /obj/item/clothing/under/color/green,
@@ -5146,6 +6365,16 @@
 "TZE" = (
 /obj/machinery/shuttle_manipulator,
 /turf/open/floor/plasteel/circuit,
+/area/centcom/ferry)
+"Ubz" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
+/turf/open/floor/plasteel/black,
 /area/centcom/ferry)
 "UbS" = (
 /turf/open/floor/plasteel/darkred/side{
@@ -5171,6 +6400,13 @@
 /obj/item/weapon/reagent_containers/food/drinks/bottle/gin,
 /turf/open/floor/wood,
 /area/syndicate_mothership)
+"UoX" = (
+/obj/structure/filingcabinet{
+	icon_state = "employmentcabinet";
+	name = "requisitions cabinet"
+	},
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "Uqx" = (
 /turf/open/floor/holofloor{
 	dir = 4;
@@ -5197,6 +6433,10 @@
 	},
 /turf/open/floor/wood,
 /area/syndicate_mothership)
+"UEi" = (
+/obj/machinery/computer/communications,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "UIO" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/clipboard,
@@ -5212,11 +6452,22 @@
 	icon_state = "cultdamage5"
 	},
 /area/wizard_station)
+"ULh" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "ULv" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer,
 /turf/open/floor/carpet,
 /area/hades)
+"ULx" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "ULy" = (
 /obj/structure/window{
 	dir = 1
@@ -5243,6 +6494,11 @@
 "UOa" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/wood,
+/area/centcom/ferry)
+"URK" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 1
+	},
 /area/centcom/ferry)
 "UTC" = (
 /obj/structure/bed,
@@ -5280,6 +6536,23 @@
 	dir = 1
 	},
 /area/centcom/evac)
+"VfV" = (
+/obj/item/weapon/storage/secure/safe{
+	l_code = "58421";
+	l_set = 1;
+	pixel_y = 28
+	},
+/obj/machinery/computer/message_monitor,
+/turf/open/floor/wood,
+/area/centcom/ferry)
+"Vhs" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Administrative Office";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "ViR" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien21"
@@ -5308,6 +6581,18 @@
 	dir = 10
 	},
 /area/ctf)
+"VzD" = (
+/obj/structure/guncase/ecase{
+	open = 0
+	},
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun/advtaser,
+/obj/item/weapon/gun/energy/gun/advtaser,
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
+/area/centcom/ferry)
 "VzR" = (
 /turf/open/floor/plasteel/warning{
 	dir = 4
@@ -5368,6 +6653,13 @@
 	},
 /turf/open/space,
 /area/space)
+"VKc" = (
+/obj/machinery/door/airlock/glass_large{
+	name = "pod bay 3";
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "VMU" = (
 /turf/closed/indestructible/riveted,
 /area/hades)
@@ -5401,6 +6693,16 @@
 	icon_state = "green"
 	},
 /area/shuttle/ftl/holodeck/rec_center/dodgeball)
+"Wak" = (
+/obj/structure/guncase/shotgun{
+	open = 0
+	},
+/obj/item/weapon/gun/projectile/shotgun/lethal,
+/obj/item/weapon/gun/projectile/shotgun/lethal,
+/obj/item/weapon/gun/projectile/shotgun/lethal,
+/obj/item/weapon/gun/projectile/shotgun/riot,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "WcD" = (
 /turf/open/floor/plasteel/cult/airless{
 	icon_state = "cultdamage"
@@ -5414,6 +6716,17 @@
 	dir = 8
 	},
 /area/shuttle/ftl/holodeck/rec_center/medical)
+"WfF" = (
+/obj/machinery/computer/cloning,
+/obj/machinery/vending/wallmed{
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/whiteblue/side{
+	tag = "icon-whiteblue (NORTH)";
+	icon_state = "whiteblue";
+	dir = 1
+	},
+/area/centcom/ferry)
 "WjH" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/open/floor/plasteel/green/side{
@@ -5461,6 +6774,19 @@
 /obj/structure/chair/wood/normal,
 /turf/open/floor/holofloor/carpet,
 /area/shuttle/ftl/holodeck/rec_center/lounge)
+"Wwp" = (
+/obj/machinery/vending/cigarette{
+	shut_up = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"WyO" = (
+/turf/open/floor/plasteel/whiteblue/corner{
+	tag = "icon-whitebluecorner (EAST)";
+	icon_state = "whitebluecorner";
+	dir = 4
+	},
+/area/centcom/ferry)
 "WBJ" = (
 /obj/structure/table/glass,
 /obj/item/weapon/cautery,
@@ -5537,6 +6863,10 @@
 "WMJ" = (
 /turf/open/floor/plasteel/shuttle/red,
 /area/shuttle/assault_pod)
+"WRV" = (
+/obj/machinery/computer/crew,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "WRX" = (
 /turf/open/floor/plasteel/black,
 /turf/open/floor/plasteel/warningline{
@@ -5544,6 +6874,17 @@
 	dir = 10
 	},
 /area/ctf)
+"WVi" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/obj/item/weapon/reagent_containers/food/snacks/burger,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "WWg" = (
 /turf/open/floor/plasteel/darkred/side{
 	tag = "icon-darkred (NORTHEAST)";
@@ -5554,6 +6895,17 @@
 	dir = 5
 	},
 /area/ctf)
+"WXT" = (
+/obj/machinery/door/poddoor/multi_tile/four_tile_hor{
+	name = "Large Pod Door 3"
+	},
+/obj/structure/spacepoddoor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/darkyellow/side{
+	dir = 4
+	},
+/area/centcom/ferry)
 "WYn" = (
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/uranium.dmi';
@@ -5567,6 +6919,10 @@
 	dir = 9
 	},
 /area/syndicate_mothership)
+"XaA" = (
+/obj/machinery/computer/communications,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "XaC" = (
 /turf/open/floor/plasteel/darkblue/corner,
 /area/ctf)
@@ -5593,6 +6949,15 @@
 /obj/structure/closet/secure_closet/ertEngi,
 /turf/open/floor/plasteel/freezer{
 	dir = 2
+	},
+/area/centcom/ferry)
+"Xlw" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "spitzoffice"
+	},
+/turf/closed/indestructible/fakeglass{
+	icon_state = "fakewindows";
+	dir = 1
 	},
 /area/centcom/ferry)
 "XnB" = (
@@ -5649,6 +7014,14 @@
 	icon_state = "alien8"
 	},
 /area/abductor_ship)
+"XOe" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Pod Bay";
+	opacity = 1;
+	req_access_txt = "101"
+	},
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
 "XPT" = (
 /turf/open/floor/plasteel/circuit/rcircuit,
 /turf/open/floor/plasteel/warningline{
@@ -5774,6 +7147,11 @@
 /obj/effect/landmark/abductor/scientist,
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"YNz" = (
+/obj/structure/table/wood,
+/obj/item/weapon/phone,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "YOi" = (
 /turf/open/floor/plasteel/black,
 /area/ctf)
@@ -5790,6 +7168,15 @@
 /obj/item/weapon/gun/projectile/automatic/toy/pistol,
 /turf/open/floor/plasteel/cafeteria,
 /area/centcom/holding)
+"YTS" = (
+/obj/machinery/computer/secure_data,
+/turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"YUb" = (
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 8
+	},
+/area/centcom/ferry)
 "YUr" = (
 /turf/open/floor/bluegrid,
 /area/tdome/arena_source)
@@ -5872,6 +7259,12 @@
 	dir = 1
 	},
 /area/centcom/supply)
+"ZDz" = (
+/obj/structure/table/wood,
+/obj/item/weapon/pen/fourcolor,
+/obj/item/weapon/paper/crumpled,
+/turf/open/floor/carpet,
+/area/centcom/ferry)
 "ZHT" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien24"
@@ -9543,35 +10936,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -9800,35 +11193,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -10057,35 +11450,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -10314,35 +11707,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -10571,35 +11964,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -10828,35 +12221,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -11085,35 +12478,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -11342,35 +12735,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -11599,35 +12992,35 @@ otH
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -11856,35 +13249,35 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -12113,35 +13506,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -12370,35 +13763,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -12627,35 +14020,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -12884,35 +14277,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -13141,35 +14534,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -13398,35 +14791,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+bng
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -13655,35 +15048,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -13912,35 +15305,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -14169,35 +15562,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -14426,35 +15819,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -14683,35 +16076,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -14940,35 +16333,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -15197,35 +16590,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -15454,35 +16847,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -15711,35 +17104,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -15968,35 +17361,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -16225,35 +17618,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -16482,35 +17875,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -16739,35 +18132,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -16996,35 +18389,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -17253,35 +18646,35 @@ JAo
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
+yZA
 WqG
 WqG
 WqG
@@ -30675,12 +32068,12 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
 WqG
 WqG
 WqG
@@ -30932,12 +32325,12 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+YTS
+ULx
+cSx
+cTL
+uNe
 WqG
 WqG
 WqG
@@ -31189,12 +32582,12 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+JzY
+ULx
+cSx
+cTL
+uNe
 WqG
 WqG
 WqG
@@ -31446,15 +32839,15 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+Agh
+ULx
+cSx
+cTL
+uNe
+uNe
+uNe
+uNe
 uNe
 uNe
 uNe
@@ -31703,15 +33096,15 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+rEj
+ULx
+cSx
+cSx
+cSx
+viw
+cSx
+cSx
 uNe
 xuL
 hss
@@ -31960,15 +33353,15 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+cTL
+cTL
+cSx
+cSx
+cSx
+viw
+cSx
+cSx
 uNe
 jwy
 hss
@@ -32187,6 +33580,16 @@ WqG
 WqG
 WqG
 WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
 WqG
 WqG
 WqG
@@ -32207,25 +33610,15 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+WRV
+ULx
+cSx
+cSx
+cSx
+HQb
+cSx
+cSx
 uNe
 WDT
 hss
@@ -32444,45 +33837,45 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+aea
+NFV
+NFV
+NFV
+PaT
+NFV
+NFV
+sRY
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+XaA
+ULx
+cSx
+cSx
+cSx
+EmU
+cSx
+cSx
 uNe
 HLV
 hss
@@ -32701,45 +34094,45 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+GBO
+TcB
+TcB
+SCD
+DSJ
+WyO
+TcB
+goW
+uNe
+zUu
+Npz
+Ubz
+kuI
+WVi
+ULh
+uNe
+UEi
+PTe
+dPW
+BJV
+ORX
+FTp
+uNe
+PDG
+PTe
+trt
+BJV
+RZb
+UoX
+uNe
+cTL
+cTL
+cSx
+cSx
+cSx
+viw
+cSx
+cSx
 uNe
 Xkg
 hss
@@ -32958,45 +34351,45 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+FNB
+TcB
+TcB
+BXw
+uNe
+PEH
+TcB
+goW
+uNe
+jTo
+cSx
+cSx
+cSx
+cSx
+cTL
+uNe
+VfV
+fVX
+ZDz
+qEL
+BJV
+tMk
+uNe
+UEi
+ycq
+TAR
+qEL
+BJV
+qTK
+uNe
+mzM
+ULx
+cSx
+cSx
+cSx
+viw
+cSx
+cSx
 uNe
 Xkg
 hss
@@ -33215,45 +34608,45 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+uDo
+TcB
+TcB
+CGD
+uNe
+kbM
+TcB
+goW
+uNe
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+uNe
+hcW
+BJV
+orJ
+BJV
+BJV
+IiB
+uNe
+nEk
+BJV
+YNz
+BJV
+BJV
+qTK
+uNe
+mne
+ULx
+cSx
+cTL
 uNe
 uNe
 uNe
-uNe
+HXN
 uNe
 uNe
 iHA
@@ -33472,41 +34865,41 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+WfF
+TcB
+TcB
+BZF
+uNe
+tQN
+tQN
+tQN
+uNe
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+uNe
+Wak
+BJV
+SMy
+BJV
+BJV
+yWv
+uNe
+BZm
+BJV
+BJV
+BJV
+BJV
+gbk
+uNe
+MFq
+ULx
+cSx
+cTL
 uNe
 MOY
 cSx
@@ -33729,41 +35122,41 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+BAr
+joT
+joT
+Mjk
+uNe
+Tqu
+ALH
+Tqu
+uNe
+cSx
+Jig
+Wwp
+NwN
+wsU
+cSx
+uNe
+nmA
+BJV
+BJV
+BJV
+BBy
+gbk
+uNe
+oCS
+BJV
+JdX
+BJV
+gxr
+gbk
+uNe
+sJi
+ULx
+cSx
+cTL
 uNe
 OhJ
 cSx
@@ -33986,41 +35379,41 @@ WqG
 WqG
 WqG
 WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+cSx
+cSx
+cSx
+uNe
+Ktj
+uNe
+uNe
+uNe
+uNe
+Ktj
+uNe
+Xlw
+qZm
+qZm
+Mjh
+uNe
+AGP
+uNe
+DyG
+MvQ
+MvQ
+obe
+uNe
+Tkg
+uNe
+uNe
+uNe
+uNe
+uNe
 uNe
 EES
 cSx
@@ -34237,47 +35630,47 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+IWT
+nga
+nga
+Nva
+uNe
+cSx
+cSx
+dpz
+uNe
+cSx
+DgL
+DgL
+DgL
+DgL
+cSx
+DgL
+DgL
+DgL
+DgL
+DgL
+DgL
+cSx
+DgL
+DgL
+DgL
+DgL
+DgL
+DgL
+cSx
+DgL
+DgL
+DgL
+DgL
+DgL
 uNe
 cSx
 HjU
@@ -34494,48 +35887,48 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
-Dvn
+uNe
+oEJ
+pOm
+pOm
+pOm
+iak
+uNe
+gRt
+cSx
+cSx
+tOd
+uNe
+cSx
+cSx
+rMC
+iGj
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+cSx
+iGj
 cSx
 cSx
 PDs
@@ -34751,47 +36144,47 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+bKi
+cSx
+cSx
+cSx
+gwd
+uNe
+gRt
+cSx
+cSx
+jWz
+uNe
+cSx
+cSx
+vgk
+uNe
+tbc
+tbc
+tbc
+tbc
+tbc
+cSx
+tbc
+tbc
+tbc
+tbc
+tbc
+tbc
+cSx
+tbc
+tbc
+tbc
+tbc
+tbc
+tbc
+cSx
+tbc
+tbc
+tbc
+tbc
+tbc
 uNe
 cSx
 HjU
@@ -35008,47 +36401,47 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+bKi
+cSx
+vib
+cSx
+gwd
+uNe
+TVF
+cSx
+cSx
+ISJ
+uNe
+AxQ
+cSx
+qnp
+uNe
+wAj
+cMW
+cMW
+krV
+uNe
+DuK
+uNe
+wAj
+cMW
+cMW
+krV
+uNe
+bdo
+uNe
+lYg
+cfs
+cfs
+HBd
+uNe
+Iwo
+uNe
+uNe
+uNe
+uNe
+uNe
 uNe
 Nwb
 cSx
@@ -35265,43 +36658,43 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
+uNe
+bKi
+cSx
+vib
+cSx
+gwd
+uNe
+VzD
+cSx
+cSx
+EcO
+uNe
+uNe
+tUv
+uNe
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+HwX
+BJV
+BJV
+BJV
+DSb
+gbk
+uNe
 WqG
 uNe
 uNe
@@ -35522,43 +36915,43 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
+uNe
+bKi
+cSx
+vib
+cSx
+gwd
+uNe
+Pmo
+cSx
+cSx
+cSx
+tbL
+cSx
+cSx
+ANX
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+nEk
+BJV
+BJV
+BJV
+BJV
+gbk
+uNe
 WqG
 uNe
 cSx
@@ -35779,43 +37172,43 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
+uNe
+bKi
+cSx
+vib
+cSx
+gwd
+uNe
+Pmo
+cSx
+cSx
+jMC
+uNe
+Mut
+cSx
+dSI
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+hcW
+BJV
+GGg
+BJV
+BJV
+qTK
+uNe
 WqG
 uNe
 QVd
@@ -35828,7 +37221,7 @@ uNe
 uNe
 uNe
 zqz
-gSX
+Vhs
 uNe
 sSU
 rlY
@@ -36036,43 +37429,43 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
+uNe
+bKi
+cSx
+vib
+cSx
+gwd
+uNe
+kRy
+cSx
+cSx
+dSI
+Ams
+hUo
+cSx
+dSI
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+UEi
+ycq
+TAR
+qEL
+BJV
+qTK
+uNe
 WqG
 uNe
 sVw
@@ -36293,43 +37686,43 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-bng
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
+uNe
+bKi
+cSx
+cSx
+cSx
+cSx
+spM
+cSx
+cSx
+cSx
+aBg
+TVT
+hUo
+cSx
+dSI
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+gbk
+gbk
+gbk
+gbk
+gbk
+gbk
+uNe
+PDG
+TDv
+trt
+BJV
+NWP
+qTK
+uNe
 WqG
 uNe
 BFA
@@ -36550,43 +37943,43 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-WqG
+uNe
+CbE
+hbt
+hbt
+hbt
+rbj
+uNe
+IiE
+hDE
+cut
+GNe
+uNe
+dpP
+cSx
+rbI
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
 TaU
 TaU
 Xqy
@@ -36807,6 +38200,22 @@ WqG
 WqG
 WqG
 WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+MkN
+uNe
+uNe
 WqG
 WqG
 WqG
@@ -36814,35 +38223,19 @@ WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 RLK
 SYu
@@ -37066,40 +38459,40 @@ WqG
 WqG
 WqG
 WqG
+EJP
+Iwf
+Iwf
+Iwf
+Mlb
+uNe
+Cxm
+YUb
+OkU
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 TaU
 SYu
@@ -37323,40 +38716,40 @@ WqG
 WqG
 WqG
 WqG
+NjB
+zfR
+ROT
+zfR
+GAC
+AsD
+cSx
+cSx
+cSx
+XOe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 TaU
 inQ
@@ -37580,40 +38973,40 @@ WqG
 WqG
 WqG
 WqG
+NjB
+zfR
+zfR
+zfR
+GAC
+cSx
+cSx
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 TaU
 inQ
@@ -37837,40 +39230,40 @@ WqG
 WqG
 WqG
 WqG
+OjN
+BxV
+BxV
+BxV
+ycd
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 TaU
 SYu
@@ -38094,40 +39487,40 @@ WqG
 WqG
 WqG
 WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 RLK
 SYu
@@ -38351,40 +39744,40 @@ WqG
 WqG
 WqG
 WqG
+mTc
+Iwf
+Iwf
+Iwf
+Mlb
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 TaU
 TaU
@@ -38608,40 +40001,40 @@ WqG
 WqG
 WqG
 WqG
+NjB
+zfR
+ROT
+zfR
+GAC
+OMP
+cSx
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -38865,40 +40258,40 @@ WqG
 WqG
 WqG
 WqG
+NjB
+zfR
+zfR
+zfR
+GAC
+cSx
+cSx
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -39122,40 +40515,40 @@ WqG
 WqG
 WqG
 WqG
+OjN
+BxV
+BxV
+BxV
+ycd
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -39370,6 +40763,29 @@ WqG
 WqG
 WqG
 WqG
+HbT
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
@@ -39384,35 +40800,12 @@ WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -39636,40 +41029,40 @@ WqG
 WqG
 WqG
 WqG
+WXT
+Iwf
+Iwf
+Iwf
+rhY
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -39893,40 +41286,40 @@ WqG
 WqG
 WqG
 WqG
+NjB
+zfR
+ROT
+zfR
+GAC
+VKc
+cSx
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -40150,40 +41543,40 @@ WqG
 WqG
 WqG
 WqG
+NjB
+zfR
+zfR
+zfR
+GAC
+cSx
+cSx
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
 WqG
 WqG
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
-yZA
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
+WqG
 WqG
 WqG
 WqG
@@ -40407,20 +41800,20 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+OjN
+BxV
+BxV
+BxV
+ycd
+uNe
+URK
+cSx
+NtR
+uNe
+cSx
+cSx
+cSx
+uNe
 WqG
 WqG
 WqG
@@ -40664,20 +42057,20 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+URK
+cSx
+NtR
+uNe
+uNe
+QUo
+uNe
+uNe
 WqG
 WqG
 WqG
@@ -40921,16 +42314,16 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+bTO
+Iwf
+Iwf
+Iwf
+DVE
+uNe
+URK
+cSx
+NtR
+uNe
 WqG
 WqG
 WqG
@@ -41178,16 +42571,16 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+NjB
+zfR
+zfR
+zfR
+GAC
+TBC
+cSx
+cSx
+NtR
+uNe
 WqG
 WqG
 WqG
@@ -41435,16 +42828,16 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+NjB
+zfR
+zfR
+zfR
+GAC
+cSx
+cSx
+cSx
+NtR
+uNe
 WqG
 WqG
 WqG
@@ -41692,16 +43085,16 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+OjN
+BxV
+BxV
+BxV
+ycd
+uNe
+msU
+GAF
+FlG
+uNe
 WqG
 WqG
 WqG
@@ -41949,16 +43342,16 @@ WqG
 WqG
 WqG
 WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
-WqG
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+uNe
+QUo
+uNe
+uNe
 WqG
 WqG
 WqG
