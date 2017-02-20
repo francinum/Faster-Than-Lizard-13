@@ -114,7 +114,6 @@ var/global/list/ftl_weapons_consoles = list()
 /datum/subsystem/ship/proc/attack_tick(var/datum/starship/S)
 	if(S.attacking_player)
 		if(SSstarmap.in_transit || SSstarmap.in_transit_planet)
- 			S.attacking_player = 0
 			return
 		if(S.planet != SSstarmap.current_planet)
 			return
