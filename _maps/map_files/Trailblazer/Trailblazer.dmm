@@ -491,19 +491,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/yellow,
 /area/shuttle/ftl/engine/tool_storage)
-"bbQ" = (
-/obj/machinery/porta_turret_cover,
-/obj/machinery/porta_turret/ai{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/turret_protected/ai)
 "bce" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -3342,6 +3329,41 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/engine_smes)
+"ghp" = (
+/obj/structure/rack,
+/obj/item/ammo_box/magazine/wt550m9/wtap{
+	pixel_x = 8;
+	pixel_y = -8
+	},
+/obj/item/ammo_box/magazine/wt550m9/wtap,
+/obj/item/ammo_box/magazine/wt550m9/wtap,
+/obj/item/ammo_box/magazine/wt550m9/wtap{
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/wt550m9/wtap,
+/obj/item/ammo_box/magazine/wt550m9/wtap{
+	pixel_x = 8;
+	pixel_y = -8
+	},
+/obj/machinery/airalarm{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/usp,
+/obj/item/ammo_box/magazine/usp,
+/obj/item/ammo_box/magazine/usp,
+/obj/item/ammo_box/magazine/usp,
+/obj/item/ammo_box/magazine/usp,
+/obj/item/ammo_box/magazine/usp,
+/turf/open/floor/plasteel/vault{
+	dir = 8
+	},
+/area/shuttle/ftl/security/armory)
 "gjb" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -3809,6 +3831,24 @@
 /obj/effect/decal/remains/xeno,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/disposal)
+"gXA" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Cassie Suthorn's closet";
+	registered_name = "Cassie Suthorn"
+	},
+/obj/item/clothing/suit/space/hardsuit/syndi/elite{
+	alt_desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in combat mode.";
+	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50);
+	desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in travel mode."
+	},
+/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube{
+	pin = /obj/item/device/firing_pin
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "gXR" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -4436,6 +4476,18 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/bar)
+"igr" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Mota-Rei's closet";
+	registered_name = "Mota-Rei"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/suit/hooded/explorer,
+/obj/item/weapon/gun/energy/plasmacutter,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "ihL" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -5188,6 +5240,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/atmos)
+"jye" = (
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/turret_protected/ai)
 "jyw" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -5708,10 +5772,6 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/bridge/eva)
-"kwc" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/circuit/rcircuit/animated,
-/area/shuttle/ftl/research/xenobiology)
 "kza" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/greenglow,
@@ -9511,35 +9571,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station,
-/turf/open/floor/plasteel/vault{
-	dir = 8
-	},
-/area/shuttle/ftl/security/armory)
-"rqK" = (
-/obj/structure/rack,
-/obj/item/ammo_box/magazine/wt550m9/wtap{
-	pixel_x = 8;
-	pixel_y = -8
-	},
-/obj/item/ammo_box/magazine/wt550m9/wtap,
-/obj/item/ammo_box/magazine/wt550m9/wtap,
-/obj/item/ammo_box/magazine/wt550m9/wtap{
-	pixel_x = 4;
-	pixel_y = -4
-	},
-/obj/item/ammo_box/magazine/wt550m9/wtap,
-/obj/item/ammo_box/magazine/wt550m9/wtap{
-	pixel_x = 8;
-	pixel_y = -8
-	},
-/obj/machinery/airalarm{
-	dir = 4;
-	pixel_x = -24
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
@@ -15532,14 +15563,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/crew_quarters/heads)
-"CyX" = (
-/obj/machinery/porta_turret/ai{
-	dir = 8
-	},
-/obj/machinery/porta_turret_cover,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/turret_protected/ai)
 "CzC" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -15782,6 +15805,21 @@
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/ftl/crew_quarters/toilet)
+"COZ" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Marshall Bash's closet";
+	registered_name = "Marshall Bash"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/book/space_catalog,
+/obj/item/weapon/deck{
+	icon = 'icons/obj/toy.dmi';
+	icon_state = "deck_nanotrasen_full"
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "CRi" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -15849,6 +15887,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
+"Dau" = (
+/obj/machinery/button/door{
+	id = "xenobio";
+	name = "Containment Blast Doors";
+	pixel_x = 0;
+	pixel_y = 25;
+	req_access_txt = "26"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/research/xenobiology)
 "DaK" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -17945,23 +17999,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/fore)
-"GyM" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/poddoor/preopen{
-	id = "bridge blast";
-	layer = 2.9;
-	name = "bridge blast door"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable,
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating,
-/area/shuttle/ftl/bridge)
 "GzL" = (
 /obj/structure/chair{
 	dir = 1
@@ -21613,13 +21650,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
-"NzI" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "NzP" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -21754,6 +21784,24 @@
 	dir = 1
 	},
 /area/shuttle/ftl/research/lab)
+"NNI" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/preopen{
+	id = "bridge blast";
+	layer = 2.9;
+	name = "bridge blast door"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable,
+/obj/machinery/door/firedoor/heavy,
+/obj/item/weapon/reagent_containers/food/snacks/grilledcheese,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/shuttle/ftl/bridge)
 "NNM" = (
 /obj/structure/table/glass,
 /obj/item/stack/cable_coil{
@@ -23563,6 +23611,11 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/virology)
+"RpW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light,
+/turf/open/floor/plasteel/circuit/rcircuit/animated,
+/area/shuttle/ftl/research/xenobiology)
 "RqT" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -24218,22 +24271,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/eva)
-"SGc" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	name = "Cassie Suthorn's closet";
-	registered_name = "Cassie Suthorn"
-	},
-/obj/item/clothing/suit/space/hardsuit/syndi/elite{
-	alt_desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in combat mode.";
-	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50);
-	desc = "An elite syndicate hardsuit, its specialized ceramic armor plates have been replaced with NT standard armor plating. It is in travel mode."
-	},
-/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "SIk" = (
 /obj/structure/table,
 /obj/item/weapon/surgical_drapes,
@@ -24758,6 +24795,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/hallway/primary/port)
+"TAk" = (
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/turret_protected/ai)
 "TBn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -25708,19 +25752,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/shuttle/ftl/cargo/office)
-"Vcl" = (
-/obj/machinery/button/door{
-	id = "xenobio";
-	name = "Containment Blast Doors";
-	pixel_x = 0;
-	pixel_y = 25;
-	req_access_txt = "26"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/research/xenobiology)
 "Vdi" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -25873,6 +25904,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/mining)
+"Vjp" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Rob Robinson's closet";
+	registered_name = "Rob Robinson"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/gun/energy/laser/redtag{
+	desc = "A foreign looking laser gun.";
+	icon = 'icons/obj/guns/energy.dmi';
+	icon_state = "alienpistol";
+	lefthand_file = 'icons/mob/inhands/guns_lefthand.dmi';
+	name = "Alien laser gun";
+	pin = /obj/item/device/firing_pin
+	},
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "Vjq" = (
 /obj/machinery/door/window/northright{
 	name = "Server Room";
@@ -50044,7 +50093,7 @@ XAS
 XAS
 XAS
 XAS
-Vcl
+Dau
 DCj
 DyA
 Ysy
@@ -50304,7 +50353,7 @@ QmO
 AeD
 uKb
 mbn
-kwc
+RpW
 LGN
 tyy
 TZf
@@ -58795,7 +58844,7 @@ dzn
 sBE
 yDw
 gcK
-rqK
+ghp
 SDE
 YSr
 hea
@@ -60072,12 +60121,12 @@ sme
 VGU
 XPf
 IiQ
-CyX
+TAk
 Bpj
 fJZ
 OJH
 fJZ
-CyX
+TAk
 IiQ
 sme
 sme
@@ -61100,12 +61149,12 @@ VGU
 VGU
 XPf
 IiQ
-CyX
+TAk
 zvH
 FEm
 TJP
 fJZ
-CyX
+TAk
 IiQ
 sme
 sme
@@ -61617,7 +61666,7 @@ IiQ
 Lab
 SKA
 FEm
-bbQ
+jye
 Fqa
 bez
 IiQ
@@ -62905,9 +62954,9 @@ OFv
 WbU
 vxM
 hDM
-SGc
+gXA
 jzE
-NzI
+igr
 SBQ
 Wnf
 Ghn
@@ -63164,7 +63213,7 @@ tKO
 alv
 WZz
 Lav
-NzI
+Vjp
 SBQ
 haL
 Ghn
@@ -63421,7 +63470,7 @@ dbV
 alv
 oyE
 Lav
-NzI
+COZ
 SBQ
 sZa
 Ghn
@@ -70365,7 +70414,7 @@ YlR
 YlR
 FDK
 JEh
-GyM
+NNI
 Wqi
 LtU
 LtU
