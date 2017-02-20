@@ -904,7 +904,7 @@ var/global/list/possible_items_special = list()
 
 /datum/objective/ftl/killships/find_target()
 	ship_count = rand(5,10)
-	if(prob(25))
+	if(prob(5))
 		faction = "pirate"
 	else
 		faction = "syndicate"
