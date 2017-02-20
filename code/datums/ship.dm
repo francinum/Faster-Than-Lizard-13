@@ -265,6 +265,12 @@ var/next_ship_id
 
 	possible_weapons = list(/datum/ship_attack/ion,/datum/ship_attack/stun_bomb,/datum/ship_attack/flame_bomb)
 
+/datum/component/weapon/random/memegun
+	name = "meme weapon"
+	cname = "meme_weapon"
+
+	possible_weapons = list(/datum/ship_attack/slipstorm,/datum/ship_attack/honkerblaster,/datum/ship_attack/bananabomb)
+
 /datum/component/weapon/ion
 	name = "ion cannon"
 	cname = "ion_weapon"
@@ -300,7 +306,7 @@ var/next_ship_id
 			continue
 		if(!SSship.check_hostilities(ship.faction,O.faction))
 			possible_targets += O
-	if(ship.system == SSstarmap.current_system && !SSship.check_hostilities(ship.faction,"ship"))
+	if(ship.system && ship.system == SSstarmap.current_system && !SSship.check_hostilities(ship.faction,"ship"))
 		possible_targets += "ship"
 	if(!possible_targets.len)
 		return
@@ -396,8 +402,8 @@ var/next_ship_id
 /datum/ship_ai/flee/fire(datum/starship/ship)
 	ship.flagship = null
 	var/datum/star_system/escape_system = pick(ship.system.adjacent_systems(ship.ftl_range))
-
-	if(escape_system.alignment != ship.faction)
+	
+	if(escape_system.alignment != ship.faction && ship.faction != "pirate") //pirates don't care, arr
 		return	//this ensures if there are no adjacent friendly systems we won't crash the game with a while loop
 	if(!ship.target_system)
 		SSship.plot_course(ship,escape_system)

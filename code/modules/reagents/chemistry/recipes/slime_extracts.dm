@@ -1,4 +1,3 @@
-
 //Grey
 /datum/chemical_reaction/slimespawn
 	name = "Slime Spawn"
@@ -708,4 +707,3 @@
 	feedback_add_details("slime_cores_used","[type]")
 	var/obj/item/slimepotion/transference/P = new /obj/item/slimepotion/transference
 	P.loc = get_turf(holder.my_atom)
-
