@@ -903,11 +903,12 @@ var/global/list/possible_items_special = list()
 	var/ships_killed = 0
 
 /datum/objective/ftl/killships/find_target()
-	ship_count = rand(5,10)
 	if(prob(5))
 		faction = "pirate"
+		ship_count = rand(1,3)
 	else
 		faction = "syndicate"
+		ship_count = rand(5,10)
 	..()
 
 /datum/objective/ftl/killships/update_explanation_text()
