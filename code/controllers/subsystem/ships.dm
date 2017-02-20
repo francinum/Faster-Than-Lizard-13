@@ -95,7 +95,7 @@ var/global/list/ftl_weapons_consoles = list()
 		S.next_recharge = world.time + S.recharge_rate
 		S.shield_strength = min(initial(S.shield_strength), S.shield_strength + 1)
 		if(S.shield_strength >= initial(S.shield_strength))
-			if(S.attacking_player && S.shield_strength > starting_shields) broadcast_message("<span class=notice>[faction2prefix(S)] ship ([S.name]) has recharged shields to 100% strength.</span>",notice_sound,S)
+			if(S.shield_strength > starting_shields) broadcast_message("<span class=notice>[faction2prefix(S)] ship ([S.name]) has recharged shields to 100% strength.</span>",notice_sound,S)
 
 	if(!find_broken_components(S))
 		S.next_repair = world.time + S.repair_time
@@ -113,6 +113,9 @@ var/global/list/ftl_weapons_consoles = list()
 
 /datum/subsystem/ship/proc/attack_tick(var/datum/starship/S)
 	if(S.attacking_player)
+		if(SSstarmap.in_transit || SSstarmap.in_transit_planet)
+ 			S.attacking_player = 0
+			return
 		if(S.planet != SSstarmap.current_planet)
 			return
 		if(world.time > S.next_attack && S.fire_rate)
@@ -120,10 +123,6 @@ var/global/list/ftl_weapons_consoles = list()
 			attack_player(S,pick(get_attacks(S)))
 	if(S.attacking_target)
 		if(S.attacking_target.planet != S.planet)
-			return
-		if(S.attacking_target.planet != S.planet)
-			S.attacking_target = null
-			broadcast_message("<span class=notice> [faction2prefix(S.attacking_target)] ship ([S.attacking_target.name]) left weapons range of [faction2prefix(S)] ship ([S.name]).</span>",notice_sound,S)
 			return
 		if(world.time > S.next_attack && S.fire_rate)
 			S.next_attack = world.time + S.fire_rate
