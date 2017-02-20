@@ -43,7 +43,7 @@
 	new /obj/item/weapon/wirecutters(src)
 	new /obj/item/device/multitool(src)
 	new /obj/item/stack/cable_coil(src,30,pick("red","yellow","orange"))
-
+	update_icon()
 
 /obj/item/weapon/storage/belt/utility/atmostech/New()
 	..()
@@ -54,8 +54,7 @@
 	new /obj/item/weapon/wirecutters(src)
 	new /obj/item/device/t_scanner(src)
 	new /obj/item/weapon/extinguisher/mini(src)
-
-
+	update_icon()
 
 /obj/item/weapon/storage/belt/medical
 	name = "medical belt"
@@ -146,7 +145,7 @@
 	new /obj/item/weapon/grenade/flashbang(src)
 	new /obj/item/device/assembly/flash/handheld(src)
 	new /obj/item/weapon/melee/baton/loaded(src)
-
+	update_icon()
 
 /obj/item/weapon/storage/belt/mining
 	name = "explorer's webbing"
@@ -220,7 +219,8 @@
 	..()
 	for(var/i in 1 to 6)
 		new /obj/item/device/soulstone(src)
-
+	update_icon()
+	
 /obj/item/weapon/storage/belt/champion
 	name = "championship belt"
 	desc = "Proves to the world that you are the strongest!"
@@ -303,6 +303,7 @@
 	new /obj/item/weapon/grenade/syndieminibomb(src)
 	new /obj/item/weapon/screwdriver(src)
 	new /obj/item/device/multitool(src)
+	update_icon()
 
 /obj/item/weapon/storage/belt/wands
 	name = "wand belt"
@@ -326,7 +327,8 @@
 	for(var/obj/item/weapon/gun/magic/wand/W in contents) //All wands in this pack come in the best possible condition
 		W.max_charges = initial(W.max_charges)
 		W.charges = W.max_charges
-
+	update_icon()
+	
 /obj/item/weapon/storage/belt/janitor
 	name = "janibelt"
 	desc = "A belt used to hold most janitorial supplies."
