@@ -469,7 +469,7 @@
 	name = "captain's hardsuit helmet"
 	icon_state = "capspace"
 	item_state = "capspacehelmet"
-	desc = "A special hardsuit helmet designed for only the most fashionable of military figureheads."
++	desc = "A tactical SWAT helmet MK.II boasting better protection and a horrible fashion sense."
 	armor = list(melee = 40, bullet = 50, laser = 50, energy = 25, bomb = 50, bio = 100, rad = 50)
 	actions_types = list()
 
