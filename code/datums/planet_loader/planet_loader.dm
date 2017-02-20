@@ -33,8 +33,6 @@
 			PL.docks |= D
 			PL.name_dock(D, D.encounter_type)
 			if(D.encounter_type == "main")
-			PL.name_dock(D, copytext(L.name, 9))
-			if(copytext(L.name, 9) == "main")
 				PL.main_dock = D
 			qdel(L)
 	
