@@ -118,6 +118,7 @@
 	if(!predefs["norings"] && (prob(30) || predefs["rings"]))
 		ringed = 1
 		// Rings!
+		map_names += "rings.dmm"
 		icon_layers += "p_rings_under"
 
 		// Composition of rings
