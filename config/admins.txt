@@ -13,5 +13,5 @@ eissendargwell = Game Admin
 segalowitz = Game Admin
 leon962 = Game Admin
 jessica_stark = Game Admin
-christ110 = Trial Admin
-auris456852 = Trial Admin
+christ110 = Game Admin
+auris456852 = Game Admin
