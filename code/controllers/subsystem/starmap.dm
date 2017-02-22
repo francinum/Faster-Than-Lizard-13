@@ -20,7 +20,7 @@ var/datum/subsystem/starmap/SSstarmap
 	var/to_distance = 0 //how far is it? used in FTL travel
 	var/travel_time = 0 //how long should it take?
 	
-	var/target_round_time_in_minutes = 270		//target round time, where the 'go home' objective is made
+	var/target_round_time_in_minutes = 150		//target round time, where the 'go home' objective is made
 
 	var/datum/planet/current_planet
 	var/datum/planet/from_planet
