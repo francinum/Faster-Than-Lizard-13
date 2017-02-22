@@ -1483,10 +1483,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/research/xenobiology)
-"cWX" = (
-/obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/turret_protected/ai)
 "cYM" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -19932,6 +19928,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/fore)
+"JwJ" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/turret_protected/ai)
 "JxA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -61891,7 +61894,7 @@ VGU
 IiQ
 UbS
 gbO
-cWX
+JwJ
 TPZ
 dyI
 CIJ
