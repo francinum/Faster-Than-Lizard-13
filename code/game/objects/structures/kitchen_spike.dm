@@ -101,7 +101,7 @@
 			M.visible_message(\
 			"<span class='warning'>[M.name] struggles to break free from the [src]!</span>",\
 			"<span class='notice'>You struggle to break free from the [src], exacerbating your wounds! (Stay still for two minutes.)</span>",\
-			"<span class='italics'>You hear a wet squishing noise..</span>")
+			"<span class='italics'>You hear a wet squishing noise.</span>")
 			M.adjustBruteLoss(30)
 			if(!do_after(M, 1200, target = src))
 				if(M && M.buckled)
