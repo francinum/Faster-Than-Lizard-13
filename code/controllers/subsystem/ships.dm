@@ -117,9 +117,6 @@ var/global/list/ftl_weapons_consoles = list()
 		if(SSstarmap.in_transit || SSstarmap.in_transit_planet)
 			return
 		if(S.planet != SSstarmap.current_planet)
-			if(ships_disengage_on_ftl_jump)
-				S.attacking_player = 0
-				broadcast_message("<span class=notice> Left weapons range of enemy ship ([S.name]). Enemy ship disengaging.</span>",notice_sound)
 			return
 		if(S.system != SSstarmap.current_system)
 			if(ships_disengage_on_ftl_jump)
