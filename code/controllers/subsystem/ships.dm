@@ -15,6 +15,7 @@ var/global/list/ftl_weapons_consoles = list()
 	var/list/ship_types = list()
 	
 	var/debug_ships = 0		//you are going to want to leave this off, trust me
+	var/ships_disengage_on_ftl_jump = 1	//do we want ships to disengage the player if they jump?
 
 	var/alert_sound = 'sound/machines/warning-buzzer.ogg'
 	var/success_sound = 'sound/machines/ping.ogg'
@@ -116,6 +117,14 @@ var/global/list/ftl_weapons_consoles = list()
 		if(SSstarmap.in_transit || SSstarmap.in_transit_planet)
 			return
 		if(S.planet != SSstarmap.current_planet)
+			if(ships_disengage_on_ftl_jump)
+				S.attacking_player = 0
+				broadcast_message("<span class=notice> Left weapons range of enemy ship ([S.name]). Enemy ship disengaging.</span>",notice_sound)
+			return
+		if(S.system != SSstarmap.current_system)
+			if(ships_disengage_on_ftl_jump)
+				S.attacking_player = 0
+				broadcast_message("<span class=notice> Left weapons range of enemy ship ([S.name]).</span>",notice_sound)
 			return
 		if(world.time > S.next_attack && S.fire_rate)
 			S.next_attack = world.time + S.fire_rate
@@ -392,7 +401,7 @@ var/global/list/ftl_weapons_consoles = list()
 		process_ftl(S)
 		calculate_damage_effects(S)
 		repair_tick(S)
-		if(S.attacking_player ||S.target) attack_tick(S)
+		if(S.attacking_player || S.target) attack_tick(S)
 		ship_ai(S)
 
 //		if(S.system != SSstarmap.current_system)
