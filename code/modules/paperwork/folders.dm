@@ -116,7 +116,7 @@
 	icon_state = "folder_red"
 	
 
-/obj/item/weapon/folder/syndicate/mining/New()
+/obj/item/weapon/folder/jonas/New()
 	..()
 	new /obj/item/weapon/paper/jonas/overview(src)
 	new /obj/item/weapon/paper/jonas/medic(src)
