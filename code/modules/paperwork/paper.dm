@@ -468,7 +468,3 @@
 /obj/item/weapon/paper/jonas/radmeer_autopsy_3
 	name = "paper- Jonas Spitzer - Autopsy Report: Joseph Davis"
 	info = "<font face=\"Verdana\" color=black><font size=\"4\"><center>NANOTRASEN DOSSIER FILE</center></font><BR><center>CLASSIFIED</center><BR> SPITZER, RANDALL PHILIP JONAS<BR> AUTOPSY REPORT re: RADMEER 2 ASSASSINATIONS<BR> JOSEPH DAVIS<BR> <HR> <B>Date of Autopsy:</B> 2547-04-02<BR> <B>Victim:</B> Davis, Joseph Alan<BR> <B>Victim&#39;s Occupation:</B> Mayor of Amadeus Valley<BR> <B>Coroner:</B> Van der Haagen, Sheila<BR> <B>Report number:</B> 35685342<BR> <HR> <B>Cause of Death:</B> Blood loss resultant to single gunshot wound to neck<BR> <B>Time of Death approx.:</B> 13:56 2547-04-01<BR> <HR> Subject suffered gunshot wound to the jugular. Subject was standing behind Daniel Smith (AUTOPSY NO.35685340) and was stricken by the bullet exiting Smith. Bullet passed through and exited the back of the neck. Large wound suggests rifle cartridge.<BR> <BR> <I>(Below are various schematics detailing entry and exit wounds.)</I></font>"
-	
-/obj/item/weapon/paper/jonas/
-	name = "paper- Jonas Spitzer - "
-	info = ""
