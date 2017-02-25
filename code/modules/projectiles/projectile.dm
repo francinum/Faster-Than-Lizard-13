@@ -76,8 +76,8 @@
 	var/damage = 10
 	var/damage_spread_type = DAMAGE_SPREAD_OFF
 	var/damage_spread_coeff = 0.2
-	var/new_damage = NULL			//damage calculation
-	var/new_damage_spread_coeff = NULL		//used in halved-spread
+	var/new_damage = null				//damage calculation
+	var/new_damage_spread_coeff = null		//used in halved-spread
 	var/damage_type = BRUTE //BRUTE, BURN, TOX, OXY, CLONE are the only things that should be in here
 	var/nodamage = 0 //Determines if the projectile will skip any damage inflictions
 	var/flag = "bullet" //Defines what armor to use when it hits things.  Must be set to bullet, laser, energy,or bomb
