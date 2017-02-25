@@ -1693,13 +1693,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"dp" = (
-/mob/living/simple_animal/hostile/creature,
-/turf/open/floor/engine,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
 "dq" = (
 /mob/living/carbon/monkey/punpun{
 	name = "monkey"
@@ -1711,17 +1704,6 @@
 	})
 "dr" = (
 /mob/living/simple_animal/cow,
-/turf/open/floor/engine,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
-"ds" = (
-/obj/structure/alien/weeds{
-	tag = "icon-weeds2";
-	icon_state = "weeds2"
-	},
-/mob/living/simple_animal/hostile/alien,
 /turf/open/floor/engine,
 /area/no_entry{
 	has_gravity = 1;
@@ -2028,15 +2010,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/neutral/side{
 	dir = 4
-	},
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
-"dV" = (
-/obj/machinery/door/airlock/centcom,
-/turf/closed/indestructible{
-	icon_state = "rwall3"
 	},
 /area/no_entry{
 	has_gravity = 1;
@@ -2646,13 +2619,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"ff" = (
-/mob/living/simple_animal/hostile/asteroid/fugu,
-/turf/open/floor/engine,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
 "fg" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
@@ -2676,24 +2642,6 @@
 "fi" = (
 /obj/structure/chair/comfy/beige,
 /turf/open/floor/carpet,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
-"fj" = (
-/mob/living/simple_animal/hostile/asteroid/goliath,
-/turf/open/floor/engine,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
-"fk" = (
-/obj/structure/alien/weeds{
-	tag = "icon-weeds2";
-	icon_state = "weeds2"
-	},
-/mob/living/simple_animal/hostile/alien/queen/large,
-/turf/open/floor/engine,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
@@ -3202,6 +3150,22 @@
 	},
 /turf/open/space,
 /area/space)
+"gg" = (
+/turf/closed/indestructible{
+	icon_state = "rwall13"
+	},
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"gh" = (
+/turf/closed/indestructible{
+	icon_state = "rwall15"
+	},
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
 "gk" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -3216,32 +3180,142 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"gj" = (
-/obj/structure/statue/diamond/captain,
+"kj" = (
+/obj/structure/statue/bananium/clown{
+	desc = "A bananium statue with a small engraving chiseled, 'HOOOOOOONK'.";
+	name = "Statue of a Clown"
+	},
 /turf/open/floor/noslip,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"gi" = (
-/obj/structure/statue/bananium/clown,
+"kD" = (
+/obj/machinery/door/airlock/glass_medical{
+	name = "Medbay Storage"
+	},
+/turf/open/floor/plasteel/white,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"lX" = (
+/obj/machinery/door/airlock/security{
+	id_tag = "outerbrig";
+	name = "Brig";
+	req_access = null;
+	req_access_txt = "38"
+	},
+/turf/open/floor/plasteel/black,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"sW" = (
+/mob/living/simple_animal/hostile/asteroid/fugu{
+	
+	},
+/turf/open/floor/engine,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"tQ" = (
+/obj/machinery/door/airlock/glass{
+	name = "Hydrophonics"
+	},
+/turf/open/floor/plasteel,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"zK" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Office"
+	},
+/turf/closed/indestructible{
+	icon_state = "rwall3"
+	},
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"Bp" = (
+/obj/structure/alien/weeds{
+	tag = "icon-weeds2";
+	icon_state = "weeds2"
+	},
+/mob/living/simple_animal/hostile/alien{
+	
+	},
+/turf/open/floor/engine,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"BQ" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Gift Shop - Closed"
+	},
 /turf/open/floor/noslip,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"gh" = (
-/turf/closed/indestructible{
-	icon_state = "rwall15"
+"Cj" = (
+/mob/living/simple_animal/hostile/asteroid/goliath{
+	
 	},
+/turf/open/floor/engine,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"gg" = (
-/turf/closed/indestructible{
-	icon_state = "rwall13"
+"HY" = (
+/mob/living/simple_animal/hostile/creature{
+	
 	},
+/turf/open/floor/engine,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"OU" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Centcom Access"
+	},
+/turf/open/floor/plasteel/grimy,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"RW" = (
+/obj/structure/statue/diamond/captain{
+	
+	},
+/turf/open/floor/noslip,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"Vp" = (
+/mob/living/simple_animal/hostile/asteroid/fugu{
+	AIStatus = 3
+	},
+/turf/open/floor/engine,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"XS" = (
+/obj/structure/alien/weeds{
+	tag = "icon-weeds2";
+	icon_state = "weeds2"
+	},
+/mob/living/simple_animal/hostile/alien/queen/large{
+	
+	},
+/turf/open/floor/engine,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
@@ -22829,7 +22903,7 @@ dM
 dM
 dE
 dd
-fj
+Cj
 dd
 ad
 aa
@@ -23072,7 +23146,7 @@ aa
 aa
 ad
 dd
-dp
+HY
 dd
 de
 dM
@@ -23857,7 +23931,7 @@ dM
 dM
 dF
 dd
-ff
+Vp
 dd
 ad
 aa
@@ -24113,7 +24187,7 @@ dM
 dM
 dM
 de
-ff
+sW
 dd
 dd
 ad
@@ -24621,7 +24695,7 @@ dM
 dR
 ae
 ae
-ai
+en
 ae
 ae
 dR
@@ -24885,7 +24959,7 @@ dM
 dM
 eW
 dg
-fk
+XS
 dg
 ad
 aa
@@ -25642,7 +25716,7 @@ cp
 bc
 ad
 df
-ds
+Bp
 dg
 de
 dM
@@ -27712,7 +27786,7 @@ eC
 dM
 dM
 dM
-ai
+kD
 dM
 dM
 fK
@@ -27969,7 +28043,7 @@ eC
 dM
 dM
 dM
-ai
+kD
 dM
 dM
 dM
@@ -31814,7 +31888,7 @@ ct
 ad
 bM
 bO
-dV
+zK
 be
 aZ
 aM
@@ -32842,7 +32916,7 @@ bS
 ad
 bM
 bO
-dV
+zK
 be
 aZ
 aM
@@ -34883,7 +34957,7 @@ aa
 aa
 ac
 bg
-ai
+tQ
 bg
 bd
 bm
@@ -35154,7 +35228,7 @@ dk
 cA
 cA
 ad
-ae
+cA
 ad
 be
 aZ
@@ -35411,7 +35485,7 @@ dl
 dy
 cA
 ai
-ae
+cA
 ai
 be
 aZ
@@ -35668,7 +35742,7 @@ dm
 cA
 cA
 ad
-ae
+cA
 ad
 be
 aZ
@@ -35925,7 +35999,7 @@ cA
 cA
 cA
 ad
-ae
+cA
 ad
 be
 aZ
@@ -36179,10 +36253,10 @@ cB
 cN
 cV
 ad
-ai
-ai
+lX
+lX
 ad
-ae
+cA
 ad
 be
 aZ
@@ -36945,7 +37019,7 @@ ad
 bL
 bO
 bO
-ai
+OU
 cA
 cA
 cA
@@ -41835,8 +41909,8 @@ bd
 bm
 bm
 bp
-ai
-ai
+BQ
+BQ
 bd
 bm
 bm
@@ -42606,8 +42680,8 @@ cZ
 cX
 cX
 cX
-gi
-gj
+kj
+RW
 cX
 cX
 cX

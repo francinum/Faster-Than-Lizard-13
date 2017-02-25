@@ -359,14 +359,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"aU" = (
-/obj/structure/alien/weeds,
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plasteel,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
 "aV" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/egg,
@@ -422,13 +414,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"bb" = (
-/obj/machinery/door/airlock/glass_research,
-/turf/open/floor/plasteel/black,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
 "bd" = (
 /turf/closed/indestructible/fakeglass{
 	icon_state = "fakewindows2";
@@ -441,31 +426,6 @@
 "bf" = (
 /obj/structure/table,
 /obj/item/weapon/circular_saw,
-/turf/open/floor/plasteel,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
-"bg" = (
-/obj/structure/alien/weeds{
-	tag = "icon-weeds1";
-	icon_state = "weeds1"
-	},
-/mob/living/simple_animal/hostile/alien/maid,
-/turf/open/floor/plasteel,
-/area/no_entry{
-	has_gravity = 1;
-	name = "Space Station"
-	})
-"bh" = (
-/obj/structure/alien/weeds{
-	tag = "icon-weeds2";
-	icon_state = "weeds2"
-	},
-/obj/machinery/igniter{
-	id = 15
-	},
-/mob/living/simple_animal/hostile/alien/queen/large,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -1288,11 +1248,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"hl" = (
-/turf/closed/indestructible{
-	icon_state = "rwall4"
-	},
-/area/space)
 "ix" = (
 /turf/closed/indestructible{
 	icon_state = "rwall14"
@@ -1325,20 +1280,26 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"pc" = (
-/turf/closed/indestructible{
-	icon_state = "rwall12"
-	},
-/area/space)
-"pr" = (
-/turf/closed/indestructible{
-	icon_state = "rwall1"
-	},
-/area/space)
 "qH" = (
 /turf/closed/indestructible{
 	icon_state = "rwall9"
 	},
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"qP" = (
+/obj/structure/alien/weeds{
+	tag = "icon-weeds2";
+	icon_state = "weeds2"
+	},
+/obj/machinery/igniter{
+	id = 15
+	},
+/mob/living/simple_animal/hostile/alien/queen/large{
+	AIStatus = 3
+	},
+/turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
@@ -1368,9 +1329,23 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"wX" = (
+"zW" = (
+/obj/machinery/door/airlock/glass_research{
+	name = "Research"
+	},
 /turf/open/floor/plasteel,
-/area/space)
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"AL" = (
+/turf/closed/indestructible/fakedoor{
+	name = "Gift Shop - Closed"
+	},
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
 "BZ" = (
 /obj/machinery/door/window/eastleft{
 	name = "Station Kitchen"
@@ -1400,25 +1375,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"EA" = (
-/turf/open/floor/plasteel/darkblue,
-/area/space)
-"EF" = (
-/turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 1
-	},
-/area/space)
-"EQ" = (
-/turf/closed/indestructible{
-	icon_state = "rwall8"
-	},
-/area/space)
-"ES" = (
-/turf/closed/indestructible{
-	icon_state = "rwall2"
-	},
-/area/space)
 "EX" = (
 /turf/open/floor/plasteel/loadingarea{
 	dir = 1
@@ -1451,6 +1407,15 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
+"IN" = (
+/obj/machinery/door/airlock/glass_research{
+	name = "Research Access"
+	},
+/turf/open/floor/plasteel/black,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
 "JC" = (
 /obj/structure/sign/directions/science,
 /turf/closed/indestructible{
@@ -1460,9 +1425,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"KV" = (
-/turf/closed/indestructible/fakeglass,
-/area/space)
 "Mi" = (
 /turf/closed/indestructible{
 	icon_state = "rwall2"
@@ -1471,9 +1433,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"Mr" = (
-/turf/open/floor/plasteel/black,
-/area/space)
 "NV" = (
 /obj/machinery/status_display,
 /turf/closed/indestructible{
@@ -1483,10 +1442,33 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
+"Or" = (
+/obj/structure/alien/weeds{
+	tag = "icon-weeds1";
+	icon_state = "weeds1"
+	},
+/mob/living/simple_animal/hostile/alien/maid{
+	AIStatus = 3
+	},
+/turf/open/floor/plasteel,
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
 "QE" = (
 /turf/closed/indestructible{
 	icon_state = "rwall13"
 	},
+/area/no_entry{
+	has_gravity = 1;
+	name = "Space Station"
+	})
+"Su" = (
+/obj/structure/alien/weeds,
+/mob/living/simple_animal/hostile/alien{
+	AIStatus = 3
+	},
+/turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
 	name = "Space Station"
@@ -1519,12 +1501,6 @@
 	has_gravity = 1;
 	name = "Space Station"
 	})
-"UB" = (
-/turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 1
-	},
-/area/space)
 "WT" = (
 /obj/machinery/button/door{
 	id = "StationDoor";
@@ -26659,7 +26635,7 @@ aQ
 aT
 aT
 aZ
-bg
+Or
 aZ
 aT
 aT
@@ -26913,7 +26889,7 @@ aa
 aa
 Ff
 aQ
-aU
+Su
 aT
 aT
 aT
@@ -27173,7 +27149,7 @@ aQ
 aQ
 aZ
 aT
-bh
+qP
 aT
 aT
 aZ
@@ -29234,7 +29210,7 @@ aX
 aX
 aX
 aL
-ae
+zW
 aO
 aO
 aO
@@ -29491,7 +29467,7 @@ bk
 bx
 bi
 aL
-ae
+zW
 aO
 aO
 aO
@@ -29741,7 +29717,7 @@ aa
 ix
 we
 Ui
-bb
+IN
 nF
 we
 we
@@ -34885,7 +34861,7 @@ aN
 aM
 aL
 Ff
-ae
+AL
 ba
 bd
 bw
@@ -40776,19 +40752,19 @@ qH
 aa
 aa
 aa
-hl
-EF
-UB
-UB
-KV
-ES
-pr
-EF
-UB
-UB
-UB
-UB
-ES
+ID
+ba
+bd
+bd
+bw
+Mi
+Ui
+ba
+bd
+bd
+bd
+bd
+Mi
 qH
 ba
 bw
@@ -41033,26 +41009,26 @@ aa
 aa
 aa
 aa
-pc
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-EA
-Mr
-EA
-wX
-pc
+Ff
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aM
+aN
+aM
+aL
+Ff
 aa
 aa
 aa
@@ -41290,26 +41266,26 @@ aa
 aa
 aa
 aa
-pc
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-Mr
-EA
-wX
-pc
+Ff
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aN
+aM
+aL
+Ff
 aa
 aa
 aa
@@ -41547,26 +41523,26 @@ aa
 aa
 aa
 aa
-pc
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-Mr
-EA
-wX
-pc
+Ff
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aN
+aM
+aL
+Ff
 aa
 aa
 aa
@@ -41804,26 +41780,26 @@ aa
 aa
 aa
 aa
-pc
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-wX
-pc
+Ff
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aM
+aL
+Ff
 aa
 aa
 aa
@@ -42061,26 +42037,26 @@ aa
 aa
 aa
 aa
-pc
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-wX
-pc
+Ff
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+aL
+Ff
 aa
 aa
 aa
@@ -42318,26 +42294,26 @@ aa
 aa
 aa
 aa
-EQ
-EF
-UB
-UB
-KV
-ES
-pr
-EF
-UB
-UB
-UB
-UB
-ES
-pr
-EF
-UB
-UB
-UB
-KV
-EQ
+uU
+ba
+bd
+bd
+bw
+Mi
+Ui
+ba
+bd
+bd
+bd
+bd
+Mi
+Ui
+ba
+bd
+bd
+bd
+bw
+uU
 aa
 aa
 aa
