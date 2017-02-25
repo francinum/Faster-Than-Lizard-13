@@ -103,12 +103,12 @@
 			new_damage = damage
 			
 		else if(damage_spread_type == DAMAGE_SPREAD_MULT)		//multiplicative
-			new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff))
+			new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
 			
 		else if(damage_spread_type == DAMAGE_SPREAD_MULT_HALVED)	//halved-multiplicative
 			new_damage_spread_coeff = (damage_spread_coeff * 0.5)
 			damage_spread_coeff = new_damage_spread_coeff
-			new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff))
+			new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
 			
 		else if(damage_spread_type == DAMAGE_SPREAD_ADD)		//additive
 			new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
