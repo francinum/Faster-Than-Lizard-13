@@ -146,6 +146,24 @@
 	},
 /turf/open/floor/holofloor/carpet,
 /area/shuttle/ftl/holodeck/rec_center/lounge)
+"brB" = (
+/obj/structure/closet,
+/obj/item/clothing/under/rank/centcom_officer,
+/obj/item/clothing/under/rank/centcom_commander,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/glasses/gglasses,
+/obj/item/weapon/gun/projectile/automatic/wt550{
+	automatic = 1;
+	desc = "A seemingly tailored version of Nanotrasen's traditional security auto-rifle, this rifle shows attempts at improving the rather low quality equipment that is issued to NT Security Forces.  Kelloway seems to think it's a genuine gun, but it's just a prototype.";
+	fire_delay = 1;
+	name = "Centcomm Vindicator"
+	},
+/obj/item/weapon/storage/belt/holster,
+/obj/item/device/flashlight/seclite,
+/obj/item/weapon/gun/projectile/automatic/pistol/usp,
+/turf/open/floor/wood,
+/area/centcom/ferry)
 "bvA" = (
 /turf/open/floor/holofloor{
 	dir = 10;
@@ -1418,6 +1436,13 @@
 /obj/structure/table/reinforced,
 /obj/item/weapon/reagent_containers/food/snacks/pie/cherrypie,
 /turf/open/floor/plasteel/black,
+/area/centcom/ferry)
+"kvd" = (
+/obj/structure/filingcabinet,
+/obj/item/weapon/folder/documents,
+/obj/item/weapon/folder/documents,
+/obj/item/weapon/folder/jonas,
+/turf/open/floor/wood,
 /area/centcom/ferry)
 "kwW" = (
 /turf/open/floor/holofloor{
@@ -4738,12 +4763,6 @@
 	icon_state = "red"
 	},
 /area/shuttle/ftl/holodeck/rec_center/basketball)
-"HwX" = (
-/obj/structure/filingcabinet,
-/obj/item/weapon/folder/documents,
-/obj/item/weapon/folder/documents,
-/turf/open/floor/wood,
-/area/centcom/ferry)
 "HAd" = (
 /obj/structure/closet/secure_closet/bar,
 /turf/open/floor/plasteel/red/side{
@@ -35073,7 +35092,7 @@ BJV
 BJV
 BJV
 BJV
-gbk
+brB
 uNe
 MFq
 ULx
@@ -36867,7 +36886,7 @@ BJV
 GLV
 gbk
 uNe
-HwX
+kvd
 BJV
 BJV
 BJV
