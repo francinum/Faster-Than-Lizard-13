@@ -1,11 +1,84 @@
+//quick numbers for personal manual of style
+// max base damage of 75
+//armour piercing divides damage and armour by 1.5
+//hollowpoint multiplies damage and armour by 1.5
+
 /obj/item/projectile/bullet
 	name = "bullet"
 	icon_state = "bullet"
 	damage = 60
 	damage_type = BRUTE
+	damage_spread_coeff = 0
+	damage_spread_type = DAMAGE_SPREAD_OFF
+	var/ismagnum = 0		//for magnum rounds, such as +p/+p+
 	nodamage = 0
 	flag = "bullet"
 	hitsound_wall = "ricochet"
+	
+/obj/item/projectile/bullet/calibre
+	damage_spread_coeff = 0.2
+	damage_spread_type = DAMAGE_SPREAD_MULT
+	
+///////////////////////////////////
+// HANDGUN AND SMALL ARMS ROUNDS //
+///////////////////////////////////
+
+//IMPERIAL CALIBRES
+/obj/item/projectile/bullet/calibre/17		//.17 HMR
+	damage = 10
+
+/obj/item/projectile/bullet/calibre/177		//.177 airgun
+	damage = 5				//you'll shoot your eye out, kid
+
+/obj/item/projectile/bullet/calibre/22lr	//.22 Long Rifle
+	damage = 20
+	
+/obj/item/projectile/bullet/calibre/357		//.357 magnum
+	damage = 50
+	ismagnum = 1
+	
+/obj/item/projectile/bullet/calibre/38		//.38 Special
+	damage = 15
+	stamina = 50
+
+/obj/item/projectile/bullet/calibre/44mag	//.44 Magnum
+	damage = 60
+	ismagnum = 1
+
+/obj/item/projectile/bullet/calibre/44spl	//.44 Special
+	damage = 50
+	
+/obj/item/projectile/bullet/calibre/45acp	//.45 Automatic
+	damage = 35
+	
+/obj/item/projectile/bullet/calibre/454		//.454 Casull
+	damage = 55
+	damage_spread_coeff = 0.3	//.454 is a wildcat, so loading will vary between handloaders
+	
+/obj/item/projectile/bullet/calibre/50ae	//.50 Action Express
+	damage = 60
+	stamina = 10
+
+/obj/item/projectile/bullet/calibre/500sw	//.500 Smith & Wesson
+	damage = 65
+	stamina = 25
+	
+//METRIC
+/obj/item/projectile/bullet/calibre/46x30	//4.6x30mm
+	damage = 20
+
+/obj/item/projectile/bullet/calibre/57x28	//5.7x28mm
+	damage = 22
+
+/obj/item/projectile/bullet/calibre/9x18	//9x18mm Makarov
+	damage = 30
+	damage_spread_coeff = 0.25
+	
+/obj/item/projectile/bullet/calibre/9x19	//9x19 Parabellum
+	damage = 30
+
+/obj/item/projectile/bullet/calibre/68x43	//6.8x43mm Caseless
+
 
 /obj/item/projectile/bullet/nerfed
 	damage = 15
