@@ -4692,20 +4692,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/security/armory)
-"ilZ" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	name = "Marshall Bash's closet";
-	registered_name = "Marshall Bash"
-	},
-/obj/item/weapon/book/space_catalog,
-/obj/item/weapon/deck{
-	icon = 'icons/obj/toy.dmi';
-	icon_state = "deck_nanotrasen_full"
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "img" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -9343,19 +9329,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
-"rko" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	name = "Boris Mayonnaise's closet";
-	registered_name = "Boris Mayonnaise"
-	},
-/obj/item/weapon/gun/projectile/revolver/mateba,
-/obj/item/clothing/suit/space/hardsuit/ert/paranormal/beserker{
-	armor = list(melee = 30, bullet = 15, laser = 30, energy = 10, bomb = 10, bio = 100, rad = 50)
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "rkv" = (
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/turret_protected/ai_upload)
@@ -17344,6 +17317,17 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/central)
+"FLj" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Boris Mayonnaise's closet";
+	registered_name = "Boris Mayonnaise"
+	},
+/obj/item/weapon/gun/projectile/revolver/mateba,
+/obj/item/clothing/suit/armor/vest/warden,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "FMv" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/carpet,
@@ -20604,6 +20588,17 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/genetics)
+"LVD" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Marshall Bash's closet";
+	registered_name = "Marshall Bash"
+	},
+/obj/item/weapon/book/space_catalog,
+/obj/item/toy/cards/deck,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "LWQ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -24819,15 +24814,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/lab)
-"Uph" = (
-/obj/machinery/atmospherics/pipe/simple/yellow/visible,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/engine/engine_smes)
 "Uso" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -36863,7 +36849,7 @@ Ikh
 OPU
 IaL
 eXJ
-Uph
+tzi
 tzi
 Svq
 bPD
@@ -62048,7 +62034,7 @@ PZf
 lhc
 yCd
 BeW
-rko
+FLj
 jzE
 raA
 HzW
@@ -63078,7 +63064,7 @@ sYl
 alv
 BBn
 Lav
-ilZ
+LVD
 HzW
 zYc
 nUf
