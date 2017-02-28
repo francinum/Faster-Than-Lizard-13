@@ -24,42 +24,44 @@
 ///////////////////////////////////
 
 //IMPERIAL CALIBRES
-/obj/item/projectile/bullet/calibre/17		//.17 HMR
+/obj/item/projectile/bullet/calibre/cal17		//.17 HMR
 	damage = 10
 
-/obj/item/projectile/bullet/calibre/177		//.177 airgun
-	damage = 5				//you'll shoot your eye out, kid
+/obj/item/projectile/bullet/calibre/cal177		//.177 airgun
+	damage = 5					//you'll shoot your eye out, kid
 
-/obj/item/projectile/bullet/calibre/22lr	//.22 Long Rifle
+/obj/item/projectile/bullet/calibre/cal22lr		//.22 Long Rifle
 	damage = 20
 	
-/obj/item/projectile/bullet/calibre/357		//.357 magnum
+/obj/item/projectile/bullet/calibre/cal357		//.357 magnum
 	damage = 50
 	ismagnum = 1
 	
-/obj/item/projectile/bullet/calibre/38		//.38 Special
+/obj/item/projectile/bullet/calibre/cal357/38spl		//.38 Special
 	damage = 15
 	stamina = 50
+	ismagnum = 0
 
-/obj/item/projectile/bullet/calibre/44mag	//.44 Magnum
+/obj/item/projectile/bullet/calibre/cal44mag			//.44 Magnum
 	damage = 60
 	ismagnum = 1
 
-/obj/item/projectile/bullet/calibre/44spl	//.44 Special
+/obj/item/projectile/bullet/calibre/cal44mag/44spl		//.44 Special
 	damage = 50
+	ismagnum = 0
 	
-/obj/item/projectile/bullet/calibre/45acp	//.45 Automatic
+/obj/item/projectile/bullet/calibre/cal45acp		//.45 Automatic
 	damage = 35
 	
-/obj/item/projectile/bullet/calibre/454		//.454 Casull
+/obj/item/projectile/bullet/calibre/cal454		//.454 Casull
 	damage = 55
-	damage_spread_coeff = 0.3	//.454 is a wildcat, so loading will vary between handloaders
+	damage_spread_coeff = 0.3			//.454 is a wildcat, so loading will vary between handloaders
 	
-/obj/item/projectile/bullet/calibre/50ae	//.50 Action Express
+/obj/item/projectile/bullet/calibre/cal50ae		//.50 Action Express
 	damage = 60
 	stamina = 10
 
-/obj/item/projectile/bullet/calibre/500sw	//.500 Smith & Wesson
+/obj/item/projectile/bullet/calibre/cal500sw	//.500 Smith & Wesson
 	damage = 65
 	stamina = 25
 	
@@ -67,7 +69,7 @@
 /obj/item/projectile/bullet/calibre/46x30	//4.6x30mm
 	damage = 20
 
-/obj/item/projectile/bullet/calibre/57x28	//5.7x28mm
+/obj/item/projectile/bullet/calibre/57x28	//5.7x28mm FNH
 	damage = 22
 
 /obj/item/projectile/bullet/calibre/9x18	//9x18mm Makarov
@@ -78,7 +80,48 @@
 	damage = 30
 
 /obj/item/projectile/bullet/calibre/68x43	//6.8x43mm Caseless
+	damage = 35
+	
 
+///////////////////////////////
+// RIFLE AND LONG ARM ROUNDS //
+///////////////////////////////
+
+//IMPERIAL CALIBRES
+
+//.223 Remington is under 556x45 below - identical to 5.56x45 NATO but lower pressure
+
+/obj/item/projectile/bullet/calibre/cal3006	//.30-06 Winchester
+	damage = 40
+	
+/obj/item/projectile/bullet/calibre/cal308	//.308 Winchester
+	damage = 40
+	
+/obj/item/projectile/bullet/calibre/cal338	//.338 Lapua
+	damage = 45
+	
+/obj/item/projectile/bullet/calibre/cal338/338mag	//.338 Lapua Magnum
+	damage = 50
+	ismagnum = 1
+
+/obj/item/projectile/bullet/calibre/cal4570	//.45-70 Government
+	damage = 55
+	
+/obj/item/projectile/bullet/calibre/cal50bmg	//.50 Browning Machine Gun
+	damage = 75				//the bullet is fucking huge, 12.7x99mm - and that's just the CASE!
+	
+//METRIC
+
+/obj/item/projectile/bullet/calibre/556x45	//5.56x45mm NATO
+	damage = 35
+	ismagnum = 1
+	
+/obj/item/projectile/bullet/calibre/556x45/cal223	//.223 Remington Magnum
+	damage = 30
+	ismagnum = 0
+	
+/////BOOKMARK
+	
 
 /obj/item/projectile/bullet/nerfed
 	damage = 15
