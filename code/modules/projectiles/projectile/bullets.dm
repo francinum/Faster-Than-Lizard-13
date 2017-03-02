@@ -66,20 +66,20 @@
 	stamina = 25
 	
 //METRIC
-/obj/item/projectile/bullet/calibre/46x30	//4.6x30mm
+/obj/item/projectile/bullet/calibre/cal46x30	//4.6x30mm
 	damage = 20
 
-/obj/item/projectile/bullet/calibre/57x28	//5.7x28mm FNH
+/obj/item/projectile/bullet/calibre/cal57x28	//5.7x28mm FNH
 	damage = 22
 
-/obj/item/projectile/bullet/calibre/9x18	//9x18mm Makarov
+/obj/item/projectile/bullet/calibre/cal9x18	//9x18mm Makarov
 	damage = 30
 	damage_spread_coeff = 0.25
 	
-/obj/item/projectile/bullet/calibre/9x19	//9x19 Parabellum
+/obj/item/projectile/bullet/calibre/cal9x19	//9x19 Parabellum
 	damage = 30
 
-/obj/item/projectile/bullet/calibre/68x43	//6.8x43mm Caseless
+/obj/item/projectile/bullet/calibre/cal68x43	//6.8x43mm Caseless
 	damage = 35
 	
 
@@ -100,7 +100,7 @@
 /obj/item/projectile/bullet/calibre/cal338	//.338 Lapua
 	damage = 45
 	
-/obj/item/projectile/bullet/calibre/cal338/338mag	//.338 Lapua Magnum
+/obj/item/projectile/bullet/calibre/cal338/mag	//.338 Lapua Magnum
 	damage = 50
 	ismagnum = 1
 
@@ -112,11 +112,11 @@
 	
 //METRIC
 
-/obj/item/projectile/bullet/calibre/556x45	//5.56x45mm NATO
+/obj/item/projectile/bullet/calibre/cal556x45	//5.56x45mm NATO
 	damage = 35
 	ismagnum = 1
 	
-/obj/item/projectile/bullet/calibre/556x45/cal223	//.223 Remington Magnum
+/obj/item/projectile/bullet/calibre/cal556x45/cal223	//.223 Remington Magnum
 	damage = 30
 	ismagnum = 0
 	
