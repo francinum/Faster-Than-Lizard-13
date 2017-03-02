@@ -37,7 +37,7 @@
 	damage = 50
 	ismagnum = 1
 	
-/obj/item/projectile/bullet/calibre/cal357/38spl		//.38 Special
+/obj/item/projectile/bullet/calibre/cal357/spl		//.38 Special
 	damage = 15
 	stamina = 50
 	ismagnum = 0
@@ -46,7 +46,7 @@
 	damage = 60
 	ismagnum = 1
 
-/obj/item/projectile/bullet/calibre/cal44mag/44spl		//.44 Special
+/obj/item/projectile/bullet/calibre/cal44mag/spl		//.44 Special
 	damage = 50
 	ismagnum = 0
 	
