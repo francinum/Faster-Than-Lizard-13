@@ -6773,21 +6773,6 @@
 	},
 /turf/open/floor/plasteel/shuttle/white,
 /area/shuttle/ftl/subshuttle/pod_3)
-"mqu" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "n2_in"
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/open/floor/engine/n2,
-/area/shuttle/ftl/atmos)
 "mqV" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/medical/virology)
@@ -7179,28 +7164,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall,
 /area/shuttle/ftl/janitor)
-"naw" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
-	dir = 1;
-	external_pressure_bound = 0;
-	frequency = 1441;
-	icon_state = "vent_map";
-	id_tag = "air_out";
-	internal_pressure_bound = 2000;
-	on = 1;
-	pressure_checks = 2;
-	pump_direction = 0
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/open/floor/engine/air,
-/area/shuttle/ftl/atmos)
 "nbT" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/machinery/door/poddoor{
@@ -8649,21 +8612,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/virology)
-"pMk" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "air_in"
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/open/floor/engine/air,
-/area/shuttle/ftl/atmos)
 "pMW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station,
 /obj/machinery/light/small{
@@ -14500,18 +14448,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/hor)
-"AxE" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "n2_sensor"
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/open/floor/engine/n2,
-/area/shuttle/ftl/atmos)
 "AxL" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -17414,6 +17350,20 @@
 	},
 /turf/open/floor/plasteel/darkblue,
 /area/shuttle/ftl/engine/engine_smes)
+"Fyz" = (
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "air_sensor"
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/open/floor/engine/air{
+	initial_gas_mix = "o2=120000;n2=480000;TEMP=293.15"
+	},
+/area/shuttle/ftl/atmos)
 "Fzl" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -17609,6 +17559,30 @@
 	dir = 8
 	},
 /area/shuttle/ftl/engine/engine_smes)
+"FOV" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	dir = 1;
+	external_pressure_bound = 0;
+	frequency = 1441;
+	icon_state = "vent_map";
+	id_tag = "air_out";
+	internal_pressure_bound = 2000;
+	on = 1;
+	pressure_checks = 2;
+	pump_direction = 0
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/engine/air{
+	initial_gas_mix = "o2=120000;n2=480000;TEMP=293.15"
+	},
+/area/shuttle/ftl/atmos)
 "FOW" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -19473,12 +19447,38 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/storage)
+"JsV" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/meter{
+	name = "Mixed Air Tank Out"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/darkblue,
+/area/shuttle/ftl/atmos)
 "JtB" = (
 /obj/machinery/computer/atmos_alert,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/shuttle/ftl/engine/chiefs_office)
+"JtE" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1441;
+	id = "n2_in"
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/engine/n2{
+	initial_gas_mix = "n2=600000;TEMP=293.15"
+	},
+/area/shuttle/ftl/atmos)
 "Juf" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -20344,6 +20344,30 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkblue,
+/area/shuttle/ftl/atmos)
+"KSz" = (
+/obj/machinery/atmospherics/components/unary/vent_pump{
+	dir = 1;
+	external_pressure_bound = 0;
+	frequency = 1441;
+	id_tag = "n2_out";
+	initialize_directions = 1;
+	internal_pressure_bound = 4000;
+	on = 1;
+	pressure_checks = 2;
+	pump_direction = 0
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/engine/n2{
+	initial_gas_mix = "n2=600000;TEMP=293.15"
+	},
 /area/shuttle/ftl/atmos)
 "KTk" = (
 /obj/effect/landmark/event_spawn,
@@ -23192,6 +23216,23 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/engine/secure_construction)
+"QlW" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1441;
+	id = "air_in"
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/engine/air{
+	initial_gas_mix = "o2=120000;n2=480000;TEMP=293.15"
+	},
+/area/shuttle/ftl/atmos)
 "Qmm" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
@@ -24561,14 +24602,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/assembly/robotics)
-"TaW" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/obj/machinery/meter{
-	name = "Mixed Air Tank Out"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/darkblue,
-/area/shuttle/ftl/atmos)
 "Tbk" = (
 /obj/structure/closet/emcloset,
 /obj/effect/decal/cleanable/dirt,
@@ -24646,6 +24679,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/munitions)
+"TgX" = (
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "n2_sensor"
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/open/floor/engine/n2{
+	initial_gas_mix = "n2=600000;TEMP=293.15"
+	},
+/area/shuttle/ftl/atmos)
 "ThA" = (
 /obj/machinery/computer/pmanagement,
 /obj/effect/decal/cleanable/dirt,
@@ -25583,28 +25630,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/hallway/primary/starboard)
-"UKL" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 1;
-	external_pressure_bound = 0;
-	frequency = 1441;
-	id_tag = "n2_out";
-	initialize_directions = 1;
-	internal_pressure_bound = 4000;
-	on = 1;
-	pressure_checks = 2;
-	pump_direction = 0
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/open/floor/engine/n2,
-/area/shuttle/ftl/atmos)
 "UMf" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -27227,18 +27252,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay_lobby)
-"XMg" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "air_sensor"
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/open/floor/engine/air,
-/area/shuttle/ftl/atmos)
 "XOg" = (
 /obj/structure/sink{
 	dir = 4;
@@ -38046,7 +38059,7 @@ uvK
 uqI
 LAW
 bJs
-mqu
+JtE
 rPy
 YHL
 rvu
@@ -38303,7 +38316,7 @@ OLj
 IHq
 IXy
 jnm
-AxE
+TgX
 rPy
 RhC
 sWN
@@ -38560,7 +38573,7 @@ vQs
 ofu
 Mtv
 ZGG
-UKL
+KSz
 rPy
 RhC
 dld
@@ -39588,7 +39601,7 @@ CtK
 ARI
 KSr
 iSP
-pMk
+QlW
 rPy
 RhC
 sWN
@@ -39845,7 +39858,7 @@ uqI
 nOc
 IFH
 DME
-XMg
+Fyz
 rPy
 RhC
 sWN
@@ -40101,8 +40114,8 @@ TQY
 GoO
 vuS
 KWp
-TaW
-naw
+JsV
+FOV
 rPy
 zBm
 sWN
