@@ -109,3 +109,28 @@
 	..()
 	new /obj/item/documents/syndicate/mining(src)
 	update_icon()
+	
+/obj/item/weapon/folder/jonas
+	name = "folder- 'Dossier - Jonas Spitzer'"
+	desc = "A red folder, prepared by Richard Dunn."
+	icon_state = "folder_red"
+	
+
+/obj/item/weapon/folder/jonas/New()
+	..()
+	new /obj/item/weapon/paper/jonas/overview(src)
+	new /obj/item/weapon/paper/jonas/medic(src)
+	new /obj/item/weapon/paper/jonas/warrant(src)
+	new /obj/item/weapon/paper/jonas/duga_1(src)
+	new /obj/item/weapon/paper/jonas/duga_2(src)
+	new /obj/item/weapon/paper/jonas/edc_file(src)
+	new /obj/item/weapon/paper/jonas/edc_discharge(src)
+	new /obj/item/weapon/paper/jonas/basilisk_arrest(src)
+	new /obj/item/weapon/paper/jonas/ir_radmeer(src)
+	new /obj/item/weapon/paper/jonas/ir_basilisk(src)
+	new /obj/item/weapon/paper/jonas/radmeer_pca(src)
+	new /obj/item/weapon/paper/jonas/radmeer_autopsy_1(src)
+	new /obj/item/weapon/paper/jonas/radmeer_autopsy_2(src)
+	new /obj/item/weapon/paper/jonas/radmeer_autopsy_3(src)
+	update_icon()
+	

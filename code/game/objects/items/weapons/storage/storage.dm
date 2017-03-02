@@ -347,18 +347,18 @@
 	W.layer = initial(W.layer)
 	W.loc = new_location
 
-	if(usr)
-		orient2hud(usr)
-		if(usr.s_active)
-			usr.s_active.show_to(usr)
-	if(W.maptext)
-		W.maptext = ""
-	W.on_exit_storage(src)
-	update_icon()
-	W.mouse_opacity = initial(W.mouse_opacity)
-	if(burn)
-		W.fire_act()
-	return 1
+	for(var/mob/M in can_see_contents())
+		orient2hud(M)
+		show_to(M)
+		
+		if(W.maptext)
+			W.maptext = ""
+		W.on_exit_storage(src)
+		update_icon()
+		W.mouse_opacity = initial(W.mouse_opacity)
+		if(burn)
+			W.fire_act()
+		return 1
 
 
 /obj/item/weapon/storage/empty_object_contents(burn, src.loc)

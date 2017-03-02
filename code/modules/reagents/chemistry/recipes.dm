@@ -2,6 +2,7 @@
 	var/name = null
 	var/id = null
 	var/result = null
+	var/list/results = new/list()
 	var/list/required_reagents = new/list()
 	var/list/required_catalysts = new/list()
 

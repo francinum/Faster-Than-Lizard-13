@@ -15,6 +15,7 @@ var/global/list/ftl_weapons_consoles = list()
 	var/list/ship_types = list()
 	
 	var/debug_ships = 0		//you are going to want to leave this off, trust me
+	var/ships_disengage_on_ftl_jump = 1	//do we want ships to disengage the player if they jump?
 
 	var/alert_sound = 'sound/machines/warning-buzzer.ogg'
 	var/success_sound = 'sound/machines/ping.ogg'
@@ -95,7 +96,7 @@ var/global/list/ftl_weapons_consoles = list()
 		S.next_recharge = world.time + S.recharge_rate
 		S.shield_strength = min(initial(S.shield_strength), S.shield_strength + 1)
 		if(S.shield_strength >= initial(S.shield_strength))
-			if(S.attacking_player && S.shield_strength > starting_shields) broadcast_message("<span class=notice>[faction2prefix(S)] ship ([S.name]) has recharged shields to 100% strength.</span>",notice_sound,S)
+			if(S.shield_strength > starting_shields) broadcast_message("<span class=notice>[faction2prefix(S)] ship ([S.name]) has recharged shields to 100% strength.</span>",notice_sound,S)
 
 	if(!find_broken_components(S))
 		S.next_repair = world.time + S.repair_time
@@ -113,17 +114,20 @@ var/global/list/ftl_weapons_consoles = list()
 
 /datum/subsystem/ship/proc/attack_tick(var/datum/starship/S)
 	if(S.attacking_player)
+		if(SSstarmap.in_transit || SSstarmap.in_transit_planet)
+			return
 		if(S.planet != SSstarmap.current_planet)
+			return
+		if(S.system != SSstarmap.current_system)
+			if(ships_disengage_on_ftl_jump)
+				S.attacking_player = 0
+				broadcast_message("<span class=notice> Left weapons range of enemy ship ([S.name]).</span>",notice_sound)
 			return
 		if(world.time > S.next_attack && S.fire_rate)
 			S.next_attack = world.time + S.fire_rate
 			attack_player(S,pick(get_attacks(S)))
 	if(S.attacking_target)
 		if(S.attacking_target.planet != S.planet)
-			return
-		if(S.attacking_target.planet != S.planet)
-			S.attacking_target = null
-			broadcast_message("<span class=notice> [faction2prefix(S.attacking_target)] ship ([S.attacking_target.name]) left weapons range of [faction2prefix(S)] ship ([S.name]).</span>",notice_sound,S)
 			return
 		if(world.time > S.next_attack && S.fire_rate)
 			S.next_attack = world.time + S.fire_rate
@@ -275,7 +279,7 @@ var/global/list/ftl_weapons_consoles = list()
 	qdel(S)
 
 /datum/subsystem/ship/proc/broadcast_message(var/message,var/sound,var/datum/starship/S)
-	if(S && S.system != SSstarmap.current_system)
+	if(S && S.system &&  S.system != SSstarmap.current_system)
 		return //don't need information about every combat sequence happening across the galaxy
 	for(var/obj/machinery/computer/ftl_weapons/C in ftl_weapons_consoles)
 		C.status_update(message,sound)
@@ -394,7 +398,7 @@ var/global/list/ftl_weapons_consoles = list()
 		process_ftl(S)
 		calculate_damage_effects(S)
 		repair_tick(S)
-		if(S.attacking_player ||S.target) attack_tick(S)
+		if(S.attacking_player || S.target) attack_tick(S)
 		ship_ai(S)
 
 //		if(S.system != SSstarmap.current_system)
