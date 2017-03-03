@@ -27,63 +27,124 @@
 ///////////////////////////////////
 
 //IMPERIAL CALIBRES
-/obj/item/projectile/bullet/calibre/cal17		//.17 HMR
-	damage = 10
+/obj/item/projectile/bullet/calibre/cal17			//.17 HMR
+	damage = 15
 
-/obj/item/projectile/bullet/calibre/cal177		//.177 airgun
+/obj/item/projectile/bullet/calibre/cal17/ap
+	damage = 12					//20% weaker, but does 25% armour penetration, which does better damage
+	armour_penetration = 25				//against armoued foes than regular bullets
+	damage_spread_type = DAMAGE_SPREAD_ADD
+	damage_spread_coeff = 2				//the bullet's weak as hell, we don't want to nerf it much harder
+
+/obj/item/projectile/bullet/calibre/cal177			//.177 airgun
 	damage = 5					//you'll shoot your eye out, kid
+	stamina = 2					
 
-/obj/item/projectile/bullet/calibre/cal22lr		//.22 Long Rifle
+/obj/item/projectile/bullet/calibre/cal22lr			//.22 Long Rifle
 	damage = 20
 	
-/obj/item/projectile/bullet/calibre/cal357		//.357 magnum
+/obj/item/projectile/bullet/calibre/cal357			//.357 magnum
 	damage = 50
 	ismagnum = 1
 	
-/obj/item/projectile/bullet/calibre/cal357/spl		//.38 Special
+/obj/item/projectile/bullet/calibre/cal357/ap
+	damage = 40
+	armour_penetration = 25
+
+/obj/item/projectile/bullet/calibre/cal357/spl			//.38 Special
 	damage = 15
 	stamina = 50
 	ismagnum = 0
+	
+/obj/item/projectile/bullet/calibre/cal357/spl/lethal
+	damage = 40
+	stamina = 0
 
 /obj/item/projectile/bullet/calibre/cal44mag			//.44 Magnum
-	damage = 60
+	damage = 55
 	ismagnum = 1
+	
+/obj/item/projectile/bullet/calibre/cal44mag/ap
+	damage = 44
+	armour_penetration = 25
 
 /obj/item/projectile/bullet/calibre/cal44mag/spl		//.44 Special
 	damage = 50
 	ismagnum = 0
 	
-/obj/item/projectile/bullet/calibre/cal45acp		//.45 Automatic
+/obj/item/projectile/bullet/calibre/cal45acp			//.45 Automatic
 	damage = 35
 	
-/obj/item/projectile/bullet/calibre/cal454		//.454 Casull
-	damage = 55
-	damage_spread_coeff = 0.3			//.454 is a wildcat, so loading will vary between handloaders
+/obj/item/projectile/bullet/calibre/cal45acp/plus			//+P
+	damage = 45
+	ismagnum = 1
 	
-/obj/item/projectile/bullet/calibre/cal50ae		//.50 Action Express
+/obj/item/projectile/bullet/calibre/cal5acp/plusplus			//+P+
+	damage = 50
+	ismagnum = 2			//very high pressure
+	
+/obj/item/projectile/bullet/calibre/cal45acp/ap
+	damage = 28
+	armour_piercing = 25
+	
+/obj/item/projectile/bullet/calibre/cal454			//.454 Casull
+	damage = 65
+	damage_spread_coeff = 0.3			//.454 is a wildcat, so loading will vary between handloaders
+	ismagnum = 1
+	
+/obj/item/projectile/bullet/calibre/cal50ae			//.50 Action Express
 	damage = 60
 	stamina = 10
 
-/obj/item/projectile/bullet/calibre/cal500sw	//.500 Smith & Wesson
+/obj/item/projectile/bullet/calibre/cal50ae/ap
+	damage = 48
+	armour_penetration = 25
+
+/obj/item/projectile/bullet/calibre/cal500sw			//.500 Smith & Wesson
 	damage = 65
 	stamina = 25
 	
+/obj/item/projectile/bullet/calibre/cal500sw/ap
+	damage = 52
+	armour_piercing = 25
+	
+	
 //METRIC
-/obj/item/projectile/bullet/calibre/cal46x30	//4.6x30mm
+/obj/item/projectile/bullet/calibre/cal46x30			//4.6x30mm
 	damage = 20
 
-/obj/item/projectile/bullet/calibre/cal57x28	//5.7x28mm FNH
-	damage = 22
+/obj/item/projectile/bullet/calibre/cal46x30/ap
+	damage = 16
+	armour_piercing = 25
 
-/obj/item/projectile/bullet/calibre/cal9x18	//9x18mm Makarov
+/obj/item/projectile/bullet/calibre/cal57x28			//5.7x28mm FNH
+	damage = 22
+	
+/obj/item/projectile/bullet/calibre/cal57x28/ap
+	damage = 18
+	armour_piercing = 25
+
+/obj/item/projectile/bullet/calibre/cal9x18			//9x18mm Makarov
 	damage = 30
 	damage_spread_coeff = 0.25
 	
-/obj/item/projectile/bullet/calibre/cal9x19	//9x19 Parabellum
+/obj/item/projectile/bullet/calibre/cal9x18/ap
+	damage = 24
+	armour_piercing = 25
+	
+/obj/item/projectile/bullet/calibre/cal9x19			//9x19 Parabellum
 	damage = 30
+	
+/obj/item/projectile/bullet/calibre/cal9x19/ap
+	damage = 24
+	armour_piercing = 25
 
-/obj/item/projectile/bullet/calibre/cal68x43	//6.8x43mm Caseless
+/obj/item/projectile/bullet/calibre/cal68x43			//6.8x43mm Caseless
 	damage = 35
+	
+/obj/item/projectile/bullet/calibre/cal68x43/ap
+	damage = 28
+	armour_piercing = 25
 	
 
 ///////////////////////////////
@@ -97,11 +158,21 @@
 /obj/item/projectile/bullet/calibre/cal3006	//.30-06 Winchester
 	damage = 40
 	
+
+/obj/item/projectile/bullet/calibre/cal3006/ap
+	damage = 28			//more of a hit for rifle bullets (30%), but...
+	armour_penetration = 40		//...more of a return against armoured targets (40%)
+	
 /obj/item/projectile/bullet/calibre/cal308	//.308 Winchester
 	damage = 40
 	
+/obj/item/projectile/bullet/calibre/cal308/ap
+	damage = 28
+	armour_penetration = 40
+	
 /obj/item/projectile/bullet/calibre/cal338	//.338 Lapua
 	damage = 45
+	armour_penetration = 10		//sniper bullet
 	
 /obj/item/projectile/bullet/calibre/cal338/mag	//.338 Lapua Magnum
 	damage = 50
@@ -109,9 +180,11 @@
 
 /obj/item/projectile/bullet/calibre/cal4570	//.45-70 Government
 	damage = 55
-	
+	armour_penetration = 5
+
 /obj/item/projectile/bullet/calibre/cal50bmg	//.50 Browning Machine Gun
 	damage = 75				//the bullet is fucking huge, 12.7x99mm - and that's just the CASE!
+	armour_penetration = 5
 	
 //METRIC
 
@@ -119,16 +192,92 @@
 	damage = 35
 	ismagnum = 1
 	
+/obj/item/projectile/bullet/calibre/cal556x45/ap
+	damage = 25
+	armour_penetration = 40
+	
 /obj/item/projectile/bullet/calibre/cal556x45/cal223	//.223 Remington Magnum
 	damage = 30
 	ismagnum = 0
 	
+/obj/item/projectile/bullet/calibre/cal556x45/cal223/ap
+	damage = 21
+	armour_penetration = 40
+	
 /obj/item/projectile/bullet/calibre/cal762x39		//7.62x39mm Kalashnikov
 	damage = 50
 	
-/obj/item/projectile/bullet/calibre/cal762x51		//7.62x51mm Mosin
+/obj/item/projectile/bullet/calibre/cal762x39/ap
+	damage = 35
+	armour_penetration = 40
+	
+/obj/item/projectile/bullet/calibre/cal762x51		//7.62x51mm NATO
 	damage = 65
+	
+/obj/item/projectile/bullet/calibre/cal762x51/ap
+	damage = 46
+	armour_penetration = 40
 
+///////////////////////////////
+// SHOTGUN AMMUNITION (12ga) //
+///////////////////////////////
+
+/obj/item/projectile/bullet/shotshell	//TO REMAIN UNUSED
+	name = "shotgun pellet"
+	damage = 1				
+	damage_spread_coeff = 0.3
+
+//LETHALS
+
+/obj/item/projectile/bullet/shotshell/slug		//slug
+	name = "shotgun slug"
+	damage = 60
+	damage_spread_coeff = 0.2
+	
+/obj/item/projectile/bullet/shotshell/slug/ap		//fletchette
+	name = "shotgun fletchette"
+	damage = 40
+	armour_penetration = 40
+
+/obj/item/projectile/bullet/shotshell/doubleaught	//00 buck
+	damage = 10
+
+/obj/item/projectile/bullet/shotshell/tripleaught	//000 buck
+	damage = 15
+	
+/obj/item/projectile/bullet/shotshell/quadrupleaught	//0000 buck
+	damage = 20
+
+//LESS THAN LETHAL
+
+/obj/item/projectile/bullet/shotshell/ltl		//rubber slug
+	damage = 5
+	damage_spread_type = DAMAGE_SPREAD_OFF		//damage too low
+	stamina = 80
+
+/obj/item/projectile/bullet/shotshell/ltl/doubleaught	//00 rubber shot
+	damage = 3
+	stamina = 25
+	
+/obj/item/projectile/bullet/shotshell/ltl/tripleaught	//000 rubber shot
+	damage = 4
+	stamina = 30
+	
+/obj/item/projectile/bullet/shotshell/ltl/quadrupleaught	//0000 rubber shot
+	damage = 5
+	stamina = 35
+	
+/obj/item/projectile/bullet/shotshell/ltl/xrep		//eXtended Range Electromuscular Projectile
+	name = "XREP"
+	damage = 5
+	stun = 5
+	weaken = 5
+	stutter = 5
+	jitter = 20
+	range = 7
+	icon_state = "spark"
+	color = "#FFFF00"
+	
 	
 /////BOOKMARK
 	
