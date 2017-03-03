@@ -85,7 +85,7 @@
 	
 /obj/item/projectile/bullet/calibre/cal45acp/ap
 	damage = 28
-	armour_piercing = 25
+	armour_penetration = 25
 	
 /obj/item/projectile/bullet/calibre/cal454			//.454 Casull
 	damage = 65
@@ -106,7 +106,7 @@
 	
 /obj/item/projectile/bullet/calibre/cal500sw/ap
 	damage = 52
-	armour_piercing = 25
+	armour_penetration = 25
 	
 	
 //METRIC
@@ -115,14 +115,14 @@
 
 /obj/item/projectile/bullet/calibre/cal46x30/ap
 	damage = 16
-	armour_piercing = 25
+	armour_penetration = 25
 
 /obj/item/projectile/bullet/calibre/cal57x28			//5.7x28mm FNH
 	damage = 22
 	
 /obj/item/projectile/bullet/calibre/cal57x28/ap
 	damage = 18
-	armour_piercing = 25
+	armour_penetration = 25
 
 /obj/item/projectile/bullet/calibre/cal9x18			//9x18mm Makarov
 	damage = 30
@@ -130,21 +130,21 @@
 	
 /obj/item/projectile/bullet/calibre/cal9x18/ap
 	damage = 24
-	armour_piercing = 25
+	armour_penetration = 25
 	
 /obj/item/projectile/bullet/calibre/cal9x19			//9x19 Parabellum
 	damage = 30
 	
 /obj/item/projectile/bullet/calibre/cal9x19/ap
 	damage = 24
-	armour_piercing = 25
+	armour_penetration = 25
 
 /obj/item/projectile/bullet/calibre/cal68x43			//6.8x43mm Caseless
 	damage = 35
 	
 /obj/item/projectile/bullet/calibre/cal68x43/ap
 	damage = 28
-	armour_piercing = 25
+	armour_penetration = 25
 	
 
 ///////////////////////////////
