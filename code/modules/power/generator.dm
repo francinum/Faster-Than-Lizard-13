@@ -125,7 +125,7 @@
 			var/datum/gas_mixture/cold_circ_air1 = cold_circ.AIR1
 			cold_circ_air1.merge(cold_air)
 
-	var/genlev = max(0, min( round(26*lastgen / 100000), 26))
+	var/genlev = max(0, min( round(26*lastgen / 1000000), 26))
 	var/circ = "[cold_circ && cold_circ.last_pressure_delta > 0 ? "1" : "0"][hot_circ && hot_circ.last_pressure_delta > 0 ? "1" : "0"]"
 	if((genlev != lastgenlev) || (circ != lastcirc))
 		lastgenlev = genlev
