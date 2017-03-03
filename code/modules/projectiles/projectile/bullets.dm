@@ -1,7 +1,10 @@
 //quick numbers for personal manual of style
 // max base damage of 75
-//armour piercing divides damage and armour by 1.5
-//hollowpoint multiplies damage and armour by 1.5
+//armour piercing reduces base damage and armour
+//hollowpoint increases base damage and armour
+//the basic idea is the armour multiplier is more than the base, so using hollowpoint against armour will do
+//less damage to armoured foes than regular ammo against unarmoured
+//similarly using armour piercing is better against armoured foes than unarmoured
 
 /obj/item/projectile/bullet
 	name = "bullet"
@@ -119,6 +122,13 @@
 /obj/item/projectile/bullet/calibre/cal556x45/cal223	//.223 Remington Magnum
 	damage = 30
 	ismagnum = 0
+	
+/obj/item/projectile/bullet/calibre/cal762x39		//7.62x39mm Kalashnikov
+	damage = 38
+	
+/obj/item/projectile/bullet/calibre/cal762x51		//7.62x51mm Mosin
+	damage = 40
+
 	
 /////BOOKMARK
 	
