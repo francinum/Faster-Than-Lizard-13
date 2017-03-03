@@ -10,6 +10,7 @@
 /obj/machinery/power/generator
 	name = "thermoelectric generator"
 	desc = "It's a high efficiency thermoelectric generator."
+	icon = 'goon/icons/obj/machinery/power.dmi'
 	icon_state = "teg"
 	anchored = 1
 	density = 1
@@ -61,10 +62,12 @@
 	else
 		cut_overlays()
 
-		if(lastgenlev != 0)
-			add_overlay(image('icons/obj/power.dmi', "teg-op[lastgenlev]"))
+		add_overlay(image('goon/icons/obj/machinery/power.dmi', "teg-oc[lastcirc]"))
 
-		add_overlay(image('icons/obj/power.dmi', "teg-oc[lastcirc]"))
+		if(lastgenlev != 0)
+			add_overlay(image('goon/icons/obj/machinery/power.dmi', "teg-op[lastgenlev]"))
+
+
 
 
 #define GENRATE 800		// generator output coefficient from Q
@@ -122,7 +125,7 @@
 			var/datum/gas_mixture/cold_circ_air1 = cold_circ.AIR1
 			cold_circ_air1.merge(cold_air)
 
-	var/genlev = max(0, min( round(11*lastgen / 100000), 11))
+	var/genlev = max(0, min( round(26*lastgen / 100000), 26))
 	var/circ = "[cold_circ && cold_circ.last_pressure_delta > 0 ? "1" : "0"][hot_circ && hot_circ.last_pressure_delta > 0 ? "1" : "0"]"
 	if((genlev != lastgenlev) || (circ != lastcirc))
 		lastgenlev = genlev
