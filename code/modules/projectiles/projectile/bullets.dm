@@ -124,10 +124,10 @@
 	ismagnum = 0
 	
 /obj/item/projectile/bullet/calibre/cal762x39		//7.62x39mm Kalashnikov
-	damage = 38
+	damage = 50
 	
 /obj/item/projectile/bullet/calibre/cal762x51		//7.62x51mm Mosin
-	damage = 40
+	damage = 65
 
 	
 /////BOOKMARK
