@@ -25,6 +25,7 @@
 	
 /obj/item/weapon/gun/projectile/automatic/pistol/m1911/meusoc
 	name = "M45 MEU(SOC)"
+	spread = 5
 	desc = "This adaptation of the Colt M1911 still sees use where Nanotrasen needs to arm its officers cheaply and effectively."
 
 /obj/item/weapon/gun/projectile/automatic/pistol/deagle
@@ -65,6 +66,7 @@
 	name = "Automag"
 	desc = "A semi-automatic .44 AMP caliber handgun. A rare firearm generally only seen among the highest-ranking NanoTrasen officers. The caliber gives this weapon immense firepower in a fairly small size."
 	icon_state = "automag"
+	spread = 4
 	force = 10
 	mag_type = /obj/item/ammo_box/magazine/m44
 	can_suppress = 0
@@ -110,6 +112,7 @@
 	can_flashlight = 1
 	flight_x_offset = 16
 	flight_y_offset = 12
+	spread = 5
 	w_class = 2
 	fire_sound = 'sound/weapons/pistol_glock17_1.ogg'
 
@@ -129,3 +132,4 @@
 
 /obj/item/weapon/gun/projectile/automatic/pistol/usp/andreas
 	desc = "Renowned on Earth for its legendary reliability, this .45 handgun is still in use in some militaries throughout the galaxy. Has a threaded barrel to mount a suppressor. Has an accessory rail to mount a flashlight. \n \nThis particular handgun bears an engraving on the left side of an encircled eagle, over the words \"DEUTSCHE BUNDESWEHR\" painted in white. Above the serial is '5842189 R S', engraved messily. The handgun seems carefully tuned with a match-grade trigger and an ambidexterous safety. It also seems well-maintained - seems its owner cared a lot about it."
+	spread = 4.5
