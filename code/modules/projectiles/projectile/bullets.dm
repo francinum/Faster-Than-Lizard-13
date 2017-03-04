@@ -202,6 +202,18 @@
 		M.adjust_fire_stacks(4)
 		M.IgniteMob()
 
+/obj/item/projectile/bullet/calibre/cal10x25			//10x25 Automatic
+	damage = 32
+	damage_spread_coeff = 0.3		//not widely used IRL so loading will vary
+	
+/obj/item/projectile/bullet/calibre/cal10x25/ap
+	damage = 26
+	armour_penetration = 25
+	
+/obj/item/projectile/bullet/calibre/cal10x25/hp
+	damage = 38
+	armour_penetration = -25
+
 
 /obj/item/projectile/bullet/calibre/cal68x43			//6.8x43mm Caseless
 	damage = 30
