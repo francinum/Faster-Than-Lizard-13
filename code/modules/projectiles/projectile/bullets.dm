@@ -283,35 +283,35 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 		target.ex_act(rand(1,2))
 	return ..()
 	
-/obj/item/projectile/calibre/cal50bmg/narq
+/obj/item/projectile/bullet/calibre/cal50bmg/narq
 	armour_penetration = 0
 	nodamage = 1
 	stun = 0
 	weaken = 0
 	breakthings = FALSE
 
-/obj/item/projectile/calibre/cal50bmg/narq/on_hit(atom/target, blocked = 0, hit_zone)
+/obj/item/projectile/bullet/calibre/cal50bmg/narq/on_hit(atom/target, blocked = 0, hit_zone)
 	if((blocked != 100) && istype(target, /mob/living))
 		var/mob/living/L = target
 		L.Sleeping(20)
 	return ..()
 
 
-/obj/item/projectile/calibre/cal50bmg/haemorrhage
+/obj/item/projectile/bullet/calibre/cal50bmg/cal50bmg/haemorrhage
 	armour_penetration = 15
 	damage = 15
 	stun = 0
 	weaken = 0
 	breakthings = FALSE
 
-/obj/item/projectile/calibre/cal50bmghaemorrhage/on_hit(atom/target, blocked = 0, hit_zone)
+/obj/item/projectile/bullet/calibre/cal50bmg/haemorrhage/on_hit(atom/target, blocked = 0, hit_zone)
 	if((blocked != 100) && iscarbon(target))
 		var/mob/living/carbon/C = target
 		C.bleed(100)
 	return ..()
 
 
-/obj/item/projectile/calibre/cal50bmg/penetrator
+/obj/item/projectile/bullet/calibre/cal50bmg/penetrator
 	icon_state = "gauss"
 	name = "penetrator round"
 	damage = 60
