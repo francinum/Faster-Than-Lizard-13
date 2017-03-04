@@ -100,7 +100,7 @@
 	minimum_distance = 5
 	icon_state = "syndicateranged"
 	icon_living = "syndicateranged"
-	casingtype = /obj/item/ammo_casing/c45nostamina
+	casingtype = /obj/item/ammo_casing/c45
 	projectilesound = 'sound/weapons/Gunshot_smg.ogg'
 	loot = list(/obj/effect/gibspawner/human)
 
