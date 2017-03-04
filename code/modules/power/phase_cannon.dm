@@ -11,6 +11,9 @@
 	var/obj/item/weapon/stock_parts/cell/cell
 	var/charge_rate = 60000
 	var/charge_per_shot = 400
+	var/charge_reduction_per_manip_upgrade = 25
+	var/evasion_datum = /datum/ship_attack/laser		//used later, but might break. Testing needed.
+	var/evasion_reduction_per_laser_upgrade = 0.1		//decimal for the evasion multiplier
 
 	var/state = 0
 	var/locked = 0
@@ -30,7 +33,16 @@
 	cell = null
 	for(var/obj/item/weapon/stock_parts/cell/C in component_parts)
 		cell = C
+	var/manip
+	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
+		manip += M.rating
+	var/pewpewmicrolaser
+	for(var//obj/item/weapon/stock_parts/micro_laser/L in component_parts)
+		pewpewmicrolaser += L.rating
 
+	charge_per_shot = initial(charge_per_shot) - ((manip - 1) * charge_reduction_per_manip_upgrade)
+	evasion_datum.evasion_mod = initial(evasion_datum.evasion_mod) + ((pewpewmicrolaser - 1) * evasion_reduction_per_laser_upgrade)
+	
 /obj/item/weapon/circuitboard/machine/phase_cannon
 	name = "circuit board (Phase Cannon)"
 	build_path = /obj/machinery/power/shipweapon
