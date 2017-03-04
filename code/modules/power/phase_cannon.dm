@@ -11,6 +11,7 @@
 	var/obj/item/weapon/stock_parts/cell/cell
 	var/charge_rate = 60000
 	var/charge_per_shot = 400
+	var/charge_reduction_per_upgrade = 25
 
 	var/state = 0
 	var/locked = 0
@@ -30,7 +31,15 @@
 	cell = null
 	for(var/obj/item/weapon/stock_parts/cell/C in component_parts)
 		cell = C
+	var/manip
+	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
+		manip += M.rating
+	var/pewpewmicrolaser
+	for(var/obj/item/weapon/stock_parts/micro_laser/L in component_parts)
+		pewpewmicrolaser += L.rating
 
+	charge_per_shot = initial(charge_per_shot) - (((pewpewmicrolaser + manip) - 2) * charge_reduction_per_upgrade)
+	
 /obj/item/weapon/circuitboard/machine/phase_cannon
 	name = "circuit board (Phase Cannon)"
 	build_path = /obj/machinery/power/shipweapon
