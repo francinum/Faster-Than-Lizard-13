@@ -403,7 +403,7 @@ obj/item/projectile/bullet/calibre/cal3006/hp
  	var/datum/effect_system/spark_spread/sparks = new /datum/effect_system/spark_spread
  	sparks.set_up(1, 1, src)
  	sparks.start()
-	..()
+ 	..()
 
 /obj/item/projectile/bullet/shotshell/metal_shavings/overload/New()
 	damage = 3
@@ -418,7 +418,7 @@ obj/item/projectile/bullet/calibre/cal3006/hp
  	var/datum/effect_system/spark_spread/sparks = new /datum/effect_system/spark_spread
  	sparks.set_up(3, 3, src)
  	sparks.start()
-	..()	
+ 	..()	
 
 /obj/item/projectile/bullet/shotshell/incendiary	//incendiary shot
 	name = "incendiary slug"
