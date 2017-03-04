@@ -5,6 +5,7 @@
 //the basic idea is the armour multiplier is more than the base, so using hollowpoint against armour will do
 //less damage to armoured foes than regular ammo against unarmoured
 //similarly using armour piercing is better against armoured foes than unarmoured
+//using AP against an unarmoured target or HP against an armoured target will do less damage than a regular bullet
 
 /obj/item/projectile/bullet
 	name = "bullet"
@@ -13,7 +14,7 @@
 	damage_type = BRUTE
 	damage_spread_coeff = 0
 	damage_spread_type = DAMAGE_SPREAD_OFF
-	var/ismagnum = 0		//for magnum rounds, such as +p/+p+
+	var/ismagnum = 0		//for magnum rounds, such as +p/+p+ - currently unused, but may later cause it to blow up the gun
 	nodamage = 0
 	flag = "bullet"
 	hitsound_wall = "ricochet"
@@ -187,15 +188,30 @@
 	damage = 24
 	armour_penetration = -25
 
+/obj/item/projectile/bullet/calibre/cal9x19/tox
+	damage = 15
+	damage_type = TOX
+	
+/obj/item/projectile/bullet/calibre/cal9x19/incendiary
+	damage = 10
+	
+/obj/item/projectile/bullet/calibre/cal9x19/incendiary/on_hit(atom/target, blocked = 0)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(4)
+		M.IgniteMob()
+
+
 /obj/item/projectile/bullet/calibre/cal68x43			//6.8x43mm Caseless
-	damage = 35
+	damage = 30
 	
 /obj/item/projectile/bullet/calibre/cal68x43/ap
-	damage = 28
+	damage = 24
 	armour_penetration = 25
 	
 /obj/item/projectile/bullet/calibre/cal68x43/ap
-	damage = 42
+	damage = 36
 	armour_penetration = -25
 	
 
