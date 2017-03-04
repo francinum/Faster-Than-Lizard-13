@@ -395,7 +395,7 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 /obj/item/projectile/bullet/shotshell/quadrupleaught	//0000 buck
 	damage = 20
 	
-/obj/item/projectile/bullet/shotshell/metal_shavings	//improv shell
+/obj/item/projectile/bullet/shotshell/metal_shavings/New()	//improv shell
 	damage = 6
 	range = rand(8)
 
