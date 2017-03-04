@@ -38,7 +38,7 @@
 	for(var/obj/item/weapon/stock_parts/micro_laser/L in component_parts)
 		pewpewmicrolaser += L.rating
 
-	charge_per_shot = initial(charge_per_shot) - (((pewpewmicrolaser + manip) - 2) * charge_reduction_per_manip_upgrade)
+	charge_per_shot = initial(charge_per_shot) - (((pewpewmicrolaser + manip) - 2) * charge_reduction_per_upgrade)
 	
 /obj/item/weapon/circuitboard/machine/phase_cannon
 	name = "circuit board (Phase Cannon)"
