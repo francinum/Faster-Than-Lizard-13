@@ -387,7 +387,7 @@
 	name = "SMG magazine (.45)"
 	icon_state = "c20r45-24"
 	origin_tech = "combat=2"
-	ammo_type = /obj/item/ammo_casing/c45nostamina
+	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	max_ammo = 24
 
