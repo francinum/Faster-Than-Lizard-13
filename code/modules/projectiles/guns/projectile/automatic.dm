@@ -548,7 +548,7 @@
 	
 /obj/item/weapon/gun/projectile/automatic/garand/update_icon()
 	..()
-	icon_state = "[initial(icon_state)][chambered ? "" : "-locked"]"
+	icon_state = "[initial(icon_state)][magazine ? "" : "-locked"]"
 
 
 /obj/item/weapon/gun/projectile/automatic/garand/afterattack()
