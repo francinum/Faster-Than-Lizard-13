@@ -37,7 +37,7 @@
 	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
 		manip += M.rating
 	var/pewpewmicrolaser
-	for(var//obj/item/weapon/stock_parts/micro_laser/L in component_parts)
+	for(var/obj/item/weapon/stock_parts/micro_laser/L in component_parts)
 		pewpewmicrolaser += L.rating
 
 	charge_per_shot = initial(charge_per_shot) - ((manip - 1) * charge_reduction_per_manip_upgrade)
