@@ -241,11 +241,14 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 
 /obj/item/projectile/bullet/calibre/cal4570	//.45-70 Government
 	damage = 55
-	armour_penetration = 5
+	armour_penetration = 10
 
 /obj/item/projectile/bullet/calibre/cal50bmg	//.50 Browning Machine Gun
 	damage = 75				//the bullet is fucking huge, 12.7x99mm - and that's just the CASE!
-	armour_penetration = 5
+	stun = 5
+	weaken = 5
+	armour_penetration = 15
+	var/breakthings = TRUE
 	
 /obj/item/projectile/bullet/calibre/cal50bmg/on_hit(atom/target, blocked = 0, hit_zone)
 	if((blocked != 100) && (!ismob(target) && breakthings))
