@@ -259,7 +259,7 @@ obj/item/weapon/gun/proc/explode_gun()		//called above
 				if( i>1 && !(src in get_both_hands(user))) //for burst firing
 					break
 			if(chambered)
-				if(!process_magnum)		//if gun went boom
+				if(!process_magnum())		//if gun went boom
 					break
 				var/sprd = 0
 				if(randomspread)
@@ -283,7 +283,7 @@ obj/item/weapon/gun/proc/explode_gun()		//called above
 		firing_burst = 0
 	else
 		if(chambered)
-			if(!process_magnum)		//if the gun went boom
+			if(!process_magnum())		//if the gun went boom
 				break
 			if(!chambered.fire(target, user, params, , suppressed, zone_override, spread))
 				shoot_with_empty_chamber(user)
