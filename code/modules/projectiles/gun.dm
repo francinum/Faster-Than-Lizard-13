@@ -217,13 +217,16 @@ obj/item/weapon/gun/proc/process_magnum(mob/living/user)
 			return 1
 
 		if(wear > 100)			//you used too much magnum ammo and now the barrel is warped
+			var/spread_already_adjusted = 0
 			chance_to_explode_violently = 100 * (1 - (100 / wear))
 			
 			if(prob(chance_to_explode_violently))
 				explode_gun()
 				return 0		//kaboom.
 			else
-				spread = initial(spread) * 2
+				if(!spread_already_adjusted)
+					spread = initial(spread) * 2
+					spread_already_adjusted = 1
 				user << "<span class='warning'>You notice the bullet go wide....</span>"
 				return 1		//no explosion.
 
