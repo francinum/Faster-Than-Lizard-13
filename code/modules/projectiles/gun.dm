@@ -260,7 +260,7 @@ obj/item/weapon/gun/proc/explode_gun(mob/living/user)		//called above
 					break
 			if(chambered)
 				if(!process_magnum())		//if gun went boom
-					break
+					return
 				var/sprd = 0
 				if(randomspread)
 					sprd = round((rand() - 0.5) * spread)
@@ -284,7 +284,7 @@ obj/item/weapon/gun/proc/explode_gun(mob/living/user)		//called above
 	else
 		if(chambered)
 			if(!process_magnum())		//if the gun went boom
-				break
+				return
 			if(!chambered.fire(target, user, params, , suppressed, zone_override, spread))
 				shoot_with_empty_chamber(user)
 				return
