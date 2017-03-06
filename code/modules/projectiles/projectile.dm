@@ -98,7 +98,7 @@
 
 /obj/item/projectile/New()
 	permutated = list()
-	if(damage_spread_type == (0 || 1 || 2 || 3 || 4))
+	if(damage_spread_type == (DAMAGE_SPREAD_OFF || DAMAGE_SPREAD_MULT || DAMAGE_SPREAD_MULT_HALVED || DAMAGE_SPREAD_ADD || DAMAGE_SPREAD_ADD_HALVED))
 		if(damage_spread_type == DAMAGE_SPREAD_OFF)			//no damage spread
 			new_damage = damage
 			
