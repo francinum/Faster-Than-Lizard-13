@@ -972,7 +972,7 @@
 /datum/design/c556x45mm/hp
 	name = "Ammo box (5.56x45mm NATO HP)"
 	id = "c556_hp"
-	build_path = /obj/item/ammo_box/c556x4/hp
+	build_path = /obj/item/ammo_box/c556x45/hp
 
 /datum/design/c556x45mm/ap
 	name = "Ammo box (5.56x45mm NATO AP)"
