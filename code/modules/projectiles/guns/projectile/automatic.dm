@@ -533,7 +533,7 @@
 	w_class = 4
 	fire_delay = 2
 	name = "\improper M1 Garand"
-	desc = "This 7.62x51mm rifle is well-known for its eight-round en-bloc clip that ejects with a distinctive <i>ping!</i>, and its use during a war in the early 1940s."
+	desc = "This .30-06 rifle is well-known for its eight-round en-bloc clip that ejects with a distinctive <i>ping!</i>, and its use during a war in the early 1940s."
 	icon_state = "garand"
 	item_state = "moistnugget"
 	mag_type = /obj/item/ammo_box/magazine/enbloc
