@@ -161,7 +161,7 @@
 	damage = 18
 	armour_penetration = 25
 	
-/obj/item/projectile/bullet/calibre/cal57x28/ap
+/obj/item/projectile/bullet/calibre/cal57x28/hp
 	damage = 26
 	armour_penetration = -25
 
