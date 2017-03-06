@@ -93,7 +93,7 @@
 	damage = 45
 	ismagnum = 1
 	
-/obj/item/projectile/bullet/calibre/cal5acp/plusplus			//+P+
+/obj/item/projectile/bullet/calibre/cal45acp/plusplus			//+P+
 	damage = 50
 	ismagnum = 2			//very high pressure
 
