@@ -113,7 +113,7 @@
 /obj/item/ammo_casing/a50hp
 	desc = "A bullet casing. The headstamp reads \".50-AE JHP\"."
 	caliber = ".50"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal50ae/jhp
+	projectile_type = /obj/item/projectile/bullet/calibre/cal50ae/hp
 	
 /obj/item/ammo_casing/a50ap
 	desc = "A bullet casing. The headstamp reads \".50-AE HV AP\"."
@@ -247,12 +247,12 @@
 /obj/item/ammo_casing/c3006hp
 	desc = "A bullet casing. The headstamp reads \".30-06 SPRG SpHP\"."
 	caliber = ".30-06"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal3006hp
+	projectile_type = /obj/item/projectile/bullet/calibre/cal3006/hp
 	
 /obj/item/ammo_casing/c3006ap
 	desc = "A bullet casing. The headstamp reads \".30-06 SPRG AP-T\"."
 	caliber = ".30-06"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal3006ap
+	projectile_type = /obj/item/projectile/bullet/calibre/cal3006/ap
 	
 /obj/item/ammo_casing/c308		//.308 Winchester
 	desc = "A bullet casing. The headstamp reads \".308 WIN FMJ\"."
