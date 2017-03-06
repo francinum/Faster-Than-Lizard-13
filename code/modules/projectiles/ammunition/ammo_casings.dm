@@ -375,21 +375,21 @@
 	projectile_type = /obj/item/projectile/bullet/shotshell/slug/ap
 
 /obj/item/ammo_casing/shotgun/buckshot
-	name = "\improper 00 buckshot shell"
+	name = "00 buckshot shell"
 	desc = "A 12 gauge, 00 buckshot shell."
 	icon_state = "gshell"
 	projectile_type = /obj/item/projectile/bullet/shotshell/doubleaught
 	pellets = 6
 	variance = 25
 
-/obj/item/ammo_casing/shotgun/buckshot/000
+/obj/item/ammo_casing/shotgun/buckshot/tripleaught
 	name = "\improper 000 buckshot shell"
 	desc = "A 12 gauge, 000 buckshot shell."
 	projectile_type = /obj/item/projectile/bullet/shotshell/tripleaught
 	pellets = 4
 	variance = 20
 
-/obj/item/ammo_casing/shotgun/buckshot/0000
+/obj/item/ammo_casing/shotgun/buckshot/quadrupleaught
 	name = "\improper 0000 buckshot shell"
 	desc = "A 12 gauge, 0000 buckshot shell."
 	icon_state = "gshell"
@@ -406,14 +406,14 @@
 	variance = 25
 	materials = list(MAT_METAL=4000)
 	
-/obj/item/ammo_casing/shotgun/rubbershot/000
+/obj/item/ammo_casing/shotgun/rubbershot/tripleaught
 	name = "rubber 000 shot"
 	desc = "A shotgun casing filled with 000-buckshot-sized rubber balls, used to incapacitate crowds from a distance."
 	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/tripleaught 
 	pellets = 5
 	variance = 20
 
-/obj/item/ammo_casing/shotgun/rubbershot/0000
+/obj/item/ammo_casing/shotgun/rubbershot/quadrupleaught
 	name = "rubber 0000 shot"
 	desc = "A shotgun casing filled with 0000-buckshot-sized rubber balls, used to incapacitate crowds from a distance."
 	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/tripleaught 
