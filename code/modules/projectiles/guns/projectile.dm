@@ -3,6 +3,7 @@
 	name = "projectile gun"
 	icon_state = "pistol"
 	origin_tech = "combat=2;materials=2"
+	canmagnum = 0			//We no longer want to bypass the check
 	w_class = 3
 	spread = 6			//six degree cone of fire
 
