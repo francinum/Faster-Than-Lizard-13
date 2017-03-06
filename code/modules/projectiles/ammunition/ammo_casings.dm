@@ -187,7 +187,7 @@
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/ap
 
-/obj/item/ammo_casing/c9mmap
+/obj/item/ammo_casing/c9mmhp
 	desc = "A bullet casing. The headstamp reads \"9mm LUGER JHP\"."
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/hp
