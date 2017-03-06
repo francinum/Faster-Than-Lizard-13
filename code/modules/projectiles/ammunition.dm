@@ -12,6 +12,7 @@
 	var/projectile_type = null					//The bullet type to create when New() is called
 	var/obj/item/projectile/BB = null 			//The loaded bullet
 	var/pellets = 1								//Pellets for spreadshot
+	var/ismagnum = 0					//Is it a magnum/+P/+P+ round?
 	var/variance = 0							//Variance for inaccuracy fundamental to the casing
 	var/randomspread = 0						//Randomspread for automatics
 	var/delay = 0								//Delay for energy weapons
