@@ -29,7 +29,7 @@
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357/hp
 	
-/obj/item/ammo_casing/a357hp		
+/obj/item/ammo_casing/a357ap		
 	desc = "A bullet casing.  The headstamp reads \".357 MAG HV AP\"."
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357/hp
@@ -131,6 +131,11 @@
 	desc = "A bullet casing. The headstamp reads \"4.6x30mm FMJ\"."
 	caliber = "4.6x30mm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30
+	
+/obj/item/ammo_casing/c46x30mmhp
+	desc = "A bullet casing. The headstamp reads \"4.6x30mm JHP\"."
+	caliber = "4.6x30mm"
+	projectile_type =/obj/item/projectile/bullet/calibre/cal46x30/hp
 
 /obj/item/ammo_casing/c46x30mmap
 	desc = "A bullet casing. The headstamp reads \"4.6x30mm HV AP\"."
@@ -212,7 +217,7 @@
 	caliber = "10mm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal10x25/ap
 	
-/obj/item/ammo_casing/c10mmap
+/obj/item/ammo_casing/c10mmhp
 	desc = "A bullet casing. The headstamp reads \"10mm AUTO JHP\"."
 	caliber = "10mm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal10x25/hp
@@ -229,7 +234,7 @@
 	caliber = "5.56x45"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223/hp
 	
-/obj/item/ammo_casing/c223hp
+/obj/item/ammo_casing/c223ap
 	desc = "A bullet casing. The headstamp reads \".223 AP-T\"."	//Armour-Piercing Tracer
 	caliber = "5.56x45"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223/hp
@@ -324,7 +329,7 @@
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/incen
 
 /obj/item/ammo_casing/a762x39		//7.62x39mm Soviet
-	desc = "A bullet casing. The headstamp reads \"7.62x39mm FMJ\".
+	desc = "A bullet casing. The headstamp reads \"7.62x39mm FMJ\"."
 	icon_state = "casing_762x39"
 	caliber = "7.62x39"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39
