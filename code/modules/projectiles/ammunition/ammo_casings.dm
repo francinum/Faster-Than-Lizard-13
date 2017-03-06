@@ -22,16 +22,19 @@
 /obj/item/ammo_casing/a357		//.357 Magnum
 	desc = "A bullet casing.  The headstamp reads \".357 MAG FMJ\"."
 	caliber = "357"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357
 	
 /obj/item/ammo_casing/a357hp		
 	desc = "A bullet casing.  The headstamp reads \".357 MAG JHP\"."
 	caliber = "357"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357/hp
 	
 /obj/item/ammo_casing/a357ap		
 	desc = "A bullet casing.  The headstamp reads \".357 MAG HV AP\"."
 	caliber = "357"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357/hp
 
 /obj/item/ammo_casing/c38		//.38 Special
@@ -47,16 +50,19 @@
 /obj/item/ammo_casing/c44mag		//.44 Magnum
 	desc = "A bullet casing. The headstamp reads \".44 MAG FMJ\"."
 	caliber = "44mag"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag
 
 /obj/item/ammo_casing/c44magap
 	desc = "A bullet casing. The headstamp reads \".44 MAG HV AP\"."
 	caliber = "44mag"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag/ap
 	
 /obj/item/ammo_casing/c44maghp
 	desc = "A bullet casing. The headstamp reads \".44 MAG JHP\"."
 	caliber = "44mag"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag/ap
 	
 /obj/item/ammo_casing/c44spl		//.44 Special
@@ -77,11 +83,13 @@
 /obj/item/ammo_casing/c45plus
 	desc = "A bullet casing. The headstamp reads \".45 ACP +P\"."		//overpressure
 	caliber = ".45"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp/plus
 	
 /obj/item/ammo_casing/c45plusplus
 	desc = "A bullet casing. The headstamp reads \".45 ACP +P+\"."		//overpressure plus
 	caliber = ".45"
+	ismagnum = 2
 	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp/plusplus
 
 /obj/item/ammo_casing/c45ap
@@ -103,6 +111,7 @@
 /obj/item/ammo_casing/c454		//.454 Casull
 	desc = "A bullet casing. The headstamp reads \"IWB .454 CASULL\"."
 	caliber = ".454"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal454
 	
 /obj/item/ammo_casing/a50		//.50 Action Express
@@ -123,6 +132,7 @@
 /obj/item/ammo_casing/a500sw		//.500 Smith & Wesson Magnum
 	desc = "A bullet casing. The headstamp reads \".500SWM FMJ\"."
 	caliber = ".500 swm"
+	ismagnum = 1
 	projectile_type = /obj/item/projectile/bullet/calibre/cal500sw
 	
 //HANDGUNS AND SMALL ARMS - METRIC
