@@ -368,7 +368,7 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 	damage = 21
 	armour_penetration = 40
 	
-/obj/item/projectile/bullet/calibre/cal556x45/cal223/ap
+/obj/item/projectile/bullet/calibre/cal556x45/cal223/hp
 	damage = 39
 	armour_penetration = -40
 	
