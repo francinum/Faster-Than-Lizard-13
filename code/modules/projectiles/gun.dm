@@ -211,7 +211,7 @@ obj/item/weapon/gun/proc/process_magnum(mob/living/user)
 		return 1
 	else
 		if(chambered.ismagnum > canmagnum)
-			wear = initial(wear) + (rand(10) * (chambered.ismagnum - canmagnum))
+			wear += initial(wear) + (rand(10) * (chambered.ismagnum - canmagnum))
 			return 1		//gun didn't explode
 		else				//the gun is rated for the class of ammunition
 			return 1
