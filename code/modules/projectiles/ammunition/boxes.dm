@@ -9,11 +9,11 @@
 
 /obj/item/ammo_box/c17hmr/hp
 	name = "ammo box (.17 HMR JHP)"
-	ammo_type = /obj/item/ammo_casing/c17/hp
+	ammo_type = /obj/item/ammo_casing/c17hp
 
 /obj/item/ammo_box/c17hmr/ap
 	name = "ammo box (.17 HMR HV AP)"
-	ammo_type = /obj/item/ammo_casing/c17/ap
+	ammo_type = /obj/item/ammo_casing/c17ap
 
 /obj/item/ammo_box/c22lr
 	name = "ammo box (.22 Long Rifle)"
