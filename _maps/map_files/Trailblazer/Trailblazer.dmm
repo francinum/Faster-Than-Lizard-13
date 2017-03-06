@@ -6522,11 +6522,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
-"lMJ" = (
-/obj/machinery/processor,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cafeteria,
-/area/shuttle/ftl/crew_quarters/kitchen)
 "lOs" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -10396,26 +10391,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/research/xenobiology)
-"sYl" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	moving_diagonally = 0;
-	name = "Eats-The-Glue's closet";
-	registered_name = "Eats-The-Glue"
-	},
-/obj/item/clothing/tie/scarf/darkblue,
-/obj/item/weapon/gun/projectile/automatic/pistol,
-/obj/item/device/radio/intercom{
-	pixel_y = 24
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "sZx" = (
 /obj/structure/sign/directions/engineering{
 	dir = 1
@@ -13773,6 +13748,26 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/engine_smes)
+"zJz" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	moving_diagonally = 0;
+	name = "Eats-The-Glue's closet";
+	registered_name = "Eats-The-Glue"
+	},
+/obj/item/weapon/gun/projectile/automatic/pistol,
+/obj/item/device/radio/intercom{
+	pixel_y = 24
+	},
+/obj/item/ammo_box/magazine/m10mm,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "zLe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -17060,11 +17055,6 @@
 	icon_state = "bar"
 	},
 /area/shuttle/ftl/crew_quarters/kitchen)
-"Fbl" = (
-/obj/machinery/gibber,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cafeteria,
-/area/shuttle/ftl/crew_quarters/kitchen)
 "Fbx" = (
 /obj/structure/rack,
 /obj/item/weapon/circuitboard/machine/mac_barrel{
@@ -17566,6 +17556,11 @@
 /turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
+/area/shuttle/ftl/crew_quarters/kitchen)
+"Gdy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/gibber,
+/turf/open/floor/plasteel/cafeteria,
 /area/shuttle/ftl/crew_quarters/kitchen)
 "Gfx" = (
 /mob/living/simple_animal/pet/dog/corgi/Ian{
@@ -25488,6 +25483,11 @@
 	},
 /turf/open/floor/plasteel/circuit/rcircuit/animated,
 /area/shuttle/ftl/turret_protected/ai)
+"VdQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/processor,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/ftl/crew_quarters/kitchen)
 "VeA" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
@@ -26780,6 +26780,17 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/captain)
+"Xue" = (
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1;
+	desc = "It's a secure locker for personnel.";
+	name = "Robert Robinson's closet";
+	registered_name = "Robert Robinson"
+	},
+/obj/item/clothing/head/wizard,
+/obj/item/weapon/reagent_containers/food/snacks/boiledspaghetti,
+/turf/open/floor/wood,
+/area/shuttle/ftl/crew_quarters/locker)
 "XvX" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
@@ -27626,20 +27637,6 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plating,
 /area/shuttle/ftl/munitions/loading)
-"YSf" = (
-/obj/structure/closet/secure_closet/personal{
-	anchored = 1;
-	desc = "It's a secure locker for personnel.";
-	name = "Robert Robinson's closet";
-	registered_name = "Robert Robinson"
-	},
-/obj/item/weapon/gun/energy/gun/mini{
-	desc = "A heavily modified energy gun to look similar to the weapon Rob's waifu wields.";
-	icon_state = "alienpistol";
-	name = "Modified energy gun"
-	},
-/turf/open/floor/wood,
-/area/shuttle/ftl/crew_quarters/locker)
 "YTQ" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/firecloset,
@@ -43760,7 +43757,7 @@ WQl
 pit
 Kmf
 gBd
-Fbl
+VdQ
 nmE
 CKy
 CKy
@@ -44017,7 +44014,7 @@ WQl
 pit
 SOT
 dtq
-lMJ
+Gdy
 nmE
 OzD
 isB
@@ -63029,7 +63026,7 @@ SXA
 alv
 MOY
 Lav
-YSf
+Xue
 HzW
 SqD
 nUf
@@ -63282,7 +63279,7 @@ Dft
 Nry
 zGB
 Etg
-sYl
+zJz
 alv
 BBn
 Lav
