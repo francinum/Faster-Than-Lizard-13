@@ -259,14 +259,10 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 	damage = 52
 	armour_penetration = -40
 	
-/obj/item/projectile/bullet/calibre/cal338	//.338 Lapua
-	damage = 45
+/obj/item/projectile/bullet/calibre/cal338	//.338 Lapua Magnum
+	damage = 50
 	armour_penetration = 10		//sniper bullet
 	
-/obj/item/projectile/bullet/calibre/cal338/mag	//.338 Lapua Magnum
-	damage = 50
-	ismagnum = 1
-
 /obj/item/projectile/bullet/calibre/cal4570	//.45-70 Government
 	damage = 55
 	armour_penetration = 10
