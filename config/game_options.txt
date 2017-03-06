@@ -292,7 +292,7 @@ ROUNDSTART_RACES diamond
 ROUNDSTART_RACES gold
 ROUNDSTART_RACES silver
 #ROUNDSTART_RACES uranium
-#ROUNDSTART_RACES abductor
+ROUNDSTART_RACES abductor
 ROUNDSTART_RACES synth
 
 ## Races that are straight upgrades. If these are on expect powergamers to always pick them
