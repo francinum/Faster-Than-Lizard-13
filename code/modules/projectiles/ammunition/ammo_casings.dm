@@ -1,179 +1,359 @@
-/obj/item/ammo_casing/a357
-	desc = "A .357 bullet casing."
+//HANDGUNS AND SMALL ARMS - IMPERIAL
+/obj/item/ammo_casing/c17		//.17 Hornady Magnum Rimfire
+	desc = "A bullet casing. The headstamp reads \".17 HMR FMJ\"."		//"Full Metal Jacket"
+	caliber = "17hmr"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal17
+	
+/obj/item/ammo_casing/c17hp
+	desc = "A bullet casing. The headstamp reads \".17 HMR JHP\"."		//"Jacketed, Hollow Point"
+	caliber = "17hmr"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal17/hp
+	
+/obj/item/ammo_casing/c17ap
+	desc = "A bullet casing. The headstamp reads \".17 HMR HV AP\"."	//"High-Velocity Armour-Piercing"
+	caliber = "17hmr"
+	projectile_type = "/obj/item/projectile/bullet/calibre/cal17/ap"
+	
+/obj/item/ammo_casing/c22lr		//.22 Long Rifle
+	desc = "A bullet casing. The headstamp reads \".22 LR\"."
+	caliber = "22lr"
+	projectile_type = "/obj/item/projectile/bullet/calibre/cal22lr"
+
+/obj/item/ammo_casing/a357		//.357 Magnum
+	desc = "A bullet casing.  The headstamp reads \".357 MAG FMJ\"."
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357
+	
+/obj/item/ammo_casing/a357hp		
+	desc = "A bullet casing.  The headstamp reads \".357 MAG JHP\"."
+	caliber = "357"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal357/hp
+	
+/obj/item/ammo_casing/a357hp		
+	desc = "A bullet casing.  The headstamp reads \".357 MAG HV AP\"."
+	caliber = "357"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal357/hp
 
-/obj/item/ammo_casing/a762
-	desc = "A 7.62 bullet casing."
-	icon_state = "762-casing"
-	caliber = "a762"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal762x51
-
-/obj/item/ammo_casing/a762/enchanted
-	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223 
-
-/obj/item/ammo_casing/a50
-	desc = "A .50AE bullet casing."
-	caliber = ".50"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal50ae 
-
-/obj/item/ammo_casing/c38
-	desc = "A .38 bullet casing."
+/obj/item/ammo_casing/c38		//.38 Special
+	desc = "A bullet casing. The headstamp reads \".38 SPL STUN\"."
 	caliber = "38"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal357/spl
+	
+/obj/item/ammo_casing/c38lethal
+	desc = "A bullet casing. The headstamp reads \".38 SPL FMJ\"."
+	caliber = "38"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal357/spl/lethal
+	
+/obj/item/ammo_casing/c44mag		//.44 Magnum
+	desc = "A bullet casing. The headstamp reads \".44 MAG FMJ\"."
+	caliber = "44mag"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag
 
-/obj/item/ammo_casing/c10mm
-	desc = "A 10mm bullet casing."
-	caliber = "10mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal10x25
-
-/obj/item/ammo_casing/c9mm
-	desc = "A 9mm bullet casing."
-	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19
-
-/obj/item/ammo_casing/c9mmap
-	desc = "A 9mm bullet casing."
-	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/ap
-
-/obj/item/ammo_casing/c9mmtox
-	desc = "A 9mm bullet casing."
-	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/tox
-
-/obj/item/ammo_casing/c9mminc
-	desc = "A 9mm bullet casing."
-	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/incendiary
-
-/obj/item/ammo_casing/c46x30mm
-	desc = "A 4.6x30mm bullet casing."
-	caliber = "4.6x30mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30
-
-/obj/item/ammo_casing/c46x30mmap
-	desc = "A 4.6x30mm bullet casing."
-	caliber = "4.6x30mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30/ap
-
-/obj/item/ammo_casing/c46x30mmtox
-	desc = "A 4.6x30mm bullet casing."
-	caliber = "4.6x30mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30/tox
-
-/obj/item/ammo_casing/c46x30mminc
-	desc = "A 4.6x30mm bullet casing."
-	caliber = "4.6x30mm"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30/incendiary
-
-/obj/item/ammo_casing/c45
-	desc = "A .45 bullet casing."
+/obj/item/ammo_casing/c44magap
+	desc = "A bullet casing. The headstamp reads \".44 MAG HV AP\"."
+	caliber = "44mag"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag/ap
+	
+/obj/item/ammo_casing/c44maghp
+	desc = "A bullet casing. The headstamp reads \".44 MAG JHP\"."
+	caliber = "44mag"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag/ap
+	
+/obj/item/ammo_casing/c44spl		//.44 Special
+	desc = "A bullet casing. The headstamp reads \".44 SPL\"."
+	caliber = "44mag"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal44mag/spl
+	
+/obj/item/ammo_casing/c44		//.44 AMP
+	desc = "A .44 AMP cartridge."
+	caliber = ".44"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal50bmg
+	
+/obj/item/ammo_casing/c45		//.45 Automatic Colt Pistol
+	desc = "A bullet casing. The headstamp reads \".45 ACP FMJ\"."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp
+	
+/obj/item/ammo_casing/c45plus
+	desc = "A bullet casing. The headstamp reads \".45 ACP +P\"."		//overpressure
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp/plus
+	
+/obj/item/ammo_casing/c45plusplus
+	desc = "A bullet casing. The headstamp reads \".45 ACP +P+\"."		//overpressure plus
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp/plusplus
+
+/obj/item/ammo_casing/c45ap
+	desc = "A bullet casing. The headstamp reads \".45 ACP HV AP\"."
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp/ap
+	
+/obj/item/ammo_casing/c45hp
+	desc = "A bullet casing. The headstamp reads \".45 ACP JHP\"."
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal45acp/hp
 /*
 /obj/item/ammo_casing/c45nostamina
 	desc = "A .45 bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/midbullet3
 */
-/obj/item/ammo_casing/c44
-	desc = "A .44 AMP cartridge."
-	caliber = ".44"
+
+/obj/item/ammo_casing/c454		//.454 Casull
+	desc = "A bullet casing. The headstamp reads \"IWB .454 CASULL\"."
+	caliber = ".454"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal454
+	
+/obj/item/ammo_casing/a50		//.50 Action Express
+	desc = "A bullet casing. The headstamp reads \".50-AE FMJ\"."
+	caliber = ".50"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal50ae
+	
+/obj/item/ammo_casing/a50hp
+	desc = "A bullet casing. The headstamp reads \".50-AE JHP\"."
+	caliber = ".50"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal50ae/jhp
+	
+/obj/item/ammo_casing/a50ap
+	desc = "A bullet casing. The headstamp reads \".50-AE HV AP\"."
+	caliber = ".50"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal50ae/ap
+	
+/obj/item/ammo_casing/a500sw		//.500 Smith & Wesson Magnum
+	desc = "A bullet casing. The headstamp reads \".500SWM FMJ\"."
+	caliber = ".500 swm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal500sw
+	
+//HANDGUNS AND SMALL ARMS - METRIC
 
-/obj/item/ammo_casing/caseless/a68
-	desc = "A 6.8x43mm caseless cartridge."
-	caliber = "6.8"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal68x43
+/obj/item/ammo_casing/c46x30mm		//4.6x30mm Heckler & Koch
+	desc = "A bullet casing. The headstamp reads \"4.6x30mm FMJ\"."
+	caliber = "4.6x30mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30
 
-/obj/item/ammo_casing/a762x39
-	desc = "A 7.62x39mm bullet casing."
-	icon_state = "casing_762x39"
-	caliber = "7.62x39"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39
+/obj/item/ammo_casing/c46x30mmap
+	desc = "A bullet casing. The headstamp reads \"4.6x30mm HV AP\"."
+	caliber = "4.6x30mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30/ap
 
-/obj/item/ammo_casing/a545
-	desc = "A 5.45x39mm cartridge."
-	icon_state = "casing_545"
-	caliber = "a556"
+/obj/item/ammo_casing/c46x30mmtox
+	desc = "A bullet casing. The headstamp reads \"4.6x30mm HITOX\"."	//"Hitox" is not a real-life headstamp
+	caliber = "4.6x30mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30/tox
+
+/obj/item/ammo_casing/c46x30mminc
+	desc = "A bullet casing. The headstamp reads \"4.6x30mm I-T\"."		//Incendiary Tracer
+	caliber = "4.6x30mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal46x30/incendiary
+	
+/obj/item/ammo_casing/c57x28mm		//5.7x28mm Fabrique Nationale d'Herstal
+	desc = "A bullet casing. The headstamp reads \"5.7x28mm FMJ\"."
+	caliber = "5.7x28mm"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal57x28
+	
+/obj/item/ammo_casing/c57x28mmap		
+	desc = "A bullet casing. The headstamp reads \"5.7x28mm HV AP\"."
+	caliber = "5.7x28mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal57x28/ap
+	
+/obj/item/ammo_casing/c57x28mmhp		
+	desc = "A bullet casing. The headstamp reads \"5.7x28mm JHP\"."
+	caliber = "5.7x28mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal57x28/hp
 
-/obj/item/ammo_casing/n762
-	desc = "A 7.62x38mmR bullet casing."
-	caliber = "n762"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal357	//nagant revolver, this is a stopgap
+/obj/item/ammo_casing/c9x18mm		//9x18mm Makarov
+	desc = "A bullet casing. The headstamp reads \"9x18mm FMJ\"."
+	caliber = "9x18mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x18
+	
+/obj/item/ammo_casing/c9x18mmhp
+	desc = "A bullet casing. The headstamp reads \"9x18mm JHP\"."
+	caliber = "9x18mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x18/hp
+	
+/obj/item/ammo_casing/c9x18mmap
+	desc = "A bullet casing. The headstamp reads \"9x18mm HV AP\"."
+	caliber = "9x18mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x18/hp
+	
+/obj/item/ammo_casing/c9mm		//9x19mm NATO, or 9mm Luger, or 9mm Parabellum... 
+	desc = "A bullet casing. The headstamp reads \"9mm LUGER FMJ\"."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19
 
-/obj/item/ammo_casing/a556
-	desc = "A 5.56mm bullet casing."
-	caliber = "a556"
-	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223 
+/obj/item/ammo_casing/c9mmap
+	desc = "A bullet casing. The headstamp reads \"9mm LUGER HV AP\"."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/ap
 
-/obj/item/ammo_casing/a40mm
-	name = "40mm HE shell"
-	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
-	caliber = "40mm"
-	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/bullet/a40mm
+/obj/item/ammo_casing/c9mmap
+	desc = "A bullet casing. The headstamp reads \"9mm LUGER JHP\"."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/hp
 
+/obj/item/ammo_casing/c9mmtox
+	desc = "A bullet casing. The headstamp reads \"9mm LUGER HITOX\"."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/tox
 
+/obj/item/ammo_casing/c9mminc
+	desc = "A bullet casing. The headstamp reads \"9mm LUGER I-T\"."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x19/incendiary
+	
+/obj/item/ammo_casing/c10mm		//10x25mm Automatic
+	desc = "A bullet casing. The headstamp reads \"10mm AUTO FMJ\"."
+	caliber = "10mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal10x25
+	
+/obj/item/ammo_casing/c10mmap
+	desc = "A bullet casing. The headstamp reads \"10mm AUTO HV AP\"."
+	caliber = "10mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal10x25/ap
+	
+/obj/item/ammo_casing/c10mmap
+	desc = "A bullet casing. The headstamp reads \"10mm AUTO JHP\"."
+	caliber = "10mm"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal10x25/hp
 
-/////SNIPER ROUNDS
+//RIFLE ROUNDS - IMPERIAL
 
-/obj/item/ammo_casing/point50
-	desc = "A .50 bullet casing."
+/obj/item/ammo_casing/c223		//.223 Remington Magnum
+	desc = "A bullet casing. The headstamp reads \".223 FMJ\"."
+	caliber = "5.56x45"				//you can put a .223 in a 5.56 and it will fire safely
+	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223
+
+/obj/item/ammo_casing/c223hp
+	desc = "A bullet casing. The headstamp reads \".223 SpHP\"."	//SPitzer, Hollow Point
+	caliber = "5.56x45"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223/hp
+	
+/obj/item/ammo_casing/c223hp
+	desc = "A bullet casing. The headstamp reads \".223 AP-T\"."	//Armour-Piercing Tracer
+	caliber = "5.56x45"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223/hp
+	
+/obj/item/ammo_casing/c3006		//.30-06 Springfield
+	desc = "A bullet casing. The headstamp reads \".30-06 SPRG FMJ\"."	//SPRinGfield
+	caliber = ".30-06"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal3006
+	
+/obj/item/ammo_casing/c3006hp
+	desc = "A bullet casing. The headstamp reads \".30-06 SPRG SpHP\"."
+	caliber = ".30-06"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal3006hp
+	
+/obj/item/ammo_casing/c3006ap
+	desc = "A bullet casing. The headstamp reads \".30-06 SPRG AP-T\"."
+	caliber = ".30-06"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal3006ap
+	
+/obj/item/ammo_casing/c308		//.308 Winchester
+	desc = "A bullet casing. The headstamp reads \".308 WIN FMJ\"."
+	caliber = ".308"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal308
+	
+/obj/item/ammo_casing/c308ap
+	desc = "A bullet casing. The headstamp reads \".308 WIN AP-T\"."
+	caliber = ".308"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal308/ap
+
+/obj/item/ammo_casing/c308hp
+	desc = "A bullet casing. The headstamp reads \".308 WIN SpHP\"."
+	caliber = ".308"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal308/hp
+	
+/obj/item/ammo_casing/c338		//.338 Lapua Magnum
+	desc = "A bullet casing. The headstamp reads \".338 LAPUA MAG\"."
+	caliber = ".338"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal338
+	
+/obj/item/ammo_casing/c4570		//.45-70 Government
+	desc = "A bullet casing. The headstamp reads \".45-70 GOVT\"."
+	caliber = ".45-70"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal4570
+
+/obj/item/ammo_casing/point50		//.50 Browning Machine Gun
+	desc = "A bullet casing. The headstamp reads \".50BMG SLAP\"."		//Saboted Light Armour-Piercing
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal50bmg
 	icon_state = ".50"
 
-/obj/item/ammo_casing/soporific
-	desc = "A .50 bullet casing, specialised in sending the target to sleep, instead of hell."
+/obj/item/ammo_casing/soporific	
+	desc = "A bullet casing. The headstamp reads \".50BMG TRANQ\". Designed to send the target to sleep, instead of hell."
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal50bmg/narq
 	icon_state = ".50"
 
 /obj/item/ammo_casing/haemorrhage
-	desc = "A .50 bullet casing, specialised in causing massive bloodloss"
+	desc = "A bullet casing. The headstamp reads \".50BMG SX\". Specializes in causing massive bloodloss."		//Super eXplosive
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal50bmg/haemorrhage
 	icon_state = ".50"
 
 /obj/item/ammo_casing/penetrator
-	desc = "A .50 caliber penetrator round casing."
+	desc = "A bullet casing. The headstamp reads \".50BMG DU\". A penetrator round, if there ever was one."		//Depleted Uranium
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal50bmg/penetrator
 	icon_state = ".50"
 
+//RIFLE ROUNDS - METRIC
 
-
-/// SAW ROUNDS
-
-/obj/item/ammo_casing/mm556x45
-	desc = "A 556x45mm bullet casing."
+/obj/item/ammo_casing/mm556x45		//5.56x45mm NATO
+	desc = "A bullet casing. The headstamp reads \"5.56x45mm NATO FMJ\"."	
 	icon_state = "762-casing"
 	caliber = "mm55645"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45
 
 /obj/item/ammo_casing/mm556x45/bleeding
-	desc = "A 556x45mm bullet casing with specialized inner-casing, that when it makes contact with a target, release tiny shrapnel to induce internal bleeding."
+	desc = "A bullet casing. The headstamp reads \"5.56x45mm NATO SX\". It has a specialized inner-casing, that when it makes contact with a target, release tiny shrapnel to induce internal bleeding."
 	icon_state = "762-casing"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/bleeding
 
 /obj/item/ammo_casing/mm556x45/hollow
-	desc = "A 556x45mm bullet casing designed to cause more damage to unarmored targets."
+	desc = "A bullet casing. The headstamp reads \"5.56x45mm NATO SpHP\"."
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/hp
 
 /obj/item/ammo_casing/mm556x45/ap
-	desc = "A 556x45mm bullet casing designed with a hardened-tipped core to help penetrate armored targets."
+	desc = "A bullet casing. The headstamp reads \"5.56x45mm NATO HV AP\"."
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/ap
 
 /obj/item/ammo_casing/mm556x45/incen
-	desc = "A 556x45mm bullet casing designed with a chemical-filled capsule on the tip that when bursted, reacts with the atmosphere to produce a fireball, engulfing the target in flames. "
+	desc = "A bullet casing. The headstamp reads \"5.56x45mm NATO I-T\"."
 	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/incen
 
+/obj/item/ammo_casing/a762x39		//7.62x39mm Soviet
+	desc = "A bullet casing. The headstamp reads \"7.62x39mm FMJ\".
+	icon_state = "casing_762x39"
+	caliber = "7.62x39"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39
+	
+/obj/item/ammo_casing/a762x39hp
+	desc = "A bullet casing. The headstamp reads \"7.62x39mm SpHP\".
+	icon_state = "casing_762x39"
+	caliber = "7.62x39"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39/hp
+	
+/obj/item/ammo_casing/a762x39ap
+	desc = "A bullet casing. The headstamp reads \"7.62x39mm AP-T\".
+	icon_state = "casing_762x39"
+	caliber = "7.62x39"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39/ap
 
+/obj/item/ammo_casing/a762		//7.62x51mm
+	desc = "A bullet casing. The headstamp reads \"7.62x51mm FMJ\".
+	icon_state = "762-casing"
+	caliber = "a762"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal762x51
+	
+/obj/item/ammo_casing/a762/ap
+	desc = "A bullet casing. The headstamp reads \"7.62x51mm AP-T\".
+	projectile_type = /obj/item/projectile/bullet/calibre/cal762x51/ap
 
-
+/obj/item/ammo_casing/a762/enchanted
+	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223 
+	
 //SHOTGUN ROUNDS
 
 /obj/item/ammo_casing/shotgun
@@ -184,32 +364,70 @@
 	projectile_type = /obj/item/projectile/bullet/shotshell/slug
 	materials = list(MAT_METAL=4000)
 
+/obj/item/ammo_casing/shotgun/fletchette
+	name = "shotgun fletchette"
+	desc = "A 12 gauge fletchette shell."
+	projectile_type = /obj/item/projectile/bullet/shotshell/slug/ap
 
 /obj/item/ammo_casing/shotgun/buckshot
-	name = "buckshot shell"
-	desc = "A 12 gauge buckshot shell."
+	name = "00 buckshot shell"
+	desc = "A 12 gauge, 00 buckshot shell."
 	icon_state = "gshell"
 	projectile_type = /obj/item/projectile/bullet/shotshell/doubleaught
 	pellets = 6
 	variance = 25
 
+/obj/item/ammo_casing/shotgun/buckshot/000
+	name = "000 buckshot shell"
+	desc = "A 12 gauge, 000 buckshot shell."
+	projectile_type = /obj/item/projectile/bullet/shotshell/tripleaught
+	pellets = 4
+	variance = 20
+
+/obj/item/ammo_casing/shotgun/buckshot/0000
+	name = "0000 buckshot shell"
+	desc = "A 12 gauge, 0000 buckshot shell."
+	icon_state = "gshell"
+	projectile_type = /obj/item/projectile/bullet/shotshell/quadrupleaught
+	pellets = 3
+	variance = 15
+
 /obj/item/ammo_casing/shotgun/rubbershot
-	name = "rubber shot"
-	desc = "A shotgun casing filled with densely-packed rubber balls, used to incapacitate crowds from a distance."
+	name = "00 rubber shot"
+	desc = "A shotgun casing filled with 00-buckshot-sized rubber balls, used to incapacitate crowds from a distance."
 	icon_state = "bshell"
 	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/doubleaught 
-	pellets = 6
+	pellets = 7
 	variance = 25
 	materials = list(MAT_METAL=4000)
+	
+/obj/item/ammo_casing/shotgun/rubbershot/000
+	name = "000 rubber shot"
+	desc = "A shotgun casing filled with 000-buckshot-sized rubber balls, used to incapacitate crowds from a distance."
+	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/tripleaught 
+	pellets = 5
+	variance = 20
 
+/obj/item/ammo_casing/shotgun/rubbershot/0000
+	name = "0000 rubber shot"
+	desc = "A shotgun casing filled with 0000-buckshot-sized rubber balls, used to incapacitate crowds from a distance."
+	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/tripleaught 
+	pellets = 4
+	variance = 15
 
 /obj/item/ammo_casing/shotgun/beanbag
-	name = "beanbag slug"
-	desc = "A weak beanbag slug for riot control."
+	name = "rubber slug"
+	desc = "A weak rubber slug for riot control."
 	icon_state = "bshell"
 	projectile_type = /obj/item/projectile/bullet/shotshell/ltl
 	materials = list(MAT_METAL=250)
 
+/obj/item/ammo_casing/shotgun/stunslug
+	name = "Taser slug"
+	desc = "A Taser slug."
+	icon_state = "stunshell"
+	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/xrep
+	materials = list(MAT_METAL=250)
 
 /obj/item/ammo_casing/shotgun/improvised
 	name = "improvised shell"
@@ -230,14 +448,6 @@
 	materials = list(MAT_METAL=250)
 	pellets = 4
 	variance = 40
-
-
-/obj/item/ammo_casing/shotgun/stunslug
-	name = "taser slug"
-	desc = "A stunning taser slug."
-	icon_state = "stunshell"
-	projectile_type = /obj/item/projectile/bullet/shotshell/ltl/xrep
-	materials = list(MAT_METAL=250)
 
 
 /obj/item/ammo_casing/shotgun/meteorshot
@@ -327,6 +537,33 @@
 	reagents.add_reagent("coniine", 6)
 	reagents.add_reagent("sodium_thiopental", 6)
 
+	
+//UNSORTED
+
+/obj/item/ammo_casing/a545			//Used in the M90 (the P90 clone)
+	desc = "A 5.45x39mm cartridge."
+	icon_state = "casing_545"
+	caliber = "a556"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal57x28
+
+/obj/item/ammo_casing/n762			//Nagant revolver
+	desc = "A 7.62x38mmR bullet casing."
+	caliber = "n762"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal357
+
+/obj/item/ammo_casing/a556			//I don't even
+	desc = "A 5.56mm bullet casing."
+	caliber = "a556"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal556x45/cal223 
+
+/obj/item/ammo_casing/a40mm			//grenade launcher
+	name = "40mm HE shell"
+	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
+	caliber = "40mm"
+	icon_state = "40mmHE"
+	projectile_type = /obj/item/projectile/bullet/a40mm
+
+
 // Caseless Ammunition
 
 /obj/item/ammo_casing/caseless
@@ -344,11 +581,22 @@
 	..()
 	icon_state = "[initial(icon_state)]"
 
+/obj/item/ammo_casing/caseless/a68
+	desc = "A 6.8x43mm caseless cartridge."
+	caliber = "6.8"
+	projectile_type = /obj/item/projectile/bullet/calibre/cal68x43
+
 /obj/item/ammo_casing/caseless/a75
 	desc = "A .75 bullet casing."
 	caliber = "75"
 	icon_state = "s-casing-live"
 	projectile_type = /obj/item/projectile/bullet/gyro
+	
+/obj/item/ammo_casing/caseless/bb
+	desc = "A .177 BB. Don't shoot your eye out."
+	caliber = "177"
+	icon_state = "s-casing-live"	//placeholder
+	projectile_type = /obj/item/projectile/bullet/calibre/cal177
 
 /obj/item/ammo_casing/caseless/magspear
 	name = "magnetic spear"
