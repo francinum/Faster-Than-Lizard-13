@@ -42,7 +42,8 @@
 							"Medical",
 							"Misc",
 							"Dinnerware",
-							"Imported"
+							"Imported",
+							"Ammunition"
 							)
 
 /obj/machinery/autolathe/New()
