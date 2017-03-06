@@ -335,25 +335,25 @@
 	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39
 	
 /obj/item/ammo_casing/a762x39hp
-	desc = "A bullet casing. The headstamp reads \"7.62x39mm SpHP\".
+	desc = "A bullet casing. The headstamp reads \"7.62x39mm SpHP\"."
 	icon_state = "casing_762x39"
 	caliber = "7.62x39"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39/hp
 	
 /obj/item/ammo_casing/a762x39ap
-	desc = "A bullet casing. The headstamp reads \"7.62x39mm AP-T\".
+	desc = "A bullet casing. The headstamp reads \"7.62x39mm AP-T\"."
 	icon_state = "casing_762x39"
 	caliber = "7.62x39"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal762x39/ap
 
 /obj/item/ammo_casing/a762		//7.62x51mm
-	desc = "A bullet casing. The headstamp reads \"7.62x51mm FMJ\".
+	desc = "A bullet casing. The headstamp reads \"7.62x51mm FMJ\"."
 	icon_state = "762-casing"
 	caliber = "a762"
 	projectile_type = /obj/item/projectile/bullet/calibre/cal762x51
 	
 /obj/item/ammo_casing/a762/ap
-	desc = "A bullet casing. The headstamp reads \"7.62x51mm AP-T\".
+	desc = "A bullet casing. The headstamp reads \"7.62x51mm AP-T\"."
 	projectile_type = /obj/item/projectile/bullet/calibre/cal762x51/ap
 
 /obj/item/ammo_casing/a762/enchanted
