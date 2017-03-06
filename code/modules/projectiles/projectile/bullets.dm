@@ -235,7 +235,7 @@
 
 //.223 Remington is under 556x45 below - identical to 5.56x45 NATO but lower pressure
 
-/obj/item/projectile/bullet/calibre/cal3006	//.30-06 Winchester
+/obj/item/projectile/bullet/calibre/cal3006	//.30-06 Springfield
 	damage = 40
 	
 
