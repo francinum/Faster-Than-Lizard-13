@@ -206,7 +206,7 @@
 obj/item/weapon/gun/proc/newshot()
 	return
 	
-obj/item/weapon/gun/proc/process_magnum()
+obj/item/weapon/gun/proc/process_magnum(mob/living/user)
 	if(canmagnum == BYPASS)		//bypass the check entirely
 		return 1
 	else
@@ -227,7 +227,7 @@ obj/item/weapon/gun/proc/process_magnum()
 				user << "<span class='warning'>You notice the bullet go wide....</span>"
 				return 1		//no explosion.
 
-obj/item/weapon/gun/proc/explode_gun()		//called above
+obj/item/weapon/gun/proc/explode_gun(mob/living/user)		//called above
 	playsound(user, fire_sound, 50, 1)	
 	user.visible_message("[user]'s [src] explodes violently!", "<span class='userdanger'>The [src] blows up in your face!</span>")
 	explosion(get_turf(src), 0, 0, (chambered.ismagnum + 1), flame_range = 2)
