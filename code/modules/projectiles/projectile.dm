@@ -98,32 +98,34 @@
 
 /obj/item/projectile/New()
 	permutated = list()
-	if(damage_spread_type == (DAMAGE_SPREAD_OFF || DAMAGE_SPREAD_MULT || DAMAGE_SPREAD_MULT_HALVED || DAMAGE_SPREAD_ADD || DAMAGE_SPREAD_ADD_HALVED))
-		if(damage_spread_type == DAMAGE_SPREAD_OFF)			//no damage spread
-			new_damage = damage
-			
-		else if(damage_spread_type == DAMAGE_SPREAD_MULT)		//multiplicative
-			new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
-			
-		else if(damage_spread_type == DAMAGE_SPREAD_MULT_HALVED)	//halved-multiplicative
-			new_damage_spread_coeff = (damage_spread_coeff * 0.5)
-			damage_spread_coeff = new_damage_spread_coeff
-			new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
-			
-		else if(damage_spread_type == DAMAGE_SPREAD_ADD)		//additive
-			new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
-			
-		else if(damage_spread_type == DAMAGE_SPREAD_ADD_HALVED)		//halved-additive
-			new_damage_spread_coeff = (damage_spread_coeff * 0.5)
-			damage_spread_coeff = new_damage_spread_coeff
-			new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
+	if(damage_spread_type == DAMAGE_SPREAD_OFF)			//no damage spread
+		new_damage = damage
 		
-		damage = new_damage
-
+	else if(damage_spread_type == DAMAGE_SPREAD_MULT)		//multiplicative
+		new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_MULT_HALVED)	//halved-multiplicative
+		new_damage_spread_coeff = (damage_spread_coeff * 0.5)
+		damage_spread_coeff = new_damage_spread_coeff
+		new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_ADD)		//additive
+		new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_ADD_HALVED)		//halved-additive
+		new_damage_spread_coeff = (damage_spread_coeff * 0.5)
+		damage_spread_coeff = new_damage_spread_coeff
+		new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
+		
 	else			//our damage spread type is not listed. Crash the proc, something went wrong.
 		damage_spread_type = DAMAGE_SPREAD_OFF
 		CRASH("Invalid damage spread type!")
+	damage = new_damage
+
 	return ..()
+
+
+
 
 /obj/item/projectile/proc/Range()
 	range--
