@@ -944,7 +944,7 @@
 	id = "c4570"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 45000)
-	build_path = /obj/item/ammo_box/4570
+	build_path = /obj/item/ammo_box/c4570
 	category = list("hacked", "Ammunition")	
 	
 /datum/design/c50bmg
@@ -972,12 +972,12 @@
 /datum/design/c556x45mm/hp
 	name = "Ammo box (5.56x45mm NATO HP)"
 	id = "c556_hp"
-	build_path = /obj/item/ammo_box/c556x45_hp
+	build_path = /obj/item/ammo_box/c556x4/hp
 
 /datum/design/c556x45mm/ap
 	name = "Ammo box (5.56x45mm NATO AP)"
 	id = "c556_ap"
-	build_path = /obj/item/ammo_box/c556x45_ap
+	build_path = /obj/item/ammo_box/c556x45/ap
 
 /datum/design/c762x39mm
 	name = "Ammo box (7.62x39mm)"
