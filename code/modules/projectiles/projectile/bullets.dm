@@ -14,7 +14,6 @@
 	damage_type = BRUTE
 	damage_spread_coeff = 0
 	damage_spread_type = DAMAGE_SPREAD_OFF
-	var/ismagnum = 0		//for magnum rounds, such as +p/+p+ - currently unused, but may later cause it to blow up the gun
 	nodamage = 0
 	flag = "bullet"
 	hitsound_wall = "ricochet"
@@ -50,7 +49,6 @@
 	
 /obj/item/projectile/bullet/calibre/cal357			//.357 magnum
 	damage = 50
-	ismagnum = 1
 	
 /obj/item/projectile/bullet/calibre/cal357/ap
 	damage = 40
@@ -63,7 +61,6 @@
 /obj/item/projectile/bullet/calibre/cal357/spl			//.38 Special
 	damage = 15
 	stamina = 50
-	ismagnum = 0
 	
 /obj/item/projectile/bullet/calibre/cal357/spl/lethal
 	damage = 40
@@ -71,7 +68,6 @@
 
 /obj/item/projectile/bullet/calibre/cal44mag			//.44 Magnum
 	damage = 55
-	ismagnum = 1
 	
 /obj/item/projectile/bullet/calibre/cal44mag/ap
 	damage = 44
@@ -83,7 +79,6 @@
 
 /obj/item/projectile/bullet/calibre/cal44mag/spl		//.44 Special
 	damage = 50
-	ismagnum = 0
 	
 /obj/item/projectile/bullet/calibre/cal45acp			//.45 Automatic
 	damage = 35
@@ -91,11 +86,9 @@
 	
 /obj/item/projectile/bullet/calibre/cal45acp/plus			//+P
 	damage = 45
-	ismagnum = 1
 	
 /obj/item/projectile/bullet/calibre/cal45acp/plusplus			//+P+
 	damage = 50
-	ismagnum = 2			//very high pressure
 
 /obj/item/projectile/bullet/calibre/cal45acp/ap
 	damage = 28
@@ -108,7 +101,6 @@
 /obj/item/projectile/bullet/calibre/cal454			//.454 Casull
 	damage = 65
 	damage_spread_coeff = 0.3			//.454 is a wildcat, so loading will vary between handloaders
-	ismagnum = 1
 	
 /obj/item/projectile/bullet/calibre/cal50ae			//.50 Action Express
 	damage = 60
@@ -321,7 +313,6 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 
 /obj/item/projectile/bullet/calibre/cal556x45	//5.56x45mm NATO
 	damage = 35
-	ismagnum = 1
 	
 /obj/item/projectile/bullet/calibre/cal556x45/ap
 	damage = 25
@@ -362,7 +353,6 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 	
 /obj/item/projectile/bullet/calibre/cal556x45/cal223	//.223 Remington Magnum
 	damage = 30
-	ismagnum = 0
 	
 /obj/item/projectile/bullet/calibre/cal556x45/cal223/ap
 	damage = 21
