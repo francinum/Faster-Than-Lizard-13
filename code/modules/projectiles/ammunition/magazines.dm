@@ -204,8 +204,8 @@
 	name = "en-bloc clip"
 	icon_state = "enbloc"
 	origin_tech = "combat=3"
-	ammo_type = /obj/item/ammo_casing/a762
-	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/c3006
+	caliber = ".30-06"
 	max_ammo = 8
 
 /obj/item/ammo_box/magazine/enbloc/update_icon()
@@ -387,7 +387,7 @@
 	name = "SMG magazine (.45)"
 	icon_state = "c20r45-24"
 	origin_tech = "combat=2"
-	ammo_type = /obj/item/ammo_casing/c45nostamina
+	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	max_ammo = 24
 

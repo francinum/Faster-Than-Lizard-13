@@ -665,9 +665,9 @@
 	always_up = 1
 	use_power = 0
 	has_cover = 0
-	scan_range = 9
-	projectile = /obj/item/projectile/bullet/nerfed
-	eprojectile = /obj/item/projectile/bullet/nerfed
+	scan_range = 7
+	projectile = /obj/item/projectile/bullet/calibre/cal762x51
+	eprojectile = /obj/item/projectile/bullet/calibre/cal762x51
 	shot_sound = 'sound/weapons/Gunshot.ogg'
 	eshot_sound = 'sound/weapons/Gunshot.ogg'
 	base_icon_state = "syndie"
@@ -683,8 +683,8 @@
 
 /obj/machinery/porta_turret/syndicate/pod
 	health = 40
-	projectile = /obj/item/projectile/bullet/weakbullet3
-	eprojectile = /obj/item/projectile/bullet/weakbullet3
+	projectile = /obj/item/projectile/bullet/calibre/cal45acp
+	eprojectile = /obj/item/projectile/bullet/calibre/cal45acp
 
 /obj/machinery/porta_turret/ai
 	faction = "silicon"

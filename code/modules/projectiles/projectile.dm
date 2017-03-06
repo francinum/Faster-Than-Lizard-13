@@ -1,3 +1,45 @@
+/*	DAMAGE SPREAD TEXTWALL
+ *
+ *	Okay, before I begin, a quick note on damage spread. Damage spread gives the bullet a
+ *	degree of unpredictibility versus it just being a flat numbers game. For example, without
+ *	damage spread, a Stechkin bullet will do 30 damage, meaning you've got a 4 bullet crit
+ *	and a 7 bullet kill. If we add, say a plus-or-minus 20% range on that, that puts it
+ *	between 3 and 5 bullets to crit, and 6 to 9 bullets to kill, making it rely a little
+ *	less on getting the drop on someone and a little more on your luck.
+ *
+ *	There are 5 modes, defined immediately below, that the bullets will use to determine
+ *	damage spread. The first is no damage spread at all, meaning the base damage is the updated
+ *	damage. We want to use this in instances where we don't want luck to play a factor, for
+ *	instance mounted turrets like those in Centcomm stations.
+ *
+ *	The second damage spread mode is multiplicative (of multiplication), so if the damage
+ *	spread coefficient is 0.2, the bullet will do between 80% and 120% the base damage.
+ *
+ *	The third damage spread mode is halved-multiplicative. The coefficient becomes the total
+ *	range of the damage spread, so if the damage spread coefficient is 0.2, the bullet will
+ *	have a total spread of 20%, and will do between 90% and 110% base damage. This is here
+ *	for maintainer's ease.
+ *
+ *	The fourth damage spread option is additive. The coefficient becomes the total damage spread.
+ *	It's pretty straight-forward: If you have a damage of 10 and a spread coefficient of 2, then
+ *	the bullet will do between 8 and 12 damage.
+ *
+ *	The fifth damage spread mode is halved-additive. Similar to halved-multiplicative, this is
+ *	the total range of the spread, centered, so if I have a bullet damage of 10 and a spread 
+ *	coefficient of 2, the bullet will do between 9 and 11 damage.
+ *
+ *	An important thing to note is DAMAGE SPREAD IS AFFECTED BY ROUNDING. The rand() variable used
+ *	to determine bullet damage from spread will have the upper and lower bounds (determined by
+ *	the spread coefficient) rounded.
+ */
+
+// DAMAGE SPREAD DEFINES
+#define DAMAGE_SPREAD_OFF 0		//no damage spread
+#define DAMAGE_SPREAD_MULT 1		//multiplicative
+#define DAMAGE_SPREAD_MULT_HALVED 2	//halved-multiplicative
+#define DAMAGE_SPREAD_ADD 3		//additive
+#define DAMAGE_SPREAD_ADD_HALVED 4	//halved-additive
+
 /obj/item/projectile
 	name = "projectile"
 	icon = 'icons/obj/projectiles.dmi'
@@ -32,6 +74,10 @@
 	animate_movement = 0	//Use SLIDE_STEPS in conjunction with legacy
 
 	var/damage = 10
+	var/damage_spread_type = DAMAGE_SPREAD_OFF
+	var/damage_spread_coeff = 0.2
+	var/new_damage = null				//damage calculation
+	var/new_damage_spread_coeff = null		//used in halved-spread
 	var/damage_type = BRUTE //BRUTE, BURN, TOX, OXY, CLONE are the only things that should be in here
 	var/nodamage = 0 //Determines if the projectile will skip any damage inflictions
 	var/flag = "bullet" //Defines what armor to use when it hits things.  Must be set to bullet, laser, energy,or bomb
@@ -52,7 +98,34 @@
 
 /obj/item/projectile/New()
 	permutated = list()
+	if(damage_spread_type == DAMAGE_SPREAD_OFF)			//no damage spread
+		new_damage = damage
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_MULT)		//multiplicative
+		new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_MULT_HALVED)	//halved-multiplicative
+		new_damage_spread_coeff = (damage_spread_coeff * 0.5)
+		damage_spread_coeff = new_damage_spread_coeff
+		new_damage = rand(round(damage * (1 - damage_spread_coeff)), round(damage * (1 + damage_spread_coeff)))
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_ADD)		//additive
+		new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
+		
+	else if(damage_spread_type == DAMAGE_SPREAD_ADD_HALVED)		//halved-additive
+		new_damage_spread_coeff = (damage_spread_coeff * 0.5)
+		damage_spread_coeff = new_damage_spread_coeff
+		new_damage = rand(round(damage - damage_spread_coeff), round(damage + damage_spread_coeff))
+		
+	else			//our damage spread type is not listed. Crash the proc, something went wrong.
+		damage_spread_type = DAMAGE_SPREAD_OFF
+		CRASH("Invalid damage spread type!")
+	damage = new_damage
+
 	return ..()
+
+
+
 
 /obj/item/projectile/proc/Range()
 	range--

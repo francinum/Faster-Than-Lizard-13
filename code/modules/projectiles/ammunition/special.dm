@@ -40,7 +40,7 @@
 	projectile_type = null
 
 /obj/item/ammo_casing/energy/c3dbullet
-	projectile_type = /obj/item/projectile/bullet/midbullet3
+	projectile_type = /obj/item/projectile/bullet/calibre/cal9x18		//9x18mm Makarov, because fuck you that's why
 	select_name = "spraydown"
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
 	e_cost = 20
