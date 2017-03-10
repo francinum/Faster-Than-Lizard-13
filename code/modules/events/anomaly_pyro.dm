@@ -2,7 +2,7 @@
 	name = "Anomaly: Pyroclastic"
 	typepath = /datum/round_event/anomaly/anomaly_pyro
 	max_occurrences = 5
-	weight = 25
+	weight = 15
 
 /datum/round_event/anomaly/anomaly_pyro
 	startWhen = 10
@@ -33,6 +33,7 @@
 			T.atmos_spawn_air("o2=500;plasma=500;TEMP=1000") //Make it hot and burny for the new slime
 
 		var/mob/living/simple_animal/slime/S = new/mob/living/simple_animal/slime(T)
+		S.name = "\improper Anomalous Slime"
 		S.colour = pick("red", "orange")
 		S.rabid = 1
 
