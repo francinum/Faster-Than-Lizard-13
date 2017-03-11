@@ -691,7 +691,7 @@
 	id = "a357_hp"
 	build_path = /obj/item/ammo_box/a357/hp
 	
-/datum/design/a357/hp
+/datum/design/a357/ap
 	name = "Speedloader (.357 AP)"
 	id = "a357_ap"
 	build_path = /obj/item/ammo_box/a357/ap
