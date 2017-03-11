@@ -34,7 +34,7 @@
 	name = "speed loader (.357 JHP)"
 	ammo_type = /obj/item/ammo_casing/a357hp
 	
-/obj/item/ammo_box/a357/hp
+/obj/item/ammo_box/a357/ap
 	name = "speed loader (.357 HV AP)"
 	ammo_type = /obj/item/ammo_casing/a357ap
 	
