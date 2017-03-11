@@ -871,7 +871,7 @@
 	
 /datum/design/c10mm/ap
 	name = "Ammo box (10mm Auto AP)"
-	id = "c10mm_ap
+	id = "c10mm_ap"
 	build_path = /obj/item/ammo_box/c10mm/ap
 
 /datum/design/c223
