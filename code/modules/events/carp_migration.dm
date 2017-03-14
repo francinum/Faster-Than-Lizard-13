@@ -3,11 +3,11 @@
 	typepath = /datum/round_event/carp_migration
 	weight = 15
 	min_players = 5
-	earliest_start = 9000
+	earliest_start = 18000
 	max_occurrences = 6
 
 /datum/round_event/carp_migration
-	announceWhen	= 3
+	announceWhen = 3
 	startWhen = 50
 
 /datum/round_event/carp_migration/setup()
