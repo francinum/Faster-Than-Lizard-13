@@ -154,10 +154,12 @@
 
 /obj/item/weapon/gun/projectile/revolver/golden
 	name = "\improper Golden revolver"
-	desc = "This ain't no game, ain't never been no show, And I'll gladly gun down the oldest lady you know. Uses .357 ammo."
+	desc = "This ain't no game, ain't never been no show, And I'll gladly gun down the oldest lady you know. Fires .454 Casull ammo."
 	icon_state = "goldrevolver"
 	fire_sound = 'sound/weapons/resonator_blast.ogg'
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev454
 	recoil = 8
+	canmagnum = BYPASS			//a revolver this great don't need no magnum checks, yo
 	pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/projectile/revolver/nagant

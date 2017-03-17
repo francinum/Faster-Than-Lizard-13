@@ -256,7 +256,7 @@ obj/item/projectile/bullet/calibre/cal3006/hp
 	armour_penetration = 10		//sniper bullet
 	
 /obj/item/projectile/bullet/calibre/cal4570	//.45-70 Government
-	damage = 55
+	damage = 70
 	armour_penetration = 10
 
 /obj/item/projectile/bullet/calibre/cal50bmg	//.50 Browning Machine Gun

@@ -667,7 +667,7 @@
 	
 /datum/design/a17/ap
 	name = "Ammo box (.17 HMR AP)"
-	id = "c17hmr_hp"
+	id = "c17hmr_ap"
 	build_path = /obj/item/ammo_box/c17hmr/ap
 	
 /datum/design/a22lr
@@ -691,10 +691,10 @@
 	id = "a357_hp"
 	build_path = /obj/item/ammo_box/a357/hp
 	
-/datum/design/a357/hp
+/datum/design/a357/ap
 	name = "Speedloader (.357 AP)"
-	id = "a357_hp"
-	build_path = /obj/item/ammo_box/a357/hp
+	id = "a357_ap"
+	build_path = /obj/item/ammo_box/a357/ap
 
 /datum/design/c38lethal
 	name = "Speedloader (.38 Lethal)"
@@ -835,7 +835,7 @@
 	
 /datum/design/c9x18mm/ap
 	name = "Ammo box (9x18mm Makarov AP)"
-	id = "c9x18mm_hp"
+	id = "c9x18mm_ap"
 	build_path = /obj/item/ammo_box/c9x18mm/ap
 
 /datum/design/c9mm
@@ -869,14 +869,11 @@
 	id = "c10mm_hp"
 	build_path = /obj/item/ammo_box/c10mm/hp
 	
-/datum/design/c10mm
-	name = "Ammo box (10mm Auto)"
-	id = "c10mm"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 30000)
-	build_path = /obj/item/ammo_box/c10mm
-	category = list("hacked", "Ammunition")
-	
+/datum/design/c10mm/ap
+	name = "Ammo box (10mm Auto AP)"
+	id = "c10mm_ap"
+	build_path = /obj/item/ammo_box/c10mm/ap
+
 /datum/design/c223
 	name = "Ammo box (.223 Remington)"
 	id = "c223"
