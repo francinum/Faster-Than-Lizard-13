@@ -1187,6 +1187,29 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
+"cgk" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/obj/effect/landmark{
+	name = "Observer-Start"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/fore)
 "cgZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -1264,22 +1287,6 @@
 /obj/machinery/hologram/comms_pad,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/captain)
-"clI" = (
-/obj/machinery/power/smes/engineering{
-	color = ""
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 2
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/darkwarning{
-	dir = 1
-	},
-/area/shuttle/ftl/engine/gravity_generator)
 "con" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -4405,6 +4412,12 @@
 /obj/item/clothing/mask/gas,
 /turf/open/floor/plasteel/delivery,
 /area/shuttle/ftl/crew_quarters/emergency_storage)
+"hID" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/bridge)
 "hJI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -4441,6 +4454,10 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/bar)
+"hNI" = (
+/obj/effect/landmark/start/bo/weapons,
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/bridge)
 "hOG" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -5880,15 +5897,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/ftl/medical/medbay)
-"kbi" = (
-/obj/effect/landmark{
-	name = "Observer-Start"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/port)
 "keN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -6858,6 +6866,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge)
+"lXk" = (
+/obj/machinery/power/smes/engineering{
+	color = "";
+	input_level = 10000;
+	output_level = 80000
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 2
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/darkwarning{
+	dir = 1
+	},
+/area/shuttle/ftl/engine/gravity_generator)
 "lZN" = (
 /obj/structure/chair{
 	dir = 1
@@ -18806,21 +18832,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
-"ISR" = (
-/obj/effect/landmark{
-	name = "Observer-Start"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/starboard)
 "ISU" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -19831,26 +19842,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge)
-"KQM" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/fore)
 "KSp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
@@ -19949,13 +19940,6 @@
 	d2 = 2
 	},
 /turf/open/floor/plasteel,
-/area/shuttle/ftl/bridge)
-"Lkm" = (
-/obj/effect/landmark/start/bo/weapons,
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge)
 "LlS" = (
 /obj/machinery/camera{
@@ -20727,6 +20711,10 @@
 	icon_state = "cafeteria"
 	},
 /area/shuttle/ftl/crew_quarters/hor)
+"MNd" = (
+/obj/effect/landmark/start/bo/helms,
+/turf/open/floor/plasteel/black,
+/area/shuttle/ftl/bridge)
 "MNx" = (
 /turf/open/floor/plasteel/stairs,
 /area/shuttle/ftl/cargo/mining)
@@ -24996,13 +24984,6 @@
 	dir = 6
 	},
 /area/shuttle/ftl/crew_quarters/sleep)
-"UJm" = (
-/obj/effect/landmark/start/bo/helms,
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/plasteel/black,
-/area/shuttle/ftl/bridge)
 "UJS" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -48555,7 +48536,7 @@ dTz
 pTN
 pTN
 pTN
-clI
+lXk
 FYA
 Gcl
 qIq
@@ -62184,7 +62165,7 @@ dSC
 uhK
 dSC
 dSC
-KQM
+cgk
 sAG
 dSC
 dSC
@@ -67322,11 +67303,11 @@ mWY
 MRO
 pfO
 rfn
-AYt
+hNI
 Kpv
 Pee
 xwS
-AYt
+MNd
 JUk
 pfO
 BvF
@@ -67579,11 +67560,11 @@ tuI
 MRO
 pfO
 jZn
-UJm
+hID
 OvE
 vQT
 KPY
-Lkm
+hID
 Dum
 pfO
 BvF
@@ -68594,7 +68575,7 @@ lZN
 Ewk
 oXv
 sTR
-kbi
+cAj
 Bpe
 mut
 EAP
@@ -68624,7 +68605,7 @@ XBo
 HhN
 pXc
 hup
-ISR
+DkK
 fJy
 QXd
 qng
