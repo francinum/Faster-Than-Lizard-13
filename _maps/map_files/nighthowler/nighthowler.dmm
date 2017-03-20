@@ -4663,10 +4663,6 @@
 /obj/effect/landmark/ship_fire,
 /turf/open/space,
 /area/shuttle/ftl/space)
-"ibz" = (
-/obj/machinery/autolathe,
-/turf/open/floor/plasteel/darkred,
-/area/shuttle/ftl/security/main)
 "icc" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
@@ -7409,16 +7405,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
-"ndz" = (
-/obj/structure/closet/secure_closet/chemical{
-	req_one_access_txt = "21;24"
-	},
-/obj/item/weapon/storage/bag/chemistry,
-/obj/item/weapon/storage/bag/chemistry,
-/turf/open/floor/plasteel{
-	icon_state = "white"
-	},
-/area/shuttle/ftl/medical/medbay)
 "ndF" = (
 /obj/structure/closet/crate/medical,
 /turf/open/floor/plasteel/delivery,
@@ -8622,6 +8608,18 @@
 	dir = 1
 	},
 /area/shuttle/ftl/security/main)
+"ppM" = (
+/obj/structure/closet/secure_closet/chemical{
+	req_one_access_txt = "21;24"
+	},
+/obj/item/weapon/storage/bag/chemistry,
+/obj/item/weapon/storage/bag/chemistry,
+/obj/item/weapon/storage/box/pillbottles,
+/obj/item/weapon/storage/box/pillbottles,
+/turf/open/floor/plasteel{
+	icon_state = "white"
+	},
+/area/shuttle/ftl/medical/medbay)
 "prz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -26546,6 +26544,12 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/shuttle/ftl/security/brig)
+"XDI" = (
+/obj/machinery/autolathe{
+	hacked = 1
+	},
+/turf/open/floor/plasteel/darkred,
+/area/shuttle/ftl/security/main)
 "XEW" = (
 /obj/structure/cable{
 	crit_fail = 0;
@@ -51106,7 +51110,7 @@ Pxz
 Vtr
 JvI
 zjT
-ndz
+ppM
 wrt
 AQw
 AQw
@@ -62673,7 +62677,7 @@ xoW
 LNI
 geG
 LPx
-ibz
+XDI
 UsH
 IaT
 KFz
