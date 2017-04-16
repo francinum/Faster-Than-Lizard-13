@@ -57,8 +57,8 @@ var/datum/subsystem/ticker/ticker
 
 /datum/subsystem/ticker/New()
 	NEW_SS_GLOBAL(ticker)
-
-	login_music = pickweight(list('sound/ambience/title2.ogg' = 31, 'sound/ambience/title1.ogg' = 31, 'sound/ambience/title3.ogg' = 31, 'sound/ambience/toboldlyhonk.ogg' = 31, 'sound/ambience/FrontierElite2.ogg' = 31, 'sound/ambience/FrontierElite2_SB.ogg' = 31, 'sound/ambience/clown.ogg' = 7)) // choose title music!
+	//bookmark for title music so i can find it later
+	login_music = pickweight(list('sound/ambience/title2.ogg' = 16, 'sound/ambience/title1.ogg' = 16, 'sound/ambience/title3.ogg' = 16, 'sound/ambience/toboldlyhonk.ogg' = 8, 'sound/ambience/FrontierElite2.ogg' = 32, 'sound/ambience/FrontierElite2_SB.ogg' = 32, 'sound/ambience/clown.ogg' = 8, 'sound/lobby/chronovalor.ogg' = 32, 'sound/lobby/drivertitle.ogg' = 16, 'sound/lobby/ftlcans.ogg' = 32, 'sound/lobby/ftlelectric.ogg' = 32, 'sound/lobby/ftllight.ogg' = 32, 'sound/lobby/ftlreality.ogg' = 32, 'sound/lobby/ftltitle.ogg' = 32, 'sound/lobby/gtr2spa.ogg' = 16, 'sound/lobby/spess.ogg' = 32, 'sound/lobby/tgrmenu.ogg' = 8)) // choose title music!	
 	if(SSevent.holidays && SSevent.holidays[APRIL_FOOLS])
 		login_music = 'sound/ambience/clown.ogg'
 
@@ -508,8 +508,6 @@ var/datum/subsystem/ticker/ticker
 			dellog += "Failures : [SSgarbage.didntgc[path]] \n"
 		world.log << dellog
 
-	return 1
-
 	CHECK_TICK
 
 	sleep(50)
@@ -526,6 +524,8 @@ var/datum/subsystem/ticker/ticker
 			world.Reboot("Station destroyed by Nuclear Device.", "end_proper", "nuke")
 		else
 			world.Reboot("Round ended.", "end_proper", "proper completion")
+			
+	return 1
 
 /datum/subsystem/ticker/proc/send_tip_of_the_round()
 	var/m
