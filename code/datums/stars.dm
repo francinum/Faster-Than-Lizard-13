@@ -150,6 +150,7 @@
 		switch(predefs["surface"] ? predefs["surface"] : rand(1, 130))
 			if(1 to 50)
 				var/datum/planet_loader/loader = new /datum/planet_loader("lavaland.dmm")
+				loader.has_gravity = 1
 				loader.ruins_args = list(config.lavaland_budget, /area/lavaland/surface/outdoors, lava_ruins_templates)
 				map_names += loader
 				planet_type = "Lava Planet"
@@ -159,6 +160,7 @@
 				icon_layers += "p_lava"
 			if(51 to 100)
 				var/datum/planet_loader/loader = new /datum/planet_loader("icy_planet.dmm")
+				loader.has_gravity = 1
 				map_names += loader
 				planet_type = "Icy Planet"
 				surface_turf_type = /turf/open/floor/plating/asteroid/snow/surface
@@ -167,6 +169,7 @@
 				icon_layers += "p_icy"
 			if(101 to 130)
 				var/datum/planet_loader/loader = new /datum/planet_loader/earthlike("earthlike.dmm")
+				loader.has_gravity = 1
 				map_names += loader
 				planet_type = "Habitable Exoplanet"
 				surface_turf_type = /turf/open/floor/plating/asteroid/planet/sand
