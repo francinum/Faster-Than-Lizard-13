@@ -18,7 +18,7 @@
 	else
 		LAVA = new /datum/weather/ash_storm
 	ongoing_weather = LAVA
-	LAVA.weather_start_up()
+//	LAVA.weather_start_up()				//todo: make it a config thing
 	ongoing_weather = null
 
 /obj/machinery/lavaland_controller/Destroy(force)
