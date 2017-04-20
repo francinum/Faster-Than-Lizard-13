@@ -398,6 +398,16 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
 
+/obj/item/clothing/under/sundresswhite
+	name = "white sundress"
+	desc = "White, flowy and covered in flowery vines."
+	icon_state = "sundresswhite"
+	item_state = "sundresswhite"
+	item_color = "sundresswhite"
+	body_parts_covered = CHEST|GROIN
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+
 /obj/item/clothing/under/captainparade
 	name = "captain's parade uniform"
 	desc = "A captain's luxury-wear, for special occasions."
