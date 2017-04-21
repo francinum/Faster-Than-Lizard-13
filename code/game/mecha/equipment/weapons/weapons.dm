@@ -233,7 +233,7 @@
 	icon_state = "mecha_carbine"
 	origin_tech = "materials=4;combat=4"
 	equip_cooldown = 5
-	projectile = /obj/item/projectile/bullet/incendiary/shell/dragonsbreath
+	projectile = /obj/item/projectile/bullet/shotshell/incendiary/dragon
 	projectiles = 24
 	projectile_energy_cost = 7
 
@@ -253,7 +253,7 @@
 	icon_state = "mecha_scatter"
 	origin_tech = "combat=4"
 	equip_cooldown = 20
-	projectile = /obj/item/projectile/bullet/midbullet
+	projectile = /obj/item/projectile/bullet/calibre/cal57x28
 	projectiles = 40
 	projectile_energy_cost = 12
 	projectiles_per_shot = 4
@@ -265,7 +265,7 @@
 	icon_state = "mecha_uac2"
 	origin_tech = "combat=4"
 	equip_cooldown = 10
-	projectile = /obj/item/projectile/bullet/weakbullet3
+	projectile = /obj/item/projectile/bullet/calibre/cal45acp
 	projectiles = 300
 	projectile_energy_cost = 10
 	projectiles_per_shot = 3

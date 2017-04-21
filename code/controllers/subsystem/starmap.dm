@@ -116,6 +116,7 @@ var/datum/subsystem/starmap/SSstarmap
 		if(system.alignment == "unaligned")
 			var/datum/star_faction/pirate = SSship.cname2faction("pirate")
 			pirate.systems += system
+			system.danger_level = 2
 
 
 	spawn(10) generate_factions()

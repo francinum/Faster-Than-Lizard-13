@@ -1,3 +1,5 @@
+#define BYPASS -1
+
 /obj/item/weapon/gun
 	name = "gun"
 	desc = "It's a gun. It's pretty terrible, though."
@@ -31,6 +33,10 @@
 	var/firing_burst = 0				//Prevent the weapon from firing again while already firing
 	var/semicd = 0						//cooldown handler
 	var/weapon_weight = WEAPON_LIGHT
+	var/canmagnum = BYPASS					//can the weapon handle magnum or +P/+P+ ammunition?
+	var/wear = 0						//you can only shoot so much magnum before the gun has a chance to blow up
+	var/chance_to_explode_violently = 0			//used in magnum check, doesn't do shit otherwise
+	var/spread_already_adjusted = 0
 
 	var/spread = 0						//Spread induced by the gun itself.
 	var/randomspread = 1				//Set to 0 for shotguns. This is used for weapons that don't fire all their bullets at once.
@@ -200,7 +206,48 @@
 
 obj/item/weapon/gun/proc/newshot()
 	return
+	
+obj/item/weapon/gun/proc/process_magnum(mob/user)
+	if(canmagnum == BYPASS)		//bypass the check entirely
+		return 1
+	else
+		if(chambered.ismagnum > canmagnum)
+			wear += initial(wear) + (rand(10,15) * (chambered.ismagnum - canmagnum))
+		else
+			wear += chambered.ismagnum			//it'll still wear the barrel out a bit, but less quickly
 
+		if(wear > 1000)			//even your luck has its limits
+			explode_gun(user)
+			return 0
+
+		if(wear > 100)			//you used too much magnum ammo and now the barrel is warped
+			chance_to_explode_violently = 100 - ((100 / wear) * 100)
+			
+			if(prob(chance_to_explode_violently))
+				explode_gun(user)
+				return 0
+			else
+				if(!spread_already_adjusted)
+					spread = initial(spread) * 5
+					spread_already_adjusted = 1
+				user << "<span class='warning'>You notice the bullet go wide....</span>"
+				
+				
+	return 1
+
+
+obj/item/weapon/gun/proc/explode_gun(mob/user, mob/living/A)		//called above
+	
+	playsound(user, fire_sound, 50, 1)
+	user.visible_message("[user]'s [src] explodes violently!", "<span class='userdanger'>The [src] blows up in your face!</span>")
+	explosion(get_turf(src), 0, 0, (chambered.ismagnum + 1), flame_range = 0)
+	message_admins("Explosion due to malfunction of a firearm held by [key_name_admin(user)]<A HREF='?_src_=holder;adminmoreinfo=\ref[user]'>?</A> (<A HREF='?_src_=holder;adminplayerobservefollow=\ref[user]'>FLW</A>).")
+	log_game("Explosion due to malfunction of a firearm held by [key_name_admin(user)].")
+	wear += 100
+	user.unEquip(src)
+	qdel(chambered)
+	return 0
+	
 /obj/item/weapon/gun/proc/process_fire(atom/target as mob|obj|turf, mob/living/user as mob|obj, message = 1, params, zone_override)
 	add_fingerprint(user)
 
@@ -212,6 +259,7 @@ obj/item/weapon/gun/proc/newshot()
 			recoil = 4 //one-handed kick
 		else
 			recoil = initial(recoil)
+			
 
 	if(burst_size > 1)
 		firing_burst = 1
@@ -222,6 +270,8 @@ obj/item/weapon/gun/proc/newshot()
 				if( i>1 && !(src in get_both_hands(user))) //for burst firing
 					break
 			if(chambered)
+				if(!process_magnum(user))		//if gun went boom
+					return
 				var/sprd = 0
 				if(randomspread)
 					sprd = round((rand() - 0.5) * spread)
@@ -244,6 +294,8 @@ obj/item/weapon/gun/proc/newshot()
 		firing_burst = 0
 	else
 		if(chambered)
+			if(!process_magnum(user))		//if the gun went boom
+				return
 			if(!chambered.fire(target, user, params, , suppressed, zone_override, spread))
 				shoot_with_empty_chamber(user)
 				return
@@ -252,6 +304,7 @@ obj/item/weapon/gun/proc/newshot()
 					shoot_live_shot(user, 1, target, message)
 				else
 					shoot_live_shot(user, 0, target, message)
+				
 		else
 			shoot_with_empty_chamber(user)
 			return

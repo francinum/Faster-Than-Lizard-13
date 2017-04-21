@@ -3,7 +3,9 @@
 	name = "projectile gun"
 	icon_state = "pistol"
 	origin_tech = "combat=2;materials=2"
+	canmagnum = 0			//We no longer want to bypass the check
 	w_class = 3
+	spread = 6			//six degree cone of fire
 
 	var/mag_type = /obj/item/ammo_box/magazine/m10mm //Removes the need for max_ammo and caliber info
 	var/obj/item/ammo_box/magazine/magazine

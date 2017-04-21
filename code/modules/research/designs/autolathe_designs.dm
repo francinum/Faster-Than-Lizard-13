@@ -392,28 +392,38 @@
 	category = list("initial", "Medical")
 
 /datum/design/beanbag_slug
-	name = "Beanbag slug"
+	name = "Rubber slug"
 	id = "beanbag_slug"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 250)
 	build_path = /obj/item/ammo_casing/shotgun/beanbag
-	category = list("initial", "Security")
+	category = list("initial", "Ammunition")
 
 /datum/design/rubbershot
-	name = "Rubber shot"
+	name = "00 rubber shot"
 	id = "rubber_shot"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun/rubbershot
-	category = list("initial", "Security")
+	category = list("initial", "Ammunition")
+	
+/datum/design/rubbershot/tripleaught
+	name = "000 rubber shot"
+	id = "rubber_shot_000"
+	build_path = /obj/item/ammo_casing/shotgun/rubbershot/tripleaught
+	
+/datum/design/rubbershot/quadrupleaught
+	name = "0000 rubber shot"
+	id = "rubber_shot_0000"
+	build_path = /obj/item/ammo_casing/shotgun/rubbershot/quadrupleaught
 
 /datum/design/c38
-	name = "Speed loader (.38)"
+	name = "Speedloader (.38 stunshot)"
 	id = "c38"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 30000)
 	build_path = /obj/item/ammo_box/c38
-	category = list("initial", "Security")
+	category = list("initial", "Ammunition")
 
 /datum/design/recorder
 	name = "Universal recorder"
@@ -606,15 +616,25 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
 
 /datum/design/buckshot_shell
-	name = "Buckshot shell"
+	name = "00 Buckshot shell"
 	id = "buckshot_shell"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun/buckshot
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
+	
+/datum/design/buckshot_shell/tripleaught
+	name = "000 Buckshot shell"
+	id = "buckshot_shell_000"
+	build_path = /obj/item/ammo_casing/shotgun/buckshot/tripleaught
+	
+/datum/design/buckshot_shell/quadrupleaught
+	name = "0000 Buckshot shell"
+	id = "buckshot_shell_0000"
+	build_path = /obj/item/ammo_casing/shotgun/buckshot/quadrupleaught
 
 /datum/design/shotgun_dart
 	name = "Shotgun dart"
@@ -622,7 +642,7 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun/dart
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
 
 /datum/design/incendiary_slug
 	name = "Incendiary slug"
@@ -630,39 +650,362 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun/incendiary
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
+	
+/datum/design/a17
+	name = "Ammo box (.17 HMR)"
+	id = "c17hmr"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c17hmr
+	category = list("hacked", "Ammunition")
+	
+/datum/design/a17/hp
+	name = "Ammo box (.17 HMR HP)"
+	id = "c17hmr_hp"
+	build_path = /obj/item/ammo_box/c17hmr/hp
+	
+/datum/design/a17/ap
+	name = "Ammo box (.17 HMR AP)"
+	id = "c17hmr_ap"
+	build_path = /obj/item/ammo_box/c17hmr/ap
+	
+/datum/design/a22lr
+	name = "Ammo box (.22 LR)"
+	id = "c22lr"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c22lr
+	category = list("hacked", "Ammunition")
 
 /datum/design/a357
-	name = "Ammo box (.357)"
+	name = "Speedloader (.357)"
 	id = "a357"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 30000)
 	build_path = /obj/item/ammo_box/a357
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
 
-/datum/design/c10mm
-	name = "Ammo box (10mm)"
-	id = "c10mm"
+/datum/design/a357/hp
+	name = "Speedloader (.357 HP)"
+	id = "a357_hp"
+	build_path = /obj/item/ammo_box/a357/hp
+	
+/datum/design/a357/ap
+	name = "Speedloader (.357 AP)"
+	id = "a357_ap"
+	build_path = /obj/item/ammo_box/a357/ap
+
+/datum/design/c38lethal
+	name = "Speedloader (.38 Lethal)"
+	id = "a38_fmj"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 30000)
-	build_path = /obj/item/ammo_box/c10mm
-	category = list("hacked", "Security")
+	build_path = /obj/item/ammo_box/c38lethal
+	category = list("hacked", "Ammunition")
 
+/datum/design/c44mag
+	name = "Ammo box (.44 Magnum)"
+	id = "a44mag"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c44mag
+	category = list("hacked", "Ammunition")
+
+/datum/design/c44mag/hp
+	name = "Ammo box (.44 Magnum HP)"
+	id = "a44mag_hp"
+	build_path = /obj/item/ammo_box/c44mag/hp
+
+/datum/design/c44mag/ap
+	name = "Ammo box (.44 Magnum AP)"
+	id = "a44mag_ap"
+	build_path = /obj/item/ammo_box/c44mag/ap
+	
 /datum/design/c45
-	name = "Ammo box (.45)"
+	name = "Ammo box (.45 ACP)"
 	id = "c45"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 30000)
 	build_path = /obj/item/ammo_box/c45
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
+
+/datum/design/c45/plus
+	name = "Ammo box (.45 ACP +P)"
+	id = "c45_plus"
+	build_path = /obj/item/ammo_box/c45/plus
+	
+/datum/design/c45/plus/plus
+	name = "Ammo box (.45 ACP +P+)"
+	id = "c45_plusplus"
+	build_path = /obj/item/ammo_box/c45/plus/plus
+
+/datum/design/c45/hp
+	name = "Ammo box (.45 ACP HP)"
+	id = "c45_hp"
+	build_path = /obj/item/ammo_box/c45/hp
+	
+/datum/design/c45/ap
+	name = "Ammo box (.45 ACP AP)"
+	id = "c45_ap"
+	build_path = /obj/item/ammo_box/c45/ap
+	
+/datum/design/c454
+	name = "Ammo box (.454 wildcat)"
+	id = "c454"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c454casull
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c50ae
+	name = "Ammo box (.50 Action Express)"
+	id = "c50ae"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c50ae
+	category = list("hacked", "Ammunition")
+
+/datum/design/c50ae/hp
+	name = "Ammo box (.50 Action Express HP)"
+	id = "c50ae_hp"
+	build_path = /obj/item/ammo_box/c50ae/hp
+	
+/datum/design/c50ae/ap
+	name = "Ammo box (.50 Action Express AP)"
+	id = "c50ae_ap"
+	build_path = /obj/item/ammo_box/c50ae/ap
+	
+/datum/design/c50ae
+	name = "Ammo box (.500 S&W Magnum)"
+	id = "c500swm"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c500sw
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c46x30mm
+	name = "Ammo box (HK 4.6x30mm)"
+	id = "c46x30mm"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c46x30mm
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c46x30mm/hp
+	name = "Ammo box (HK 4.6x30mm HP)"
+	id = "c46x30mm_hp"
+	build_path = /obj/item/ammo_box/c46x30mm/hp
+
+/datum/design/c46x30mm/ap
+	name = "Ammo box (HK 4.6x30mm AP)"
+	id = "c46x30mm_ap"
+	build_path = /obj/item/ammo_box/c46x30mm/ap
+
+/datum/design/c57x28mm
+	name = "Ammo box (FN 5.7x28mm)"
+	id = "c57x28mm"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c57x28mm
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c57x28mm/hp
+	name = "Ammo box (FN 5.7x28mm HP)"
+	id = "c57x28mm_hp"
+	build_path = /obj/item/ammo_box/c57x28mm/hp
+
+/datum/design/c57x28mm/ap
+	name = "Ammo box (FN 5.7x28mm AP)"
+	id = "c57x28mm_ap"
+	build_path = /obj/item/ammo_box/c57x28mm/ap
+	
+/datum/design/c9x18mm
+	name = "Ammo box (9x18mm Makarov)"
+	id = "c9x18mm"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c9x18mm
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c9x18mm/hp
+	name = "Ammo box (9x18mm Makarov HP)"
+	id = "c9x18mm_hp"
+	build_path = /obj/item/ammo_box/c9x18mm/hp
+	
+/datum/design/c9x18mm/ap
+	name = "Ammo box (9x18mm Makarov AP)"
+	id = "c9x18mm_ap"
+	build_path = /obj/item/ammo_box/c9x18mm/ap
 
 /datum/design/c9mm
-	name = "Ammo box (9mm)"
+	name = "Ammo box (9x19mm NATO)"
 	id = "c9mm"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 30000)
 	build_path = /obj/item/ammo_box/c9mm
-	category = list("hacked", "Security")
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c9mm/hp
+	name = "Ammo box (9x19mm NATO HP)"
+	id = "c9mm_hp"
+	build_path = /obj/item/ammo_box/c9mm/hp
+	
+/datum/design/c9mm/ap
+	name = "Ammo box (9x19mm NATO AP)"
+	id = "c9mm_ap"
+	build_path = /obj/item/ammo_box/c9mm/ap
+	
+/datum/design/c10mm
+	name = "Ammo box (10mm Auto)"
+	id = "c10mm"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c10mm
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c10mm/hp
+	name = "Ammo box (10mm Auto HP)"
+	id = "c10mm_hp"
+	build_path = /obj/item/ammo_box/c10mm/hp
+	
+/datum/design/c10mm/ap
+	name = "Ammo box (10mm Auto AP)"
+	id = "c10mm_ap"
+	build_path = /obj/item/ammo_box/c10mm/ap
+
+/datum/design/c223
+	name = "Ammo box (.223 Remington)"
+	id = "c223"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c223
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c223/hp
+	name = "Ammo box (.223 Remington HP)"
+	id = "c223_hp"
+	build_path = /obj/item/ammo_box/c223/hp
+	
+/datum/design/c223/ap
+	name = "Ammo box (.223 Remington AP)"
+	id = "c223_ap"
+	build_path = /obj/item/ammo_box/c223/ap
+
+/datum/design/c3006
+	name = "Ammo box (.30-06 Springfield)"
+	id = "c3006"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c3006
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c3006/hp
+	name = "Ammo box (.30-06 Springfield HP)"
+	id = "c3006_hp"
+	build_path = /obj/item/ammo_box/c3006/hp
+	
+/datum/design/c3006/ap
+	name = "Ammo box (.30-06 Springfield AP)"
+	id = "c3006_ap"
+	build_path = /obj/item/ammo_box/c3006/ap
+	
+/datum/design/c308
+	name = "Ammo box (.308 Winchester)"
+	id = "c308"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c308
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c308/hp
+	name = "Ammo box (.308 Winchester HP)"
+	id = "c308_hp"
+	build_path = /obj/item/ammo_box/c308/hp
+
+/datum/design/c308/ap
+	name = "Ammo box (.308 Winchester AP)"
+	id = "c308_ap"
+	build_path = /obj/item/ammo_box/c308/ap
+	
+/datum/design/c338
+	name = "Ammo box (.338 Lapua Magnum)"
+	id = "c338"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 40000)
+	build_path = /obj/item/ammo_box/c338
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c4570
+	name = "Ammo box (.45-70 Government)"
+	id = "c4570"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 45000)
+	build_path = /obj/item/ammo_box/c4570
+	category = list("hacked", "Ammunition")	
+	
+/datum/design/c50bmg
+	name = "Ammo box (.50 BMG, Saboted LAP)"
+	id = "c50bmg"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 65000)
+	build_path = /obj/item/ammo_box/c50bmg
+	category = list("hacked", "Ammunition")	
+	
+/datum/design/c50bmg/narq	
+	name = "Ammo box (.50 BMG, Tranquilizer)"
+	id = "c50bmg_narq"
+	materials = list(MAT_METAL = 55000)
+	build_path = /obj/item/ammo_box/c50bmg/tranq
+
+/datum/design/c556x45mm
+	name = "Ammo box (5.56x45mm NATO)"
+	id = "c556"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c556x45
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c556x45mm/hp
+	name = "Ammo box (5.56x45mm NATO HP)"
+	id = "c556_hp"
+	build_path = /obj/item/ammo_box/c556x45/hp
+
+/datum/design/c556x45mm/ap
+	name = "Ammo box (5.56x45mm NATO AP)"
+	id = "c556_ap"
+	build_path = /obj/item/ammo_box/c556x45/ap
+
+/datum/design/c762x39mm
+	name = "Ammo box (7.62x39mm)"
+	id = "c762x39"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/c762x39
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c762x39mm/hp
+	name = "Ammo box (7.62x39mm HP)"
+	id = "c762x39_hp"
+	build_path = /obj/item/ammo_box/c762x39/hp
+
+/datum/design/c762x39mm/ap
+	name = "Ammo box (7.62x39mm AP)"
+	id = "c762x39_ap"
+	build_path = /obj/item/ammo_box/c762x39/ap
+	
+/datum/design/c762x51mm
+	name = "Ammo box (7.62x51mm NATO)"
+	id = "c762x51"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 35000)
+	build_path = /obj/item/ammo_box/c762x51
+	category = list("hacked", "Ammunition")
+	
+/datum/design/c762x51mm/ap		//no HP rounds
+	name = "Ammo box (7.62x51mm NATO AP)"
+	id = "c762x51_ap"
+	build_path = /obj/item/ammo_box/c762x51/ap
 
 /datum/design/cleaver
 	name = "Butcher's cleaver"

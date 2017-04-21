@@ -7,6 +7,7 @@
 	can_suppress = 1
 	burst_size = 3
 	fire_delay = 2
+	spread = 5
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	var/eject_sound = null		//only used with the M1 Garand, so expect disappointment if you try it elsewhere
 
@@ -52,7 +53,7 @@
 				update_icon()
 				return 1
 	else if(can_tactical_reload == 2)		//used with the M1 Garand
-		if(magazine || !chambered)		//cheap hack, removing the magazine dechambers it
+		if(magazine || chambered)		//cheap hack, removing the magazine dechambers it
 			user << "<span class='warning'>You cannot perform a tactical reload with an en-bloc clip, eject it first!</span>"
 			return
 		else
@@ -133,6 +134,7 @@
 	desc = "An outdated personal defence weapon. Uses 4.6x30mm rounds and is designated the WT-550 Automatic Rifle."
 	icon_state = "wt550"
 	item_state = "arg"
+	spread = 6			//cheap malaysian piece of shit
 	mag_type = /obj/item/ammo_box/magazine/wt550m9
 	fire_delay = 2
 	can_suppress = 0
@@ -148,10 +150,13 @@
 	desc = "A battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector has a 3-round-burst and a semi-automatic mode."
 	icon_state = "br55"
 	item_state = "c20r"
+	spread = 4
 	mag_type = /obj/item/ammo_box/magazine/br55
 	fire_delay = 1
 	can_suppress = 0
 	burst_size = 3
+	zoomable = TRUE			//EXPERIMENTAL
+	zoom_amt = 4		
 	fire_sound = 'sound/weapons/gunshot_br55.ogg'
 
 /obj/item/weapon/gun/projectile/automatic/br55/update_icon()
@@ -164,15 +169,18 @@
 	desc = "The civilian variant of a battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector only has a semi-automatic mode."
 	icon_state = "br55civ"
 	mag_type = /obj/item/ammo_box/magazine/br55/civilian
+	spread = 2		//you lose the burst, but get better accuracy because less kick
 	fire_delay = 2
 	can_suppress = 0
 	burst_size = 0
+	zoom_amt = 2		//honk.
 	actions_types = list()
 
 /obj/item/weapon/gun/projectile/automatic/mini_uzi
 	name = "\improper 'Type U3' Uzi"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "mini-uzi"
+	spread = 8		//short barrel, automatic
 	origin_tech = "combat=4;materials=2;syndicate=4"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	burst_size = 2
@@ -256,6 +264,7 @@
 	desc = "Based on the classic 'Chicago Typewriter'."
 	icon_state = "tommygun"
 	item_state = "shotgun"
+	spread = 3
 	w_class = 5
 	slot_flags = 0
 	origin_tech = "combat=5;materials=1;syndicate=3"
@@ -291,6 +300,7 @@
 	origin_tech = "combat=6;materials=4;syndicate=6"
 	mag_type = /obj/item/ammo_box/magazine/m12g
 	fire_sound = 'sound/weapons/Gunshot.ogg'
+	spread = 0		//handled in buckshot code. We don't want spread here as well.
 	can_suppress = 0
 	burst_size = 1
 	fire_delay = 0
@@ -406,6 +416,7 @@
 	burst_size = 1
 	origin_tech = "combat=7"
 	can_unsuppress = 1
+	spread = 0			//no spread
 	can_suppress = 1
 	w_class = 3
 	zoomable = TRUE
@@ -464,6 +475,7 @@
 	w_class = 3
 	burst_size = 3
 	fire_delay = 1
+	spread = 3
 	force = 10 //melee damage
 	origin_tech = "combat=6;materials=4;syndicate=8"
 	fire_sound = 'sound/weapons/gunshot_g36.ogg'
@@ -521,12 +533,13 @@
 	w_class = 4
 	fire_delay = 2
 	name = "\improper M1 Garand"
-	desc = "This 7.62x51mm rifle is well-known for its eight-round en-bloc clip that ejects with a distinctive <i>ping!</i>, and its use during a war in the early 1940s."
+	desc = "This .30-06 rifle is well-known for its eight-round en-bloc clip that ejects with a distinctive <i>ping!</i>, and its use during a war in the early 1940s."
 	icon_state = "garand"
 	item_state = "moistnugget"
 	mag_type = /obj/item/ammo_box/magazine/enbloc
 	actions_types = list()
 	fire_delay = 2
+	spread = 1
 	can_tactical_reload = 2
 	can_suppress = 0
 	burst_size = 0
@@ -535,7 +548,7 @@
 	
 /obj/item/weapon/gun/projectile/automatic/garand/update_icon()
 	..()
-	icon_state = "[initial(icon_state)][chambered ? "" : "-locked"]"
+	icon_state = "[initial(icon_state)][magazine ? "" : "-locked"]"
 
 
 /obj/item/weapon/gun/projectile/automatic/garand/afterattack()

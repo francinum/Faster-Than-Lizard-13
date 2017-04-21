@@ -20,6 +20,7 @@
 	active_power_usage = 6
 	power_channel = ENVIRON
 	var/detecting = 1
+	var/coldalarming = 0
 	var/buildstage = 2 // 2 = complete, 1 = no wires, 0 = circuit gone
 	var/health = 50
 
@@ -83,7 +84,10 @@
 		playsound(src.loc, 'sound/effects/sparks4.ogg', 50, 1)
 
 /obj/machinery/firealarm/temperature_expose(datum/gas_mixture/air, temperature, volume)
-	if(!emagged && detecting && !stat && (temperature > T0C + 200 || temperature < T0C - 15))
+	if(!emagged && detecting && !stat && (temperature > T0C + 200))
+		alarm()
+	else if(!emagged && detecting && !stat && (temperature < T0C - 15))
+		coldalarming = 1
 		alarm()
 
 /obj/machinery/firealarm/proc/alarm()
@@ -99,6 +103,8 @@
 /obj/machinery/firealarm/proc/reset()
 	if(!is_operational())
 		return
+	if(coldalarming)
+		coldalarming = 0
 	var/area/A = get_area(src)
 	A.firereset(src)
 
